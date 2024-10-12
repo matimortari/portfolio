@@ -36,6 +36,12 @@
 		"link": "https://react-query.tanstack.com"
 	},
 	{
+		"name": "Vitest",
+		"description": "Fast, lightweight testing library for web applications, inspired by Jest.",
+		"icon": "simple-icons:vitest",
+		"link": "https://vitest.dev"
+	},
+	{
 		"name": "Playwright",
 		"description": "Testing and web browser automation library for web applications.",
 		"icon": "simple-icons:playwright",
@@ -58,12 +64,6 @@
 		"description": "Powerful and multipurpose high-level programming language.",
 		"icon": "simple-icons:python",
 		"link": "https://www.python.org"
-	},
-	{
-		"name": "PowerShell",
-		"description": "Command-line shell and scripting language designed for Windows.",
-		"icon": "simple-icons:powershell",
-		"link": "https://docs.microsoft.com/en-us/powershell"
 	},
 	{
 		"name": "Git",
