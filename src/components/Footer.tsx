@@ -10,7 +10,7 @@ export default function Footer() {
 				<a href="https://github.com/matimortari">
 					<Icon icon="simple-icons:github" className="icon h-6 w-6" />
 				</a>
-				<a href="https://www.linkedin.com/in/matheus-mortari-19rt">
+				<a href="https://linkedin.com/in/matheus-mortari-19rt">
 					<Icon icon="simple-icons:linkedin" className="icon h-6 w-6" />
 				</a>
 				<a href="mailto:matheus.felipe.19rt@gmail.com">
@@ -21,7 +21,7 @@ export default function Footer() {
 			<div className="text-center text-xs">
 				Icons provided by{" "}
 				<a href="https://iconify.design/" className="text-secondary hover:underline">
-					Iconify Design.
+					Iconify.
 				</a>
 				<p>© 2024 Matheus Mortari. All rights reserved.</p>
 			</div>

@@ -37,7 +37,7 @@
 	},
 	{
 		"name": "Vitest",
-		"description": "Fast, lightweight testing library for web applications, inspired by Jest.",
+		"description": "Lightweight testing library for web applications, inspired by Jest.",
 		"icon": "simple-icons:vitest",
 		"link": "https://vitest.dev"
 	},

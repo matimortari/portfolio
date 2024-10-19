@@ -15,25 +15,28 @@ export default function Hero() {
 				</div>
 			</div>
 
-			<div className="relative flex flex-col items-center gap-4 p-4 text-center font-serif ">
-				<img src={avatar} alt="Avatar" className="hero-avatar card-shadow my-4 h-auto w-1/2 md:w-1/4" />
-				<h1 className="text-4xl font-bold md:text-6xl">Hi, I'm Matheus!</h1>
-				<h2 className="text-2xl font-bold md:text-4xl">I'm a full-stack developer.</h2>
-				<p className="max-w-md text-base md:text-xl">
+			<div className="relative flex flex-col items-center p-4 text-center font-serif">
+				<img src={avatar} alt="@matimortari" className="hero-avatar card-shadow m-2 w-1/2 md:w-1/4" />
+
+				<div className="flex flex-col items-center gap-2 p-6">
+					<h1 className="text-5xl font-bold md:text-6xl">Hi, I'm Matheus!</h1>
+					<h2 className="text-3xl font-bold md:text-4xl">I'm a full-stack developer.</h2>
+				</div>
+				<p className="max-w-md text-xl">
 					This is my website, where you can learn about my work. Feel free to explore and connect!
 				</p>
 
-				<hr className="my-2 w-full border-t border-accent opacity-50" />
+				<hr />
 
 				<div className="flex items-center justify-center gap-4 text-secondary">
 					<a href="https://github.com/matimortari">
-						<Icon icon="simple-icons:github" className="icon h-8 w-8" />
+						<Icon icon="simple-icons:github" className="icon h-8 w-8 md:h-6 md:w-6" />
 					</a>
-					<a href="https://www.linkedin.com/in/matheus-mortari-19rt/">
-						<Icon icon="simple-icons:linkedin" className="icon h-8 w-8" />
+					<a href="https://linkedin.com/in/matheus-mortari-19rt/">
+						<Icon icon="simple-icons:linkedin" className="icon h-8 w-8 md:h-6 md:w-6" />
 					</a>
 					<a href="mailto:matheus.felipe.19rt@gmail.com">
-						<Icon icon="simple-icons:gmail" className="icon h-8 w-8" />
+						<Icon icon="simple-icons:gmail" className="icon h-8 w-8 md:h-6 md:w-6" />
 					</a>
 				</div>
 			</div>
