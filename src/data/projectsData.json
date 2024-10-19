@@ -1,7 +1,7 @@
 [
 	{
 		"title": "LinkSphere",
-		"description": "Link aggregator website with user authentication, inspired by Linktree. Created with Next.js, TypeScript, and Tailwind CSS.",
+		"description": "Link aggregator website that allows users to create a customizable landing page with links to their social media profiles, contact information, and more. User authentication with NextAuth. Built with Next.js, TypeScript, and Tailwind CSS.",
 		"skills": [
 			"Next.js",
 			"React",
@@ -18,7 +18,7 @@
 	},
 	{
 		"title": "Zephyr",
-		"description": "Weather website built around the Open-Meteo API. Created with Next.js, TypeScript, and Tailwind CSS.",
+		"description": "Weather website built around the Open-Meteo API. Users can search for weather information by location. Built with Next.js, TypeScript, and Tailwind CSS. Custom UI components from shadcn/ui.",
 		"skills": [
 			"Next.js",
 			"React",
@@ -35,7 +35,7 @@
 	},
 	{
 		"title": "To-Do List",
-		"description": "Simple to-do list website with user authentication, built with Next.js, TypeScript, and Tailwind CSS.",
+		"description": "Simple to-do list website with user authentication via NextAuth. Users can create, toggle, and delete tasks. Built with Next.js, TypeScript, and Tailwind CSS.",
 		"skills": [
 			"Next.js",
 			"React",

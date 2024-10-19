@@ -11,9 +11,9 @@ export default function Projects() {
 				{projectsData.map((project: ProjectCardProps) => (
 					<div key={project.title} className="card-shadow flex flex-col items-center gap-2 rounded-lg p-6">
 						<strong className="font-serif text-2xl font-semibold">{project.title}</strong>
-						<p className="text-sm">{project.description}</p>
+						<p className="max-w-sm text-sm">{project.description}</p>
 
-						<div className="flex flex-wrap items-center justify-center gap-1 text-center">
+						<div className="flex max-w-sm flex-wrap items-center justify-center gap-1 text-center">
 							{project.skills.map((skill, index) => (
 								<span key={index} className="rounded-lg bg-accent px-2 py-1 text-xs font-medium">
 									{skill}
