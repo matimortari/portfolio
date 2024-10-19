@@ -22,7 +22,7 @@ export default function Projects() {
 								))}
 							</div>
 
-							<hr className="my-4 w-full border-t border-accent opacity-50" />
+							<hr className="my-2 w-full border-t border-accent opacity-50" />
 
 							<div className="flex flex-row items-center justify-center gap-6">
 								<a
