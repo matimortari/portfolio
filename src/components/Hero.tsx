@@ -9,14 +9,14 @@ export default function Hero() {
 			<div className="absolute inset-x-0 bottom-0 z-0 h-full overflow-hidden opacity-20">
 				<img src="/map.png" alt="Background" className="block h-full w-full object-cover md:hidden" />
 
-				<div className="scrolling-map">
+				<div className="scrolling-map scroll">
 					<img src="/map.png" alt="Background" className="hidden h-full w-full object-cover md:block" />
 					<img src="/map.png" alt="Background" className="hidden h-full w-full object-cover md:block" />
 				</div>
 			</div>
 
 			<div className="relative flex flex-col items-center p-4 text-center font-serif">
-				<img src={avatar} alt="@matimortari" className="hero-avatar card-shadow m-2 w-1/2 md:w-1/4" />
+				<img src={avatar} alt="@matimortari" className="hero-avatar float card-shadow m-2 w-1/2 md:w-1/4" />
 
 				<div className="flex flex-col items-center gap-2 p-6">
 					<h1 className="text-5xl font-bold md:text-6xl">Hi, I'm Matheus!</h1>

@@ -77,7 +77,15 @@
 .hero-avatar {
 	background: var(--background);
 	border-radius: 100%;
-	animation: floating 3s infinite ease-in-out;
+}
+
+.scrolling-map {
+	display: flex;
+	width: 200%;
+}
+
+.scrolling-map img {
+	width: 50%;
 }
 
 .footer-container {

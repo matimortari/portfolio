@@ -1,5 +1,5 @@
 /* Keyframe animation for floating effect */
-@keyframes floating {
+@keyframes float {
 	0%,
 	100% {
 		transform: translate(0, 0px);
@@ -15,19 +15,16 @@
 	0% {
 		transform: translateX(0);
 	}
+
 	100% {
 		transform: translateX(-50%);
 	}
 }
 
-/* Container for the scrolling map */
-.scrolling-map {
-	display: flex;
-	width: 200%;
-	animation: scroll 120s linear infinite;
+.float {
+	animation: float 2s ease-in-out infinite;
 }
 
-/* Each image takes half the width of the container */
-.scrolling-map img {
-	width: 50%;
+.scroll {
+	animation: scroll 90s linear infinite;
 }
