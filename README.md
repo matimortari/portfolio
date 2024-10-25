@@ -2,7 +2,7 @@
 
 Welcome to my web portfolio! This website showcases my projects and experiences in software development.
 
-[🚀 Check it out!](https://matheus-mortari-dev.vercel.app)
+[🚀 **Check it out!**](https://matheus-mortari-dev.vercel.app)
 
 ## 🌐 About Me
 
@@ -16,10 +16,10 @@ If you're looking for someone with strong problem-solving skills, who values bot
 
 These are the technologies I use the most in my projects:
 
-- **Programming Languages:** TypeScript, Python, PowerShell.
+- **Programming Languages:** TypeScript, Python.
 - **Frontend:** React, Next.js, Tailwind CSS.
-- **Backend & Databases:** Node.js, React Query, PostgreSQL, Prisma ORM.
-- **Tools & Other:** Playwright, Git.
+- **Backend & Database:** Node.js, React Query, PostgreSQL, Prisma.
+- **Testing & Tooling:** Playwright, Vitest, Git.
 
 ## 🛠️ My Projects
 
@@ -28,19 +28,19 @@ Here are some of the projects I'm most proud of:
 ### LinkSphere
 
 - **Description:** Social media & link aggregator website, based on Linktree.
-- **Technologies Used:** Next.js, React, TypeScript, Tailwind CSS, Node.js, NextAuth, Prisma ORM.
+- **Technologies Used:** Next.js, React, TypeScript, Tailwind CSS, Node.js, NextAuth.js, Prisma, Playwright, Vitest.
 - **Links:** [Demo](https://linksphere-live.vercel.app) | [Source](https://github.com/matimortari/linksphere)
 
 ### Zephyr
 
 - **Description:** Next.js weather app with Open-Meteo API integration.
-- **Technologies Used:** Next.js, React, TypeScript, shadcn/ui, Tailwind CSS, Node.js.
+- **Technologies Used:** Next.js, React, TypeScript, shadcn/ui, Open-Meteo, Tailwind CSS, Node.js.
 - **Links:** [Demo](https://zephyr-weather.vercel.app) | [Source](https://github.com/matimortari/zephyr)
 
 ### To-Do List
 
 - **Description:** Simple to-do list website with user authentication.
-- **Technologies Used:** Next.js, React, TypeScript, Tailwind CSS, Node.js, NextAuth, Prisma ORM.
+- **Technologies Used:** Next.js, React, TypeScript, Tailwind CSS, Node.js, NextAuth.js, Prisma, Playwright, Vitest.
 - **Links:** [Demo](https://wdc-todo.vercel.app) | [Source](https://github.com/matimortari/todo-list)
 
 ## 📬 Contact
