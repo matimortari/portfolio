@@ -1,0 +1,34 @@
+{
+	"Hero": {
+		"title": "Matheus Mortari",
+		"subtitle": "Full-stack developer",
+		"description": "Welcome to my website, where you can learn about my work. Feel free to explore and connect!"
+	},
+	"Navbar": {
+		"aboutMe": "About Me",
+		"contact": "Contact"
+	},
+	"Footer": {
+		"title": "Say Hello!",
+		"iconCredits": "Icons provided by",
+		"iconifyLinkText": "Iconify.",
+		"copyright": "© 2025 Matheus Mortari. All rights reserved."
+	},
+	"About": {
+		"title": "About Me",
+		"section1": "I am a full-stack web developer and Systems Analysis & Development student at the University of Passo Fundo (UPF), based in Rio Grande do Sul, Brazil. Through my studies and project work, I have specialized in creating clean, responsive user interfaces, along with robust back-end systems such as RESTful APIs and databases. I have optimized my development workflow by employing custom tooling and automation processes.",
+		"section2": "I'm easily adaptable and committed to staying updated on the industry trends, while also maintaining a foundation in traditional and reliable technologies. Beyond web development, I enjoy exploring themes such as software architecture, automation, and cloud computing. I'm passionate about many topics such as music and reading, and I'm open to learning through engaging experiences.",
+		"section3": "Feel free to explore my work, and don't hesitate to reach out — I'm always seeking to connect, learn and collaborate!",
+		"resume": "My Resume:",
+		"resumePortuguese": "CV - Portuguese",
+		"resumeEnglish": "CV - English"
+	},
+	"Projects": {
+		"title": "Projects",
+		"source": "Source",
+		"link": "Link"
+	},
+	"Stack": {
+		"title": "Tech Stack"
+	}
+}

@@ -1,0 +1,32 @@
+[
+	{
+		"title": "Linksy",
+		"description": {
+			"en": "Link aggregator website that allows authenticated users to create a customizable landing page for sharing links to their social media profiles, websites, and more.",
+			"pt": "Website agregador de links que permite aos usuários autenticados criar uma página personalizável para compartilhar links para seus perfis de mídia social, websites, e mais."
+		},
+		"skills": ["Next.js", "React", "Node.js", "React Query", "NextAuth.js", "Prisma", "TypeScript", "Tailwind CSS"],
+		"link": "https://linksy-live.vercel.app",
+		"source": "https://github.com/matimortari/linksy"
+	},
+	{
+		"title": "CloudCast",
+		"description": {
+			"en": "Simple and elegant weather website with focus on ease of use, built around the Open-Meteo API. Users can search for weather information by location.",
+			"pt": "Website de previsão do tempo simples e elegante com foco na facilidade de uso, construído em torno da API Open-Meteo. Os usuários podem pesquisar informações meteorológicas por localização."
+		},
+		"skills": ["Next.js", "React", "Node.js", "TypeScript", "Tailwind CSS", "Open-Meteo", "shadcn/ui"],
+		"link": "https://cloudcast-live.vercel.app",
+		"source": "https://github.com/matimortari/cloudcast"
+	},
+	{
+		"title": "Task Manager",
+		"description": {
+			"en": "Simple task manager website with a clean user interface, that allows authenticated users to create, edit, delete, and filter tasks.",
+			"pt": "Website de gerenciamento de tarefas simples com uma interface de usuário limpa, que permite aos usuários autenticados criar, editar, excluir e filtrar tarefas ativas, concluídas ou atrasadas."
+		},
+		"skills": ["Next.js", "React", "Node.js", "NextAuth.js", "Prisma", "TypeScript", "Tailwind CSS"],
+		"link": "https://wdc-task-manager.vercel.app",
+		"source": "https://github.com/matimortari/task-manager"
+	}
+]
