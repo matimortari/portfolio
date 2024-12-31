@@ -1,0 +1,33 @@
+{
+	"Hero": {
+		"title": "Hi, I'm Matheus!",
+		"subtitle": "I'm a full-stack developer.",
+		"description": "Welcome to my website, where you can learn about my work. Feel free to explore and connect!",
+		"github": "GitHub",
+		"linkedin": "LinkedIn",
+		"gmail": "Gmail"
+	},
+	"Navbar": {
+		"aboutMe": "About Me",
+		"contact": "Contact"
+	},
+	"Footer": {
+		"iconCredits": "Icons provided by",
+		"iconifyLinkText": "Iconify.",
+		"copyright": "© 2025 Matheus Mortari. All rights reserved."
+	},
+	"About": {
+		"aboutMe": "About Me",
+		"section1": "I am a full-stack web developer and computer science student at the University of Passo Fundo (UPF), based in Rio Grande do Sul, Brazil.",
+		"section2": "I specialize in creating user-friendly interfaces with a focus on elegant design and usability. I also have experience in back-end systems, integrating APIs and managing databases. I'm committed to staying updated on the industry trends and technologies while maintaining a foundation in more traditional tools. Beyond web development, I enjoy learning about topics such as software automation, data science, and machine learning.",
+		"section3": "Feel free to explore my work, and don't hesitate to reach out — I'm always seeking to connect, learn and collaborate!"
+	},
+	"Projects": {
+		"title": "Projects",
+		"source": "Source",
+		"preview": "Preview"
+	},
+	"Stack": {
+		"title": "Tech Stack"
+	}
+}

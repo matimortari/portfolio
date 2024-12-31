@@ -1,0 +1,33 @@
+{
+	"Hero": {
+		"title": "Olá, eu sou Matheus!",
+		"subtitle": "Sou desenvolvedor full-stack.",
+		"description": "Bem-vindo ao meu site, onde você pode conhecer meu trabalho. Sinta-se livre para explorar e conectar!",
+		"github": "GitHub",
+		"linkedin": "LinkedIn",
+		"gmail": "Gmail"
+	},
+	"Navbar": {
+		"aboutMe": "Sobre mim",
+		"contact": "Contato"
+	},
+	"Footer": {
+		"iconCredits": "Ícones fornecidos por",
+		"iconifyLinkText": "Iconify.",
+		"copyright": "© 2025 Matheus Mortari. Todos os direitos reservados."
+	},
+	"About": {
+		"aboutMe": "Sobre mim",
+		"section1": "Sou um desenvolvedor web full-stack e estudante de ciência da computação na Universidade de Passo Fundo (UPF), baseado no Rio Grande do Sul, Brasil.",
+		"section2": "Especializo-me em criar interfaces amigáveis com foco em design elegante e usabilidade. Também tenho experiência em sistemas back-end, integração de APIs e gerenciamento de bancos de dados. Estou comprometido em me manter atualizado com as tendências e tecnologias da indústria, mantendo uma base em ferramentas mais tradicionais. Além do desenvolvimento web, gosto de aprender sobre tópicos como automação de software, ciência de dados e aprendizado de máquina.",
+		"section3": "Fique à vontade para explorar meu trabalho, e não hesite em entrar em contato — estou sempre buscando me conectar, aprender e colaborar!"
+	},
+	"Projects": {
+		"title": "Projetos",
+		"source": "Código",
+		"preview": "Demonstração"
+	},
+	"Stack": {
+		"title": "Tecnologias"
+	}
+}

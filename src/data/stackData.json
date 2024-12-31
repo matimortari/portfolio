@@ -1,0 +1,110 @@
+[
+	{
+		"name": "TypeScript",
+		"description": {
+			"en": "Typed superset of the JavaScript programming language.",
+			"pt": "Superset tipado da linguagem de programação JavaScript."
+		},
+		"icon": "simple-icons:typescript",
+		"link": "https://www.typescriptlang.org"
+	},
+	{
+		"name": "Node.js",
+		"description": {
+			"en": "JavaScript server runtime environment for network applications.",
+			"pt": "Ambiente de execução do JavaScript para aplicações de rede."
+		},
+		"icon": "simple-icons:nodedotjs",
+		"link": "https://nodejs.org"
+	},
+	{
+		"name": "React",
+		"description": {
+			"en": "JavaScript front-end library for building dynamic, reusable user interfaces.",
+			"pt": "Biblioteca JavaScript para construção de interfaces reutilizáveis."
+		},
+		"icon": "simple-icons:react",
+		"link": "https://reactjs.org"
+	},
+	{
+		"name": "Next.js",
+		"description": {
+			"en": "Modern React framework for creating server-rendered web applications.",
+			"pt": "Framework React para renderizar aplicações web no servidor."
+		},
+		"icon": "simple-icons:nextdotjs",
+		"link": "https://nextjs.org"
+	},
+	{
+		"name": "Tailwind CSS",
+		"description": {
+			"en": "Utility-first CSS framework for rapidly building custom and responsive designs.",
+			"pt": "Framework CSS para construção rápida de designs personalizados."
+		},
+		"icon": "simple-icons:tailwindcss",
+		"link": "https://tailwindcss.com"
+	},
+	{
+		"name": "React Query",
+		"description": {
+			"en": "Powerful data fetching and state management library for React applications.",
+			"pt": "Biblioteca para busca de dados e gerenciamento de estado para React."
+		},
+		"icon": "simple-icons:reactquery",
+		"link": "https://react-query.tanstack.com"
+	},
+	{
+		"name": "Vitest",
+		"description": {
+			"en": "Lightweight testing library for web applications, inspired by Jest.",
+			"pt": "Biblioteca de testes leve para aplicações web, inspirada no Jest."
+		},
+		"icon": "simple-icons:vitest",
+		"link": "https://vitest.dev"
+	},
+	{
+		"name": "Playwright",
+		"description": {
+			"en": "End-to-end testing and browser automation library for web applications.",
+			"pt": "Biblioteca de testes automatizados de ponta a ponta para aplicações web."
+		},
+		"icon": "simple-icons:playwright",
+		"link": "https://playwright.dev"
+	},
+	{
+		"name": "Prisma",
+		"description": {
+			"en": "Modern database toolkit and ORM for Node.js and TypeScript applications.",
+			"pt": "Ferramentas para bancos de dados para aplicações Node.js e TypeScript."
+		},
+		"icon": "simple-icons:prisma",
+		"link": "https://prisma.io"
+	},
+	{
+		"name": "PostgreSQL",
+		"description": {
+			"en": "Relational database management system with advanced features.",
+			"pt": "Sistema avançado de gerenciamento de banco de dados relacional."
+		},
+		"icon": "simple-icons:postgresql",
+		"link": "https://www.postgresql.org"
+	},
+	{
+		"name": "Python",
+		"description": {
+			"en": "Versatile and powerful programming language with a large standard library.",
+			"pt": "Linguagem de programação versátil com grande biblioteca padrão."
+		},
+		"icon": "simple-icons:python",
+		"link": "https://www.python.org"
+	},
+	{
+		"name": "Git",
+		"description": {
+			"en": "Distributed version control system for source code management.",
+			"pt": "Sistema de controle de versão para gerenciamento de código-fonte."
+		},
+		"icon": "simple-icons:git",
+		"link": "https://git-scm.com"
+	}
+]

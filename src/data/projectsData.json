@@ -1,0 +1,32 @@
+[
+	{
+		"title": "LinkStack",
+		"description": {
+			"en": "Link aggregator website that allows users to create a customizable landing page with links to their social media profiles, contact information, and more. User authentication with NextAuth. Built with Next.js, TypeScript, and Tailwind CSS.",
+			"pt": "Website agregador de links que permite aos usuários criar uma página personalizada com links para seus perfis de mídia social, informações de contato e muito mais. Autenticação de usuário com NextAuth. Desenvolvido com Next.js, TypeScript e Tailwind CSS."
+		},
+		"skills": ["Next.js", "React", "Node.js", "React Query", "NextAuth.js", "Prisma", "TypeScript", "Tailwind CSS"],
+		"preview": "https://linkstack-live.vercel.app",
+		"source": "https://github.com/matimortari/linkstack"
+	},
+	{
+		"title": "CloudCast",
+		"description": {
+			"en": "Weather website built around the Open-Meteo API. Users can search for weather information by location. Built with Next.js, TypeScript, and Tailwind CSS. Custom UI components from shadcn/ui.",
+			"pt": "Website de clima construído em torno da API Open-Meteo. Usuários podem buscar informações de clima por localização. Desenvolvido com Next.js, TypeScript e Tailwind CSS. Componentes UI personalizados do shadcn/ui."
+		},
+		"skills": ["Next.js", "React", "Node.js", "TypeScript", "Tailwind CSS", "Open-Meteo", "shadcn/ui"],
+		"preview": "https://cloudcast-live.vercel.app",
+		"source": "https://github.com/matimortari/cloudcast"
+	},
+	{
+		"title": "Task Manager",
+		"description": {
+			"en": "Task manager website that allows users to create, edit, and delete tasks. Built with Next.js, TypeScript, and Tailwind CSS.",
+			"pt": "Website de gerenciador de tarefas que permite aos usuários criar, editar e excluir tarefas. Desenvolvido com Next.js, TypeScript e Tailwind CSS."
+		},
+		"skills": ["Next.js", "React", "Node.js", "NextAuth.js", "Prisma", "TypeScript", "Tailwind CSS"],
+		"preview": "https://wdc-task-manager.vercel.app",
+		"source": "https://github.com/matimortari/task-manager"
+	}
+]

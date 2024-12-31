@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base layer for custom theme variables */
+@layer base {
+	:root {
+		--background: #08080e;
+
+		--foreground: #ececec;
+
+		--primary: #4c4083;
+
+		--secondary: #605492;
+
+		--accent: #42413e;
+	}
+}
+
+/* General body styling */
+body {
+	font-family: "Rubik", sans-serif;
+	background-color: var(--background);
+	color: var(--foreground);
+}
+
+/* Section styling */
+section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+/* Styling for horizontal rules */
+hr {
+	border-color: var(--accent);
+	border-top-width: 1px;
+	width: 100%;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	opacity: 0.5;
+}
+
+/* Card shadow class styles and animation */
+.card-shadow {
+	box-shadow: 0 0 8px 2px var(--primary);
+	transition: box-shadow 0.3s ease-in-out;
+}
+
+.card-shadow:hover {
+	box-shadow: 0 0 16px 4px var(--primary);
+}
+
+/* Title class styles */
+.title {
+	color: var(--foreground);
+	font-family: "Platypi", sans-serif;
+	font-weight: 700;
+	font-size: 2rem;
+	text-align: center;
+	margin-top: 1.5rem;
+	margin-bottom: 1.5rem;
+}
+
+/* Icon class styles */
+.icon {
+	transition: transform 0.3s ease-in-out;
+}
+
+.icon:hover {
+	transform: scale(1.2);
+}
+
+/* Hero background class styles */
+.hero-background {
+	background: linear-gradient(330deg, var(--background) 60%, var(--primary) 80%, var(--secondary) 100%);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0.8;
+}
+
+/* Scrolling map styling */
+.hero-map {
+	display: flex;
+	width: 200%;
+}
+
+.hero-map img {
+	width: 50%;
+}
+
+/* Footer container class styles */
+.footer-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 2.5rem;
+	padding: 1rem;
+	border-top-left-radius: 20%;
+	border-top-right-radius: 20%;
+}
