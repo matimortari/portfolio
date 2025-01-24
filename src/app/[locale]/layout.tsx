@@ -19,13 +19,6 @@ export const metadata: Metadata = {
 		"Full-Stack Developer",
 		"Full-Stack Developer Portfolio"
 	],
-	openGraph: {
-		url: "https://matheus-mortari-dev-live.vercel.app/",
-		images: "/cover.png",
-		title: "Matheus Mortari",
-		description: "My Portfolio",
-		type: "website"
-	},
 	other: {
 		"google-site-verification": "2j0bcfhh8FCYPpzFylzbiPjl3Pa0X7lMuG060ctsCsA"
 	}
