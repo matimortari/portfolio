@@ -1,4 +1,4 @@
-# Matheus Mortari — Web Portfolio
+# Matheus Mortari — Web Portfolio 🚀
 
 Welcome to my web portfolio! This website showcases my projects and experiences in software development.
 
@@ -12,12 +12,16 @@ Feel free to explore my work, and don't hesitate to reach out — I'm always see
 
 ## 🛠️ My Tech Stack
 
-These are the technologies I use the most in my projects:
+These are the technologies I have worked with and feel comfortable using:
 
-- **Programming Languages:** TypeScript, Go.
-- **Frontend:** React, Next.js, Tailwind CSS.
-- **Backend & Database:** Node.js, React Query, PostgreSQL, Prisma.
-- **Testing & Tooling:** Playwright, Vitest, Git.
+- **Programming Languages:** TypeScript, Go, Python.
+- **Web Frameworks:** React, Next.js.
+- **UI Design & Styling:** Tailwind CSS, shadcn/ui.
+- **State Management:** Zustand, React Query.
+- **Backend & Database:** Node.js, PostgreSQL, Prisma.
+- **Testing & Linting:** Playwright, Vitest, ESLint.
+- **Development Tools:** Visual Studio Code, Postman, Git, GitHub.
+- **Cloud Platforms:** Vercel, Supabase, SonarCloud.
 
 ## 🏗️ My Projects
 
@@ -25,20 +29,20 @@ Here are some of the projects I'm most proud of:
 
 ### Linksy
 
-- **Description:** Link aggregator website that allows users to create a customizable landing page, based on Linktree.
-- **Technologies Used:** Next.js, React, TypeScript, Tailwind CSS, Node.js, React Query, NextAuth.js, Prisma.
+- **Description:** Link aggregator website that allows users to setup a customizable landing page, based on Linktree.
+- **Tech Stack:** Next.js, React, TypeScript, Tailwind CSS, Node.js, React Query, NextAuth.js, Prisma.
 - **Links:** [Link](https://linksy-live.vercel.app) | [Source](https://github.com/matimortari/linksy)
 
 ### CloudCast
 
-- **Description:** Simple and elegant weather website with focus on ease of use, built around the Open-Meteo API.
-- **Technologies Used:** Next.js, React, TypeScript, shadcn/ui, Open-Meteo, Tailwind CSS, Node.js.
+- **Description:** Simple and elegant weather website with focus on user-friendly design, built around the Open-Meteo API.
+- **Tech Stack:** Next.js, React, TypeScript, shadcn/ui, Open-Meteo, Tailwind CSS, Node.js.
 - **Links:** [Link](https://cloudcast-live.vercel.app) | [Source](https://github.com/matimortari/cloudcast)
 
 ### Task Manager
 
 - **Description:** Simple task manager website with a clean user interface, that allows users to create, edit, delete, and filter tasks.
-- **Technologies Used:** Next.js, React, TypeScript, Tailwind CSS, Node.js, NextAuth.js, Prisma.
+- **Tech Stack:** Next.js, React, TypeScript, Tailwind CSS, Node.js, NextAuth.js, Prisma.
 - **Links:** [Link](https://wdc-task-manager.vercel.app) | [Source](https://github.com/matimortari/task-manager)
 
 ## 📬 Contact
