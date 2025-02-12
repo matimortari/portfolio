@@ -1,0 +1,83 @@
+[
+	{
+		"name": "TypeScript",
+		"description": {
+			"en": "Typed superset of the JavaScript programming language.",
+			"pt": "Superset tipado da linguagem de programação JavaScript."
+		},
+		"icon": "simple-icons:typescript",
+		"link": "https://www.typescriptlang.org"
+	},
+	{
+		"name": "Node.js",
+		"description": {
+			"en": "Scalable and fast JavaScript server-side runtime environment.",
+			"pt": "Ambiente de execução de JavaScript rápido e escalável no servidor."
+		},
+		"icon": "simple-icons:nodedotjs",
+		"link": "https://nodejs.org"
+	},
+	{
+		"name": "React",
+		"description": {
+			"en": "JavaScript library for building dynamic, reusable user interfaces.",
+			"pt": "Biblioteca JavaScript para construção de interfaces reutilizáveis e dinâmicas."
+		},
+		"icon": "simple-icons:react",
+		"link": "https://reactjs.org"
+	},
+	{
+		"name": "Next.js",
+		"description": {
+			"en": "Modern hybrid React framework optimized for server-side rendering.",
+			"pt": "Framework React híbrida e moderna otimizada para renderização no servidor."
+		},
+		"icon": "simple-icons:nextdotjs",
+		"link": "https://nextjs.org"
+	},
+	{
+		"name": "Tailwind CSS",
+		"description": {
+			"en": "Utility-first CSS framework for rapid interface development.",
+			"pt": "Framework CSS utilitário para desenvolvimento rápido de interfaces."
+		},
+		"icon": "simple-icons:tailwindcss",
+		"link": "https://tailwindcss.com"
+	},
+	{
+		"name": "React Query",
+		"description": {
+			"en": "React library for server state management and caching.",
+			"pt": "Biblioteca React para gerenciamento e cache de estado do servidor."
+		},
+		"icon": "simple-icons:reactquery",
+		"link": "https://react-query.tanstack.com"
+	},
+	{
+		"name": "Prisma",
+		"description": {
+			"en": "Modern database toolkit and ORM tool for Node.js and TypeScript.",
+			"pt": "Kit de ferramentas moderno de banco de dados e ORM para Node.js e TypeScript."
+		},
+		"icon": "simple-icons:prisma",
+		"link": "https://prisma.io"
+	},
+	{
+		"name": "PostgreSQL",
+		"description": {
+			"en": "Relational database management system with advanced features.",
+			"pt": "Sistema avançado de gerenciamento de banco de dados relacional."
+		},
+		"icon": "simple-icons:postgresql",
+		"link": "https://www.postgresql.org"
+	},
+	{
+		"name": "Git",
+		"description": {
+			"en": "Distributed version control system for source code management.",
+			"pt": "Sistema de controle de versão para gerenciamento de código-fonte."
+		},
+		"icon": "simple-icons:git",
+		"link": "https://git-scm.com"
+	}
+]

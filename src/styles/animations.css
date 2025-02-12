@@ -1,0 +1,30 @@
+/* Keyframe animation for floating effect */
+@keyframes float {
+	0%,
+	100% {
+		transform: translate(0, 0px);
+	}
+
+	60% {
+		transform: translate(0, 8px);
+	}
+}
+
+.float {
+	animation: float 2s ease-in-out infinite;
+}
+
+/* Keyframe animation for scrolling map effect */
+@keyframes scroll {
+	0% {
+		transform: translateX(0);
+	}
+
+	100% {
+		transform: translateX(-50%);
+	}
+}
+
+.scroll {
+	animation: scroll 90s linear infinite;
+}
