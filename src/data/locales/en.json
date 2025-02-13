@@ -1,0 +1,31 @@
+{
+	"Hero": {
+		"title": "Matheus Mortari",
+		"subtitle": "Full-stack developer",
+		"description": "Welcome to my website, where you can learn about my work. Feel free to explore and connect!"
+	},
+	"Navbar": {
+		"aboutMe": "About Me",
+		"projects": "Projects",
+		"contact": "Contact"
+	},
+	"About": {
+		"title": "About Me",
+		"section1": "I am a software developer and Systems Analysis & Development student at the University of Passo Fundo (UPF), based in Rio Grande do Sul, Brazil. Through my studies and project work, I have specialized in creating full-stack web applications with clean, dynamic user interfaces, along with back-end systems such as RESTful APIs and databases. I have optimized my workflow by employing automation processes and custom tooling.",
+		"section2": "I'm easily adaptable and committed to staying updated on the industry trends, while also maintaining a foundation in traditional and reliable technologies. Feel free to explore my work, and don't hesitate to reach out — I'm always seeking to connect, learn and collaborate!",
+		"emailLabel": "Email: ",
+		"email": "matheus.felipe.19rt@gmail.com",
+		"githubLabel": "GitHub: ",
+		"github": "/matimortari",
+		"linkedinLabel": "LinkedIn: ",
+		"linkedin": "/matheus-mortari-19rt",
+		"resumePortuguese": "Resume - Portuguese",
+		"resumeEnglish": "Resume - English"
+	},
+	"Stack": {
+		"title": "Tech Stack"
+	},
+	"Projects": {
+		"title": "Projects"
+	}
+}
