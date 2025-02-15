@@ -1,6 +1,23 @@
 import { getRequestConfig } from "next-intl/server"
 import { routing } from "./routing"
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+async function loadTranslations(locale: "en" | "pt") {
+	const modules = await Promise.all([
+		import("../data/navbarData.json"),
+		import("../data/heroData.json"),
+		import("../data/aboutData.json"),
+		import("../data/projectsData.json")
+	])
+
+	return {
+		Navbar: modules[0].default,
+		Hero: modules[1].default,
+		About: modules[2].default,
+		Projects: Object.fromEntries(modules[3].default.map((project: any, index: number) => [index, project]))
+	}
+}
+
 export default getRequestConfig(async ({ requestLocale }) => {
 	let locale = await requestLocale
 
@@ -8,8 +25,10 @@ export default getRequestConfig(async ({ requestLocale }) => {
 		locale = routing.defaultLocale
 	}
 
+	const messages = await loadTranslations(locale as "en" | "pt")
+
 	return {
 		locale: locale as "en" | "pt",
-		messages: (await import(`../data/locales/${locale}.json`)).default
+		messages
 	}
 })
