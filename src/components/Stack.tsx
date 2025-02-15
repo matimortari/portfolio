@@ -15,7 +15,7 @@ export default function Stack() {
 		<section id="stack" className="flex-1 text-center md:text-start">
 			<h3 className={`${merriweather.className} my-8`}>{stackTitle[locale]}</h3>
 
-			<div className="grid grid-cols-2 gap-4">
+			<div className="grid grid-cols-2 gap-4 md:gap-2">
 				{stackData.map((item) => (
 					<StackCard
 						key={item.name}
