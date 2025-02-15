@@ -1,13 +1,16 @@
 import { Icon } from "@iconify/react"
-import { useTranslations } from "next-intl"
+import { useLocale } from "next-intl"
 import { Merriweather } from "next/font/google"
 import Image from "next/image"
 import Link from "next/link"
+import heroData from "../data/heroData.json"
 
 const merriweather = Merriweather({ subsets: ["latin"], weight: "900" })
 
 export default function Hero() {
-	const t = useTranslations("Hero")
+	const locale = useLocale()
+
+	const { title, subtitle, description } = heroData
 
 	return (
 		<section id="hero" className="relative flex min-h-screen items-center justify-center">
@@ -22,11 +25,11 @@ export default function Hero() {
 				<Image src="/avatar.png" alt="@matimortari" className="float icon avatar" width={150} height={150} />
 
 				<div className="my-4 flex flex-col gap-4 text-center md:gap-2">
-					<h1 className={merriweather.className}>{t("title")}</h1>
-					<h2 className={merriweather.className}>{t("subtitle")}</h2>
+					<h1 className={merriweather.className}>{title[locale]}</h1>
+					<h2 className={merriweather.className}>{subtitle[locale]}</h2>
 				</div>
 
-				<p className="max-w-sm text-center font-medium text-muted-foreground">{t("description")}</p>
+				<p className="max-w-sm text-center font-medium text-muted-foreground">{description[locale]}</p>
 
 				<div className="my-4 flex items-center justify-center gap-6 text-secondary">
 					<Link href="https://github.com/matimortari">

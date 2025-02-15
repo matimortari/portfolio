@@ -1,13 +1,16 @@
 "use client"
 
 import { Icon } from "@iconify/react"
-import { useTranslations } from "next-intl"
+import { useLocale } from "next-intl"
 import Image from "next/image"
 import Link from "next/link"
 import { useEffect, useState } from "react"
+import navbarData from "../data/navbarData.json"
 
 export default function Navbar() {
-	const t = useTranslations("Navbar")
+	const locale = useLocale()
+
+	const { about, projects, contact } = navbarData
 
 	const [isClient, setIsClient] = useState(false)
 
@@ -28,7 +31,7 @@ export default function Navbar() {
 					<div className="flex flex-row items-center gap-4">
 						<Link href="#about" className="hidden flex-row items-center justify-center gap-1 hover:underline md:flex">
 							<Icon icon="material-symbols:person-pin-rounded" className="icon size-6" />
-							<p>{t("aboutMe")}</p>
+							<p>{about[locale]}</p>
 						</Link>
 
 						<Link
@@ -36,12 +39,12 @@ export default function Navbar() {
 							className="hidden flex-row items-center justify-center gap-1 hover:underline md:flex"
 						>
 							<Icon icon="material-symbols:folder-code" className="icon size-6" />
-							<p>{t("projects")}</p>
+							<p>{projects[locale]}</p>
 						</Link>
 
 						<Link href="#contact" className="hidden flex-row items-center justify-center gap-1 hover:underline md:flex">
 							<Icon icon="material-symbols:chat-paste-go" className="icon size-6" />
-							<p>{t("contact")}</p>
+							<p>{contact[locale]}</p>
 						</Link>
 					</div>
 				</div>
