@@ -22,7 +22,7 @@ export default function Hero() {
 			</div>
 
 			<div className="relative flex flex-col items-center gap-4 p-16">
-				<Image src="/avatar.png" alt="@matimortari" className="float icon avatar" width={150} height={150} />
+				<Image src="/avatar.png" alt="@matimortari" className="float icon avatar" width={180} height={180} />
 
 				<div className="my-4 flex flex-col gap-4 text-center md:gap-2">
 					<h1 className={merriweather.className}>{title[locale]}</h1>

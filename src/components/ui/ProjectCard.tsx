@@ -11,7 +11,7 @@ export default function ProjectCard({ title, description, image, skills, source,
 
 	return (
 		<div className="flex flex-col items-start gap-2 text-start">
-			<Image src={image} alt={title} width={400} height={200} className="rounded-lg border" />
+			<Image src={image} alt={title} width={480} height={200} className="rounded-lg border" />
 
 			<div className="my-1 flex flex-row items-center gap-4">
 				<h4 className={merriweather.className}>{title}</h4>
