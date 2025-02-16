@@ -3,7 +3,7 @@ import { useLocale } from "next-intl"
 import { Merriweather } from "next/font/google"
 import Image from "next/image"
 import Link from "next/link"
-import heroData from "../data/heroData.json"
+import heroData from "../data/hero.json"
 
 const merriweather = Merriweather({ subsets: ["latin"], weight: "900" })
 

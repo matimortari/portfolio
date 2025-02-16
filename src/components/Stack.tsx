@@ -1,7 +1,7 @@
 import { useLocale } from "next-intl"
 import { Merriweather } from "next/font/google"
-import aboutData from "../data/aboutData.json"
-import stackData from "../data/stackData.json"
+import aboutData from "../data/about.json"
+import stackData from "../data/stack.json"
 import StackCard from "./ui/StackCard"
 
 const merriweather = Merriweather({ subsets: ["latin"], weight: "900" })
