@@ -17,7 +17,7 @@
 			"pt": "Um website de previsão do tempo construído com a API Open-Meteo. Os usuários podem buscar e obter dados meteorológicos como temperatura, precipitação e qualidade do ar por localização."
 		},
 		"image": "/cloudcast.png",
-		"skills": ["TypeScript", "React", "Next.js", "Tailwind CSS", "shadcn/ui", "Leaflet", "Open-Meteo"],
+		"skills": ["TypeScript", "React", "Next.js", "Tailwind CSS", "ShadCN/UI", "Leaflet", "Open-Meteo"],
 		"link": "https://cloudcast-live.vercel.app",
 		"source": "https://github.com/matimortari/cloudcast"
 	}

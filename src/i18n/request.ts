@@ -4,10 +4,10 @@ import { routing } from "./routing"
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 async function loadTranslations(locale: "en" | "pt") {
 	const modules = await Promise.all([
-		import("../data/navbarData.json"),
-		import("../data/heroData.json"),
-		import("../data/aboutData.json"),
-		import("../data/projectsData.json")
+		import("../data/navbar.json"),
+		import("../data/hero.json"),
+		import("../data/about.json"),
+		import("../data/projects.json")
 	])
 
 	return {
