@@ -32,13 +32,13 @@ export default function Hero() {
 				<p className="max-w-sm text-center font-medium text-muted-foreground">{description[locale]}</p>
 
 				<div className="my-4 flex items-center justify-center gap-6 text-secondary">
-					<Link href="https://github.com/matimortari">
+					<Link href="https://github.com/matimortari" title="GitHub">
 						<Icon icon="simple-icons:github" className="icon size-6" />
 					</Link>
-					<Link href="https://linkedin.com/in/matheus-mortari-19rt">
+					<Link href="https://linkedin.com/in/matheus-mortari-19rt" title="LinkedIn">
 						<Icon icon="simple-icons:linkedin" className="icon size-6" />
 					</Link>
-					<Link href="mailto:matheus.felipe.19rt@gmail.com">
+					<Link href="mailto:matheus.felipe.19rt@gmail.com" title="Email">
 						<Icon icon="simple-icons:gmail" className="icon size-6" />
 					</Link>
 				</div>
