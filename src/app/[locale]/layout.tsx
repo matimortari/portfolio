@@ -9,7 +9,11 @@ import { notFound } from "next/navigation"
 
 const inter = Inter({ subsets: ["latin"] })
 
-export async function generateMetadata({ params: { locale } }: { params: { locale: string } }): Promise<Metadata> {
+type Params = Promise<{ locale: string }>
+
+export async function generateMetadata({ params }: { params: Params }): Promise<Metadata> {
+	const { locale } = await params
+
 	const titles = {
 		en: "Matheus Mortari — Full-Stack Developer",
 		pt: "Matheus Mortari — Desenvolvedor Full-Stack"
@@ -40,11 +44,13 @@ export async function generateMetadata({ params: { locale } }: { params: { local
 
 export default async function RootLayout({
 	children,
-	params: { locale }
+	params
 }: {
 	readonly children: React.ReactNode
-	readonly params: { readonly locale: string }
+	readonly params: Params
 }) {
+	const { locale } = await params
+
 	if (!routing.locales.includes(locale as any)) {
 		notFound()
 	}
