@@ -17,10 +17,10 @@ export default function ProjectCard({ title, description, image, skills, source,
 				<h4 className={merriweather.className}>{title}</h4>
 
 				<div className="flex items-center gap-2">
-					<Link href={source} target="_blank" rel="noopener noreferrer">
+					<Link href={source} title={source} target="_blank" rel="noopener noreferrer">
 						<Icon icon="simple-icons:github" className="icon size-6" />
 					</Link>
-					<Link href={link} target="_blank" rel="noopener noreferrer" className="text-xs font-semibold tracking-widest">
+					<Link href={link} title={link} target="_blank" rel="noopener noreferrer">
 						<Icon icon="bxs:navigation" className="icon size-6" />
 					</Link>
 				</div>

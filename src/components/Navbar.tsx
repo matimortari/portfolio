@@ -50,10 +50,18 @@ export default function Navbar() {
 				</div>
 
 				<div className="flex flex-row items-center gap-2 text-sm font-bold">
-					<Link href="/en" className={`rounded-full p-2 ${window.location.pathname === "/en" ? "btn-round" : ""}`}>
+					<Link
+						href="/en"
+						title="English - US"
+						className={`rounded-full p-2 ${window.location.pathname === "/en" ? "btn-round" : ""}`}
+					>
 						EN
 					</Link>
-					<Link href="/pt" className={`rounded-full p-2 ${window.location.pathname === "/pt" ? "btn-round" : ""}`}>
+					<Link
+						href="/pt"
+						title="Português - BR"
+						className={`rounded-full p-2 ${window.location.pathname === "/pt" ? "btn-round" : ""}`}
+					>
 						PT
 					</Link>
 				</div>
