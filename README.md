@@ -15,11 +15,10 @@ Feel free to explore my work, and don't hesitate to reach out — I'm always see
 These are the technologies I have worked with and feel comfortable using:
 
 - **Programming Languages:** TypeScript, Go, Python.
-- **Web Frameworks:** React, Next.js, React Query, Zustand.
-- **UI Design & Styling:** Tailwind CSS, shadcn/ui.
+- **Web Development:** React, Next.js, React Query, Zustand, Tailwind CSS, ShadCN/UI.
 - **Backend & Database:** Node.js, PostgreSQL, Prisma.
 - **Testing & Linting:** Playwright, Vitest, ESLint.
-- **Development Tools:** Visual Studio Code, Postman, Git, GitHub.
+- **Tools:** Visual Studio Code, Postman, Git, GitHub.
 - **Cloud Platforms:** Vercel, Supabase, SonarCloud.
 
 ## 🏗️ My Projects
@@ -35,7 +34,7 @@ Here are some of the projects I'm most proud of:
 ### CloudCast
 
 - **Description:** Simple and elegant weather website with focus on user-friendly design, built around the Open-Meteo API.
-- **Tech Stack:** TypeScript, Next.js, React, Tailwind CSS, shadcn/ui, Leaflet, Node.js, Open-Meteo.
+- **Tech Stack:** TypeScript, Next.js, React, Tailwind CSS, ShadCN/UI, Leaflet, Node.js, Open-Meteo.
 - **Links:** [Live](https://cloudcast-live.vercel.app) | [Source](https://github.com/matimortari/cloudcast)
 
 ## 📬 Contact

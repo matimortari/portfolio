@@ -5,7 +5,7 @@ import { useLocale } from "next-intl"
 import Image from "next/image"
 import Link from "next/link"
 import { useEffect, useState } from "react"
-import navbarData from "../data/navbarData.json"
+import navbarData from "../data/navbar.json"
 
 export default function Navbar() {
 	const locale = useLocale()
