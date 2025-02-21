@@ -58,10 +58,10 @@ export default function About() {
 				</div>
 
 				<div className="my-4 flex flex-col items-center justify-center gap-4 md:flex-row md:justify-end">
-					<Link href="/cv-pt.pdf" className="btn">
+					<Link href="https://matimortari.github.io/assets/cv-en.pdf" className="btn">
 						{resumeEn[locale]}
 					</Link>
-					<Link href="/cv-en.pdf" className="btn">
+					<Link href="https://matimortari.github.io/assets/cv-pt.pdf" className="btn">
 						{resumePt[locale]}
 					</Link>
 				</div>
