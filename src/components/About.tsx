@@ -35,21 +35,21 @@ export default function About() {
 
 				<div id="contact" className="flex flex-col items-center justify-center gap-4 text-sm md:items-start">
 					<p className="flex flex-row items-center gap-2 font-semibold italic">
-						<Icon icon="simple-icons:github" className="icon size-5" />
+						<Icon icon="simple-icons:github" width={20} height={20} className="scale" />
 						{githubLabel}
 						<Link href="https://github.com/matimortari" className="text-secondary hover:underline">
 							{github}
 						</Link>
 					</p>
 					<p className="flex flex-row items-center gap-2 font-semibold italic">
-						<Icon icon="simple-icons:linkedin" className="icon size-5" />
+						<Icon icon="simple-icons:linkedin" width={20} height={20} className="scale" />
 						{linkedinLabel}
 						<Link href="https://linkedin.com/in/matheus-mortari-19rt" className="text-secondary hover:underline">
 							{linkedin}
 						</Link>
 					</p>
 					<p className="flex flex-row items-center gap-2 font-semibold italic">
-						<Icon icon="simple-icons:gmail" className="icon size-5" />
+						<Icon icon="simple-icons:gmail" width={20} height={20} className="scale" />
 						{emailLabel}
 						<Link href="mailto:matheus.felipe.19rt@gmail.com" className="text-secondary hover:underline">
 							{email}

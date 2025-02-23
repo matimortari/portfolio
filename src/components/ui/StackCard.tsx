@@ -11,7 +11,7 @@ export default function StackCard({ name, icon, link, description }: Readonly<St
 	return (
 		<div className="card flex flex-col items-center gap-2 p-2 text-center md:p-4">
 			<Link href={link} title={link} target="_blank" rel="noopener noreferrer">
-				<Icon icon={icon} className="icon size-6 text-foreground" />
+				<Icon icon={icon} width={25} height={25} className="scale" />
 			</Link>
 
 			<h5 className={merriweather.className}>{name}</h5>
