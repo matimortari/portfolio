@@ -30,7 +30,7 @@ export default function Navbar() {
 
 					<div className="flex flex-row items-center gap-4">
 						<Link href="#about" className="hidden flex-row items-center justify-center gap-1 hover:underline md:flex">
-							<Icon icon="material-symbols:person-pin-rounded" className="icon size-6" />
+							<Icon icon="material-symbols:person-pin-rounded" width={25} height={25} className="scale" />
 							<p>{about[locale]}</p>
 						</Link>
 
@@ -38,12 +38,12 @@ export default function Navbar() {
 							href="#projects"
 							className="hidden flex-row items-center justify-center gap-1 hover:underline md:flex"
 						>
-							<Icon icon="material-symbols:folder-code" className="icon size-6" />
+							<Icon icon="material-symbols:folder-code" width={25} height={25} className="scale" />
 							<p>{projects[locale]}</p>
 						</Link>
 
 						<Link href="#contact" className="hidden flex-row items-center justify-center gap-1 hover:underline md:flex">
-							<Icon icon="material-symbols:chat-paste-go" className="icon size-6" />
+							<Icon icon="material-symbols:chat-paste-go" width={25} height={25} className="scale" />
 							<p>{contact[locale]}</p>
 						</Link>
 					</div>

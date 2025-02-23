@@ -151,11 +151,11 @@
 		transform: scale(0.98);
 	}
 
-	.icon {
+	.scale {
 		transition: transform 0.3s ease-in-out;
 	}
 
-	.icon:hover {
+	.scale:hover {
 		transform: scale(1.2);
 	}
 }
@@ -228,7 +228,6 @@
 	100% {
 		transform: translate(0, 0px);
 	}
-
 	60% {
 		transform: translate(0, 8px);
 	}
@@ -243,7 +242,6 @@
 	0% {
 		transform: translateX(0);
 	}
-
 	100% {
 		transform: translateX(-50%);
 	}
