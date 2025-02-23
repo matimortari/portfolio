@@ -6,7 +6,7 @@ Welcome to my web portfolio! This website showcases my projects and experiences 
 
 ## 🌐 About Me
 
-I am a full-stack web developer and Systems Analysis & Development student at the University of Passo Fundo (UPF), based in Rio Grande do Sul, Brazil. Through my studies and project work, I have specialized in creating clean, responsive user interfaces, along with robust back-end systems such as RESTful APIs and databases. I have optimized my development workflow by employing custom tooling and automation processes.
+I am a software developer and Systems Analysis & Development student at the University of Passo Fundo (UPF), based in Rio Grande do Sul, Brazil. Through my studies and project work, I have specialized in creating full-stack web applications with clean, dynamic user interfaces, along with back-end systems such as RESTful APIs and databases. I have optimized my workflow by employing automation processes and custom tooling.
 
 Feel free to explore my work, and don't hesitate to reach out — I'm always seeking to connect, learn and collaborate!
 
