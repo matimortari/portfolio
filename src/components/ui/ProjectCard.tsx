@@ -16,12 +16,12 @@ export default function ProjectCard({ title, description, image, skills, source,
 			<div className="my-1 flex flex-row items-center gap-4">
 				<h4 className={merriweather.className}>{title}</h4>
 
-				<div className="flex items-center gap-2">
+				<div className="flex flex-row items-center gap-2">
 					<Link href={source} title={source} target="_blank" rel="noopener noreferrer">
-						<Icon icon="simple-icons:github" className="icon size-6" />
+						<Icon icon="simple-icons:github" width={25} height={25} className="scale" />
 					</Link>
 					<Link href={link} title={link} target="_blank" rel="noopener noreferrer">
-						<Icon icon="bxs:navigation" className="icon size-6" />
+						<Icon icon="bxs:navigation" width={25} height={25} className="scale" />
 					</Link>
 				</div>
 			</div>
