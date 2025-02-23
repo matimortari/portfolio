@@ -21,12 +21,12 @@ export default function ProjectCard({ title, description, image, skills, source,
 						<Icon icon="simple-icons:github" width={25} height={25} className="scale" />
 					</Link>
 					<Link href={link} title={link} target="_blank" rel="noopener noreferrer">
-						<Icon icon="bxs:navigation" width={25} height={25} className="scale" />
+						<Icon icon="material-symbols:captive-portal" width={30} height={30} className="scale" />
 					</Link>
 				</div>
 			</div>
 
-			<div className="flex max-w-md flex-wrap gap-1">
+			<div className="flex max-w-sm flex-wrap gap-1">
 				{skills.map((skills) => (
 					<span key={skills} className="text-primary-foreground rounded-full bg-accent px-2 py-1 text-xs font-semibold">
 						{skills}

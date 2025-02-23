@@ -26,7 +26,9 @@ export default function Navbar() {
 		<nav className="fixed top-0 z-50 w-full rounded-lg px-6 py-2 backdrop-blur">
 			<div className="flex flex-row items-center justify-between">
 				<div className="flex flex-row items-center justify-center gap-10 font-bold text-foreground">
-					<Image src="/logo.png" alt="Logo" className="icon" width={35} height={35} />
+					<Link href="/">
+						<Image src="/logo.png" alt="Logo" className="scale" width={35} height={35} />
+					</Link>
 
 					<div className="flex flex-row items-center gap-4">
 						<Link href="#about" className="hidden flex-row items-center justify-center gap-1 hover:underline md:flex">
@@ -53,14 +55,14 @@ export default function Navbar() {
 					<Link
 						href="/en"
 						title="English - US"
-						className={`rounded-full p-2 ${window.location.pathname === "/en" ? "btn-round" : ""}`}
+						className={`btn-round ${window.location.pathname === "/en" ? "bg-accent" : ""}`}
 					>
 						EN
 					</Link>
 					<Link
 						href="/pt"
 						title="Português - BR"
-						className={`rounded-full p-2 ${window.location.pathname === "/pt" ? "btn-round" : ""}`}
+						className={`btn-round ${window.location.pathname === "/pt" ? "bg-accent" : ""}`}
 					>
 						PT
 					</Link>
