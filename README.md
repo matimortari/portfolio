@@ -25,11 +25,11 @@ These are the technologies I have worked with and feel comfortable using:
 
 Here are some of the projects I'm most proud of:
 
-### Linksy
+### LinkNest
 
 - **Description:** A Linktree-based link aggregator website, that allows users to create a personalized landing page.
 - **Tech Stack:** TypeScript, Next.js, React, Tailwind CSS, Recharts, React Query, Zustand, Node.js, Auth.js, Prisma.
-- **Links:** [Live](https://linksy-live.vercel.app) | [Source](https://github.com/matimortari/linksy)
+- **Links:** [Live](https://linknest-live.vercel.app) | [Source](https://github.com/matimortari/linknest)
 
 ### CloudCast
 
