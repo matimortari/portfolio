@@ -15,10 +15,9 @@ Feel free to explore my work, and don't hesitate to reach out — I'm always see
 These are the technologies I have worked with and feel comfortable using:
 
 - **Programming Languages:** TypeScript, Go, Python.
-- **Web Development:** React, Next.js, React Query, Zustand, Tailwind CSS, ShadCN/UI.
+- **Web Development:** React, Next.js, React Query, Tailwind CSS, ShadCN/UI.
 - **Backend & Database:** Node.js, PostgreSQL, Prisma.
-- **Testing & Linting:** Playwright, Vitest, ESLint.
-- **Tools:** Visual Studio Code, Postman, Git, GitHub.
+- **Tools:** Visual Studio Code, Postman, ESLint, Playwright, Git, GitHub.
 - **Cloud Platforms:** Vercel, Supabase, SonarCloud.
 
 ## 🏗️ My Projects
