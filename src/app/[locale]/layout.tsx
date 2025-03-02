@@ -36,6 +36,13 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
 			"Full-Stack Developer",
 			"Full-Stack Developer Portfolio"
 		],
+		openGraph: {
+			url: "https://matheus-mortari-dev.vercel.app",
+			title: titles[locale],
+			description: descriptions[locale],
+			type: "website",
+			images: "/opengraph-image.png"
+		},
 		other: {
 			"google-site-verification": "2j0bcfhh8FCYPpzFylzbiPjl3Pa0X7lMuG060ctsCsA"
 		}
