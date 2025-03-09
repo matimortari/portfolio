@@ -5,14 +5,8 @@ import Hero from "@/src/components/Hero"
 import Navbar from "@/src/components/Navbar"
 import Projects from "@/src/components/Projects"
 import Stack from "@/src/components/Stack"
-import { useEffect } from "react"
 
 export default function Home() {
-	useEffect(() => {
-		// Log window dimensions once after the component mounts
-		console.log("Window dimensions:", window.innerWidth, window.innerHeight)
-	}, []) // Empty dependency array to ensure it runs once when the component mounts
-
 	return (
 		<div className="flex min-h-screen flex-col">
 			<Navbar />

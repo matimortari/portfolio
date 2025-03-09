@@ -6,7 +6,7 @@
 			"pt": "Um website agregador de links que permite aos usuários criar uma página personalizada para compartilhar links de suas redes sociais, websites e mais. O usuário pode customizar a aparência da página e checar dados analíticos."
 		},
 		"image": "https://matimortari.github.io/assets/branding/open-graph/og-image-linknest.png",
-		"skills": ["TypeScript", "React", "Next.js", "Tailwind CSS", "Recharts", "React Query", "Auth.js", "Prisma"],
+		"skills": ["TypeScript", "Next.js", "React", "Tailwind CSS", "Recharts", "React Query", "Auth.js", "Prisma"],
 		"link": "https://linknest-live.vercel.app",
 		"source": "https://github.com/matimortari/linknest"
 	},
@@ -17,7 +17,7 @@
 			"pt": "Um website de previsão do tempo construído com a API Open-Meteo. Os usuários podem buscar e obter dados meteorológicos como temperatura, precipitação e qualidade do ar por localização."
 		},
 		"image": "https://matimortari.github.io/assets/branding/open-graph/og-image-cloudcast.png",
-		"skills": ["TypeScript", "React", "Next.js", "Tailwind CSS", "ShadCN/UI", "Leaflet", "Open-Meteo"],
+		"skills": ["TypeScript", "Next.js", "React", "Tailwind CSS", "ShadCN/UI", "Leaflet", "Open-Meteo"],
 		"link": "https://cloudcast-live.vercel.app",
 		"source": "https://github.com/matimortari/cloudcast"
 	}

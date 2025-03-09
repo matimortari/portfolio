@@ -27,13 +27,13 @@ Here are some of the projects I'm most proud of:
 ### LinkNest
 
 - **Description:** A Linktree-based link aggregator website, that allows users to create a personalized landing page.
-- **Tech Stack:** TypeScript, Next.js, React, Tailwind CSS, Recharts, React Query, Zustand, Node.js, Auth.js, Prisma.
+- **Tech Stack:** TypeScript, Next.js, React, Tailwind CSS, Recharts, React Query, Auth.js, Prisma.
 - **Links:** [Live](https://linknest-live.vercel.app) | [Source](https://github.com/matimortari/linknest)
 
 ### CloudCast
 
 - **Description:** Simple and elegant weather website with focus on user-friendly design, built around the Open-Meteo API.
-- **Tech Stack:** TypeScript, Next.js, React, Tailwind CSS, ShadCN/UI, Leaflet, Node.js, Open-Meteo.
+- **Tech Stack:** TypeScript, Next.js, React, Tailwind CSS, ShadCN/UI, Leaflet, Open-Meteo.
 - **Links:** [Live](https://cloudcast-live.vercel.app) | [Source](https://github.com/matimortari/cloudcast)
 
 ## 📬 Contact
