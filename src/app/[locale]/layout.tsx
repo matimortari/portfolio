@@ -25,6 +25,7 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
 	}
 
 	return {
+		metadataBase: new URL("https://matheus-mortari-dev.vercel.app"),
 		title: titles[locale],
 		description: descriptions[locale],
 		keywords: [
@@ -41,7 +42,7 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
 			title: titles[locale],
 			description: descriptions[locale],
 			type: "website",
-			images: "/opengraph-image.png"
+			images: "/og-image.png"
 		},
 		other: {
 			"google-site-verification": "2j0bcfhh8FCYPpzFylzbiPjl3Pa0X7lMuG060ctsCsA"
