@@ -1,8 +1,8 @@
+import ProjectCard from "@/src/components/ui/ProjectCard"
+import aboutData from "@/src/data/about.json"
+import projectsData from "@/src/data/projects.json"
 import { useLocale } from "next-intl"
 import { Merriweather } from "next/font/google"
-import aboutData from "../data/about.json"
-import projectsData from "../data/projects.json"
-import ProjectCard from "./ui/ProjectCard"
 
 const merriweather = Merriweather({ subsets: ["latin"], weight: "900" })
 

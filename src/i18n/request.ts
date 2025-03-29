@@ -1,5 +1,5 @@
+import { routing } from "@/src/i18n/routing"
 import { getRequestConfig } from "next-intl/server"
-import { routing } from "./routing"
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 async function loadTranslations(locale: "en" | "pt") {

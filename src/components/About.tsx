@@ -1,8 +1,8 @@
+import aboutData from "@/src/data/about.json"
 import { Icon } from "@iconify/react"
 import { useLocale } from "next-intl"
 import { Merriweather } from "next/font/google"
 import Link from "next/link"
-import aboutData from "../data/about.json"
 
 const merriweather = Merriweather({ subsets: ["latin"], weight: "900" })
 
