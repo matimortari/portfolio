@@ -1,5 +1,6 @@
 import heroData from "@/src/data/hero.json"
 import { Icon } from "@iconify/react"
+import { motion } from "framer-motion"
 import { useLocale } from "next-intl"
 import { Merriweather } from "next/font/google"
 import Image from "next/image"
@@ -22,16 +23,35 @@ export default function Hero() {
 			</div>
 
 			<div className="relative flex flex-col items-center gap-4 p-16">
-				<Image src="/avatar.png" alt="Avatar" priority={true} width={150} height={150} className="float avatar" />
+				<motion.div initial={{ opacity: 0, y: -40 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
+					<Image src="/avatar.png" alt="Avatar" priority={true} width={150} height={150} className="float avatar" />
+				</motion.div>
 
-				<div className="my-4 flex flex-col gap-4 text-center md:gap-2">
+				<motion.div
+					initial={{ opacity: 0, y: 40 }}
+					animate={{ opacity: 1, y: 0 }}
+					transition={{ duration: 1 }}
+					className="my-4 flex flex-col gap-4 text-center md:gap-2"
+				>
 					<h1 className={merriweather.className}>{title[locale]}</h1>
 					<h2 className={merriweather.className}>{subtitle[locale]}</h2>
-				</div>
+				</motion.div>
 
-				<p className="max-w-sm text-center text-sm text-muted-foreground md:text-base">{description[locale]}</p>
+				<motion.p
+					initial={{ opacity: 0, y: 40 }}
+					animate={{ opacity: 1, y: 0 }}
+					transition={{ duration: 1 }}
+					className="max-w-sm text-center text-sm text-muted-foreground md:text-base"
+				>
+					{description[locale]}
+				</motion.p>
 
-				<div className="my-4 flex flex-row items-center justify-center gap-6 text-secondary">
+				<motion.div
+					initial={{ opacity: 0, y: 40 }}
+					animate={{ opacity: 1, y: 0 }}
+					transition={{ duration: 1, delay: 0.6 }}
+					className="my-4 flex flex-row items-center justify-center gap-6 text-secondary"
+				>
 					<Link href="https://github.com/matimortari" title="GitHub">
 						<Icon icon="simple-icons:github" width={25} height={25} className="scale" />
 					</Link>
@@ -41,7 +61,7 @@ export default function Hero() {
 					<Link href="mailto:matheus.felipe.19rt@gmail.com" title="Email">
 						<Icon icon="simple-icons:gmail" width={25} height={25} className="scale" />
 					</Link>
-				</div>
+				</motion.div>
 			</div>
 		</section>
 	)

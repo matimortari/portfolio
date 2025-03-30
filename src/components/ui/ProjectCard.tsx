@@ -1,4 +1,5 @@
 import { Icon } from "@iconify/react"
+import { motion } from "framer-motion"
 import { useLocale } from "next-intl"
 import { Merriweather } from "next/font/google"
 import Image from "next/image"
@@ -12,13 +13,20 @@ export default function ProjectCard({ title, description, image, skills, source,
 
 	const [updatedImageUrl, setUpdatedImageUrl] = useState(image)
 
-	// Cache busting
+	// Cache busting for project images
 	useEffect(() => {
 		setUpdatedImageUrl(`${image}?v=${Date.now()}`)
 	}, [image])
 
 	return (
-		<div className="flex flex-col items-start gap-2 text-start">
+		<motion.div
+			initial={{ opacity: 0 }}
+			whileInView={{ opacity: 1 }}
+			whileHover={{ scale: 1.02, transition: { duration: 0.4 } }}
+			transition={{ duration: 0.6 }}
+			viewport={{ once: true }}
+			className="flex flex-col items-start gap-2 text-start"
+		>
 			<Image
 				src={updatedImageUrl}
 				alt={title}
@@ -28,7 +36,13 @@ export default function ProjectCard({ title, description, image, skills, source,
 				className="rounded-lg border"
 			/>
 
-			<div className="my-1 flex flex-row items-center gap-4">
+			<motion.div
+				initial={{ opacity: 0, x: -20 }}
+				whileInView={{ opacity: 1, x: 0 }}
+				transition={{ duration: 1 }}
+				viewport={{ once: true }}
+				className="my-1 flex flex-row items-center gap-4"
+			>
 				<h4 className={merriweather.className}>{title}</h4>
 
 				<div className="flex flex-row items-center gap-2">
@@ -39,17 +53,31 @@ export default function ProjectCard({ title, description, image, skills, source,
 						<Icon icon="material-symbols:captive-portal" width={30} height={30} className="scale" />
 					</Link>
 				</div>
-			</div>
+			</motion.div>
 
-			<div className="flex max-w-sm flex-wrap gap-1">
-				{skills.map((skills) => (
-					<span key={skills} className="text-primary-foreground rounded-full bg-accent px-2 py-1 text-xs font-semibold">
-						{skills}
+			<motion.div
+				initial={{ opacity: 0, y: -20 }}
+				whileInView={{ opacity: 1, y: 0 }}
+				transition={{ duration: 1 }}
+				viewport={{ once: true }}
+				className="flex max-w-sm flex-wrap gap-1"
+			>
+				{skills.map((skill) => (
+					<span key={skill} className="text-primary-foreground rounded-full bg-accent px-2 py-1 text-xs font-semibold">
+						{skill}
 					</span>
 				))}
-			</div>
+			</motion.div>
 
-			<p className="max-w-md text-sm text-muted-foreground">{description[locale]}</p>
-		</div>
+			<motion.p
+				initial={{ opacity: 0, y: 20 }}
+				whileInView={{ opacity: 1, y: 0 }}
+				transition={{ duration: 1 }}
+				viewport={{ once: true }}
+				className="max-w-md text-sm text-muted-foreground"
+			>
+				{description[locale]}
+			</motion.p>
+		</motion.div>
 	)
 }

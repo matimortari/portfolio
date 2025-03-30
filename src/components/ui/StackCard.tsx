@@ -1,4 +1,5 @@
 import { Icon } from "@iconify/react"
+import { motion } from "framer-motion"
 import { useLocale } from "next-intl"
 import { Merriweather } from "next/font/google"
 import Link from "next/link"
@@ -9,7 +10,14 @@ export default function StackCard({ name, icon, link, description }: Readonly<St
 	const locale = useLocale()
 
 	return (
-		<div className="card flex flex-col items-center gap-2 p-2 text-center md:p-4">
+		<motion.div
+			initial={{ opacity: 0 }}
+			whileInView={{ opacity: 1 }}
+			whileHover={{ scale: 1.02, transition: { duration: 0.4 } }}
+			transition={{ duration: 0.6 }}
+			viewport={{ once: true }}
+			className="card flex flex-col items-center gap-2 p-2 text-center md:p-4"
+		>
 			<Link href={link} title={link} target="_blank" rel="noopener noreferrer">
 				<Icon icon={icon} width={25} height={25} className="scale" />
 			</Link>
@@ -17,6 +25,6 @@ export default function StackCard({ name, icon, link, description }: Readonly<St
 			<h5 className={merriweather.className}>{name}</h5>
 
 			<span className="text-xs text-muted-foreground">{description[locale]}</span>
-		</div>
+		</motion.div>
 	)
 }

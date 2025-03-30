@@ -1,5 +1,6 @@
 import aboutData from "@/src/data/about.json"
 import { Icon } from "@iconify/react"
+import { motion } from "framer-motion"
 import { useLocale } from "next-intl"
 import { Merriweather } from "next/font/google"
 import Link from "next/link"
@@ -25,15 +26,49 @@ export default function About() {
 
 	return (
 		<section id="about" className="flex-1 text-center md:text-start">
-			<h3 className={`${merriweather.className} my-8`}>{aboutTitle[locale]}</h3>
+			<motion.h3
+				initial={{ opacity: 0, y: -20 }}
+				whileInView={{ opacity: 1, y: 0 }}
+				transition={{ duration: 1 }}
+				viewport={{ once: true }}
+				className={`${merriweather.className} my-8`}
+			>
+				{aboutTitle[locale]}
+			</motion.h3>
 
 			<div className="space-y-6">
-				<p className="text-sm text-muted-foreground md:text-sm">{aboutSection1[locale]}</p>
-				<hr />
-				<p className="text-sm text-muted-foreground md:text-sm">{aboutSection2[locale]}</p>
+				<motion.p
+					initial={{ opacity: 0, x: -20 }}
+					whileInView={{ opacity: 1, x: 0 }}
+					transition={{ duration: 1 }}
+					viewport={{ once: true }}
+					className="text-sm text-muted-foreground md:text-sm"
+				>
+					{aboutSection1[locale]}
+				</motion.p>
+
 				<hr />
 
-				<div id="contact" className="flex flex-col items-center justify-center gap-4 text-sm md:items-start">
+				<motion.p
+					initial={{ opacity: 0, x: -20 }}
+					whileInView={{ opacity: 1, x: 0 }}
+					transition={{ duration: 1 }}
+					viewport={{ once: true }}
+					className="text-sm text-muted-foreground md:text-sm"
+				>
+					{aboutSection2[locale]}
+				</motion.p>
+
+				<hr />
+
+				<motion.div
+					id="contact"
+					initial={{ opacity: 0, x: -20 }}
+					whileInView={{ opacity: 1, x: 0 }}
+					transition={{ duration: 1 }}
+					viewport={{ once: true }}
+					className="flex flex-col items-center justify-center gap-4 text-sm md:items-start"
+				>
 					<p className="flex flex-row items-center gap-2 font-semibold italic">
 						<Icon icon="simple-icons:github" width={20} height={20} className="scale" />
 						{githubLabel}
@@ -41,6 +76,7 @@ export default function About() {
 							{github}
 						</Link>
 					</p>
+
 					<p className="flex flex-row items-center gap-2 font-semibold italic">
 						<Icon icon="simple-icons:linkedin" width={20} height={20} className="scale" />
 						{linkedinLabel}
@@ -48,6 +84,7 @@ export default function About() {
 							{linkedin}
 						</Link>
 					</p>
+
 					<p className="flex flex-row items-center gap-2 font-semibold italic">
 						<Icon icon="simple-icons:gmail" width={20} height={20} className="scale" />
 						{emailLabel}
@@ -55,9 +92,17 @@ export default function About() {
 							{email}
 						</Link>
 					</p>
-				</div>
+				</motion.div>
 
-				<div className="my-4 flex flex-col items-center justify-center gap-4 md:flex-row md:justify-end">
+				<hr />
+
+				<motion.div
+					initial={{ opacity: 0, y: 20 }}
+					whileInView={{ opacity: 1, y: 0 }}
+					transition={{ duration: 1, delay: 0.6 }}
+					viewport={{ once: true }}
+					className="my-4 flex flex-col items-center justify-center gap-4 md:flex-row md:justify-end"
+				>
 					<Link href="https://matimortari.github.io/assets/cv/cv-en.pdf" className="btn">
 						<Icon icon="material-symbols:article-shortcut" width={25} height={25} className="scale" />
 						{resumeEn[locale]}
@@ -66,7 +111,7 @@ export default function About() {
 						<Icon icon="material-symbols:article-shortcut" width={25} height={25} className="scale" />
 						{resumePt[locale]}
 					</Link>
-				</div>
+				</motion.div>
 			</div>
 		</section>
 	)
