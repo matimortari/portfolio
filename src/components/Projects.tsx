@@ -18,7 +18,6 @@ export default function Projects() {
 				initial={{ opacity: 0, y: -20 }}
 				whileInView={{ opacity: 1, y: 0 }}
 				transition={{ duration: 1 }}
-				viewport={{ once: true }}
 				className={`${merriweather.className} my-12`}
 			>
 				{projectsTitle[locale]}
@@ -31,7 +30,6 @@ export default function Projects() {
 						initial={{ opacity: 0, y: 40 }}
 						whileInView={{ opacity: 1, y: 0 }}
 						transition={{ duration: 0.4, delay: 0.1 * index }}
-						viewport={{ once: true }}
 					>
 						<ProjectCard
 							title={project.title}

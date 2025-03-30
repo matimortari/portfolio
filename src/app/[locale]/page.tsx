@@ -21,7 +21,7 @@ export default function Home() {
 				<Projects />
 			</div>
 
-			<footer id="footer" className="footer-container h-20" />
+			<footer id="footer" className="footer-container" />
 		</div>
 	)
 }

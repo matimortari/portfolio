@@ -23,13 +23,13 @@ export default function Hero() {
 			</div>
 
 			<div className="relative flex flex-col items-center gap-4 p-16">
-				<motion.div initial={{ opacity: 0, y: -40 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
+				<motion.div initial={{ opacity: 0, y: -40 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
 					<Image src="/avatar.png" alt="Avatar" priority={true} width={150} height={150} className="float avatar" />
 				</motion.div>
 
 				<motion.div
 					initial={{ opacity: 0, y: 40 }}
-					animate={{ opacity: 1, y: 0 }}
+					whileInView={{ opacity: 1, y: 0 }}
 					transition={{ duration: 1 }}
 					className="my-4 flex flex-col gap-4 text-center md:gap-2"
 				>
@@ -39,18 +39,18 @@ export default function Hero() {
 
 				<motion.p
 					initial={{ opacity: 0, y: 40 }}
-					animate={{ opacity: 1, y: 0 }}
+					whileInView={{ opacity: 1, y: 0 }}
 					transition={{ duration: 1 }}
-					className="max-w-sm text-center text-sm text-muted-foreground md:text-base"
+					className="max-w-md text-center text-sm text-muted-foreground md:text-base"
 				>
 					{description[locale]}
 				</motion.p>
 
 				<motion.div
 					initial={{ opacity: 0, y: 40 }}
-					animate={{ opacity: 1, y: 0 }}
+					whileInView={{ opacity: 1, y: 0 }}
 					transition={{ duration: 1, delay: 0.6 }}
-					className="my-4 flex flex-row items-center justify-center gap-6 text-secondary"
+					className="my-4 flex flex-row items-center justify-center gap-4 text-secondary"
 				>
 					<Link href="https://github.com/matimortari" title="GitHub">
 						<Icon icon="simple-icons:github" width={25} height={25} className="scale" />

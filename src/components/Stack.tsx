@@ -18,7 +18,6 @@ export default function Stack() {
 				initial={{ opacity: 0, y: -20 }}
 				whileInView={{ opacity: 1, y: 0 }}
 				transition={{ duration: 1 }}
-				viewport={{ once: true }}
 				className={`${merriweather.className} my-8`}
 			>
 				{stackTitle[locale]}
@@ -31,7 +30,6 @@ export default function Stack() {
 						initial={{ opacity: 0, y: 40 }}
 						whileInView={{ opacity: 1, y: 0 }}
 						transition={{ duration: 0.4, delay: 0.1 * index }}
-						viewport={{ once: true }}
 					>
 						<StackCard name={item.name} icon={item.icon} link={item.link} description={item.description} />
 					</motion.div>

@@ -30,7 +30,6 @@ export default function About() {
 				initial={{ opacity: 0, y: -20 }}
 				whileInView={{ opacity: 1, y: 0 }}
 				transition={{ duration: 1 }}
-				viewport={{ once: true }}
 				className={`${merriweather.className} my-8`}
 			>
 				{aboutTitle[locale]}
@@ -41,7 +40,6 @@ export default function About() {
 					initial={{ opacity: 0, x: -20 }}
 					whileInView={{ opacity: 1, x: 0 }}
 					transition={{ duration: 1 }}
-					viewport={{ once: true }}
 					className="text-sm text-muted-foreground md:text-sm"
 				>
 					{aboutSection1[locale]}
@@ -53,7 +51,6 @@ export default function About() {
 					initial={{ opacity: 0, x: -20 }}
 					whileInView={{ opacity: 1, x: 0 }}
 					transition={{ duration: 1 }}
-					viewport={{ once: true }}
 					className="text-sm text-muted-foreground md:text-sm"
 				>
 					{aboutSection2[locale]}
@@ -66,7 +63,6 @@ export default function About() {
 					initial={{ opacity: 0, x: -20 }}
 					whileInView={{ opacity: 1, x: 0 }}
 					transition={{ duration: 1 }}
-					viewport={{ once: true }}
 					className="flex flex-col items-center justify-center gap-4 text-sm md:items-start"
 				>
 					<p className="flex flex-row items-center gap-2 font-semibold italic">
@@ -100,7 +96,6 @@ export default function About() {
 					initial={{ opacity: 0, y: 20 }}
 					whileInView={{ opacity: 1, y: 0 }}
 					transition={{ duration: 1, delay: 0.6 }}
-					viewport={{ once: true }}
 					className="my-4 flex flex-col items-center justify-center gap-4 md:flex-row md:justify-end"
 				>
 					<Link href="https://matimortari.github.io/assets/cv/cv-en.pdf" className="btn">
