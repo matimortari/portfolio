@@ -185,7 +185,7 @@
 		height: 5rem;
 		margin-top: 2.5rem;
 		padding: 1.5rem;
-		border-top-left-radius: 50%;
+		border-top-left-radius: 1%;
 		border-top-right-radius: 100%;
 		transition: box-shadow 0.3s ease-in-out;
 	}
