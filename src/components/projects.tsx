@@ -1,6 +1,6 @@
-import ProjectCard from "@/src/components/ui/ProjectCard"
-import aboutData from "@/src/data/about.json"
-import projectsData from "@/src/data/projects.json"
+import ProjectCard from "@/src/components/ui/project-card"
+import about from "@/src/data/about.json"
+import projects from "@/src/data/projects.json"
 import { motion } from "framer-motion"
 import { useLocale } from "next-intl"
 import { Merriweather } from "next/font/google"
@@ -10,7 +10,7 @@ const merriweather = Merriweather({ subsets: ["latin"], weight: "900" })
 export default function Projects() {
 	const locale = useLocale()
 
-	const { projectsTitle } = aboutData
+	const { projectsTitle } = about
 
 	return (
 		<section id="projects" className="flex-1 text-center">
@@ -24,7 +24,7 @@ export default function Projects() {
 			</motion.h3>
 
 			<div className="flex w-full flex-col justify-between gap-12 md:flex-row md:gap-36">
-				{projectsData.map((project, index) => (
+				{projects.map((project, index) => (
 					<motion.div
 						key={project.title}
 						initial={{ opacity: 0, y: 40 }}

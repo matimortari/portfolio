@@ -1,6 +1,6 @@
-import StackCard from "@/src/components/ui/StackCard"
-import aboutData from "@/src/data/about.json"
-import stackData from "@/src/data/stack.json"
+import StackCard from "@/src/components/ui/stack-card"
+import about from "@/src/data/about.json"
+import stack from "@/src/data/stack.json"
 import { motion } from "framer-motion"
 import { useLocale } from "next-intl"
 import { Merriweather } from "next/font/google"
@@ -10,7 +10,7 @@ const merriweather = Merriweather({ subsets: ["latin"], weight: "900" })
 export default function Stack() {
 	const locale = useLocale()
 
-	const { stackTitle } = aboutData
+	const { stackTitle } = about
 
 	return (
 		<section id="stack" className="flex-1 text-center md:text-start">
@@ -24,7 +24,7 @@ export default function Stack() {
 			</motion.h3>
 
 			<div className="grid grid-cols-2 gap-4 md:gap-2">
-				{stackData.map((item, index) => (
+				{stack.map((item, index) => (
 					<motion.div
 						key={item.name}
 						initial={{ opacity: 0, y: 40 }}

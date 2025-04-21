@@ -1,4 +1,4 @@
-import aboutData from "@/src/data/about.json"
+import about from "@/src/data/about.json"
 import { Icon } from "@iconify/react"
 import { motion } from "framer-motion"
 import { useLocale } from "next-intl"
@@ -22,7 +22,7 @@ export default function About() {
 		email,
 		resumeEn,
 		resumePt
-	} = aboutData
+	} = about
 
 	return (
 		<section id="about" className="flex-1 text-center md:text-start">

@@ -1,6 +1,6 @@
 "use client"
 
-import navbarData from "@/src/data/navbar.json"
+import navbar from "@/src/data/navbar.json"
 import { motion } from "framer-motion"
 import { useLocale } from "next-intl"
 import Image from "next/image"
@@ -9,7 +9,7 @@ import Link from "next/link"
 export default function Navbar() {
 	const locale = useLocale()
 
-	const { about, projects, contact } = navbarData
+	const { about, projects, contact } = navbar
 
 	return (
 		<nav className="fixed top-0 z-50 w-full rounded-lg px-6 py-2 backdrop-blur">

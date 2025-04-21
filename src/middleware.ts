@@ -1,4 +1,4 @@
-import { routing } from "@/src/i18n/routing"
+import { routing } from "@/src/lib/i18n/routing"
 import createMiddleware from "next-intl/middleware"
 
 export default createMiddleware(routing)

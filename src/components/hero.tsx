@@ -1,4 +1,4 @@
-import heroData from "@/src/data/hero.json"
+import hero from "@/src/data/hero.json"
 import { Icon } from "@iconify/react"
 import { motion } from "framer-motion"
 import { useLocale } from "next-intl"
@@ -11,7 +11,7 @@ const merriweather = Merriweather({ subsets: ["latin"], weight: "900" })
 export default function Hero() {
 	const locale = useLocale()
 
-	const { title, subtitle, description } = heroData
+	const { title, subtitle, description } = hero
 
 	return (
 		<section id="hero" className="relative flex min-h-screen items-center justify-center">

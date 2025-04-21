@@ -1,13 +1,13 @@
-import { routing } from "@/src/i18n/routing"
+import { routing } from "@/src/lib/i18n/routing"
 import { getRequestConfig } from "next-intl/server"
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 async function loadTranslations(locale: "en" | "pt") {
 	const modules = await Promise.all([
-		import("../data/navbar.json"),
-		import("../data/hero.json"),
-		import("../data/about.json"),
-		import("../data/projects.json")
+		import("../../data/navbar.json"),
+		import("../../data/hero.json"),
+		import("../../data/about.json"),
+		import("../../data/projects.json")
 	])
 
 	return {

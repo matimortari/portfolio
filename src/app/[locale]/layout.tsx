@@ -1,4 +1,4 @@
-import { routing } from "@/src/i18n/routing"
+import { routing } from "@/src/lib/i18n/routing"
 import "@/src/styles/globals.css"
 import { Analytics } from "@vercel/analytics/react"
 import type { Metadata } from "next"
