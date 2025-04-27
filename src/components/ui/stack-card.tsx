@@ -16,7 +16,7 @@ export default function StackCard({ name, icon, link, description }: Readonly<St
 			whileHover={{ scale: 1.02, transition: { duration: 0.4 } }}
 			transition={{ duration: 0.6 }}
 			viewport={{ once: true }}
-			className="card flex flex-col items-center gap-2 p-2 text-center md:p-4"
+			className="card flex min-h-[145px] flex-col items-center gap-2 p-2 text-center sm:min-h-[130px] sm:p-4 md:p-4 lg:min-h-[160px] xl:min-h-[130px]"
 		>
 			<Link href={link} title={link} target="_blank" rel="noopener noreferrer">
 				<Icon icon={icon} width={25} height={25} className="scale" />
@@ -24,7 +24,7 @@ export default function StackCard({ name, icon, link, description }: Readonly<St
 
 			<h5 className={merriweather.className}>{name}</h5>
 
-			<span className="text-xs text-muted-foreground">{description[locale]}</span>
+			<span className="flex-grow text-xs text-muted-foreground">{description[locale]}</span>
 		</motion.div>
 	)
 }

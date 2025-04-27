@@ -27,7 +27,7 @@ export default function Navbar() {
 							animate={{ opacity: 1, x: 0 }}
 							transition={{ duration: 0.8, delay: 0.2 }}
 						>
-							<Link href="#about" className="hidden hover:underline md:block">
+							<Link href="#about" className="hidden hover:underline sm:block">
 								{about[locale]}
 							</Link>
 						</motion.div>
@@ -36,7 +36,7 @@ export default function Navbar() {
 							animate={{ opacity: 1, x: 0 }}
 							transition={{ duration: 0.8, delay: 0.4 }}
 						>
-							<Link href="#projects" className="hidden hover:underline md:block">
+							<Link href="#projects" className="hidden hover:underline sm:block">
 								{projects[locale]}
 							</Link>
 						</motion.div>
@@ -45,7 +45,7 @@ export default function Navbar() {
 							animate={{ opacity: 1, x: 0 }}
 							transition={{ duration: 0.8, delay: 0.6 }}
 						>
-							<Link href="#contact" className="hidden hover:underline md:block">
+							<Link href="#contact" className="hidden hover:underline sm:block">
 								{contact[locale]}
 							</Link>
 						</motion.div>

@@ -25,7 +25,7 @@ export default function About() {
 	} = about
 
 	return (
-		<section id="about" className="flex-1 text-center md:text-start">
+		<section id="about" className="flex-1 text-center lg:text-start">
 			<motion.h3
 				initial={{ opacity: 0, y: -20 }}
 				whileInView={{ opacity: 1, y: 0 }}

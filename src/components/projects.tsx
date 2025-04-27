@@ -23,7 +23,7 @@ export default function Projects() {
 				{projectsTitle[locale]}
 			</motion.h3>
 
-			<div className="flex w-full flex-col justify-between gap-12 md:flex-row md:gap-36">
+			<div className="flex w-full flex-col justify-between gap-12 lg:flex-row lg:gap-36">
 				{projects.map((project, index) => (
 					<motion.div
 						key={project.title}

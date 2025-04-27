@@ -25,7 +25,7 @@ export default function ProjectCard({ title, description, image, skills, source,
 			whileHover={{ scale: 1.02, transition: { duration: 0.4 } }}
 			transition={{ duration: 0.6 }}
 			viewport={{ once: true }}
-			className="flex flex-col items-start gap-2 text-start"
+			className="flex flex-col items-center gap-2 text-center lg:items-start lg:text-start"
 		>
 			<Image
 				src={updatedImageUrl}
@@ -60,10 +60,10 @@ export default function ProjectCard({ title, description, image, skills, source,
 				whileInView={{ opacity: 1, y: 0 }}
 				transition={{ duration: 1 }}
 				viewport={{ once: true }}
-				className="flex max-w-sm flex-wrap gap-1"
+				className="flex max-w-lg flex-wrap justify-center gap-1 lg:justify-start"
 			>
 				{skills.map((skill) => (
-					<span key={skill} className="text-primary-foreground rounded-full bg-accent px-2 py-1 text-xs font-semibold">
+					<span key={skill} className="rounded-full bg-accent px-2 py-1 text-xs font-semibold">
 						{skill}
 					</span>
 				))}

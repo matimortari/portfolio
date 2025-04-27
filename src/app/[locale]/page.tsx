@@ -12,8 +12,8 @@ export default function Home() {
 			<Navbar />
 			<Hero />
 
-			<div className="m-8 flex flex-col items-center justify-center gap-8 md:mx-20">
-				<div className="flex w-full flex-col justify-between gap-8 md:flex-row md:gap-20">
+			<div className="m-8 flex flex-col items-center justify-center gap-8 md:mx-16 lg:mx-20">
+				<div className="flex w-full flex-col justify-between gap-8 lg:flex-row lg:gap-20">
 					<About />
 					<Stack />
 				</div>
