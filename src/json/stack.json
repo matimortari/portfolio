@@ -1,0 +1,92 @@
+[
+  {
+    "name": "TypeScript",
+    "description": {
+      "en": "Statically typed superset of the JavaScript programming language.",
+      "pt": "Superset tipado da linguagem de programação JavaScript."
+    },
+    "icon": "simple-icons:typescript",
+    "link": "https://www.typescriptlang.org"
+  },
+  {
+    "name": "Node.js",
+    "description": {
+      "en": "JavaScript runtime environment for server-side applications.",
+      "pt": "Ambiente de execução JavaScript para aplicativos no servidor."
+    },
+    "icon": "simple-icons:nodedotjs",
+    "link": "https://nodejs.org"
+  },
+  {
+    "name": "React",
+    "description": {
+      "en": "JavaScript library for building dynamic and reusable user interfaces.",
+      "pt": "Biblioteca JavaScript para construção de interfaces reutilizáveis e dinâmicas."
+    },
+    "icon": "simple-icons:react",
+    "link": "https://reactjs.org"
+  },
+  {
+    "name": "Next.js",
+    "description": {
+      "en": "Modern React framework optimized for server-side rendering.",
+      "pt": "Framework React moderna otimizada para renderização no servidor."
+    },
+    "icon": "simple-icons:nextdotjs",
+    "link": "https://nextjs.org"
+  },
+  {
+    "name": "Tailwind CSS",
+    "description": {
+      "en": "Utility-first CSS framework for rapid interface development.",
+      "pt": "Framework CSS utilitária para desenvolvimento rápido de interfaces."
+    },
+    "icon": "simple-icons:tailwindcss",
+    "link": "https://tailwindcss.com"
+  },
+  {
+    "name": "React Query",
+    "description": {
+      "en": "Modern React library for asynchronous data management.",
+      "pt": "Biblioteca React moderna para gerenciamento de dados assíncronos."
+    },
+    "icon": "simple-icons:reactquery",
+    "link": "https://react-query.tanstack.com"
+  },
+  {
+    "name": "Prisma",
+    "description": {
+      "en": "Database access toolkit and ORM for TypeScript applications.",
+      "pt": "Kit de ferramentas de acesso a banco de dados e ORM para TypeScript."
+    },
+    "icon": "simple-icons:prisma",
+    "link": "https://prisma.io"
+  },
+  {
+    "name": "PostgreSQL",
+    "description": {
+      "en": "Relational database management system with advanced features.",
+      "pt": "Sistema avançado de gerenciamento de banco de dados relacional."
+    },
+    "icon": "simple-icons:postgresql",
+    "link": "https://www.postgresql.org"
+  },
+  {
+    "name": "Go",
+    "description": {
+      "en": "Programming language with a focus on performance.",
+      "pt": "Linguagem de programação com foco em desempenho."
+    },
+    "icon": "simple-icons:go",
+    "link": "https://golang.org"
+  },
+  {
+    "name": "Git",
+    "description": {
+      "en": "Distributed version control system for source code management.",
+      "pt": "Sistema de controle de versão distribuído para gerenciamento de código."
+    },
+    "icon": "simple-icons:git",
+    "link": "https://git-scm.com"
+  }
+]

@@ -1,0 +1,41 @@
+[
+  {
+    "title": "LinkNest",
+    "description": {
+      "en": "A link aggregator website that allows users to create a personalized landing page to share links to their social media, websites, and more. The user can customize the page appearance, and check analytics data.",
+      "pt": "Um website agregador de links que permite aos usuários criar uma página personalizada para compartilhar links de suas redes sociais, websites e mais. O usuário pode customizar a aparência da página e checar dados analíticos."
+    },
+    "image": "https://matimortari.github.io/assets/branding/open-graph/og-image-linknest.png",
+    "skills": [
+      "TypeScript",
+      "Next.js",
+      "React",
+      "Tailwind CSS",
+      "Recharts",
+      "React Query",
+      "Auth.js",
+      "Prisma"
+    ],
+    "link": "https://linknest-live.vercel.app",
+    "source": "https://github.com/matimortari/linknest"
+  },
+  {
+    "title": "CloudCast",
+    "description": {
+      "en": "A weather forecast application built around the Open-Meteo API. Users can search for and get weather data such as temperature, precipitation, and air quality by location.",
+      "pt": "Um website de previsão do tempo construído com a API Open-Meteo. Os usuários podem buscar e obter dados meteorológicos como temperatura, precipitação e qualidade do ar por localização."
+    },
+    "image": "https://matimortari.github.io/assets/branding/open-graph/og-image-cloudcast.png",
+    "skills": [
+      "TypeScript",
+      "Next.js",
+      "React",
+      "Tailwind CSS",
+      "ShadCN/UI",
+      "Leaflet",
+      "Open-Meteo"
+    ],
+    "link": "https://cloudcast-live.vercel.app",
+    "source": "https://github.com/matimortari/cloudcast"
+  }
+]
