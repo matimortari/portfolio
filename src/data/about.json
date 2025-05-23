@@ -1,0 +1,36 @@
+{
+  "aboutTitle": {
+    "en": "About Me",
+    "pt": "Sobre Mim"
+  },
+  "aboutSection1": {
+    "en": "I am a software developer and Systems Analysis & Development student at the University of Passo Fundo (UPF), based in Rio Grande do Sul, Brazil. I have specialized in creating full-stack web applications with clean, dynamic user interfaces, along with back-end systems such as REST APIs and databases, optimizing my workflow through automation processes and custom tooling.",
+    "pt": "Sou um desenvolvedor de software e estudante de Análise e Desenvolvimento de Sistemas na Universidade de Passo Fundo (UPF), localizado no Rio Grande do Sul, Brasil. Me especializei em criar aplicações web full-stack com interfaces limpas e dinâmicas, juntamente com sistemas de back-end, como APIs REST e bancos de dados, otimizando meu fluxo de trabalho através de processos de automação e ferramentas personalizadas."
+  },
+  "aboutSection2": {
+    "en": "I'm easily adaptable and committed to staying updated on the industry trends, while also maintaining a foundation in traditional and reliable technologies. Feel free to explore my work, and don't hesitate to reach out — I'm always seeking to connect, learn and collaborate!",
+    "pt": "Sou facilmente adaptável e procuro me manter atualizado com as tendências do mercado, enquanto mantenho uma base sólida em tecnologias tradicionais e de confiança. Fique à vontade para explorar meu trabalho e não hesite em entrar em contato — estou sempre em busca de me conectar, aprender e colaborar!"
+  },
+  "emailLabel": "Email: ",
+  "email": "matheus.felipe.19rt@gmail.com",
+  "githubLabel": "GitHub: ",
+  "github": "/matimortari",
+  "linkedinLabel": "LinkedIn: ",
+  "linkedin": "/matheus-mortari-19rt",
+  "resumeEn": {
+    "en": "Resume - English",
+    "pt": "CV - Inglês"
+  },
+  "resumePt": {
+    "en": "Resume - Portuguese",
+    "pt": "CV - Português"
+  },
+  "stackTitle": {
+    "en": "Tech Stack",
+    "pt": "Tecnologias"
+  },
+  "projectsTitle": {
+    "en": "Projects",
+    "pt": "Projetos"
+  }
+}
