@@ -1,0 +1,135 @@
+{
+  "locale.en-US": "EN",
+  "locale.pt-BR": "PT",
+  "locale.dir": "ltr",
+  "site": {
+    "name": "Matheus Mortari – Full-Stack Developer"
+  },
+  "index": {
+    "meta": {
+      "title": "Matheus Mortari – Full-Stack Developer",
+      "description": "Welcome to my website, where you can learn about my work. Feel free to explore and connect!"
+    },
+    "navbar": {
+      "about": "About Me",
+      "projects": "Projects",
+      "contact": "Contact"
+    },
+    "hero": {
+      "title": "Matheus Mortari",
+      "subtitle": "Full-Stack Developer",
+      "description": "Welcome to my website, where you can learn about my work. Feel free to explore and connect!"
+    },
+    "about": {
+      "title": "About Me",
+      "section1": "I am a software developer and Systems Analysis & Development student at the University of Passo Fundo (UPF), based in Rio Grande do Sul, Brazil. I have specialized in creating full-stack web applications with clean, dynamic user interfaces, along with back-end systems such as REST APIs and databases, optimizing my workflow through automation processes and custom tooling.",
+      "section2": "I'm easily adaptable and committed to staying updated on the industry trends, while also maintaining a foundation in traditional and reliable technologies. Feel free to explore my work, and don't hesitate to reach out — I'm always seeking to connect, learn and collaborate!",
+      "contact": "Contact Me",
+      "resumeEn": "Resume - English",
+      "resumePt": "Resume - Portuguese"
+    },
+    "stack": {
+      "title": "Tech Stack",
+      "items": [
+        {
+          "name": "TypeScript",
+          "description": "Statically typed superset of the JavaScript programming language.",
+          "icon": "simple-icons:typescript",
+          "link": "https://www.typescriptlang.org"
+        },
+        {
+          "name": "Node.js",
+          "description": "JavaScript runtime environment for server-side applications.",
+          "icon": "simple-icons:nodedotjs",
+          "link": "https://nodejs.org"
+        },
+        {
+          "name": "React",
+          "description": "JavaScript library for building dynamic and reusable user interfaces.",
+          "icon": "simple-icons:react",
+          "link": "https://reactjs.org"
+        },
+        {
+          "name": "Next.js",
+          "description": "Modern React framework optimized for server-side rendering.",
+          "icon": "simple-icons:nextdotjs",
+          "link": "https://nextjs.org"
+        },
+        {
+          "name": "Tailwind CSS",
+          "description": "Utility-first CSS framework for rapid interface development.",
+          "icon": "simple-icons:tailwindcss",
+          "link": "https://tailwindcss.com"
+        },
+        {
+          "name": "React Query",
+          "description": "Modern React library for asynchronous data management.",
+          "icon": "simple-icons:reactquery",
+          "link": "https://react-query.tanstack.com"
+        },
+        {
+          "name": "Prisma",
+          "description": "Database access toolkit and ORM for TypeScript applications.",
+          "icon": "simple-icons:prisma",
+          "link": "https://prisma.io"
+        },
+        {
+          "name": "PostgreSQL",
+          "description": "Relational database management system with advanced features.",
+          "icon": "simple-icons:postgresql",
+          "link": "https://www.postgresql.org"
+        },
+        {
+          "name": "Go",
+          "description": "Programming language with a focus on performance.",
+          "icon": "simple-icons:go",
+          "link": "https://golang.org"
+        },
+        {
+          "name": "Git",
+          "description": "Distributed version control system for source code management.",
+          "icon": "simple-icons:git",
+          "link": "https://git-scm.com"
+        }
+      ]
+    },
+    "projects": {
+      "title": "Projects",
+      "items": [
+        {
+          "title": "LinkNest",
+          "description": "A link aggregator website that allows users to create a personalized landing page to share links to their social media, websites, and more. The user can customize the page appearance, and check analytics data.",
+          "image": "https://matimortari.github.io/assets/branding/open-graph/og-image-linknest.png",
+          "skills": [
+            "TypeScript",
+            "Next.js",
+            "React",
+            "Tailwind CSS",
+            "Recharts",
+            "React Query",
+            "Auth.js",
+            "Prisma"
+          ],
+          "link": "https://linknest-live.vercel.app",
+          "source": "https://github.com/matimortari/linknest"
+        },
+        {
+          "title": "CloudCast",
+          "description": "A weather forecast application built around the Open-Meteo API. Users can search for and get weather data such as temperature, precipitation, and air quality by location.",
+          "image": "https://matimortari.github.io/assets/branding/open-graph/og-image-cloudcast.png",
+          "skills": [
+            "TypeScript",
+            "Next.js",
+            "React",
+            "Tailwind CSS",
+            "ShadCN/UI",
+            "Leaflet",
+            "Open-Meteo"
+          ],
+          "link": "https://cloudcast-live.vercel.app",
+          "source": "https://github.com/matimortari/cloudcast"
+        }
+      ]
+    }
+  }
+}
