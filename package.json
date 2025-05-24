@@ -1,0 +1,41 @@
+{
+  "name": "nuxtjs-boilerplate",
+  "type": "module",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt dev",
+    "build": "nuxt build",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "start": "node .output/server/index.mjs",
+    "postinstall": "nuxt prepare",
+    "lint": "eslint . --debug",
+    "lint:fix": "eslint . --debug --fix",
+    "db:push": "prisma db push",
+    "db:dev": "prisma migrate dev",
+    "db:deploy": "dotenv -e .env.production prisma migrate deploy",
+    "db:studio": "prisma studio"
+  },
+  "dependencies": {
+    "@nuxt/icon": "1.13.0",
+    "@nuxtjs/google-fonts": "3.2.0",
+    "@nuxtjs/i18n": "9.5.4",
+    "@nuxtjs/tailwindcss": "6.14.0",
+    "@vercel/analytics": "1.5.0",
+    "@vueuse/motion": "3.0.3",
+    "framer-motion": "12.5.0",
+    "nuxt": "3.17.4"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "4.13.3",
+    "@nuxt/devtools": "2.4.1",
+    "@nuxt/eslint": "1.4.1",
+    "@stylistic/eslint-plugin": "4.4.0",
+    "@types/node": "22.15.21",
+    "@typescript-eslint/parser": "8.32.1",
+    "eslint": "9.27.0",
+    "eslint-plugin-format": "1.0.1",
+    "typescript": "5.8.3"
+  }
+}
