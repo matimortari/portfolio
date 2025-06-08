@@ -11,7 +11,7 @@
       v-for="(section, index) in sections" :key="index" v-motion :initial="{ opacity: 0, x: -20 }"
       :visible="{ opacity: 1, x: 0 }" :duration="800"
     >
-      <p class="text-sm text-muted-foreground md:text-sm my-4">
+      <p class="text-sm text-muted-foreground lg:text-sm my-4">
         {{ t(section) }}
       </p>
       <hr v-if="index < sections.length - 1">
@@ -19,7 +19,7 @@
 
     <hr class="my-4">
 
-    <div id="contact" class="flex flex-col items-center justify-center gap-4 text-sm md:items-start">
+    <div id="contact" class="flex flex-col items-center justify-center gap-4 text-sm lg:items-start">
       <h4
         v-motion :initial="{ opacity: 0, y: -10 }" :visible="{ opacity: 1, y: 0 }" :duration="800"
         class="font-serif text-lg"
@@ -41,7 +41,7 @@
 
     <div
       v-motion :initial="{ opacity: 0, y: -20 }" :visible="{ opacity: 1, y: 0 }" :duration="800" :delay="400"
-      class="flex flex-col items-center justify-center gap-4 md:flex-row md:justify-end"
+      class="flex flex-col items-center justify-center gap-4 lg:flex-row lg:justify-end"
     >
       <a v-for="(resume, index) in resumes" :key="index" :href="resume.href" class="btn" target="_blank">
         <Icon name="material-symbols:article-shortcut" size="25" class="animate-scale" />
