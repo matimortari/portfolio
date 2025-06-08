@@ -1,7 +1,7 @@
 <template>
   <div
     v-motion :initial="{ opacity: 0 }" :visible="{ opacity: 1 }" :duration="800"
-    class="card flex min-h-[145px] flex-col items-center gap-2 p-2 text-center sm:min-h-[130px] md:p-4 animate-scale transition-transform duration-300"
+    class="card flex min-h-[175px] sm:min-h-0 lg:min-h-[205px] xl:min-h-0 flex-col items-center justify-center text-center gap-2"
   >
     <a :href="link" :title="link" target="_blank" rel="noopener noreferrer">
       <Icon :name="icon" size="25" class="animate-scale" />
