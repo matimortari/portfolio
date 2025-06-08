@@ -1,8 +1,7 @@
 <template>
   <nav
-    class="fixed top-0 z-50 w-full px-4 py-2 backdrop-blur-sm" :class="[
-      showNavbar ? 'translate-y-0' : '-translate-y-full',
-    ]"
+    class="fixed top-0 z-50 w-full px-4 py-2 transition-transform duration-300"
+    :class="[showNavbar ? 'translate-y-0' : '-translate-y-full', scrolled ? 'backdrop-blur-sm' : '']"
   >
     <div class="flex flex-row items-center justify-between">
       <div
@@ -54,11 +53,14 @@
 const { t, locale, availableLocales } = useI18n()
 
 const showNavbar = ref(true)
+const scrolled = ref(false)
+
 let lastScrollY = 0
 
 function handleScroll() {
   const currentY = window.scrollY
   showNavbar.value = currentY < lastScrollY || currentY < 10
+  scrolled.value = currentY > 0
   lastScrollY = currentY
 }
 
@@ -71,6 +73,7 @@ onMounted(async () => {
   }
 
   lastScrollY = window.scrollY
+  scrolled.value = lastScrollY > 0
   window.addEventListener("scroll", handleScroll)
 })
 
