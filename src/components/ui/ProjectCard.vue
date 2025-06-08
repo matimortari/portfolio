@@ -3,7 +3,7 @@
     v-motion :initial="{ opacity: 0 }" :visible="{ opacity: 1 }" :duration="800"
     class="flex flex-col items-center gap-2 text-center lg:items-start lg:text-start"
   >
-    <img :src="image" :alt="title" width="600" height="315" class="rounded-lg border">
+    <img :src="image" :alt="title" width="600" height="320" class="card p-0">
 
     <div
       v-motion :initial="{ opacity: 0, x: -20 }" :visible="{ opacity: 1, x: 0 }" :duration="800"
