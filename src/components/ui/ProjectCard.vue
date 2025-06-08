@@ -25,7 +25,7 @@
 
     <div
       v-motion :initial="{ opacity: 0, y: -20 }" :visible="{ opacity: 1, y: 0 }" :duration="400"
-      class="flex max-w-md flex-wrap justify-center gap-1 lg:justify-start"
+      class="flex  flex-wrap justify-center gap-1 lg:justify-start"
     >
       <span v-for="skill in skills" :key="skill" class="rounded-full bg-accent px-2 py-1 text-xs font-semibold">
         {{ skill }}
@@ -34,7 +34,7 @@
 
     <p
       v-motion :initial="{ opacity: 0, x: 20 }" :visible="{ opacity: 1, x: 0 }" :duration="400"
-      class="max-w-md text-sm text-muted-foreground"
+      class="text-sm max-w-xl text-muted-foreground"
     >
       {{ description }}
     </p>
