@@ -1,6 +1,6 @@
 <template>
   <nav
-    class="fixed top-0 z-50 w-full rounded-lg px-6 py-2 backdrop-blur transition-transform duration-300" :class="[
+    class="fixed top-0 z-50 w-full px-4 py-2 backdrop-blur-sm transition-transform duration-300" :class="[
       showNavbar ? 'translate-y-0' : '-translate-y-full',
     ]"
   >
@@ -9,10 +9,10 @@
         v-motion :initial="{ opacity: 0 }" :visible="{ opacity: 1 }" :duration="200"
         class="flex flex-row items-center justify-center gap-10 text-foreground"
       >
-        <NuxtLink to="/">
+        <NuxtLink to="/" class="animate-scale">
           <img
-            v-motion :initial="{ opacity: 0 }" :visible="{ opacity: 1 }" :duration="200" :delay="400" src="/logo.png"
-            alt="Logo" class="animate-scale" width="35" height="35"
+            v-motion :initial="{ opacity: 0 }" :visible="{ opacity: 1 }" :duration="200" :delay="200" src="/logo.png"
+            alt="Logo" width="40" height="40"
           >
         </NuxtLink>
 

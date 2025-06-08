@@ -120,6 +120,7 @@
     font-weight: 600;
     font-size: 0.875rem;
     line-height: 1.25rem;
+    white-space: nowrap;
     transition: box-shadow 0.3s ease-in-out;
   }
   .btn:hover,
@@ -134,7 +135,7 @@
   }
 
   .animate-scale {
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.2s ease-in-out;
   }
   .animate-scale:hover {
     transform: scale(1.2);

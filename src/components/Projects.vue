@@ -9,7 +9,7 @@
 
     <div
       v-motion :initial="{ opacity: 0, y: -40 }" :visible="{ opacity: 1, y: 0 }" :duration="400" :delay="200"
-      class="flex w-full flex-col justify-center gap-12 lg:flex-row lg:gap-36 2xl:gap-52"
+      class="flex w-full flex-col justify-center gap-12 lg:flex-row xl:gap-40"
     >
       <UiProjectCard
         v-for="(project, index) in projects"
@@ -17,7 +17,7 @@
         v-motion
         :initial="{ opacity: 0, y: 40 }"
         :visible="{ opacity: 1, y: 0 }"
-        :duration="400" :delay="600 * Number(index)" :title="project.title"
+        :duration="200" :delay="100 * Number(index)" :title="project.title"
         :description="project.description" :image="project.image" :skills="project.skills" :source="project.source"
         :link="project.link"
       />
