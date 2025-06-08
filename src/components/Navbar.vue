@@ -1,6 +1,6 @@
 <template>
   <nav
-    class="fixed top-0 z-50 w-full px-4 py-2 backdrop-blur-sm transition-transform duration-300" :class="[
+    class="fixed top-0 z-50 w-full px-4 py-2 backdrop-blur-sm" :class="[
       showNavbar ? 'translate-y-0' : '-translate-y-full',
     ]"
   >
