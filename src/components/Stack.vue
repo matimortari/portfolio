@@ -1,7 +1,7 @@
 <template>
   <section id="stack" class="flex-1 text-center lg:text-start">
     <h3
-      v-motion :initial="{ opacity: 0, y: -20 }" :visible="{ opacity: 1, y: 0 }" :duration="800"
+      v-motion :initial="{ opacity: 0, y: -20 }" :visible="{ opacity: 1, y: 0 }" :duration="400"
       class="font-serif my-10"
     >
       {{ t("index.stack.title") }}
