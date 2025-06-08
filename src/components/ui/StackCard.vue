@@ -1,6 +1,6 @@
 <template>
   <div
-    v-motion :initial="{ opacity: 0 }" :visible="{ opacity: 1 }" :duration="800"
+    v-motion :initial="{ opacity: 0 }" :visible="{ opacity: 1 }" :duration="400"
     class="card flex min-h-[175px] sm:min-h-0 lg:min-h-[205px] xl:min-h-0 flex-col items-center justify-center text-center gap-2"
   >
     <a :href="link" :title="link" target="_blank" rel="noopener noreferrer">
