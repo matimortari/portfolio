@@ -9,7 +9,7 @@
 
     <div
       v-motion :initial="{ opacity: 0, y: -40 }" :visible="{ opacity: 1, y: 0 }" :duration="400" :delay="200"
-      class="grid grid-cols-2 gap-2 lg:grid-cols-3"
+      class="flex flex-col gap-2 lg:grid lg:grid-cols-3"
     >
       <UiStackCard
         v-for="(item, index) in stackItems"

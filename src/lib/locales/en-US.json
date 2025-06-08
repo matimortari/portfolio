@@ -44,28 +44,28 @@
           "link": "https://nodejs.org"
         },
         {
+          "name": "Vue",
+          "description": "Progressive JavaScript framework for building user interfaces.",
+          "icon": "simple-icons:vuedotjs",
+          "link": "https://vuejs.org"
+        },
+        {
+          "name": "Nuxt.js",
+          "description": "Framework for building modern Vue.js applications.",
+          "icon": "simple-icons:nuxtdotjs",
+          "link": "https://nuxtjs.org"
+        },
+        {
           "name": "React",
           "description": "JavaScript library for building dynamic and reusable user interfaces.",
           "icon": "simple-icons:react",
           "link": "https://reactjs.org"
         },
         {
-          "name": "Next.js",
-          "description": "Modern React framework optimized for server-side rendering.",
-          "icon": "simple-icons:nextdotjs",
-          "link": "https://nextjs.org"
-        },
-        {
-          "name": "Tailwind CSS",
+          "name": "TailwindCSS",
           "description": "Utility-first CSS framework for rapid interface development.",
           "icon": "simple-icons:tailwindcss",
           "link": "https://tailwindcss.com"
-        },
-        {
-          "name": "React Query",
-          "description": "Modern React library for asynchronous data management.",
-          "icon": "simple-icons:reactquery",
-          "link": "https://react-query.tanstack.com"
         },
         {
           "name": "Prisma",
@@ -78,12 +78,6 @@
           "description": "Relational database management system with advanced features.",
           "icon": "simple-icons:postgresql",
           "link": "https://www.postgresql.org"
-        },
-        {
-          "name": "Go",
-          "description": "Programming language with a focus on performance.",
-          "icon": "simple-icons:go",
-          "link": "https://golang.org"
         },
         {
           "name": "Git",
@@ -104,9 +98,8 @@
             "TypeScript",
             "Next.js",
             "React",
-            "Tailwind CSS",
+            "TailwindCSS",
             "Recharts",
-            "React Query",
             "Auth.js",
             "Prisma"
           ],
@@ -121,8 +114,7 @@
             "TypeScript",
             "Next.js",
             "React",
-            "Tailwind CSS",
-            "ShadCN/UI",
+            "TailwindCSS",
             "Leaflet",
             "Open-Meteo"
           ],
