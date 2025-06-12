@@ -15,10 +15,10 @@ Feel free to explore my work, and don't hesitate to reach out — I'm always see
 These are the technologies I have worked with and feel comfortable using:
 
 - **Programming Languages:** TypeScript, Go, Python.
-- **Web Development:** React, Next.js, React Query, Tailwind CSS, ShadCN/UI.
+- **Web Development:** Vue, Nuxt.js, React, Next.js, TailwindCSS.
 - **Backend & Database:** Node.js, PostgreSQL, Prisma.
-- **Tools:** Visual Studio Code, Postman, ESLint, Playwright, Git, GitHub.
-- **Cloud Platforms:** Vercel, Supabase, SonarCloud.
+- **Development Tools:** VSCode, Postman, ESLint, Git.
+- **Cloud Services:** Vercel, Supabase, SonarCloud.
 
 ## 🏗️ My Projects
 
@@ -27,13 +27,13 @@ Here are some of the projects I'm most proud of:
 ### LinkNest
 
 - **Description:** A Linktree-based link aggregator website, that allows users to create a personalized landing page.
-- **Tech Stack:** TypeScript, Next.js, React, Tailwind CSS, Recharts, React Query, Auth.js, Prisma.
+- **Tech Stack:** TypeScript, Nuxt.js, Vue, TailwindCSS, Charts.js, Nuxt/Auth, Prisma.
 - **Links:** [Live](https://linknest-live.vercel.app) | [Source](https://github.com/matimortari/linknest)
 
 ### CloudCast
 
 - **Description:** Simple and elegant weather website with focus on user-friendly design, built around the Open-Meteo API.
-- **Tech Stack:** TypeScript, Next.js, React, Tailwind CSS, ShadCN/UI, Leaflet, Open-Meteo.
+- **Tech Stack:** TypeScript, Next.js, React, TailwindCSS, Leaflet, Open-Meteo.
 - **Links:** [Live](https://cloudcast-live.vercel.app) | [Source](https://github.com/matimortari/cloudcast)
 
 ## 📬 Contact
