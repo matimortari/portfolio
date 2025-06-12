@@ -96,11 +96,11 @@
           "image": "https://matimortari.github.io/assets/branding/open-graph/og-image-linknest.png",
           "skills": [
             "TypeScript",
-            "Next.js",
-            "React",
+            "Nuxt.js",
+            "Vue",
             "TailwindCSS",
-            "Recharts",
-            "Auth.js",
+            "Charts.js",
+            "Nuxt/Auth",
             "Prisma"
           ],
           "link": "https://linknest-live.vercel.app",
