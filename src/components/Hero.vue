@@ -1,5 +1,5 @@
 <template>
-  <section id="hero" class="relative flex min-h-[80svh] items-center justify-center overflow-hidden">
+  <section id="hero" class="relative flex min-h-screen items-center justify-center overflow-hidden">
     <div class="hero-background" />
 
     <div class="hero-map animate-scroll absolute inset-x-0 bottom-0 z-0 overflow-hidden opacity-20">
