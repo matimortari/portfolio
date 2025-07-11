@@ -6,7 +6,7 @@ export default {
       serif: ["Merriweather"],
       mono: ["monospace"],
       display: ["Inter"],
-      body: ["Inter"]
+      body: ["Inter"],
     },
     extend: {
       colors: {
@@ -14,17 +14,17 @@ export default {
         foreground: "var(--foreground)",
         card: {
           DEFAULT: "var(--card)",
-          foreground: "var(--card-foreground)"
+          foreground: "var(--card-foreground)",
         },
         primary: "var(--primary)",
         secondary: "var(--secondary)",
         muted: {
           DEFAULT: "var(--muted)",
-          foreground: "var(--muted-foreground)"
+          foreground: "var(--muted-foreground)",
         },
         accent: "var(--accent)",
-        border: "var(--border)"
-      }
-    }
-  }
+        border: "var(--border)",
+      },
+    },
+  },
 }
