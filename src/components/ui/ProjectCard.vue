@@ -48,6 +48,6 @@ defineProps({
   image: { type: String, required: true },
   source: { type: String, required: true },
   link: { type: String, required: true },
-  skills: { type: Array as () => string[], required: true }
+  skills: { type: Array as () => string[], required: true },
 })
 </script>
