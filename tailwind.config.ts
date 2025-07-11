@@ -4,9 +4,6 @@ export default {
     fontFamily: {
       sans: ["Inter"],
       serif: ["Merriweather"],
-      mono: ["monospace"],
-      display: ["Inter"],
-      body: ["Inter"],
     },
     extend: {
       colors: {
