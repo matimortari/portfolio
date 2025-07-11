@@ -7,17 +7,17 @@ export default defineNuxtConfig({
     "@nuxtjs/i18n",
     "@nuxt/icon",
     "@nuxtjs/tailwindcss",
-    "@vueuse/motion/nuxt"
+    "@vueuse/motion/nuxt",
   ],
   srcDir: "src",
   googleFonts: {
     families: {
       Inter: true,
-      Merriweather: true
+      Merriweather: true,
     },
     display: "swap",
     prefetch: true,
-    preconnect: true
+    preconnect: true,
   },
   i18n: {
     baseUrl: process.env.BASE_URL,
@@ -27,11 +27,11 @@ export default defineNuxtConfig({
       useCookie: false,
       alwaysRedirect: true,
       redirectOn: "root",
-      fallbackLocale: "en-US"
-    }
+      fallbackLocale: "en-US",
+    },
   },
   tailwindcss: {
-    cssPath: "~/styles/globals.css"
+    cssPath: "~/styles/globals.css",
   },
-  compatibilityDate: "2025-05-24"
+  compatibilityDate: "2025-05-24",
 })

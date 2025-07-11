@@ -7,12 +7,12 @@ export default antfu({
   formatters: {
     css: true,
     html: true,
-    markdown: true
+    markdown: true,
   },
   stylistic: {
     indent: 2,
     quotes: "double",
-    semi: false
+    semi: false,
   },
   rules: {
     "no-new": "off",
@@ -20,7 +20,6 @@ export default antfu({
     "no-restricted-globals": "off",
     "regexp/no-obscure-range": "off",
     "node/prefer-global/process": "off",
-    "style/comma-dangle": "off",
-    "vue/block-order": "off"
-  }
+    "vue/block-order": "off",
+  },
 })

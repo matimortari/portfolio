@@ -57,7 +57,7 @@ const { t } = useI18n()
 
 const sections = [
   "index.about.section1",
-  "index.about.section2"
+  "index.about.section2",
 ]
 
 const contacts = [
@@ -65,30 +65,30 @@ const contacts = [
     icon: "simple-icons:github",
     label: "GitHub",
     text: "/matimortari",
-    href: "https://github.com/matimortari"
+    href: "https://github.com/matimortari",
   },
   {
     icon: "simple-icons:linkedin",
     label: "LinkedIn",
     text: "/matheus-mortari-19rt",
-    href: "https://linkedin.com/in/matheus-mortari-19rt"
+    href: "https://linkedin.com/in/matheus-mortari-19rt",
   },
   {
     icon: "simple-icons:gmail",
     label: "Email",
     text: "matheus.felipe.19rt@gmail.com",
-    href: "mailto:matheus.felipe.19rt@gmail.com"
-  }
+    href: "mailto:matheus.felipe.19rt@gmail.com",
+  },
 ]
 
 const resumes = [
   {
     label: "index.about.resumeEn",
-    href: "https://matimortari.github.io/assets/cv/cv-en.pdf"
+    href: "https://matimortari.github.io/assets/cv/cv-en.pdf",
   },
   {
     label: "index.about.resumePt",
-    href: "https://matimortari.github.io/assets/cv/cv-pt.pdf"
-  }
+    href: "https://matimortari.github.io/assets/cv/cv-pt.pdf",
+  },
 ]
 </script>

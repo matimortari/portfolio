@@ -45,6 +45,6 @@ const { t } = useI18n()
 const socialLinks = [
   { href: "https://github.com/matimortari", icon: "simple-icons:github", title: "GitHub" },
   { href: "https://linkedin.com/in/matheus-mortari-19rt", icon: "simple-icons:linkedin", title: "LinkedIn" },
-  { href: "mailto:matheus.felipe.19rt@gmail.com", icon: "simple-icons:gmail", title: "Email" }
+  { href: "mailto:matheus.felipe.19rt@gmail.com", icon: "simple-icons:gmail", title: "Email" },
 ]
 </script>

@@ -22,10 +22,10 @@ useHead({
     lang: locale,
     dir: computed(() => {
       return t("locale.dir") as "ltr" | "rtl" | "auto"
-    })
+    }),
   },
   titleTemplate() {
     return `${t("site.name")}`
-  }
+  },
 })
 </script>
