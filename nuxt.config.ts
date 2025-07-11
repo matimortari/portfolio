@@ -2,7 +2,6 @@ import { defineNuxtConfig } from "nuxt/config"
 
 export default defineNuxtConfig({
   modules: [
-    "@nuxt/eslint",
     "@nuxtjs/google-fonts",
     "@nuxtjs/i18n",
     "@nuxt/icon",
