@@ -15,7 +15,7 @@ Feel free to explore my work, and don't hesitate to reach out — I'm always see
 These are the technologies I have worked with and feel comfortable using:
 
 - **Programming Languages:** TypeScript, Go, Python.
-- **Web Development:** Vue, Nuxt.js, React, Next.js, TailwindCSS.
+- **Web Development:** Vue, Nuxt.js, React, Next.js, TailwindCSS, Pinia.
 - **Backend & Database:** Node.js, PostgreSQL, Prisma.
 - **Development Tools:** VSCode, Postman, ESLint, Git.
 - **Cloud Services:** Vercel, Supabase, SonarCloud.
@@ -27,14 +27,14 @@ Here are some of the projects I'm most proud of:
 ### LinkNest
 
 - **Description:** A Linktree-based link aggregator website, that allows users to create a personalized landing page.
-- **Tech Stack:** TypeScript, Nuxt.js, Vue, TailwindCSS, Charts.js, Nuxt/Auth, Prisma.
+- **Tech Stack:** TypeScript, Nuxt.js, Vue, TailwindCSS, Pinia, Charts.js, Nuxt/Auth, Prisma.
 - **Links:** [Live](https://linknest-live.vercel.app) | [Source](https://github.com/matimortari/linknest)
 
-### CloudCast
+### SecretKeepR
 
-- **Description:** Simple and elegant weather website with focus on user-friendly design, built around the Open-Meteo API.
-- **Tech Stack:** TypeScript, Next.js, React, TailwindCSS, Leaflet, Open-Meteo.
-- **Links:** [Live](https://cloudcast-live.vercel.app) | [Source](https://github.com/matimortari/cloudcast)
+- **Description:** A Secrets manager website designed to help users and organizations manage environment variables.
+- **Tech Stack:** TypeScript, Nuxt.js, Vue, TailwindCSS, Pinia, Nuxt/Auth, Prisma.
+- **Links:** [Live](https://secretkeepr.vercel.app) | [Source](https://github.com/matimortari/secretkeepr)
 
 ## 📬 Contact
 

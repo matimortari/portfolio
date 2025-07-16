@@ -93,12 +93,13 @@
         {
           "title": "LinkNest",
           "description": "Um website agregador de links que permite aos usuários criar uma página personalizada para compartilhar links de suas redes sociais, websites e mais. O usuário pode customizar a aparência da página e checar dados analíticos.",
-          "image": "https://matimortari.github.io/assets/branding/open-graph/og-image-linknest.png",
+          "image": "https://matimortari.github.io/assets/branding/og-image-linknest.png",
           "skills": [
             "TypeScript",
             "Nuxt.js",
             "Vue",
             "TailwindCSS",
+            "Pinia",
             "Charts.js",
             "Nuxt/Auth",
             "Prisma"
@@ -107,19 +108,20 @@
           "source": "https://github.com/matimortari/linknest"
         },
         {
-          "title": "CloudCast",
-          "description": "Um website de previsão do tempo construído com a API Open-Meteo. Os usuários podem buscar e obter dados meteorológicos como temperatura, precipitação e qualidade do ar por localização.",
-          "image": "https://matimortari.github.io/assets/branding/open-graph/og-image-cloudcast.png",
+          "title": "SecretKeepR",
+          "description": "Um website projetado para ajudar usuários e organizações a gerenciar e compartilhar variáveis de ambiente com segurança. Ele oferece controles de acesso para gerenciamento de projetos, usuários e segredos criptografados entre várias organizações.",
+          "image": "https://matimortari.github.io/assets/branding/og-image-secretkeepr.png",
           "skills": [
             "TypeScript",
-            "Next.js",
-            "React",
+            "Nuxt.js",
+            "Vue",
             "TailwindCSS",
-            "Leaflet",
-            "Open-Meteo"
+            "Pinia",
+            "Nuxt/Auth",
+            "Prisma"
           ],
-          "link": "https://cloudcast-live.vercel.app",
-          "source": "https://github.com/matimortari/cloudcast"
+          "link": "https://secretkeepr.vercel.app",
+          "source": "https://github.com/matimortari/secretkeepr"
         }
       ]
     }

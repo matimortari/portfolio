@@ -93,12 +93,13 @@
         {
           "title": "LinkNest",
           "description": "A link aggregator website that allows users to create a personalized landing page to share links to their social media, websites, and more. The user can customize the page appearance, and check analytics data.",
-          "image": "https://matimortari.github.io/assets/branding/open-graph/og-image-linknest.png",
+          "image": "https://matimortari.github.io/assets/branding/og-image-linknest.png",
           "skills": [
             "TypeScript",
             "Nuxt.js",
             "Vue",
             "TailwindCSS",
+            "Pinia",
             "Charts.js",
             "Nuxt/Auth",
             "Prisma"
@@ -107,19 +108,20 @@
           "source": "https://github.com/matimortari/linknest"
         },
         {
-          "title": "CloudCast",
-          "description": "A weather forecast application built around the Open-Meteo API. Users can search for and get weather data such as temperature, precipitation, and air quality by location.",
-          "image": "https://matimortari.github.io/assets/branding/open-graph/og-image-cloudcast.png",
+          "title": "SecretKeepR",
+          "description": "A secrets manager website designed to help users and organizations securely manage and share environment variables. It provides access controls for managing projects, users, and encrypted secrets across multiple organizations.",
+          "image": "https://matimortari.github.io/assets/branding/og-image-secretkeepr.png",
           "skills": [
             "TypeScript",
-            "Next.js",
-            "React",
+            "Nuxt.js",
+            "Vue",
             "TailwindCSS",
-            "Leaflet",
-            "Open-Meteo"
+            "Pinia",
+            "Nuxt/Auth",
+            "Prisma"
           ],
-          "link": "https://cloudcast-live.vercel.app",
-          "source": "https://github.com/matimortari/cloudcast"
+          "link": "https://secretkeepr.vercel.app",
+          "source": "https://github.com/matimortari/secretkeepr"
         }
       ]
     }
