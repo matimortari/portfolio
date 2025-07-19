@@ -5,32 +5,42 @@
   >
     <div class="flex flex-row items-center justify-between">
       <div
-        v-motion :initial="{ opacity: 0 }" :visible="{ opacity: 1 }" :duration="200"
+        v-motion :initial="{ opacity: 0 }"
+        :visible="{ opacity: 1 }" :duration="200"
         class="flex flex-row items-center justify-center gap-10 text-foreground"
       >
         <NuxtLink to="/" class="animate-scale">
           <img
-            v-motion :initial="{ opacity: 0 }" :visible="{ opacity: 1 }" :duration="200" :delay="200" src="/logo.png"
-            alt="Logo" width="40" height="40"
+            v-motion :initial="{ opacity: 0 }"
+            :visible="{ opacity: 1 }" :duration="200"
+            :delay="200" src="/logo.png"
+            alt="Logo" width="40"
+            height="40"
           >
         </NuxtLink>
 
         <div class="flex flex-row items-center gap-8 font-semibold tracking-wide">
           <NuxtLink
-            v-motion :initial="{ opacity: 0, x: -20 }" :visible="{ opacity: 1, x: 0 }" :duration="200"
-            :delay="200" to="#about" class="hidden hover:underline sm:block"
+            v-motion :initial="{ opacity: 0, x: -20 }"
+            :visible="{ opacity: 1, x: 0 }" :duration="200"
+            :delay="200" to="#about"
+            class="hidden hover:underline sm:block"
           >
             {{ t("index.navbar.about") }}
           </NuxtLink>
           <NuxtLink
-            v-motion :initial="{ opacity: 0, x: -20 }" :visible="{ opacity: 1, x: 0 }" :duration="200"
-            :delay="200" to="#projects" class="hidden hover:underline sm:block"
+            v-motion :initial="{ opacity: 0, x: -20 }"
+            :visible="{ opacity: 1, x: 0 }" :duration="200"
+            :delay="200" to="#projects"
+            class="hidden hover:underline sm:block"
           >
             {{ t("index.navbar.projects") }}
           </NuxtLink>
           <NuxtLink
-            v-motion :initial="{ opacity: 0, x: -20 }" :visible="{ opacity: 1, x: 0 }" :duration="200"
-            :delay="200" to="#contact" class="hidden hover:underline sm:block"
+            v-motion :initial="{ opacity: 0, x: -20 }"
+            :visible="{ opacity: 1, x: 0 }" :duration="200"
+            :delay="200" to="#contact"
+            class="hidden hover:underline sm:block"
           >
             {{ t("index.navbar.contact") }}
           </NuxtLink>
@@ -38,7 +48,9 @@
       </div>
 
       <div
-        v-motion :initial="{ opacity: 0 }" :visible="{ opacity: 1 }" :duration="200" :delay="400"
+        v-motion :initial="{ opacity: 0 }"
+        :visible="{ opacity: 1 }" :duration="200"
+        :delay="400"
         class="flex flex-row items-center gap-4 font-semibold"
       >
         <button v-for="language in availableLocales" :key="language" @click="() => setLanguage(language)">

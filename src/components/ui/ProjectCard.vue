@@ -1,12 +1,18 @@
 <template>
   <div
-    v-motion :initial="{ opacity: 0 }" :visible="{ opacity: 1 }" :duration="400"
+    v-motion :initial="{ opacity: 0 }"
+    :visible="{ opacity: 1 }" :duration="400"
     class="flex flex-col items-center gap-2 text-center lg:items-start lg:text-start"
   >
-    <img :src="image" :alt="title" width="600" height="320" class="card p-0">
+    <img
+      :src="image" :alt="title"
+      width="600" height="320"
+      class="card p-0"
+    >
 
     <div
-      v-motion :initial="{ opacity: 0, x: -20 }" :visible="{ opacity: 1, x: 0 }" :duration="400"
+      v-motion :initial="{ opacity: 0, x: -20 }"
+      :visible="{ opacity: 1, x: 0 }" :duration="400"
       class="my-1 flex flex-row items-center gap-4"
     >
       <h4 class="font-serif">
@@ -24,7 +30,8 @@
     </div>
 
     <div
-      v-motion :initial="{ opacity: 0, y: -20 }" :visible="{ opacity: 1, y: 0 }" :duration="400"
+      v-motion :initial="{ opacity: 0, y: -20 }"
+      :visible="{ opacity: 1, y: 0 }" :duration="400"
       class="flex  flex-wrap justify-center gap-1 lg:justify-start"
     >
       <span v-for="skill in skills" :key="skill" class="rounded-full bg-accent px-2 py-1 text-xs font-semibold">
@@ -33,7 +40,8 @@
     </div>
 
     <p
-      v-motion :initial="{ opacity: 0, x: 20 }" :visible="{ opacity: 1, x: 0 }" :duration="400"
+      v-motion :initial="{ opacity: 0, x: 20 }"
+      :visible="{ opacity: 1, x: 0 }" :duration="400"
       class="text-sm max-w-xl text-muted-foreground"
     >
       {{ description }}

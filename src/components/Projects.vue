@@ -1,14 +1,17 @@
 <template>
   <section id="projects" class="flex-1 text-center">
     <h3
-      v-motion :initial="{ opacity: 0, y: -20 }" :visible="{ opacity: 1, y: 0 }" :duration="400"
+      v-motion :initial="{ opacity: 0, y: -20 }"
+      :visible="{ opacity: 1, y: 0 }" :duration="400"
       class="font-serif my-10"
     >
       {{ t("index.projects.title") }}
     </h3>
 
     <div
-      v-motion :initial="{ opacity: 0, y: -40 }" :visible="{ opacity: 1, y: 0 }" :duration="400" :delay="200"
+      v-motion :initial="{ opacity: 0, y: -40 }"
+      :visible="{ opacity: 1, y: 0 }" :duration="400"
+      :delay="200"
       class="flex w-full flex-col justify-center gap-12 lg:flex-row xl:gap-40"
     >
       <UiProjectCard
@@ -17,8 +20,10 @@
         v-motion
         :initial="{ opacity: 0, y: 40 }"
         :visible="{ opacity: 1, y: 0 }"
-        :duration="200" :delay="100 * Number(index)" :title="project.title"
-        :description="project.description" :image="project.image" :skills="project.skills" :source="project.source"
+        :duration="200" :delay="100 * Number(index)"
+        :title="project.title"
+        :description="project.description" :image="project.image"
+        :skills="project.skills" :source="project.source"
         :link="project.link"
       />
     </div>
