@@ -3,7 +3,7 @@
     <h3
       v-motion :initial="{ opacity: 0, y: -20 }"
       :visible="{ opacity: 1, y: 0 }" :duration="400"
-      class="font-serif my-10"
+      class="my-10 font-serif"
     >
       {{ t("index.about.title") }}
     </h3>
@@ -13,7 +13,7 @@
       v-motion :initial="{ opacity: 0, x: -20 }"
       :visible="{ opacity: 1, x: 0 }" :duration="400"
     >
-      <p class="text-sm text-muted-foreground lg:text-sm my-4">
+      <p class="my-4 text-sm text-muted-foreground lg:text-sm">
         {{ t(section) }}
       </p>
       <hr v-if="index < sections.length - 1">

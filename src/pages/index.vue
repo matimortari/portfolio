@@ -2,7 +2,7 @@
   <div class="flex flex-col">
     <Navbar />
     <Hero />
-    <div class="flex flex-col items-center justify-center m-8 gap-8 lg:m-16">
+    <div class="m-8 flex flex-col items-center justify-center gap-8 lg:m-16">
       <div class="flex w-full flex-col justify-between gap-8 lg:flex-row lg:gap-16">
         <About />
         <Stack />
