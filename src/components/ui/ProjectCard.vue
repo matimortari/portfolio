@@ -42,7 +42,7 @@
     <p
       v-motion :initial="{ opacity: 0, x: 20 }"
       :visible="{ opacity: 1, x: 0 }" :duration="400"
-      class="text-sm max-w-xl text-muted-foreground"
+      class="max-w-xl text-sm text-muted-foreground"
     >
       {{ description }}
     </p>

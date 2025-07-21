@@ -5,7 +5,7 @@
         <img
           src="/logo.png" alt="Loading..."
           width="50" height="50"
-          class="opacity-80 animate-bounce"
+          class="animate-bounce opacity-80"
         >
       </div>
     </Transition>
