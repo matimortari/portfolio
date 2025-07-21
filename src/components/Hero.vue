@@ -2,7 +2,7 @@
   <section id="hero" class="relative flex min-h-screen items-center justify-center overflow-hidden">
     <div class="hero-background" />
 
-    <div class="flex w-[200%] animate-scroll absolute inset-x-0 bottom-0 z-0 overflow-hidden opacity-20">
+    <div class="animate-scroll absolute inset-x-0 bottom-0 z-0 flex w-[200%] overflow-hidden opacity-20">
       <img
         src="/map.png" alt="Background Image"
         class="hidden size-full lg:block" width="800"
@@ -18,7 +18,7 @@
     <div
       v-motion :initial="{ opacity: 0, y: -40 }"
       :visible="{ opacity: 1, y: 0 }" :duration="800"
-      class="relative flex flex-col items-center px-4 pt-24 pb-12 gap-2"
+      class="relative flex flex-col items-center gap-2 px-4 pb-12 pt-24"
     >
       <div class="relative size-36 lg:size-40 2xl:size-44">
         <img src="/avatar.png" alt="Avatar" class="avatar animate-float absolute inset-0">
