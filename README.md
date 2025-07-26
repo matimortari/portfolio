@@ -27,13 +27,13 @@ Here are some of the projects I'm most proud of:
 ### LinkNest
 
 - **Description:** A Linktree-based link aggregator website, that allows users to create a personalized landing page.
-- **Tech Stack:** TypeScript, Nuxt.js, Vue, TailwindCSS, Pinia, Charts.js, Nuxt/Auth, Prisma.
+- **Tech Stack:** TypeScript, Nuxt.js, Vue, TailwindCSS, Pinia, Chart.js, OAuth, Prisma.
 - **Links:** [Live](https://linknest-live.vercel.app) | [Source](https://github.com/matimortari/linknest)
 
 ### SecretKeepR
 
 - **Description:** A Secrets manager website designed to help users and organizations manage environment variables.
-- **Tech Stack:** TypeScript, Nuxt.js, Vue, TailwindCSS, Pinia, Nuxt/Auth, Prisma.
+- **Tech Stack:** TypeScript, Nuxt.js, Vue, TailwindCSS, Pinia, OAuth, Prisma.
 - **Links:** [Live](https://secretkeepr.vercel.app) | [Source](https://github.com/matimortari/secretkeepr)
 
 ## 📬 Contact
