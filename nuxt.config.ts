@@ -9,6 +9,11 @@ export default defineNuxtConfig({
     "@vueuse/motion/nuxt",
   ],
   srcDir: "src",
+  runtimeConfig: {
+    public: {
+      baseUrl: process.env.NUXT_PUBLIC_BASE_URL,
+    },
+  },
   googleFonts: {
     families: {
       Inter: true,
@@ -19,7 +24,7 @@ export default defineNuxtConfig({
     preconnect: true,
   },
   i18n: {
-    baseUrl: process.env.BASE_URL,
+    baseUrl: process.env.NUXT_PUBLIC_BASE_URL,
     restructureDir: "src/lib",
     vueI18n: "i18n.ts",
     detectBrowserLanguage: {

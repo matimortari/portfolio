@@ -2,7 +2,7 @@
   <section id="about" class="flex-1 text-center lg:text-start">
     <h3
       v-motion :initial="{ opacity: 0, y: -20 }"
-      :visible="{ opacity: 1, y: 0 }" :duration="400"
+      :visible="{ opacity: 1, y: 0 }" :transition="{ duration: 400 }"
       class="my-10 font-serif"
     >
       {{ t("index.about.title") }}
@@ -11,7 +11,7 @@
     <div
       v-for="(section, index) in sections" :key="index"
       v-motion :initial="{ opacity: 0, x: -20 }"
-      :visible="{ opacity: 1, x: 0 }" :duration="400"
+      :visible="{ opacity: 1, x: 0 }" :transition="{ duration: 400 }"
     >
       <p class="my-4 text-sm text-muted-foreground lg:text-sm">
         {{ t(section) }}
@@ -24,7 +24,7 @@
     <div id="contact" class="flex flex-col items-center justify-center gap-4 text-sm lg:items-start">
       <h4
         v-motion :initial="{ opacity: 0, y: -10 }"
-        :visible="{ opacity: 1, y: 0 }" :duration="400"
+        :visible="{ opacity: 1, y: 0 }" :transition="{ duration: 400 }"
         class="font-serif text-lg"
       >
         {{ t("index.about.contact") }}
@@ -33,9 +33,8 @@
       <p
         v-for="(contact, index) in contacts" :key="index"
         v-motion :initial="{ opacity: 0, x: -20 }"
-        :visible="{ opacity: 1, x: 0 }" :duration="400"
-        :delay="200 * Number(index)"
-        class="flex flex-row items-center gap-2 font-semibold italic"
+        :visible="{ opacity: 1, x: 0 }" :transition="{ duration: 400 }"
+        :delay="200 * Number(index)" class="flex flex-row items-center gap-2 font-semibold italic"
       >
         <Icon :name="contact.icon" size="20" class="animate-scale" />
         {{ contact.label }}
@@ -47,7 +46,7 @@
 
     <div
       v-motion :initial="{ opacity: 0, y: 20 }"
-      :visible="{ opacity: 1, y: 0 }" :duration="400"
+      :visible="{ opacity: 1, y: 0 }" :transition="{ duration: 400 }"
       :delay="400"
       class="flex flex-col items-center justify-center gap-4 lg:flex-row lg:justify-end"
     >
@@ -95,11 +94,11 @@ const contacts = [
 const resumes = [
   {
     label: "index.about.resumeEn",
-    href: "https://matimortari.github.io/assets/cv/cv-en.pdf",
+    href: "https://matimortari.github.io/statics/cv/cv-en.pdf",
   },
   {
     label: "index.about.resumePt",
-    href: "https://matimortari.github.io/assets/cv/cv-pt.pdf",
+    href: "https://matimortari.github.io/statics/cv/cv-pt.pdf",
   },
 ]
 </script>

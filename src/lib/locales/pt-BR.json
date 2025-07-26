@@ -56,12 +56,6 @@
           "link": "https://nuxtjs.org"
         },
         {
-          "name": "React",
-          "description": "Biblioteca JavaScript para construção de interfaces reutilizáveis e dinâmicas.",
-          "icon": "simple-icons:react",
-          "link": "https://reactjs.org"
-        },
-        {
           "name": "TailwindCSS",
           "description": "Framework CSS utilitária para desenvolvimento rápido de interfaces.",
           "icon": "simple-icons:tailwindcss",
@@ -80,6 +74,12 @@
           "link": "https://www.postgresql.org"
         },
         {
+          "name": "Go",
+          "description": "Linguagem de programação compilada com foco em simplicidade.",
+          "icon": "simple-icons:go",
+          "link": "https://go.dev"
+        },
+        {
           "name": "Git",
           "description": "Sistema de controle de versão distribuído para gerenciamento de código.",
           "icon": "simple-icons:git",
@@ -93,15 +93,15 @@
         {
           "title": "LinkNest",
           "description": "Um website agregador de links que permite aos usuários criar uma página personalizada para compartilhar links de suas redes sociais, websites e mais. O usuário pode customizar a aparência da página e checar dados analíticos.",
-          "image": "https://matimortari.github.io/assets/branding/og-image-linknest.png",
+          "image": "https://matimortari.github.io/statics/branding/linknest/exports/og-image.png",
           "skills": [
             "TypeScript",
             "Nuxt.js",
             "Vue",
             "TailwindCSS",
             "Pinia",
-            "Charts.js",
-            "Nuxt/Auth",
+            "Chart.js",
+            "OAuth",
             "Prisma"
           ],
           "link": "https://linknest-live.vercel.app",
@@ -110,14 +110,14 @@
         {
           "title": "SecretKeepR",
           "description": "Um website projetado para ajudar usuários e organizações a gerenciar e compartilhar variáveis de ambiente com segurança. Ele oferece controles de acesso para gerenciamento de projetos, usuários e segredos criptografados entre várias organizações.",
-          "image": "https://matimortari.github.io/assets/branding/og-image-secretkeepr.png",
+          "image": "https://matimortari.github.io/statics/branding/secretkeepr/exports/og-image.png",
           "skills": [
             "TypeScript",
             "Nuxt.js",
             "Vue",
             "TailwindCSS",
             "Pinia",
-            "Nuxt/Auth",
+            "OAuth",
             "Prisma"
           ],
           "link": "https://secretkeepr.vercel.app",

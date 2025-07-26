@@ -17,7 +17,7 @@
 
     <div
       v-motion :initial="{ opacity: 0, y: -40 }"
-      :visible="{ opacity: 1, y: 0 }" :duration="800"
+      :visible="{ opacity: 1, y: 0 }" :transition="{ duration: 800 }"
       class="relative flex flex-col items-center gap-2 px-4 pb-12 pt-24"
     >
       <div class="relative size-36 lg:size-40 2xl:size-44">

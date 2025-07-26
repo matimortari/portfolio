@@ -2,7 +2,7 @@
   <section id="stack" class="flex-1 text-center lg:text-start">
     <h3
       v-motion :initial="{ opacity: 0, y: -20 }"
-      :visible="{ opacity: 1, y: 0 }" :duration="400"
+      :visible="{ opacity: 1, y: 0 }" :transition="{ duration: 400 }"
       class="my-10 font-serif"
     >
       {{ t("index.stack.title") }}
@@ -10,21 +10,16 @@
 
     <div
       v-motion :initial="{ opacity: 0, y: -40 }"
-      :visible="{ opacity: 1, y: 0 }" :duration="400"
+      :visible="{ opacity: 1, y: 0 }" :transition="{ duration: 400 }"
       :delay="200"
       class="flex flex-col gap-2 lg:grid lg:grid-cols-3"
     >
       <UiStackCard
-        v-for="(item, index) in stackItems"
-        :key="item.name"
-        v-motion
-        :name="item.name"
-        :icon="item.icon"
-        :link="item.link"
-        :description="item.description"
-        :initial="{ opacity: 0, y: 20 }"
-        :visible="{ opacity: 1, y: 0 }"
-        :duration="200"
+        v-for="(item, index) in stackItems" :key="item.name"
+        v-motion :name="item.name"
+        :icon="item.icon" :link="item.link"
+        :description="item.description" :initial="{ opacity: 0, y: 20 }"
+        :visible="{ opacity: 1, y: 0 }" :transition="{ duration: 400 }"
         :delay="100 * Number(index)"
       />
     </div>
