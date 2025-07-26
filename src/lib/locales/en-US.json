@@ -56,12 +56,6 @@
           "link": "https://nuxtjs.org"
         },
         {
-          "name": "React",
-          "description": "JavaScript library for building dynamic and reusable user interfaces.",
-          "icon": "simple-icons:react",
-          "link": "https://reactjs.org"
-        },
-        {
           "name": "TailwindCSS",
           "description": "Utility-first CSS framework for rapid interface development.",
           "icon": "simple-icons:tailwindcss",
@@ -78,6 +72,12 @@
           "description": "Relational database management system with advanced features.",
           "icon": "simple-icons:postgresql",
           "link": "https://www.postgresql.org"
+        },
+        {
+          "name": "Go",
+          "description": "Compiled programming language, designed for simplicity and efficiency.",
+          "icon": "simple-icons:go",
+          "link": "https://go.dev"
         },
         {
           "name": "Git",
