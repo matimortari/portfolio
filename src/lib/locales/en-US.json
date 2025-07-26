@@ -56,12 +56,6 @@
           "link": "https://nuxtjs.org"
         },
         {
-          "name": "React",
-          "description": "JavaScript library for building dynamic and reusable user interfaces.",
-          "icon": "simple-icons:react",
-          "link": "https://reactjs.org"
-        },
-        {
           "name": "TailwindCSS",
           "description": "Utility-first CSS framework for rapid interface development.",
           "icon": "simple-icons:tailwindcss",
@@ -80,6 +74,12 @@
           "link": "https://www.postgresql.org"
         },
         {
+          "name": "Go",
+          "description": "Compiled programming language, designed for simplicity and efficiency.",
+          "icon": "simple-icons:go",
+          "link": "https://go.dev"
+        },
+        {
           "name": "Git",
           "description": "Distributed version control system for source code management.",
           "icon": "simple-icons:git",
@@ -93,15 +93,15 @@
         {
           "title": "LinkNest",
           "description": "A link aggregator website that allows users to create a personalized landing page to share links to their social media, websites, and more. The user can customize the page appearance, and check analytics data.",
-          "image": "https://matimortari.github.io/assets/branding/og-image-linknest.png",
+          "image": "https://matimortari.github.io/statics/branding/linknest/exports/og-image.png",
           "skills": [
             "TypeScript",
             "Nuxt.js",
             "Vue",
             "TailwindCSS",
             "Pinia",
-            "Charts.js",
-            "Nuxt/Auth",
+            "Chart.js",
+            "OAuth",
             "Prisma"
           ],
           "link": "https://linknest-live.vercel.app",
@@ -110,14 +110,14 @@
         {
           "title": "SecretKeepR",
           "description": "A secrets manager website designed to help users and organizations securely manage and share environment variables. It provides access controls for managing projects, users, and encrypted secrets across multiple organizations.",
-          "image": "https://matimortari.github.io/assets/branding/og-image-secretkeepr.png",
+          "image": "https://matimortari.github.io/statics/branding/secretkeepr/exports/og-image.png",
           "skills": [
             "TypeScript",
             "Nuxt.js",
             "Vue",
             "TailwindCSS",
             "Pinia",
-            "Nuxt/Auth",
+            "OAuth",
             "Prisma"
           ],
           "link": "https://secretkeepr.vercel.app",
