@@ -1,5 +1,5 @@
-import en from "./locales/en-US.json"
-import br from "./locales/pt-BR.json"
+import en from "~/lib/locales/en-US.json"
+import br from "~/lib/locales/pt-BR.json"
 
 export default defineI18nConfig(() => {
   const config = useRuntimeConfig()

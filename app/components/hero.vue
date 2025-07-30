@@ -4,12 +4,12 @@
 
     <div class="animate-scroll absolute inset-x-0 bottom-0 z-0 flex w-[200%] overflow-hidden opacity-20">
       <img
-        src="/map.png" alt="Background Image"
+        src="/assets/map.png" alt="Background"
         class="hidden size-full lg:block" width="800"
         height="800"
       >
       <img
-        src="/map.png" alt="Background Image"
+        src="/assets/map.png" alt="Background"
         class="hidden size-full lg:block" width="800"
         height="800"
       >
@@ -17,11 +17,11 @@
 
     <div
       v-motion :initial="{ opacity: 0, y: -40 }"
-      :visible="{ opacity: 1, y: 0 }" :transition="{ duration: 800 }"
+      :visible="{ opacity: 1, y: 0 }" :duration="400"
       class="relative flex flex-col items-center gap-2 px-4 pb-12 pt-24"
     >
       <div class="relative size-36 lg:size-40 2xl:size-44">
-        <img src="/avatar.png" alt="Avatar" class="avatar animate-float absolute inset-0">
+        <img src="/assets/avatar.png" alt="Avatar" class="avatar animate-float absolute inset-0">
       </div>
 
       <div class="m-4 flex flex-col gap-2 text-center">

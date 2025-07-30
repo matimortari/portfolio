@@ -1,7 +1,7 @@
 <template>
   <div
     v-motion :initial="{ opacity: 0 }"
-    :visible="{ opacity: 1 }" :transition="{ duration: 400 }"
+    :visible="{ opacity: 1 }" :duration="400"
     class="card flex min-h-[145px] flex-col items-center justify-center gap-2 text-center lg:min-h-[205px] xl:min-h-0"
   >
     <a :href="link" :title="link" target="_blank" rel="noopener noreferrer">
