@@ -3,7 +3,7 @@
     <Transition name="fade">
       <div v-if="isLoading" class="fixed inset-0 z-50 flex items-center justify-center">
         <img
-          src="/logo.png" alt="Loading..."
+          src="/assets/logo.png" alt="Loading..."
           width="50" height="50"
           class="animate-bounce opacity-80"
         >
@@ -46,7 +46,6 @@ onMounted(() => {
 
 useLocaleHead({
   dir: true,
-  key: "id",
   seo: true,
   lang: true,
 })
