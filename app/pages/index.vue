@@ -16,19 +16,16 @@
 <script setup lang="ts">
 const { t } = useI18n()
 
-const metaTitle = t("index.meta.title")
-const metaDescription = t("index.meta.description")
-
 useHead({
-  title: metaTitle,
+  title: ("index.meta.title"),
   link: [
     { rel: "canonical", href: "https://matheus-mortari.vercel.app" },
     { rel: "icon", href: "/favicon.ico" },
   ],
   meta: [
-    { name: "description", content: metaDescription },
-    { property: "og:title", content: metaTitle },
-    { property: "og:description", content: metaDescription },
+    { name: "description", content: t("index.meta.description") },
+    { property: "og:title", content: ("index.meta.title") },
+    { property: "og:description", content: t("index.meta.description") },
     { property: "og:type", content: "website" },
     { property: "og:image", content: "https://matheus-mortari.vercel.app/og-image.png" },
     { property: "og:url", content: "https://matheus-mortari.vercel.app" },
@@ -37,10 +34,10 @@ useHead({
 })
 
 useSeoMeta({
-  title: metaTitle,
-  description: metaDescription,
-  ogTitle: metaTitle,
-  ogDescription: metaDescription,
+  title: ("index.meta.title"),
+  description: t("index.meta.description"),
+  ogTitle: ("index.meta.title"),
+  ogDescription: t("index.meta.description"),
   ogImage: "https://matheus-mortari.vercel.app/og-image.png",
   ogUrl: "https://matheus-mortari.vercel.app",
 })
