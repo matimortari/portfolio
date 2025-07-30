@@ -2,9 +2,9 @@ import { defineNuxtConfig } from "nuxt/config"
 
 export default defineNuxtConfig({
   modules: [
+    "@nuxt/icon",
     "@nuxtjs/google-fonts",
     "@nuxtjs/i18n",
-    "@nuxt/icon",
     "@nuxtjs/tailwindcss",
     "@vueuse/motion/nuxt",
   ],

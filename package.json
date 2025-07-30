@@ -18,22 +18,21 @@
     "db:studio": "prisma studio"
   },
   "dependencies": {
-    "@nuxt/icon": "1.13.0",
+    "@nuxt/icon": "1.15.0",
     "@nuxtjs/google-fonts": "3.2.0",
-    "@nuxtjs/i18n": "9.5.4",
+    "@nuxtjs/i18n": "10.0.3",
     "@nuxtjs/tailwindcss": "6.14.0",
     "@vercel/analytics": "1.5.0",
     "@vueuse/motion": "3.0.3",
     "nuxt": "3.17.4"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "4.13.3",
-    "@nuxt/devtools": "2.4.1",
-    "@stylistic/eslint-plugin": "4.4.0",
+    "@antfu/eslint-config": "5.0.0",
+    "@nuxt/devtools": "2.6.2",
     "@types/eslint-plugin-tailwindcss": "3.17.0",
-    "@types/node": "22.15.21",
-    "@typescript-eslint/parser": "8.32.1",
-    "eslint": "9.27.0",
+    "@types/node": "24.1.0",
+    "@typescript-eslint/parser": "8.38.0",
+    "eslint": "9.32.0",
     "eslint-plugin-format": "1.0.1",
     "eslint-plugin-tailwindcss": "4.0.0-beta.0",
     "typescript": "5.8.3"

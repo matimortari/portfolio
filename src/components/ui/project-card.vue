@@ -1,7 +1,7 @@
 <template>
   <div
     v-motion :initial="{ opacity: 0 }"
-    :visible="{ opacity: 1 }" :transition="{ duration: 400 }"
+    :visible="{ opacity: 1 }" :duration="400"
     class="flex flex-col items-center gap-2 text-center lg:items-start lg:text-start"
   >
     <img
@@ -12,7 +12,7 @@
 
     <div
       v-motion :initial="{ opacity: 0, x: -20 }"
-      :visible="{ opacity: 1, x: 0 }" :transition="{ duration: 400 }"
+      :visible="{ opacity: 1, x: 0 }" :duration="400"
       class="my-1 flex flex-row items-center gap-4"
     >
       <h4 class="font-serif">
@@ -31,7 +31,7 @@
 
     <div
       v-motion :initial="{ opacity: 0, y: -20 }"
-      :visible="{ opacity: 1, y: 0 }" :transition="{ duration: 400 }"
+      :visible="{ opacity: 1, y: 0 }" :duration="400"
       class="flex  flex-wrap justify-center gap-1 lg:justify-start"
     >
       <span v-for="skill in skills" :key="skill" class="rounded-full bg-accent px-2 py-1 text-xs font-semibold">
@@ -41,7 +41,7 @@
 
     <p
       v-motion :initial="{ opacity: 0, x: 20 }"
-      :visible="{ opacity: 1, x: 0 }" :transition="{ duration: 400 }"
+      :visible="{ opacity: 1, x: 0 }" :duration="400"
       class="max-w-xl text-sm text-muted-foreground"
     >
       {{ description }}
