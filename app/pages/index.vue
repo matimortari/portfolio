@@ -1,16 +1,16 @@
 <template>
-  <div class="flex flex-col">
-    <Navbar />
-    <Hero />
-    <div class="m-8 flex flex-col items-center justify-center gap-8 lg:m-16">
-      <div class="flex w-full flex-col justify-between gap-8 lg:flex-row lg:gap-16">
-        <About />
-        <Stack />
-      </div>
-      <Projects />
+  <Navbar />
+  <Hero />
+
+  <div class="m-8 flex flex-col items-center justify-center gap-8 md:m-16">
+    <div class="flex w-full flex-col justify-between gap-8 md:flex-row md:gap-16">
+      <About />
+      <Stack />
     </div>
-    <footer id="footer" class="footer-container" />
+    <Projects />
   </div>
+
+  <footer id="footer" class="footer-container" />
 </template>
 
 <script setup lang="ts">
@@ -18,10 +18,7 @@ const { t } = useI18n()
 
 useHead({
   title: ("index.meta.title"),
-  link: [
-    { rel: "canonical", href: "https://matheus-mortari.vercel.app" },
-    { rel: "icon", href: "/favicon.ico" },
-  ],
+  link: [{ rel: "canonical", href: "https://matheus-mortari.vercel.app" }, { rel: "icon", href: "/favicon.ico" }],
   meta: [
     { name: "description", content: t("index.meta.description") },
     { property: "og:title", content: ("index.meta.title") },
