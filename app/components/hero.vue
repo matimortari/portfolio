@@ -5,22 +5,22 @@
     <div class="animate-scroll absolute inset-x-0 bottom-0 z-0 flex w-[200%] overflow-hidden opacity-20">
       <img
         src="/assets/map.png" alt="Background"
-        class="hidden size-full lg:block" width="800"
+        class="hidden size-full select-none md:block" width="800"
         height="800"
       >
       <img
         src="/assets/map.png" alt="Background"
-        class="hidden size-full lg:block" width="800"
+        class="hidden size-full select-none md:block" width="800"
         height="800"
       >
     </div>
 
     <div
       v-motion :initial="{ opacity: 0, y: -40 }"
-      :visible="{ opacity: 1, y: 0 }" :duration="400"
-      class="relative flex flex-col items-center gap-2 px-4 pb-12 pt-24"
+      :visible="{ opacity: 1, y: 0 }" :duration="1000"
+      class="relative flex flex-col items-center gap-2 px-4 py-24"
     >
-      <div class="relative size-36 lg:size-40 2xl:size-44">
+      <div class="relative size-36 select-none md:size-40 xl:size-44">
         <img src="/assets/avatar.png" alt="Avatar" class="avatar animate-float absolute inset-0">
       </div>
 
@@ -38,14 +38,14 @@
           {{ t("index.hero.description") }}
         </p>
 
-        <div class="my-4 flex flex-row items-center justify-center gap-4 text-secondary lg:my-8">
-          <a
-            v-for="link in socialLinks" :key="link.href"
-            :href="link.href" :title="link.title"
-            target="_blank"
+        <div class="my-4 flex flex-row items-center justify-center gap-4 text-secondary md:my-8">
+          <nuxt-link
+            v-for="link in contactLinks" :key="link.link"
+            :to="link.link" :title="link.title"
+            target="_blank" rel="noopener noreferrer"
           >
-            <Icon :name="link.icon" size="25" class="animate-scale" />
-          </a>
+            <icon :name="link.icon" size="25" class="hover:scale transition-all" />
+          </nuxt-link>
         </div>
       </div>
     </div>
@@ -55,9 +55,9 @@
 <script setup lang="ts">
 const { t } = useI18n()
 
-const socialLinks = [
-  { href: "https://github.com/matimortari", icon: "simple-icons:github", title: "GitHub" },
-  { href: "https://linkedin.com/in/matheus-mortari-19rt", icon: "simple-icons:linkedin", title: "LinkedIn" },
-  { href: "mailto:matheus.felipe.19rt@gmail.com", icon: "simple-icons:gmail", title: "Email" },
+const contactLinks = [
+  { link: "https://github.com/matimortari", icon: "simple-icons:github", title: "GitHub" },
+  { link: "https://linkedin.com/in/matheus-mortari-19rt", icon: "simple-icons:linkedin", title: "LinkedIn" },
+  { link: "mailto:matheus.felipe.19rt@gmail.com", icon: "simple-icons:gmail", title: "Email" },
 ]
 </script>
