@@ -1,61 +1,61 @@
 <template>
   <div
     v-motion :initial="{ opacity: 0 }"
-    :visible="{ opacity: 1 }" :duration="400"
-    class="flex flex-col items-center gap-2 text-center lg:items-start lg:text-start"
+    :visible="{ opacity: 1 }" :duration="800"
+    class="flex flex-col items-center gap-2 text-center md:items-start md:text-start"
   >
-    <img
-      :src="image" :alt="title"
-      width="600" height="320"
-      class="card p-0"
-    >
+    <div class="project-container relative mb-2 w-full max-w-[600px]">
+      <img :src="project.image" :alt="project.title" class="absolute bottom-1.5 right-1.5 size-full select-none rounded-lg object-cover">
+    </div>
 
     <div
       v-motion :initial="{ opacity: 0, x: -20 }"
-      :visible="{ opacity: 1, x: 0 }" :duration="400"
+      :visible="{ opacity: 1, x: 0 }" :duration="800"
       class="my-1 flex flex-row items-center gap-4"
     >
       <h4 class="font-serif">
-        {{ title }}
+        {{ project.title }}
       </h4>
 
       <div class="flex flex-row items-center gap-2">
-        <a :href="source" :title="source" target="_blank" rel="noopener noreferrer">
-          <Icon name="simple-icons:github" size="25" class="animate-scale" />
-        </a>
-        <a :href="link" :title="link" target="_blank" rel="noopener noreferrer">
-          <Icon name="material-symbols:captive-portal" size="25" class="animate-scale" />
-        </a>
+        <nuxt-link :to="project.source" :title="project.source" target="_blank" rel="noopener noreferrer">
+          <icon name="simple-icons:github" size="25" class="hover:scale transition-all" />
+        </nuxt-link>
+        <nuxt-link :to="project.link" :title="project.link" target="_blank" rel="noopener noreferrer">
+          <icon name="material-symbols:captive-portal" size="25" class="hover:scale transition-all" />
+        </nuxt-link>
       </div>
     </div>
 
     <div
       v-motion :initial="{ opacity: 0, y: -20 }"
-      :visible="{ opacity: 1, y: 0 }" :duration="400"
-      class="flex  flex-wrap justify-center gap-1 lg:justify-start"
+      :visible="{ opacity: 1, y: 0 }" :duration="800"
+      class="flex flex-wrap justify-center gap-1 md:justify-start"
     >
-      <span v-for="skill in skills" :key="skill" class="rounded-full bg-accent px-2 py-1 text-xs font-semibold">
+      <span v-for="skill in project.skills" :key="skill" class="rounded-full bg-accent px-2 py-1 text-xs">
         {{ skill }}
       </span>
     </div>
 
     <p
       v-motion :initial="{ opacity: 0, x: 20 }"
-      :visible="{ opacity: 1, x: 0 }" :duration="400"
+      :visible="{ opacity: 1, x: 0 }" :duration="800"
       class="max-w-xl text-sm text-muted-foreground"
     >
-      {{ description }}
+      {{ project.description }}
     </p>
   </div>
 </template>
 
 <script setup lang="ts">
-defineProps({
-  title: { type: String, required: true },
-  description: { type: String, required: true },
-  image: { type: String, required: true },
-  source: { type: String, required: true },
-  link: { type: String, required: true },
-  skills: { type: Array as () => string[], required: true },
-})
+defineProps<{
+  project: {
+    title: string
+    description: string
+    image: string
+    skills: string[]
+    source: string
+    link: string
+  }
+}>()
 </script>

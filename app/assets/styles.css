@@ -62,11 +62,6 @@
     font-weight: 700;
   }
   h5 {
-    font-size: 1.125rem;
-    line-height: 1.75rem;
-    font-weight: 700;
-  }
-  h6 {
     font-size: 1rem;
     line-height: 1.5rem;
     font-weight: 700;
@@ -77,12 +72,11 @@
     color: var(--card-foreground);
     border-radius: 0.5rem;
     padding: 1rem;
-    border-width: 1px;
-    border-color: var(--border);
-    transition: box-shadow 0.3s ease-in-out;
+    border: 1px solid var(--border);
+    transition: box-shadow 0.5s ease-in-out;
   }
   .card:hover {
-    box-shadow: 4px 4px 8px 2px var(--border);
+    box-shadow: 4px 1px 8px 2px var(--border);
   }
 
   .btn {
@@ -95,31 +89,55 @@
     width: 200px;
     border-radius: 0.5rem;
     padding: 0.5rem;
-    border-width: 1px;
-    border-color: var(--border);
+    border: 1px solid var(--border);
     gap: 0.5rem;
     font-weight: 600;
     font-size: 0.875rem;
     line-height: 1.25rem;
     white-space: nowrap;
-    transition: box-shadow 0.3s ease-in-out;
+    transition: box-shadow 0.5s ease-in-out;
   }
   .btn:hover,
   .btn-round:hover {
-    box-shadow: 0 0 8px 2px var(--border);
-    text-decoration-line: underline;
+    box-shadow: 1px 1px 4px 2px var(--border);
   }
   .btn:active,
   .btn-round:active {
-    opacity: 0.2;
+    opacity: 0.6;
     transform: scale(0.98);
+    transition: transform 0.5s ease-in-out;
   }
 
-  .animate-scale {
-    transition: transform 0.2s ease-in-out;
+  .project-container {
+    border-radius: 1rem;
+    aspect-ratio: 2 / 1;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 4px 4px 0 1px var(--accent);
+    transition: transform 0.5s ease-in-out;
   }
-  .animate-scale:hover {
-    transform: scale(1.2);
+  .project-container:hover {
+    transform: scale(1.02);
+  }
+  .project-container img {
+    border-radius: 1rem;
+    border: 6px solid var(--accent);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  footer {
+    background-color: var(--muted);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 5rem;
+    margin-top: 2.5rem;
+    padding: 1.5rem;
+    border-top-left-radius: 1%;
+    border-top-right-radius: 100%;
   }
 }
 
@@ -151,20 +169,11 @@
   .avatar {
     border-radius: 50%;
     box-shadow: 0 0 8px 2px var(--primary);
-    transition: box-shadow 0.3s ease-in-out;
+    transition: box-shadow 0.5s ease-in-out;
   }
 
-  .footer-container {
-    background-color: var(--muted);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 5rem;
-    margin-top: 2.5rem;
-    padding: 1.5rem;
-    border-top-left-radius: 1%;
-    border-top-right-radius: 100%;
-    transition: box-shadow 0.3s ease-in-out;
+  .scale {
+    transform: scale(1.08);
   }
 }
 

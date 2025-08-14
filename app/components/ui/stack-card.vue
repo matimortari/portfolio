@@ -1,28 +1,34 @@
 <template>
   <div
     v-motion :initial="{ opacity: 0 }"
-    :visible="{ opacity: 1 }" :duration="400"
-    class="card flex min-h-[145px] flex-col items-center justify-center gap-2 text-center lg:min-h-[205px] xl:min-h-0"
+    :visible="{ opacity: 1 }" :duration="800"
+    class="card flex min-h-[145px] flex-col items-center justify-center gap-2 text-center md:min-h-[205px] xl:min-h-0"
   >
-    <a :href="link" :title="link" target="_blank" rel="noopener noreferrer">
-      <Icon :name="icon" size="25" class="animate-scale" />
-    </a>
+    <nuxt-link
+      :to="stackItem.link" :title="stackItem.link"
+      target="_blank" rel="noopener noreferrer"
+      class="hover:scale flex items-center rounded-full p-2 transition-all hover:bg-muted"
+    >
+      <icon :name="stackItem.icon" size="25" />
+    </nuxt-link>
 
-    <h6 class="font-serif">
-      {{ name }}
-    </h6>
+    <h5 class="font-serif">
+      {{ stackItem.name }}
+    </h5>
 
-    <span class="flex-grow text-center text-sm text-muted-foreground lg:text-xs">
-      {{ description }}
+    <span class="flex-grow text-center text-sm text-muted-foreground md:text-xs">
+      {{ stackItem.description }}
     </span>
   </div>
 </template>
 
 <script setup lang="ts">
-defineProps({
-  name: { type: String, required: true },
-  icon: { type: String, required: true },
-  link: { type: String, required: true },
-  description: { type: String, required: true },
-})
+defineProps<{
+  stackItem: {
+    name: string
+    icon: string
+    link: string
+    description: string
+  }
+}>()
 </script>
