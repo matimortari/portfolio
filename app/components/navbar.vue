@@ -6,13 +6,13 @@
     <div class="flex flex-row items-center justify-between">
       <div
         v-motion :initial="{ opacity: 0 }"
-        :visible="{ opacity: 1 }" :duration="400"
+        :visible="{ opacity: 1 }" :duration="800"
         class="flex flex-row items-center justify-center gap-10 text-foreground"
       >
-        <NuxtLink to="/" class="animate-scale">
+        <NuxtLink to="/" class="hover:scale select-none outline-none transition-all">
           <img
             v-motion :initial="{ opacity: 0 }"
-            :visible="{ opacity: 1 }" :duration="400"
+            :visible="{ opacity: 1 }" :duration="800"
             :delay="200" src="/assets/logo.png"
             alt="Logo" width="40"
             height="40"
@@ -21,36 +21,20 @@
 
         <div class="flex flex-row items-center gap-8 font-semibold tracking-wide">
           <NuxtLink
-            v-motion :initial="{ opacity: 0, x: -20 }"
-            :visible="{ opacity: 1, x: 0 }" :duration="400"
-            :delay="200" to="#about"
-            class="hidden hover:underline sm:block"
+            v-for="link in navLinks" :key="link.link"
+            v-motion :to="link.link"
+            :visible="{ opacity: 1, x: 0 }"
+            :duration="800" :delay="200"
+            class="hidden outline-none hover:underline sm:block"
           >
-            {{ t("index.navbar.about") }}
-          </NuxtLink>
-          <NuxtLink
-            v-motion :initial="{ opacity: 0, x: -20 }"
-            :visible="{ opacity: 1, x: 0 }" :duration="400"
-            :delay="200" to="#projects"
-            class="hidden hover:underline sm:block"
-          >
-            {{ t("index.navbar.projects") }}
-          </NuxtLink>
-          <NuxtLink
-            v-motion :initial="{ opacity: 0, x: -20 }"
-            :visible="{ opacity: 1, x: 0 }" :duration="400"
-            :delay="200" to="#contact"
-            class="hidden hover:underline sm:block"
-          >
-            {{ t("index.navbar.contact") }}
+            {{ link.title }}
           </NuxtLink>
         </div>
       </div>
 
       <div
         v-motion :initial="{ opacity: 0 }"
-        :visible="{ opacity: 1 }" :duration="400"
-        :delay="400"
+        :visible="{ opacity: 1 }" :duration="800"
         class="flex flex-row items-center gap-4 font-semibold"
       >
         <button v-for="language in availableLocales" :key="language" @click="() => setLanguage(language)">
@@ -68,6 +52,12 @@ const showNavbar = ref(true)
 const scrolled = ref(false)
 
 let lastScrollY = 0
+
+const navLinks = [
+  { link: "#about", title: t("index.navbar.about") },
+  { link: "#projects", title: t("index.navbar.projects") },
+  { link: "#contact", title: t("index.navbar.contact") },
+]
 
 function handleScroll() {
   const currentY = window.scrollY
