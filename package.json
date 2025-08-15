@@ -11,6 +11,8 @@
     "lint:fix": "eslint . --debug --fix"
   },
   "dependencies": {
+    "@iconify-json/material-symbols": "1.2.32",
+    "@iconify-json/simple-icons": "1.2.47",
     "@nuxt/icon": "1.15.0",
     "@nuxtjs/google-fonts": "3.2.0",
     "@nuxtjs/i18n": "9.5.4",
