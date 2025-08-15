@@ -20,18 +20,11 @@ export default antfu({
     "no-new": "off",
     "no-undef": "off",
     "no-alert": "off",
-    "no-restricted-globals": "off",
-    "regexp/no-obscure-range": "off",
+    "no-console": "off",
     "node/prefer-global/process": "off",
-    "vue/block-order": "off",
-    "vue/max-attributes-per-line": ["warn", {
-      singleline: {
-        max: 4,
-      },
-      multiline: {
-        max: 2,
-      },
-    }],
+    "vue/block-order": ["error", { order: ["template", "script", "style"] }],
+    "vue/html-closing-bracket-newline": ["error", { multiline: "always", singleline: "never" }],
+    "vue/max-attributes-per-line": ["warn", { singleline: { max: 4 }, multiline: { max: 2 } }],
     "tailwindcss/classnames-order": "warn",
     "tailwindcss/enforces-shorthand": "warn",
     "tailwindcss/no-unnecessary-arbitrary-value": "warn",
