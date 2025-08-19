@@ -2,7 +2,7 @@
   <div
     v-motion :initial="{ opacity: 0 }"
     :visible="{ opacity: 1 }" :duration="800"
-    class="stack-item flex min-h-[145px] flex-col justify-center gap-2 p-4 md:min-h-[205px] md:p-2 xl:min-h-0"
+    class="stack-item flex min-h-[150px] flex-col justify-center gap-2 p-4 md:min-h-[200px] md:p-2 xl:min-h-0"
   >
     <div class="flex flex-row items-center gap-2">
       <nuxt-link
@@ -20,7 +20,7 @@
 
     <icon :name="stackItem.icon" size="120" class="absolute -bottom-8 -right-4 -z-10 opacity-10" />
 
-    <span class="p-1 text-start text-sm text-muted-foreground md:flex-grow md:text-xs">
+    <span class="p-1.5 text-start text-sm text-muted-foreground md:flex-grow md:text-xs">
       {{ stackItem.description }}
     </span>
   </div>
@@ -38,7 +38,7 @@ defineProps<{
 </script>
 
 <style scoped>
-  .stack-item {
+.stack-item {
   border: 2px solid var(--border);
   border-radius: 0.5rem;
   overflow: hidden;
@@ -46,7 +46,7 @@ defineProps<{
   transition: all 0.5s ease-in-out;
 }
 .stack-item:hover {
-  box-shadow: 2px 2px 0 1px var(--primary);
+  box-shadow: 2px 2px 0 2px var(--border);
   transform: scale(1.02);
   transition: all 0.5s ease-in-out;
 }

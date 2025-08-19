@@ -5,7 +5,7 @@
     class="flex flex-col items-center gap-2 text-center md:items-start md:text-start"
   >
     <div class="project-container relative mb-2 w-full max-w-[600px]">
-      <img :src="project.image" :alt="project.title" class="absolute bottom-1.5 right-1.5 size-full select-none rounded-lg object-cover">
+      <img :src="project.image" :alt="project.title" class="absolute bottom-1.5 right-1.5 size-full select-none rounded-lg">
     </div>
 
     <div
@@ -61,7 +61,7 @@ defineProps<{
 </script>
 
 <style scoped>
-  .project-container {
+.project-container {
   border-radius: 1rem;
   aspect-ratio: 2 / 1;
   width: 100%;
@@ -74,7 +74,7 @@ defineProps<{
 }
 .project-container img {
   border-radius: 1rem;
-  border: 6px solid var(--accent);
+  border: 2px solid var(--accent);
   width: 100%;
   height: 100%;
   object-fit: cover;
