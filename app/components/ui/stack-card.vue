@@ -2,21 +2,25 @@
   <div
     v-motion :initial="{ opacity: 0 }"
     :visible="{ opacity: 1 }" :duration="800"
-    class="card flex min-h-[145px] flex-col items-center justify-center gap-2 text-center md:min-h-[205px] xl:min-h-0"
+    class="stack-item flex min-h-[145px] flex-col justify-center gap-2 p-4 md:min-h-[205px] md:p-2 xl:min-h-0"
   >
-    <nuxt-link
-      :to="stackItem.link" :title="stackItem.link"
-      target="_blank" rel="noopener noreferrer"
-      class="hover:scale flex items-center rounded-full p-2 transition-all hover:bg-muted"
-    >
-      <icon :name="stackItem.icon" size="25" />
-    </nuxt-link>
+    <div class="flex flex-row items-center gap-2">
+      <nuxt-link
+        :to="stackItem.link" :title="stackItem.link"
+        target="_blank" rel="noopener noreferrer"
+        class="hover:scale flex items-center rounded-full p-1 transition-all hover:bg-muted"
+      >
+        <icon :name="stackItem.icon" size="35" />
+      </nuxt-link>
 
-    <h5 class="font-serif">
-      {{ stackItem.name }}
-    </h5>
+      <h5 class="font-serif">
+        {{ stackItem.name }}
+      </h5>
+    </div>
 
-    <span class="flex-grow text-center text-sm text-muted-foreground md:text-xs">
+    <icon :name="stackItem.icon" size="120" class="absolute -bottom-8 -right-4 -z-10 opacity-10" />
+
+    <span class="p-1 text-start text-sm text-muted-foreground md:flex-grow md:text-xs">
       {{ stackItem.description }}
     </span>
   </div>

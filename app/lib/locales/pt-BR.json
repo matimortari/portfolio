@@ -34,55 +34,55 @@
         {
           "name": "TypeScript",
           "description": "Superset tipado da linguagem de programação JavaScript.",
-          "icon": "simple-icons:typescript",
+          "icon": "lineicons:typescript",
           "link": "https://www.typescriptlang.org"
         },
         {
           "name": "Node.js",
           "description": "Ambiente de execução JavaScript para aplicativos no servidor.",
-          "icon": "simple-icons:nodedotjs",
+          "icon": "lineicons:nodejs",
           "link": "https://nodejs.org"
         },
         {
           "name": "Vue",
           "description": "Framework JavaScript progressivo para construção de interfaces.",
-          "icon": "simple-icons:vuedotjs",
+          "icon": "lineicons:vuejs",
           "link": "https://vuejs.org"
         },
         {
           "name": "Nuxt.js",
-          "description": "Framework para construção de aplicações Vue.js modernas.",
-          "icon": "simple-icons:nuxtdotjs",
+          "description": "Framework full-stack para construção de aplicações Vue.js modernas.",
+          "icon": "lineicons:nuxt",
           "link": "https://nuxtjs.org"
         },
         {
           "name": "TailwindCSS",
           "description": "Framework CSS utilitária para desenvolvimento rápido de interfaces.",
-          "icon": "simple-icons:tailwindcss",
+          "icon": "lineicons:tailwindcss",
           "link": "https://tailwindcss.com"
         },
         {
           "name": "Prisma",
           "description": "Kit de ferramentas de acesso a banco de dados e ORM para TypeScript.",
-          "icon": "simple-icons:prisma",
+          "icon": "lineicons:prisma",
           "link": "https://prisma.io"
         },
         {
           "name": "PostgreSQL",
           "description": "Sistema avançado de gerenciamento de banco de dados relacional.",
-          "icon": "simple-icons:postgresql",
+          "icon": "lineicons:postgresql",
           "link": "https://www.postgresql.org"
         },
         {
           "name": "Go",
           "description": "Linguagem de programação compilada com foco em simplicidade.",
-          "icon": "simple-icons:go",
+          "icon": "lineicons:go",
           "link": "https://go.dev"
         },
         {
           "name": "Git",
           "description": "Sistema de controle de versão distribuído para gerenciamento de código.",
-          "icon": "simple-icons:git",
+          "icon": "lineicons:git",
           "link": "https://git-scm.com"
         }
       ]
