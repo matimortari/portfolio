@@ -43,6 +43,7 @@
             v-for="link in contactLinks" :key="link.link"
             :to="link.link" :title="link.title"
             target="_blank" rel="noopener noreferrer"
+            class="flex items-center justify-center"
           >
             <icon :name="link.icon" size="25" class="hover:scale transition-all" />
           </nuxt-link>
@@ -61,3 +62,48 @@ const contactLinks = [
   { link: "mailto:matheus.felipe.19rt@gmail.com", icon: "simple-icons:gmail", title: "Email" },
 ]
 </script>
+
+<style scoped>
+  .hero-background {
+  background: linear-gradient(330deg, var(--background) 60%, var(--primary) 80%, var(--secondary) 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+}
+
+.avatar {
+  border-radius: 50%;
+  box-shadow: 0 0 8px 2px var(--primary);
+  transition: box-shadow 0.5s ease-in-out;
+}
+
+/* Keyframe animation for floating effect */
+@keyframes float {
+  0%,
+  100% {
+    transform: translate(0, 0px);
+  }
+  60% {
+    transform: translate(0, 8px);
+  }
+}
+.animate-float {
+  animation: float 2s ease-in-out infinite;
+}
+
+/* Keyframe animation for scrolling map effect */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+.animate-scroll {
+  animation: scroll 60s linear infinite;
+}
+</style>
