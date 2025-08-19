@@ -7,9 +7,6 @@
     --background: #08080e;
     --foreground: #ececec;
 
-    --card: #0e0e11;
-    --card-foreground: #ececec;
-
     --primary: #4c4083;
     --secondary: #605492;
     --accent: #333023;
@@ -62,9 +59,9 @@
     font-weight: 700;
   }
   h5 {
-    font-size: 1rem;
+    font-size: 1.15rem;
     line-height: 1.5rem;
-    font-weight: 700;
+    font-weight: 600;
   }
 
   .card {
@@ -72,7 +69,7 @@
     color: var(--card-foreground);
     border-radius: 0.5rem;
     padding: 1rem;
-    border: 1px solid var(--border);
+    border: 2px solid var(--border);
     transition: box-shadow 0.5s ease-in-out;
   }
   .card:hover {
@@ -108,13 +105,26 @@
     transition: transform 0.5s ease-in-out;
   }
 
+  .stack-item {
+    border: 2px solid var(--border);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+  }
+  .stack-item:hover {
+    box-shadow: 2px 2px 0 1px var(--primary);
+    transform: scale(1.02);
+    transition: all 0.5s ease-in-out;
+  }
+
   .project-container {
     border-radius: 1rem;
     aspect-ratio: 2 / 1;
     width: 100%;
     max-width: 600px;
     box-shadow: 4px 4px 0 1px var(--accent);
-    transition: transform 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
   }
   .project-container:hover {
     transform: scale(1.02);
@@ -125,7 +135,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
   }
 
   footer {
