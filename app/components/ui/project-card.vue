@@ -59,3 +59,25 @@ defineProps<{
   }
 }>()
 </script>
+
+<style scoped>
+  .project-container {
+  border-radius: 1rem;
+  aspect-ratio: 2 / 1;
+  width: 100%;
+  max-width: 600px;
+  box-shadow: 4px 4px 0 1px var(--accent);
+  transition: all 0.5s ease-in-out;
+}
+.project-container:hover {
+  transform: scale(1.02);
+}
+.project-container img {
+  border-radius: 1rem;
+  border: 6px solid var(--accent);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.5s ease-in-out;
+}
+</style>

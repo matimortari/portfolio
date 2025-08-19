@@ -36,3 +36,18 @@ defineProps<{
   }
 }>()
 </script>
+
+<style scoped>
+  .stack-item {
+  border: 2px solid var(--border);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.5s ease-in-out;
+}
+.stack-item:hover {
+  box-shadow: 2px 2px 0 1px var(--primary);
+  transform: scale(1.02);
+  transition: all 0.5s ease-in-out;
+}
+</style>
