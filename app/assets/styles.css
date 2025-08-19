@@ -79,12 +79,10 @@
     white-space: nowrap;
     transition: box-shadow 0.5s ease-in-out;
   }
-  .btn:hover,
-  .btn-round:hover {
-    box-shadow: 1px 1px 4px 2px var(--border);
+  .btn:hover {
+    box-shadow: 2px 2px 0 2px var(--border);
   }
-  .btn:active,
-  .btn-round:active {
+  .btn:active {
     opacity: 0.6;
     transform: scale(0.98);
     transition: transform 0.5s ease-in-out;
