@@ -34,55 +34,55 @@
         {
           "name": "TypeScript",
           "description": "Statically typed superset of the JavaScript programming language.",
-          "icon": "simple-icons:typescript",
+          "icon": "lineicons:typescript",
           "link": "https://www.typescriptlang.org"
         },
         {
           "name": "Node.js",
           "description": "JavaScript runtime environment for server-side applications.",
-          "icon": "simple-icons:nodedotjs",
+          "icon": "lineicons:nodejs",
           "link": "https://nodejs.org"
         },
         {
           "name": "Vue",
           "description": "Progressive JavaScript framework for building user interfaces.",
-          "icon": "simple-icons:vuedotjs",
+          "icon": "lineicons:vuejs",
           "link": "https://vuejs.org"
         },
         {
           "name": "Nuxt.js",
-          "description": "Framework for building modern Vue.js applications.",
-          "icon": "simple-icons:nuxtdotjs",
+          "description": "Full-stack framework for building modern Vue.js applications.",
+          "icon": "lineicons:nuxt",
           "link": "https://nuxtjs.org"
         },
         {
           "name": "TailwindCSS",
           "description": "Utility-first CSS framework for rapid interface development.",
-          "icon": "simple-icons:tailwindcss",
+          "icon": "lineicons:tailwindcss",
           "link": "https://tailwindcss.com"
         },
         {
           "name": "Prisma",
           "description": "Database access toolkit and ORM for TypeScript applications.",
-          "icon": "simple-icons:prisma",
+          "icon": "lineicons:prisma",
           "link": "https://prisma.io"
         },
         {
           "name": "PostgreSQL",
           "description": "Relational database management system with advanced features.",
-          "icon": "simple-icons:postgresql",
+          "icon": "lineicons:postgresql",
           "link": "https://www.postgresql.org"
         },
         {
           "name": "Go",
           "description": "Compiled programming language, designed for simplicity and efficiency.",
-          "icon": "simple-icons:go",
+          "icon": "lineicons:go",
           "link": "https://go.dev"
         },
         {
           "name": "Git",
           "description": "Distributed version control system for source code management.",
-          "icon": "simple-icons:git",
+          "icon": "lineicons:git",
           "link": "https://git-scm.com"
         }
       ]
