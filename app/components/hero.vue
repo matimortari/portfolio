@@ -1,5 +1,5 @@
 <template>
-  <section id="hero" class="relative flex min-h-screen items-center justify-center overflow-hidden">
+  <section id="hero" class="relative flex min-h-screen items-center justify-center">
     <div class="hero-background" />
 
     <div class="animate-scroll absolute inset-x-0 bottom-0 z-0 flex w-[200%] overflow-hidden opacity-20">
@@ -64,7 +64,7 @@ const contactLinks = [
 </script>
 
 <style scoped>
-  .hero-background {
+.hero-background {
   background: linear-gradient(330deg, var(--background) 60%, var(--primary) 80%, var(--secondary) 100%);
   position: absolute;
   top: 0;

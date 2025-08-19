@@ -36,7 +36,7 @@
         :visible="{ opacity: 1, x: 0 }" :duration="800"
         :delay="200 * Number(index)" class="flex flex-row items-center gap-2 italic"
       >
-        <icon :name="contact.icon" size="20" class="hover:scale transition-all" />
+        <icon :name="contact.icon" size="20" />
         <span>{{ contact.label }}</span>
         <nuxt-link :to="contact.link" class="text-secondary hover:underline" target="_blank" rel="noopener noreferrer">
           {{ contact.text }}
