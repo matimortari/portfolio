@@ -12,8 +12,7 @@
     },
     "navbar": {
       "about": "Sobre Mim",
-      "projects": "Projetos",
-      "contact": "Contato"
+      "projects": "Projetos"
     },
     "hero": {
       "title": "Matheus Mortari",
@@ -23,7 +22,7 @@
     "about": {
       "title": "Sobre Mim",
       "section1": "Sou desenvolvedor de software e aluno de Análise e Desenvolvimento de Sistemas na Universidade de Passo Fundo (UPF), no Rio Grande do Sul, Brasil. Especializo-me na criação de aplicações web full-stack com interfaces de usuário limpas e dinâmicas, além de sistemas de back-end, como APIs REST e bancos de dados, otimizando meu fluxo de trabalho por meio de processos de automação e ferramentas personalizadas.",
-      "section2": "Sou facilmente adaptável e comprometido em me manter atualizado nas tendências do setor, ao mesmo tempo em que mantenho uma base em tecnologias tradicionais e confiáveis. Sinta-se à vontade para explorar meu trabalho e não hesite em entrar em contato — estou sempre buscando conectar-me, aprender e colaborar!",
+      "section2": "Sou facilmente adaptável e comprometido em me manter atualizado nas tendências da área, ao mesmo tempo em que mantenho uma base em tecnologias tradicionais e confiáveis. Sinta-se à vontade para explorar meu trabalho e não hesite em entrar em contato — estou sempre buscando conectar-me, aprender e colaborar!",
       "contact": "Entre em Contato",
       "resumeEn": "Currículo - Inglês",
       "resumePt": "Currículo - Português"
@@ -33,57 +32,57 @@
       "items": [
         {
           "name": "TypeScript",
-          "description": "Superset tipado da linguagem de programação JavaScript.",
+          "description": "Superset moderno e tipado da linguagem de programação JavaScript.",
           "icon": "lineicons:typescript",
-          "link": "https://www.typescriptlang.org"
+          "url": "https://www.typescriptlang.org"
         },
         {
           "name": "Node.js",
           "description": "Ambiente de execução JavaScript para aplicativos no servidor.",
           "icon": "lineicons:nodejs",
-          "link": "https://nodejs.org"
+          "url": "https://nodejs.org"
         },
         {
           "name": "Vue",
           "description": "Framework JavaScript progressivo para construção de interfaces.",
           "icon": "lineicons:vuejs",
-          "link": "https://vuejs.org"
+          "url": "https://vuejs.org"
         },
         {
           "name": "Nuxt.js",
           "description": "Framework full-stack para construção de aplicações Vue.js modernas.",
           "icon": "lineicons:nuxt",
-          "link": "https://nuxtjs.org"
+          "url": "https://nuxtjs.org"
         },
         {
           "name": "TailwindCSS",
           "description": "Framework CSS utilitária para desenvolvimento rápido de interfaces.",
           "icon": "lineicons:tailwindcss",
-          "link": "https://tailwindcss.com"
+          "url": "https://tailwindcss.com"
         },
         {
           "name": "Prisma",
           "description": "Kit de ferramentas de acesso a banco de dados e ORM para TypeScript.",
           "icon": "lineicons:prisma",
-          "link": "https://prisma.io"
+          "url": "https://prisma.io"
         },
         {
           "name": "PostgreSQL",
           "description": "Sistema avançado de gerenciamento de banco de dados relacional.",
           "icon": "lineicons:postgresql",
-          "link": "https://www.postgresql.org"
+          "url": "https://www.postgresql.org"
         },
         {
           "name": "Go",
           "description": "Linguagem de programação compilada com foco em simplicidade.",
           "icon": "lineicons:go",
-          "link": "https://go.dev"
+          "url": "https://go.dev"
         },
         {
           "name": "Git",
           "description": "Sistema de controle de versão distribuído para gerenciamento de código.",
           "icon": "lineicons:git",
-          "link": "https://git-scm.com"
+          "url": "https://git-scm.com"
         }
       ]
     },
@@ -104,8 +103,8 @@
             "OAuth",
             "Prisma"
           ],
-          "link": "https://linknest-live.vercel.app",
-          "source": "https://github.com/matimortari/linknest"
+          "demoUrl": "https://linknest-live.vercel.app",
+          "sourceUrl": "https://github.com/matimortari/linknest"
         },
         {
           "title": "SecretKeepR",
@@ -120,8 +119,8 @@
             "OAuth",
             "Prisma"
           ],
-          "link": "https://secretkeepr.vercel.app",
-          "source": "https://github.com/matimortari/secretkeepr"
+          "demoUrl": "https://secretkeepr.vercel.app",
+          "sourceUrl": "https://github.com/matimortari/secretkeepr"
         }
       ]
     }

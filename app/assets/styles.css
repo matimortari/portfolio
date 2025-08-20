@@ -8,7 +8,7 @@
     --foreground: #ececec;
     --primary: #4c4083;
     --secondary: #605492;
-    --accent: #333023;
+    --accent: #27241e;
     --muted: #15151d;
     --muted-foreground: #c4c4c4;
     --border: #29253d;
@@ -56,7 +56,7 @@
     font-weight: 700;
   }
   h5 {
-    font-size: 1.15rem;
+    font-size: 1rem;
     line-height: 1.5rem;
     font-weight: 600;
   }

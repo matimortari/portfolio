@@ -1,20 +1,16 @@
 <template>
   <div>
-    <Transition name="fade">
+    <transition name="fade">
       <div v-if="isLoading" class="fixed inset-0 z-50 flex items-center justify-center">
-        <img
-          src="/assets/logo.png" alt="Loading..."
-          width="50" height="50"
-          class="animate-bounce opacity-80"
-        >
+        <img src="/assets/logo.png" alt="Loading..." width="50" height="50">
       </div>
-    </Transition>
+    </transition>
 
-    <Transition name="fade">
+    <transition name="fade">
       <main v-show="!isLoading">
         <slot />
       </main>
-    </Transition>
+    </transition>
   </div>
 </template>
 
@@ -59,5 +55,19 @@ useLocaleHead({
 .fade-enter-from,
 .fade-leave-to {
   opacity: 0;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}
+
+img {
+  opacity: 0.8;
+  animation: fade 1s ease-in-out infinite alternate;
 }
 </style>

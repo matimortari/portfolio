@@ -1,18 +1,10 @@
 <template>
-  <section id="hero" class="relative flex min-h-screen items-center justify-center">
+  <section id="hero" class="relative flex min-h-screen items-center justify-center overflow-hidden">
     <div class="hero-background" />
 
-    <div class="animate-scroll absolute inset-x-0 bottom-0 z-0 flex w-[200%] overflow-hidden opacity-20">
-      <img
-        src="/assets/map.png" alt="Background"
-        class="hidden size-full select-none md:block" width="800"
-        height="800"
-      >
-      <img
-        src="/assets/map.png" alt="Background"
-        class="hidden size-full select-none md:block" width="800"
-        height="800"
-      >
+    <div class="scrolling-map absolute inset-x-0 bottom-0 z-0 flex w-[200%] opacity-20">
+      <img src="/assets/map.png" class="w-1/2 select-none md:block">
+      <img src="/assets/map.png" class="w-1/2 select-none md:block">
     </div>
 
     <div
@@ -21,7 +13,7 @@
       class="relative flex flex-col items-center gap-2 px-4 py-24"
     >
       <div class="relative size-36 select-none md:size-40 xl:size-44">
-        <img src="/assets/avatar.png" alt="Avatar" class="avatar animate-float absolute inset-0">
+        <img src="/assets/avatar.png" alt="Avatar" class="avatar absolute inset-0">
       </div>
 
       <div class="m-4 flex flex-col gap-2 text-center">
@@ -39,13 +31,8 @@
         </p>
 
         <div class="my-4 flex flex-row items-center justify-center gap-4 text-secondary md:my-8">
-          <nuxt-link
-            v-for="link in contactLinks" :key="link.link"
-            :to="link.link" :title="link.title"
-            target="_blank" rel="noopener noreferrer"
-            class="flex items-center justify-center"
-          >
-            <icon :name="link.icon" size="25" class="hover:scale transition-all" />
+          <nuxt-link v-for="link in contactLinks" :key="link.url" :to="link.url" :title="link.title">
+            <icon :name="link.icon" size="25" class="hover:scale transition-all duration-500" />
           </nuxt-link>
         </div>
       </div>
@@ -57,9 +44,9 @@
 const { t } = useI18n()
 
 const contactLinks = [
-  { link: "https://github.com/matimortari", icon: "simple-icons:github", title: "GitHub" },
-  { link: "https://linkedin.com/in/matheus-mortari-19rt", icon: "simple-icons:linkedin", title: "LinkedIn" },
-  { link: "mailto:matheus.felipe.19rt@gmail.com", icon: "simple-icons:gmail", title: "Email" },
+  { url: "https://github.com/matimortari", icon: "simple-icons:github", title: "GitHub" },
+  { url: "https://linkedin.com/in/matheus-mortari-19rt", icon: "simple-icons:linkedin", title: "LinkedIn" },
+  { url: "mailto:matheus.felipe.19rt@gmail.com", icon: "simple-icons:gmail", title: "Email" },
 ]
 </script>
 
@@ -74,10 +61,15 @@ const contactLinks = [
   opacity: 0.8;
 }
 
+.scrolling-map {
+  animation: scroll 60s linear infinite;
+}
+
 .avatar {
   border-radius: 50%;
   box-shadow: 0 0 8px 2px var(--primary);
   transition: box-shadow 0.5s ease-in-out;
+  animation: float 2s ease-in-out infinite;
 }
 
 /* Keyframe animation for floating effect */
@@ -90,9 +82,6 @@ const contactLinks = [
     transform: translate(0, 8px);
   }
 }
-.animate-float {
-  animation: float 2s ease-in-out infinite;
-}
 
 /* Keyframe animation for scrolling map effect */
 @keyframes scroll {
@@ -102,8 +91,5 @@ const contactLinks = [
   100% {
     transform: translateX(-50%);
   }
-}
-.animate-scroll {
-  animation: scroll 60s linear infinite;
 }
 </style>

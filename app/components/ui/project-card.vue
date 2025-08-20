@@ -18,11 +18,11 @@
       </h4>
 
       <div class="flex flex-row items-center gap-2">
-        <nuxt-link :to="project.source" :title="project.source" target="_blank" rel="noopener noreferrer">
-          <icon name="simple-icons:github" size="25" class="hover:scale transition-all" />
+        <nuxt-link :to="project.sourceUrl" :title="project.sourceUrl">
+          <icon name="simple-icons:github" size="25" class="hover:scale flex items-center transition-all duration-500" />
         </nuxt-link>
-        <nuxt-link :to="project.link" :title="project.link" target="_blank" rel="noopener noreferrer">
-          <icon name="material-symbols:captive-portal" size="25" class="hover:scale transition-all" />
+        <nuxt-link :to="project.demoUrl" :title="project.demoUrl">
+          <icon name="material-symbols:captive-portal" size="25" class="hover:scale flex items-center transition-all duration-500" />
         </nuxt-link>
       </div>
     </div>
@@ -54,8 +54,8 @@ defineProps<{
     description: string
     image: string
     skills: string[]
-    source: string
-    link: string
+    sourceUrl: string
+    demoUrl: string
   }
 }>()
 </script>
