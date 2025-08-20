@@ -12,8 +12,7 @@
     },
     "navbar": {
       "about": "About Me",
-      "projects": "Projects",
-      "contact": "Contact"
+      "projects": "Projects"
     },
     "hero": {
       "title": "Matheus Mortari",
@@ -33,57 +32,57 @@
       "items": [
         {
           "name": "TypeScript",
-          "description": "Statically typed superset of the JavaScript programming language.",
+          "description": "Modern, statically typed superset of the JavaScript programming language.",
           "icon": "lineicons:typescript",
-          "link": "https://www.typescriptlang.org"
+          "url": "https://www.typescriptlang.org"
         },
         {
           "name": "Node.js",
           "description": "JavaScript runtime environment for server-side applications.",
           "icon": "lineicons:nodejs",
-          "link": "https://nodejs.org"
+          "url": "https://nodejs.org"
         },
         {
           "name": "Vue",
           "description": "Progressive JavaScript framework for building user interfaces.",
           "icon": "lineicons:vuejs",
-          "link": "https://vuejs.org"
+          "url": "https://vuejs.org"
         },
         {
           "name": "Nuxt.js",
           "description": "Full-stack framework for building modern Vue.js applications.",
           "icon": "lineicons:nuxt",
-          "link": "https://nuxtjs.org"
+          "url": "https://nuxtjs.org"
         },
         {
           "name": "TailwindCSS",
-          "description": "Utility-first CSS framework for rapid interface development.",
+          "description": "Utility-first CSS framework for rapid and efficient UI development.",
           "icon": "lineicons:tailwindcss",
-          "link": "https://tailwindcss.com"
+          "url": "https://tailwindcss.com"
         },
         {
           "name": "Prisma",
           "description": "Database access toolkit and ORM for TypeScript applications.",
           "icon": "lineicons:prisma",
-          "link": "https://prisma.io"
+          "url": "https://prisma.io"
         },
         {
           "name": "PostgreSQL",
           "description": "Relational database management system with advanced features.",
           "icon": "lineicons:postgresql",
-          "link": "https://www.postgresql.org"
+          "url": "https://www.postgresql.org"
         },
         {
           "name": "Go",
           "description": "Compiled programming language, designed for simplicity and efficiency.",
           "icon": "lineicons:go",
-          "link": "https://go.dev"
+          "url": "https://go.dev"
         },
         {
           "name": "Git",
           "description": "Distributed version control system for source code management.",
           "icon": "lineicons:git",
-          "link": "https://git-scm.com"
+          "url": "https://git-scm.com"
         }
       ]
     },
@@ -104,8 +103,8 @@
             "OAuth",
             "Prisma"
           ],
-          "link": "https://linknest-live.vercel.app",
-          "source": "https://github.com/matimortari/linknest"
+          "demoUrl": "https://linknest-live.vercel.app",
+          "sourceUrl": "https://github.com/matimortari/linknest"
         },
         {
           "title": "SecretKeepR",
@@ -120,8 +119,8 @@
             "OAuth",
             "Prisma"
           ],
-          "link": "https://secretkeepr.vercel.app",
-          "source": "https://github.com/matimortari/secretkeepr"
+          "demoUrl": "https://secretkeepr.vercel.app",
+          "sourceUrl": "https://github.com/matimortari/secretkeepr"
         }
       ]
     }

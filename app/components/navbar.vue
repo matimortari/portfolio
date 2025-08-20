@@ -1,6 +1,6 @@
 <template>
   <nav
-    class="fixed top-0 z-50 w-full px-4 py-2 transition-transform duration-300"
+    class="fixed top-0 z-50 w-full px-4 py-2 transition-transform duration-500"
     :class="[showNavbar ? 'translate-y-0' : '-translate-y-full', scrolled ? 'backdrop-blur-sm' : '']"
   >
     <div class="flex flex-row items-center justify-between">
@@ -9,7 +9,7 @@
         :visible="{ opacity: 1 }" :duration="800"
         class="flex flex-row items-center justify-center gap-10 text-foreground"
       >
-        <NuxtLink to="/" class="hover:scale select-none outline-none transition-all">
+        <nuxt-link to="/" class="hover:scale select-none outline-none transition-all duration-500">
           <img
             v-motion :initial="{ opacity: 0 }"
             :visible="{ opacity: 1 }" :duration="800"
@@ -17,18 +17,18 @@
             alt="Logo" width="40"
             height="40"
           >
-        </NuxtLink>
+        </nuxt-link>
 
         <div class="flex flex-row items-center gap-8 font-semibold tracking-wide">
-          <NuxtLink
-            v-for="link in navLinks" :key="link.link"
-            v-motion :to="link.link"
+          <nuxt-link
+            v-for="link in navLinks" :key="link.url"
+            v-motion :to="link.url"
             :visible="{ opacity: 1, x: 0 }"
             :duration="800" :delay="200"
             class="hidden outline-none hover:underline sm:block"
           >
             {{ link.title }}
-          </NuxtLink>
+          </nuxt-link>
         </div>
       </div>
 
@@ -37,7 +37,10 @@
         :visible="{ opacity: 1 }" :duration="800"
         class="flex flex-row items-center gap-4 font-semibold"
       >
-        <button v-for="language in availableLocales" :key="language" @click="() => setLanguage(language)">
+        <button
+          v-for="language in availableLocales" :key="language"
+          class="outline-none hover:underline" @click="() => setLanguage(language)"
+        >
           {{ t(`locale.${language}`) }}
         </button>
       </div>
@@ -54,9 +57,8 @@ const scrolled = ref(false)
 let lastScrollY = 0
 
 const navLinks = [
-  { link: "#about", title: t("index.navbar.about") },
-  { link: "#projects", title: t("index.navbar.projects") },
-  { link: "#contact", title: t("index.navbar.contact") },
+  { url: "#about", title: t("index.navbar.about") },
+  { url: "#projects", title: t("index.navbar.projects") },
 ]
 
 function handleScroll() {
