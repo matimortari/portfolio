@@ -1,5 +1,3 @@
-import { fileURLToPath } from "node:url"
-
 export default defineNuxtConfig({
   modules: [
     "@nuxt/icon",
@@ -8,9 +6,6 @@ export default defineNuxtConfig({
     "@nuxtjs/tailwindcss",
     "@vueuse/motion/nuxt",
   ],
-  alias: {
-    "#server": fileURLToPath(new URL("./server", import.meta.url)),
-  },
   runtimeConfig: {
     public: {
       baseUrl: process.env.NUXT_PUBLIC_BASE_URL,
@@ -29,6 +24,7 @@ export default defineNuxtConfig({
     baseUrl: process.env.NUXT_PUBLIC_BASE_URL,
     restructureDir: "app/lib",
     vueI18n: "i18n.ts",
+    defaultLocale: "en-US",
     detectBrowserLanguage: {
       useCookie: false,
       alwaysRedirect: true,
@@ -36,8 +32,14 @@ export default defineNuxtConfig({
       fallbackLocale: "en-US",
     },
   },
+  icon: {
+    clientBundle: {
+      scan: true,
+    },
+  },
   tailwindcss: {
     cssPath: "~/assets/styles.css",
+    quiet: true,
   },
   compatibilityDate: "2025-05-24",
 })

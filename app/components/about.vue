@@ -31,14 +31,14 @@
       </h5>
 
       <p
-        v-for="(contact, index) in contacts" :key="index"
+        v-for="(contact, index) in contactLinks" :key="index"
         v-motion :initial="{ opacity: 0, x: -20 }"
         :visible="{ opacity: 1, x: 0 }" :duration="800"
         :delay="200 * Number(index)" class="flex flex-row items-center gap-2 italic"
       >
         <icon :name="contact.icon" size="20" />
         <span>{{ contact.label }}</span>
-        <nuxt-link :to="contact.link" class="text-secondary hover:underline" target="_blank" rel="noopener noreferrer">
+        <nuxt-link :to="contact.url" class="text-secondary hover:underline">
           {{ contact.text }}
         </nuxt-link>
       </p>
@@ -51,12 +51,8 @@
       :visible="{ opacity: 1, y: 0 }" :duration="800"
       :delay="800" class="flex flex-col items-center justify-center gap-4 md:flex-row md:justify-end"
     >
-      <nuxt-link
-        v-for="(resume, index) in resumes" :key="index"
-        :to="resume.link" class="btn"
-        target="_blank" rel="noopener noreferrer"
-      >
-        <icon name="material-symbols:article-shortcut" size="25" class="hover:scale transition-all" />
+      <nuxt-link v-for="(resume, index) in resumeLinks" :key="index" :to="resume.url" class="btn">
+        <icon name="material-symbols:article-shortcut" size="25" />
         {{ t(resume.label) }}
       </nuxt-link>
     </div>
@@ -71,35 +67,35 @@ const sections = [
   "index.about.section2",
 ]
 
-const contacts = [
+const contactLinks = [
   {
     icon: "simple-icons:github",
     label: "GitHub",
     text: "/matimortari",
-    link: "https://github.com/matimortari",
+    url: "https://github.com/matimortari",
   },
   {
     icon: "simple-icons:linkedin",
     label: "LinkedIn",
     text: "/matheus-mortari-19rt",
-    link: "https://linkedin.com/in/matheus-mortari-19rt",
+    url: "https://linkedin.com/in/matheus-mortari-19rt",
   },
   {
     icon: "simple-icons:gmail",
     label: "Email",
     text: "matheus.felipe.19rt@gmail.com",
-    link: "mailto:matheus.felipe.19rt@gmail.com",
+    url: "mailto:matheus.felipe.19rt@gmail.com",
   },
 ]
 
-const resumes = [
+const resumeLinks = [
   {
     label: "index.about.resumeEn",
-    link: "https://matimortari.github.io/statics/cv/cv-en.pdf",
+    url: "https://matimortari.github.io/statics/cv/cv-en.pdf",
   },
   {
     label: "index.about.resumePt",
-    link: "https://matimortari.github.io/statics/cv/cv-pt.pdf",
+    url: "https://matimortari.github.io/statics/cv/cv-pt.pdf",
   },
 ]
 </script>

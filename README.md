@@ -15,9 +15,9 @@ Feel free to explore my work, and don't hesitate to reach out — I'm always see
 These are the technologies I have worked with and feel comfortable using:
 
 - **Programming Languages:** TypeScript, Go, Python.
-- **Web Development:** Vue, Nuxt.js, React, Next.js, TailwindCSS, Pinia.
-- **Backend & Database:** Node.js, PostgreSQL, Prisma.
-- **Development Tools:** VSCode, Postman, ESLint, Git.
+- **Web Development:** Vue, Nuxt.js, TailwindCSS, Pinia.
+- **Backend and Databases:** Node.js, PostgreSQL, Prisma.
+- **Development Tools:** VSCode, Postman, Docker, ESLint, Git.
 - **Cloud Services:** Vercel, Supabase, SonarCloud.
 
 ## 🏗️ My Projects
