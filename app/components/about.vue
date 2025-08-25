@@ -13,7 +13,7 @@
       v-motion :initial="{ opacity: 0, x: -20 }"
       :visible="{ opacity: 1, x: 0 }" :duration="800"
     >
-      <p class="my-4 text-sm text-muted-foreground md:text-sm">
+      <p class="text-muted-foreground my-4 text-sm md:text-sm">
         {{ t(section) }}
       </p>
       <hr v-if="index < sections.length - 1">

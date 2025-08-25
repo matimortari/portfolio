@@ -3,8 +3,8 @@
     <div class="hero-background" />
 
     <div class="scrolling-map absolute inset-x-0 bottom-0 z-0 flex w-[200%] opacity-20">
-      <img src="/assets/map.png" class="w-1/2 select-none md:block">
-      <img src="/assets/map.png" class="w-1/2 select-none md:block">
+      <img src="/assets/map.png" class="w-1/2 select-none md:block" alt="Background scrolling map">
+      <img src="/assets/map.png" class="w-1/2 select-none md:block" alt="Background scrolling map">
     </div>
 
     <div
@@ -26,11 +26,11 @@
       </div>
 
       <div class="flex flex-col items-center justify-center px-10">
-        <p class="max-w-md text-center leading-5 text-muted-foreground">
+        <p class="text-muted-foreground max-w-md text-center leading-5">
           {{ t("index.hero.description") }}
         </p>
 
-        <div class="my-4 flex flex-row items-center justify-center gap-4 text-secondary md:my-8">
+        <div class="text-secondary my-4 flex flex-row items-center justify-center gap-4 md:my-8">
           <nuxt-link v-for="link in contactLinks" :key="link.url" :to="link.url" :title="link.title">
             <icon :name="link.icon" size="25" class="hover:scale transition-all duration-500" />
           </nuxt-link>

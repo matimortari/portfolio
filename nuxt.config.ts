@@ -1,15 +1,17 @@
+import tailwindcss from "@tailwindcss/vite"
+
 export default defineNuxtConfig({
-  modules: [
-    "@nuxt/icon",
-    "@nuxtjs/google-fonts",
-    "@nuxtjs/i18n",
-    "@nuxtjs/tailwindcss",
-    "@vueuse/motion/nuxt",
-  ],
+  modules: ["@nuxt/icon", "@nuxtjs/google-fonts", "@nuxtjs/i18n", "@vueuse/motion/nuxt"],
   runtimeConfig: {
     public: {
       baseUrl: process.env.NUXT_PUBLIC_BASE_URL,
     },
+  },
+  css: ["~/assets/styles.css"],
+  vite: {
+    plugins: [
+      tailwindcss(),
+    ],
   },
   googleFonts: {
     display: "swap",
@@ -36,10 +38,6 @@ export default defineNuxtConfig({
     clientBundle: {
       scan: true,
     },
-  },
-  tailwindcss: {
-    cssPath: "~/assets/styles.css",
-    quiet: true,
   },
   compatibilityDate: "2025-05-24",
 })
