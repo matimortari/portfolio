@@ -1,122 +1,134 @@
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
+@import "tailwindcss";
+
+:root {
+  --background: #08080e;
+  --foreground: #ececec;
+  --primary: #4c4083;
+  --secondary: #605492;
+  --muted: #15151d;
+  --muted-foreground: #c4c4c4;
+  --accent: #27241e;
+  --border: #29253d;
+
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-default);
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+
+@theme {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-danger: var(--danger);
+  --color-accent: var(--accent);
+  --color-border: var(--border);
+
+  --font-default: "Inter", sans-serif;
+  --font-serif: "Merriweather", serif;
+}
 
 @layer base {
-  html {
-    --background: #08080e;
-    --foreground: #ececec;
-    --primary: #4c4083;
-    --secondary: #605492;
-    --accent: #27241e;
-    --muted: #15151d;
-    --muted-foreground: #c4c4c4;
-    --border: #29253d;
-
-    background-color: var(--background);
-    color: var(--foreground);
-    overflow-x: hidden;
-    scroll-behavior: smooth;
-    margin: 0;
-    padding: 0;
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
   }
 
-  * {
-    box-sizing: border-box;
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button,
+  br {
     border-color: var(--border);
-    text-decoration: none;
   }
 }
 
-/* Components layer for custom reusable components */
-@layer components {
-  hr {
-    border-color: var(--border);
-  }
-
-  /* Headers and typography */
-  h1 {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
-    font-weight: 800;
-  }
-  h2 {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
-    font-weight: 800;
-  }
-  h3 {
-    font-size: 1.75rem;
-    line-height: 2rem;
-    font-weight: 700;
-  }
-  h4 {
-    font-size: 1.5rem;
-    line-height: 1.75rem;
-    font-weight: 700;
-  }
-  h5 {
-    font-size: 1rem;
-    line-height: 1.5rem;
-    font-weight: 600;
-  }
-
-  .btn {
-    background-color: var(--muted);
-    color: var(--foreground);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 200px;
-    border-radius: 0.5rem;
-    padding: 0.5rem;
-    border: 1px solid var(--border);
-    gap: 0.5rem;
-    font-weight: 600;
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-    white-space: nowrap;
-    transition: box-shadow 0.5s ease-in-out;
-  }
-  .btn:hover {
-    box-shadow: 2px 2px 0 2px var(--border);
-  }
-  .btn:active {
-    opacity: 0.6;
-    transform: scale(0.98);
-    transition: transform 0.5s ease-in-out;
-  }
-
-  footer {
-    background-color: var(--muted);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 5rem;
-    margin-top: 2.5rem;
-    padding: 1.5rem;
-    border-top-left-radius: 1%;
-    border-top-right-radius: 100%;
-  }
+/* Typography */
+h1 {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 800;
+}
+h2 {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 800;
+}
+h3 {
+  font-size: 1.75rem;
+  line-height: 2rem;
+  font-weight: 700;
+}
+h4 {
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+}
+h5 {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 600;
 }
 
-/* Utilities layer for custom utility classes */
-@layer utilities {
-  ::-webkit-scrollbar {
-    width: 8px;
-  }
-  ::-webkit-scrollbar-thumb {
-    background-color: var(--secondary);
-    border-radius: 10px;
-    border: 2px solid var(--background);
-  }
+.btn {
+  background-color: var(--muted);
+  color: var(--foreground);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  border: 1px solid var(--border);
+  gap: 0.5rem;
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  white-space: nowrap;
+  transition: box-shadow 0.5s ease-in-out;
+}
+.btn:hover {
+  box-shadow: 2px 2px 0 2px var(--border);
+}
+.btn:active {
+  opacity: 0.6;
+  transform: scale(0.98);
+  transition: transform 0.5s ease-in-out;
+}
 
-  ::selection {
-    background: var(--accent);
-  }
+footer {
+  background-color: var(--muted);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 5rem;
+  margin-top: 2.5rem;
+  padding: 1.5rem;
+  border-top-left-radius: 1%;
+  border-top-right-radius: 100%;
+}
 
-  .scale {
-    transform: scale(1.08);
-  }
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--secondary);
+  border-radius: 10px;
+  border: 2px solid var(--background);
+}
+
+::selection {
+  background: var(--accent);
+}
+
+@utility scale {
+  transform: scale(1.08);
 }

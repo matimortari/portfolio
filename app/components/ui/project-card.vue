@@ -5,7 +5,7 @@
     class="flex flex-col items-center gap-2 text-center md:items-start md:text-start"
   >
     <div class="project-container relative mb-2 w-full max-w-[600px]">
-      <img :src="project.image" :alt="project.title" class="absolute bottom-1.5 right-1.5 size-full select-none rounded-lg">
+      <img :src="project.image" :alt="project.title" class="absolute right-1.5 bottom-1.5 size-full rounded-lg select-none">
     </div>
 
     <div
@@ -32,7 +32,7 @@
       :visible="{ opacity: 1, y: 0 }" :duration="800"
       class="flex flex-wrap justify-center gap-1 md:justify-start"
     >
-      <span v-for="skill in project.skills" :key="skill" class="rounded-full bg-accent px-2 py-1 text-xs">
+      <span v-for="skill in project.skills" :key="skill" class="bg-accent rounded-full px-2 py-1 text-xs">
         {{ skill }}
       </span>
     </div>
@@ -40,7 +40,7 @@
     <p
       v-motion :initial="{ opacity: 0, x: 20 }"
       :visible="{ opacity: 1, x: 0 }" :duration="800"
-      class="max-w-xl text-sm text-muted-foreground"
+      class="text-muted-foreground max-w-xl text-sm"
     >
       {{ project.description }}
     </p>

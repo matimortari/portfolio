@@ -7,9 +7,9 @@
       <div
         v-motion :initial="{ opacity: 0 }"
         :visible="{ opacity: 1 }" :duration="800"
-        class="flex flex-row items-center justify-center gap-10 text-foreground"
+        class="text-foreground flex flex-row items-center justify-center gap-10"
       >
-        <nuxt-link to="/" class="hover:scale select-none outline-none transition-all duration-500">
+        <nuxt-link to="/" class="hover:scale transition-all duration-500 outline-none select-none">
           <img
             v-motion :initial="{ opacity: 0 }"
             :visible="{ opacity: 1 }" :duration="800"
@@ -39,7 +39,7 @@
       >
         <button
           v-for="language in availableLocales" :key="language"
-          class="outline-none hover:underline" @click="() => setLanguage(language)"
+          class="outline-none hover:underline cursor-pointer" @click="() => setLanguage(language)"
         >
           {{ t(`locale.${language}`) }}
         </button>
