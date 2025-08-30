@@ -22,8 +22,10 @@
     "about": {
       "title": "Sobre Mim",
       "section1": "Sou desenvolvedor de software e aluno de Análise e Desenvolvimento de Sistemas na Universidade de Passo Fundo (UPF), no Rio Grande do Sul, Brasil. Especializo-me na criação de aplicações web full-stack com interfaces de usuário limpas e dinâmicas, além de sistemas de back-end, como APIs REST e bancos de dados, otimizando meu fluxo de trabalho por meio de processos de automação e ferramentas personalizadas.",
-      "section2": "Sou facilmente adaptável e comprometido em me manter atualizado nas tendências da área, ao mesmo tempo em que mantenho uma base em tecnologias tradicionais e confiáveis. Sinta-se à vontade para explorar meu trabalho e não hesite em entrar em contato — estou sempre buscando conectar-me, aprender e colaborar!",
-      "contact": "Entre em Contato",
+      "section2": "Sou facilmente adaptável e comprometido em me manter atualizado nas tendências da área, ao mesmo tempo em que mantenho uma base em tecnologias tradicionais e confiáveis. Sinta-se à vontade para explorar meu trabalho e não hesite em entrar em contato — estou sempre buscando conectar-me, aprender e colaborar!"
+    },
+    "contact": {
+      "title": "Entre em Contato",
       "resumeEn": "Currículo - Inglês",
       "resumePt": "Currículo - Português"
     },
@@ -86,6 +88,26 @@
         }
       ]
     },
+    "experience": {
+      "title": "Experiência",
+      "items": [
+        {
+          "role": "Desenvolvedor Front End",
+          "company": "Siga Software",
+          "period": "05/2025 – Presente",
+          "description": "Desenvolvo e mantenho aplicações web interativas e sistemas CRM para o setor imobiliário utilizando Vue, Nuxt.js e Tailwind CSS, garantindo performance, SEO e acessibilidade. Participo de reuniões de planejamento e revisões de código, promovo padrões de código com ESLint, documento processos técnicos e gerencio fluxos de projeto com Git.",
+          "stack": ["Nuxt", "Vue", "TailwindCSS", "TypeScript", "HTML", "CSS", "ESLint", "Git"]
+        },
+        {
+          "role": "Desenvolvedor de Software Full-Stack",
+          "company": "Independente",
+          "period": "10/2023 – Presente",
+          "description": "Construo aplicações web no ecossistema Vue, utilizando Nuxt.js para projetos em produção. Desenvolvo sistemas back-end em Node.js com APIs REST e autenticação integrados ao PostgreSQL. Realizo testes e documentação de APIs com Postman, crio CLIs em Go, gerencio projetos com Git e configuro ambientes de produção na Vercel.",
+          "stack": ["Nuxt", "Vue", "TailwindCSS", "Node.js", "PostgreSQL", "Go", "Postman", "Git", "Vercel"]
+        }
+      ]
+
+    },
     "projects": {
       "title": "Projetos",
       "items": [
@@ -93,16 +115,7 @@
           "title": "LinkNest",
           "description": "Um website agregador de links que permite aos usuários criar uma página personalizada para compartilhar links de suas redes sociais, websites e mais. O usuário pode customizar a aparência da página e checar dados analíticos.",
           "image": "https://matimortari.github.io/statics/branding/linknest/exports/og-image.png",
-          "skills": [
-            "TypeScript",
-            "Nuxt.js",
-            "Vue",
-            "TailwindCSS",
-            "Pinia",
-            "Chart.js",
-            "OAuth",
-            "Prisma"
-          ],
+          "stack": ["TypeScript", "Nuxt.js", "Vue", "TailwindCSS", "Pinia", "Chart.js", "OAuth", "Prisma"],
           "demoUrl": "https://linknest-live.vercel.app",
           "sourceUrl": "https://github.com/matimortari/linknest"
         },
@@ -110,15 +123,7 @@
           "title": "SecretKeepR",
           "description": "Um website projetado para ajudar usuários e organizações a gerenciar e compartilhar variáveis de ambiente com segurança. Ele oferece controles de acesso para gerenciamento de projetos, usuários e segredos criptografados entre várias organizações.",
           "image": "https://matimortari.github.io/statics/branding/secretkeepr/exports/og-image.png",
-          "skills": [
-            "TypeScript",
-            "Nuxt.js",
-            "Vue",
-            "TailwindCSS",
-            "Pinia",
-            "OAuth",
-            "Prisma"
-          ],
+          "stack": ["TypeScript", "Nuxt.js", "Vue", "TailwindCSS", "Pinia", "OAuth", "Prisma"],
           "demoUrl": "https://secretkeepr.vercel.app",
           "sourceUrl": "https://github.com/matimortari/secretkeepr"
         }

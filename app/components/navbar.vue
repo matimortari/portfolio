@@ -25,7 +25,7 @@
             v-motion :to="link.url"
             :visible="{ opacity: 1, x: 0 }"
             :duration="800" :delay="200"
-            class="hidden outline-none hover:underline sm:block"
+            class="hidden outline-none hover:underline md:block"
           >
             {{ link.title }}
           </nuxt-link>
@@ -39,7 +39,7 @@
       >
         <button
           v-for="language in availableLocales" :key="language"
-          class="outline-none hover:underline cursor-pointer" @click="() => setLanguage(language)"
+          class="cursor-pointer outline-none hover:underline" @click="() => setLanguage(language)"
         >
           {{ t(`locale.${language}`) }}
         </button>

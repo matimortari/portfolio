@@ -1,24 +1,22 @@
 <template>
-  <section id="stack" class="flex-1 text-center md:text-start">
-    <h3
-      v-motion :initial="{ opacity: 0, y: -20 }"
-      :visible="{ opacity: 1, y: 0 }" :duration="800"
-      class="my-10 font-serif"
-    >
+  <section id="stack" class="flex flex-col items-center justify-center gap-4 text-sm md:items-start">
+    <h5 v-motion :initial="{ opacity: 0, y: -20 }" :visible="{ opacity: 1, y: 0 }" :duration="800">
       {{ t("index.stack.title") }}
-    </h3>
+    </h5>
 
-    <div
-      v-motion :initial="{ opacity: 0, y: -40 }"
-      :visible="{ opacity: 1, y: 0 }" :duration="800"
-      :delay="200" class="flex flex-col gap-2 md:grid md:grid-cols-3"
-    >
-      <UiStackCard
-        v-for="(item, index) in tm('index.stack.items')" :key="item.name"
-        v-motion :stack-item="item"
-        :initial="{ opacity: 0, y: 20 }" :visible="{ opacity: 1, y: 0 }"
-        :duration="400" :delay="100 * Number(index)"
-      />
+    <div class="flex flex-wrap justify-center gap-1 md:justify-start">
+      <div
+        v-for="(item, index) in tm('index.stack.items')" :key="index"
+        v-motion class="label"
+        :title="item.description" :initial="{ opacity: 0, y: 20 }"
+        :visible="{ opacity: 1, y: 0 }" :duration="400"
+        :delay="100 * Number(index)"
+      >
+        <nuxt-link :to="item.url" class="hover:scale flex flex-row items-center gap-1 transition-transform duration-500" external>
+          <icon :name="item.icon" size="25" />
+          <span>{{ (item.name) }}</span>
+        </nuxt-link>
+      </div>
     </div>
   </section>
 </template>

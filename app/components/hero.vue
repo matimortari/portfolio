@@ -2,9 +2,9 @@
   <section id="hero" class="relative flex min-h-screen items-center justify-center overflow-hidden">
     <div class="hero-background" />
 
-    <div class="scrolling-map absolute inset-x-0 bottom-0 z-0 flex w-[200%] opacity-20">
-      <img src="/assets/map.png" class="w-1/2 select-none md:block" alt="Background scrolling map">
-      <img src="/assets/map.png" class="w-1/2 select-none md:block" alt="Background scrolling map">
+    <div class="scrolling-map absolute inset-x-0 bottom-0 z-0 hidden w-[200%] opacity-20 md:flex">
+      <img src="/assets/map.png" class="w-1/2 select-none" alt="Background scrolling map">
+      <img src="/assets/map.png" class="w-1/2 select-none" alt="Background scrolling map">
     </div>
 
     <div
@@ -12,15 +12,15 @@
       :visible="{ opacity: 1, y: 0 }" :duration="1000"
       class="relative flex flex-col items-center gap-2 px-4 py-24"
     >
-      <div class="relative size-36 select-none md:size-40 xl:size-44">
+      <div class="relative size-36 select-none 2xl:size-44">
         <img src="/assets/avatar.png" alt="Avatar" class="avatar absolute inset-0">
       </div>
 
       <div class="m-4 flex flex-col gap-2 text-center">
-        <h1 class="font-serif text-3xl xl:text-4xl">
+        <h1>
           {{ t("index.hero.title") }}
         </h1>
-        <h2 class="font-serif text-xl xl:text-2xl">
+        <h2>
           {{ t("index.hero.subtitle") }}
         </h2>
       </div>
@@ -30,9 +30,9 @@
           {{ t("index.hero.description") }}
         </p>
 
-        <div class="text-secondary my-4 flex flex-row items-center justify-center gap-4 md:my-8">
-          <nuxt-link v-for="link in contactLinks" :key="link.url" :to="link.url" :title="link.title">
-            <icon :name="link.icon" size="25" class="hover:scale transition-all duration-500" />
+        <div class="text-secondary my-4 flex flex-row items-center justify-center gap-2 md:my-8">
+          <nuxt-link v-for="link in contactLinks" :key="link.url" :to="link.url" :title="link.label">
+            <icon :name="link.icon" size="30" class="hover:scale transition-all duration-500" />
           </nuxt-link>
         </div>
       </div>
@@ -44,9 +44,9 @@
 const { t } = useI18n()
 
 const contactLinks = [
-  { url: "https://github.com/matimortari", icon: "simple-icons:github", title: "GitHub" },
-  { url: "https://linkedin.com/in/matheus-mortari-19rt", icon: "simple-icons:linkedin", title: "LinkedIn" },
-  { url: "mailto:matheus.felipe.19rt@gmail.com", icon: "simple-icons:gmail", title: "Email" },
+  { url: "https://github.com/matimortari", icon: "lineicons:github", label: "GitHub" },
+  { url: "https://linkedin.com/in/matheus-mortari-19rt", icon: "lineicons:linkedin", label: "LinkedIn" },
+  { url: "mailto:matheus.felipe.19rt@gmail.com", icon: "material-symbols:mail-rounded", label: "Email" },
 ]
 </script>
 

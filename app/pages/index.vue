@@ -2,11 +2,8 @@
   <Navbar />
   <Hero />
 
-  <div class="m-8 flex flex-col items-center justify-center gap-8 md:m-16">
-    <div class="flex w-full flex-col justify-between gap-8 md:flex-row md:gap-16">
-      <About />
-      <Stack />
-    </div>
+  <div class="m-8 flex flex-col items-center justify-center gap-4 md:m-32">
+    <About />
     <Projects />
   </div>
 
