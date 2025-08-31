@@ -7,7 +7,9 @@
     <Projects />
   </div>
 
-  <footer id="footer" class="footer-container" />
+  <footer class="relative">
+    <img src="/assets/footer-bg.svg" alt="Footer Background" class="pointer-events-none absolute bottom-0 -z-10 w-full opacity-20 select-none">
+  </footer>
 </template>
 
 <script setup lang="ts">
