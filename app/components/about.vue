@@ -6,8 +6,8 @@
     <hr class="w-full">
   </header>
 
-  <div class="my-4 flex w-full flex-col justify-between gap-8 md:flex-row md:gap-16">
-    <div class="flex flex-col gap-4 text-center md:w-2/3 md:text-start">
+  <div class="my-8 flex w-full flex-col justify-between gap-8 md:flex-row md:gap-20">
+    <div class="flex flex-col gap-12 text-center md:w-2/3 md:text-start">
       <section id="about" class="text-center md:text-start">
         <p
           v-for="(section, index) in sections" :key="index"
@@ -20,7 +20,7 @@
       <Experience />
     </div>
 
-    <div class="flex flex-col gap-4 text-center md:w-1/3 md:text-start">
+    <div class="mb-8 flex flex-col gap-8 text-center md:w-1/3 md:text-start">
       <Stack />
       <hr class="w-full">
       <Contact />

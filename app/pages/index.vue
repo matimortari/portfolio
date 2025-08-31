@@ -2,7 +2,7 @@
   <Navbar />
   <Hero />
 
-  <div class="m-8 flex flex-col items-center justify-center gap-4 md:m-32">
+  <div class="m-8 flex flex-col items-center justify-center md:m-32">
     <About />
     <Projects />
   </div>
