@@ -1,10 +1,6 @@
 {
   "locale.en-US": "EN",
   "locale.pt-BR": "PT",
-  "locale.dir": "ltr",
-  "site": {
-    "name": "Matheus Mortari — Full-Stack Developer"
-  },
   "index": {
     "meta": {
       "title": "Matheus Mortari — Full-Stack Developer",
@@ -32,60 +28,15 @@
     "stack": {
       "title": "Tech Stack",
       "items": [
-        {
-          "name": "TypeScript",
-          "description": "Modern, statically typed superset of the JavaScript programming language.",
-          "icon": "lineicons:typescript",
-          "url": "https://www.typescriptlang.org"
-        },
-        {
-          "name": "Node.js",
-          "description": "JavaScript runtime environment for server-side applications.",
-          "icon": "lineicons:nodejs",
-          "url": "https://nodejs.org"
-        },
-        {
-          "name": "Vue",
-          "description": "Progressive JavaScript framework for building user interfaces.",
-          "icon": "lineicons:vuejs",
-          "url": "https://vuejs.org"
-        },
-        {
-          "name": "Nuxt.js",
-          "description": "Full-stack framework for building modern Vue.js applications.",
-          "icon": "lineicons:nuxt",
-          "url": "https://nuxtjs.org"
-        },
-        {
-          "name": "TailwindCSS",
-          "description": "Utility-first CSS framework for rapid and efficient UI development.",
-          "icon": "lineicons:tailwindcss",
-          "url": "https://tailwindcss.com"
-        },
-        {
-          "name": "Prisma",
-          "description": "Database access toolkit and ORM for TypeScript applications.",
-          "icon": "lineicons:prisma",
-          "url": "https://prisma.io"
-        },
-        {
-          "name": "PostgreSQL",
-          "description": "Relational database management system with advanced features.",
-          "icon": "lineicons:postgresql",
-          "url": "https://www.postgresql.org"
-        },
-        {
-          "name": "Go",
-          "description": "Compiled programming language, designed for simplicity and efficiency.",
-          "icon": "lineicons:go",
-          "url": "https://go.dev"
-        },
-        {
-          "name": "Git",
-          "description": "Distributed version control system for source code management.",
-          "icon": "lineicons:git",
-          "url": "https://git-scm.com"
-        }
+        { "name": "TypeScript", "description": "Modern, statically typed superset of the JavaScript programming language." },
+        { "name": "Node.js", "description": "JavaScript runtime environment for server-side applications." },
+        { "name": "Vue", "description": "Progressive JavaScript framework for building user interfaces." },
+        { "name": "Nuxt.js", "description": "Full-stack framework for building modern Vue.js applications." },
+        { "name": "TailwindCSS", "description": "Utility-first CSS framework for rapid and efficient UI development." },
+        { "name": "Prisma", "description": "Database access toolkit and ORM for TypeScript applications." },
+        { "name": "PostgreSQL", "description": "Relational database management system with advanced features." },
+        { "name": "Go", "description": "Compiled programming language, designed for simplicity and efficiency." },
+        { "name": "Git", "description": "Distributed version control system for source code management." }
       ]
     },
     "experience": {
@@ -94,16 +45,14 @@
         {
           "role": "Frontend Developer",
           "company": "Siga Software",
-          "period": "05/2025 – Present",
-          "description": "Develop and maintain highly interactive web applications and CRM systems for the real estate sector using Vue, Nuxt.js, and Tailwind CSS, ensuring performance, SEO, and accessibility compliance. Collaborate with developers in planning meetings and code reviews, enforce coding standards with ESLint, and manage project workflows using Git.",
-          "stack": ["Nuxt", "Vue", "TailwindCSS", "TypeScript", "HTML", "CSS", "ESLint", "Git"]
+          "period": "05/2025 - Present",
+          "description": "Building interactive web apps and CRM systems for real estate using Vue, Nuxt.js, and Tailwind CSS. Focus on performance, SEO, and accessibility, while collaborating on code reviews and keeping the codebase clean."
         },
         {
-          "role": "Full-Stack Software Developer",
+          "role": "Full-Stack Developer",
           "company": "Independent",
-          "period": "10/2023 – Present",
-          "description": "Build web applications within the Vue ecosystem, leveraging Nuxt.js for production-ready projects. Develop Node.js back-end systems with REST APIs and PostgreSQL, integrate authentication, and document APIs with Postman. Configure production environments on Vercel and create CLIs with Go.",
-          "stack": ["Nuxt", "Vue", "TailwindCSS", "Node.js", "PostgreSQL", "Go", "Postman", "Git", "Vercel"]
+          "period": "10/2023 - Present",
+          "description": "Building web apps with Vue and Nuxt.js, designing REST APIs and PostgreSQL databases, and handling deployments. Also make small CLIs and tools for added workflow efficiency."
         }
       ]
 
@@ -111,22 +60,8 @@
     "projects": {
       "title": "Projects",
       "items": [
-        {
-          "title": "LinkNest",
-          "description": "A link aggregator website that allows users to create a personalized landing page to share links to their social media, websites, and more. The user can customize the page appearance, and check analytics data.",
-          "image": "https://matimortari.github.io/statics/branding/linknest/exports/og-image.png",
-          "stack": ["TypeScript", "Nuxt.js", "Vue", "TailwindCSS", "Pinia", "Chart.js", "OAuth", "Prisma"],
-          "demoUrl": "https://linknest-live.vercel.app",
-          "sourceUrl": "https://github.com/matimortari/linknest"
-        },
-        {
-          "title": "SecretKeepR",
-          "description": "A secrets manager website designed to help users and organizations securely manage and share environment variables. It provides access controls for managing projects, users, and encrypted secrets across multiple organizations.",
-          "image": "https://matimortari.github.io/statics/branding/secretkeepr/exports/og-image.png",
-          "stack": ["TypeScript", "Nuxt.js", "Vue", "TailwindCSS", "Pinia", "OAuth", "Prisma"],
-          "demoUrl": "https://secretkeepr.vercel.app",
-          "sourceUrl": "https://github.com/matimortari/secretkeepr"
-        }
+        { "title": "LinkNest", "description": "A link aggregator website that allows users to create a personalized landing page to share links to their social media, websites, and more. The user can customize the page appearance, and check analytics data." },
+        { "title": "SecretKeepR", "description": "A secrets manager website designed to help users and organizations securely manage and share environment variables. It provides access controls for managing projects, users, and encrypted secrets across multiple organizations." }
       ]
     }
   }

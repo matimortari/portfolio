@@ -13,9 +13,8 @@
           <img
             v-motion :initial="{ opacity: 0 }"
             :visible="{ opacity: 1 }" :duration="800"
-            :delay="200" src="/assets/logo.png"
-            alt="Logo" width="40"
-            height="40"
+            src="/assets/logo.png" alt="Logo"
+            width="40" height="40"
           >
         </nuxt-link>
 
@@ -23,8 +22,7 @@
           <nuxt-link
             v-for="link in navLinks" :key="link.url"
             v-motion :to="link.url"
-            :visible="{ opacity: 1, x: 0 }"
-            :duration="800" :delay="200"
+            :visible="{ opacity: 1, x: 0 }" :duration="800"
             class="hidden outline-none hover:underline md:block"
           >
             {{ link.title }}
@@ -56,10 +54,10 @@ const scrolled = ref(false)
 
 let lastScrollY = 0
 
-const navLinks = [
+const navLinks = computed(() => [
   { url: "#about", title: t("index.navbar.about") },
   { url: "#projects", title: t("index.navbar.projects") },
-]
+])
 
 function handleScroll() {
   const currentY = window.scrollY
@@ -70,10 +68,9 @@ function handleScroll() {
 
 onMounted(async () => {
   const savedLang = localStorage.getItem("nuxt-lang")
-  if (savedLang) {
-    locale.value = savedLang
+  if (savedLang && (savedLang === "en-US" || savedLang === "pt-BR")) {
+    locale.value = savedLang as "en-US" | "pt-BR"
     await nextTick()
-    document.documentElement.dir = t("locale.dir")
   }
 
   lastScrollY = window.scrollY
@@ -86,9 +83,8 @@ onBeforeUnmount(() => {
 })
 
 async function setLanguage(language: string) {
-  locale.value = language
+  locale.value = language as "en-US" | "pt-BR"
   localStorage.setItem("nuxt-lang", language)
   await nextTick()
-  document.documentElement.dir = t("locale.dir")
 }
 </script>

@@ -17,7 +17,7 @@ const { t } = useI18n()
 
 useHead({
   title: ("index.meta.title"),
-  link: [{ rel: "canonical", href: "https://matheus-mortari.vercel.app" }, { rel: "icon", href: "/favicon.ico" }],
+  link: [{ rel: "canonical", href: "https://matheus-mortari.vercel.app" }, { rel: "icon", href: "/favicon.svg" }],
   meta: [
     { name: "description", content: t("index.meta.description") },
     { property: "og:title", content: ("index.meta.title") },
