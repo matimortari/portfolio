@@ -12,7 +12,7 @@ const { locale, t } = useI18n()
 
 if (import.meta.client) {
   const storedLanguage = localStorage.getItem("nuxt-lang")
-  if (storedLanguage && storedLanguage !== "en-US") {
+  if (storedLanguage === "en-US" || storedLanguage === "pt-BR") {
     locale.value = storedLanguage
   }
 }
@@ -20,12 +20,10 @@ if (import.meta.client) {
 useHead({
   htmlAttrs: {
     lang: locale,
-    dir: computed(() => {
-      return t("locale.dir") as "ltr" | "rtl" | "auto"
-    }),
+    dir: "ltr",
   },
   titleTemplate() {
-    return `${t("site.name")}`
+    return `${t("index.meta.title")}`
   },
 })
 </script>

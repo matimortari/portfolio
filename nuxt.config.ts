@@ -23,12 +23,17 @@ export default defineNuxtConfig({
     },
   },
   i18n: {
-    baseUrl: process.env.NUXT_PUBLIC_BASE_URL,
     restructureDir: "app/lib",
-    vueI18n: "i18n.ts",
+    baseUrl: process.env.NUXT_PUBLIC_BASE_URL,
+    locales: [
+      { code: "en-US", language: "en-US", file: "en-US.json" },
+      { code: "pt-BR", language: "pt-BR", file: "pt-BR.json" },
+    ],
     defaultLocale: "en-US",
+    strategy: "no_prefix",
     detectBrowserLanguage: {
       useCookie: false,
+      cookieKey: "nuxt-lang",
       alwaysRedirect: true,
       redirectOn: "root",
       fallbackLocale: "en-US",

@@ -4,10 +4,9 @@
   --background: #08080e;
   --foreground: #ececec;
   --primary: #4c4083;
-  --secondary: #605492;
-  --muted: #15151d;
+  --secondary: #675c92;
+  --muted: #2f2f3d;
   --muted-foreground: #c4c4c4;
-  --accent: #27241e;
   --border: #29253d;
 
   background-color: var(--background);
@@ -27,7 +26,6 @@
   --color-muted: var(--muted);
   --color-muted-foreground: var(--muted-foreground);
   --color-danger: var(--danger);
-  --color-accent: var(--accent);
   --color-border: var(--border);
 
   --font-default: "Inter", sans-serif;
@@ -95,6 +93,7 @@ h6 {
   padding-block: 0.25rem;
   border-radius: 0.375rem;
   font-size: 0.75rem;
+  user-select: none;
 }
 
 .btn {
@@ -115,7 +114,7 @@ h6 {
   transition: box-shadow 0.5s ease-in-out;
 }
 .btn:hover {
-  box-shadow: 2px 2px 0 2px var(--border);
+  box-shadow: 1px 1px 0 2px var(--primary);
 }
 .btn:active {
   opacity: 0.6;
@@ -133,7 +132,8 @@ h6 {
 }
 
 ::selection {
-  background: var(--accent);
+  background: color-mix(in srgb, var(--secondary) 50%, transparent);
+  color: var(--foreground);
 }
 
 @utility scale {

@@ -11,7 +11,7 @@
         :visible="{ opacity: 1, x: 0 }" :duration="800"
         :delay="200 * Number(index)" class="flex flex-row items-center gap-2 italic"
       >
-        <icon :name="contact.icon" size="25" />
+        <icon :name="contact.icon" size="25" class="shrink-0" />
         <span>{{ contact.label }}</span>
         <nuxt-link :to="contact.url" class="text-secondary hover:underline">
           {{ contact.text }}
@@ -28,7 +28,7 @@
         :delay="200 * Number(index)" :to="resume.url"
         class="btn flex w-full items-center justify-center gap-2 text-sm italic hover:underline"
       >
-        <icon name="material-symbols:article-shortcut" size="25" />
+        <icon name="material-symbols:article-shortcut" size="25" class="shrink-0" />
         <span>{{ t(resume.label) }}</span>
       </nuxt-link>
     </div>
