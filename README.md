@@ -4,12 +4,6 @@ Welcome to my web portfolio! This website showcases my projects and experiences 
 
 [**Check it out!** 🔍](https://matheus-mortari.vercel.app)
 
-## 🌐 About Me
-
-I am a software developer and Systems Analysis & Development student at the University of Passo Fundo (UPF), based in Rio Grande do Sul, Brazil. Through my studies and project work, I have specialized in creating full-stack web applications with clean, dynamic user interfaces, along with back-end systems such as REST APIs and databases. I have optimized my workflow by employing automation processes and custom tooling.
-
-Feel free to explore my work, and don't hesitate to reach out — I'm always seeking to connect, learn and collaborate!
-
 ## 🛠️ My Tech Stack
 
 These are the technologies I have worked with and feel comfortable using:

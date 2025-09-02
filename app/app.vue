@@ -19,7 +19,7 @@ if (import.meta.client) {
 
 useHead({
   htmlAttrs: {
-    lang: locale,
+    lang: locale.value,
     dir: "ltr",
   },
   titleTemplate() {

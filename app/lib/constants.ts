@@ -53,14 +53,6 @@ export const projectItems: ProjectItemType[] = [
   },
 ]
 
-export interface ExperienceItemType {
-  role: string // i18n key
-  company: string // i18n key
-  period: string
-  description: string // i18n key
-  stack: string[]
-}
-
 export const experienceItems: ExperienceItemType[] = [
   {
     role: "index.experience.items.0.role",
@@ -74,6 +66,6 @@ export const experienceItems: ExperienceItemType[] = [
     company: "index.experience.items.1.company",
     period: "index.experience.items.1.period",
     description: "index.experience.items.1.description",
-    stack: ["Nuxt.js", "Vue", "TailwindCSS", "Node.js", "PostgreSQL", "Go", "Postman", "Git", "Vercel"],
+    stack: ["Nuxt.js", "Vue", "TailwindCSS", "TypeScript", "Node.js", "PostgreSQL", "Go", "Postman", "Git", "Vercel"],
   },
 ]
