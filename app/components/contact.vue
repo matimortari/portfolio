@@ -1,8 +1,11 @@
 <template>
-  <section id="contact" class="flex flex-col items-center justify-center gap-4 text-sm md:items-start">
-    <h5 v-motion :initial="{ opacity: 0, y: -10 }" :visible="{ opacity: 1, y: 0 }" :duration="800">
-      {{ t("index.contact.title") }}
-    </h5>
+  <section id="contact" class="flex flex-col items-center justify-center gap-6 py-4 text-sm md:items-start">
+    <header class="flex w-full flex-row items-center gap-6 whitespace-nowrap">
+      <h4 v-motion :initial="{ opacity: 0, y: -10 }" :visible="{ opacity: 1, y: 0 }" :duration="800">
+        {{ t("index.contact.title") }}
+      </h4>
+      <hr class="w-full">
+    </header>
 
     <div class="flex flex-col items-center gap-2 md:items-start">
       <p

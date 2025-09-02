@@ -1,6 +1,6 @@
 <template>
   <nav
-    class="fixed top-0 z-50 w-full px-4 py-2 transition-transform duration-500"
+    class="fixed top-0 z-50 w-full p-4 transition-transform duration-500"
     :class="[showNavbar ? 'translate-y-0' : '-translate-y-full', scrolled ? 'backdrop-blur-sm' : '']"
   >
     <div class="flex flex-row items-center justify-between">

@@ -1,12 +1,12 @@
 <template>
-  <header class="flex w-full flex-row items-center gap-4 whitespace-nowrap">
+  <header class="flex w-full flex-row items-center gap-8 whitespace-nowrap">
     <hr class="w-full">
     <h3 v-motion :initial="{ opacity: 0, y: -20 }" :visible="{ opacity: 1, y: 0 }" :duration="800">
       {{ t("index.projects.title") }}
     </h3>
   </header>
 
-  <section id="projects" class="my-8 flex w-full flex-col justify-center gap-8 md:flex-row md:gap-24 2xl:gap-32">
+  <section id="projects" class="my-8 flex w-full flex-col justify-center gap-12 md:flex-row md:gap-24 2xl:justify-evenly">
     <div
       v-for="(project, index) in projectItems" :key="index"
       v-motion :initial="{ opacity: 0, y: 40 }"
@@ -60,8 +60,6 @@
 </template>
 
 <script setup lang="ts">
-import { projectItems } from "~/lib/constants"
-
 const { t } = useI18n()
 </script>
 
@@ -71,10 +69,12 @@ const { t } = useI18n()
   border-radius: 1rem;
   aspect-ratio: 2 / 1;
   width: 100%;
+  filter: brightness(0.7);
   box-shadow: 2px 2px 0 2px var(--primary);
   transition: all 0.5s ease-in-out;
 }
 .project-container:hover {
+  filter: brightness(1);
   transform: scale(1.02);
 }
 .project-container img {

@@ -16,7 +16,7 @@
 const { t } = useI18n()
 
 useHead({
-  title: ("index.meta.title"),
+  title: t("index.meta.title"),
   link: [{ rel: "canonical", href: "https://matheus-mortari.vercel.app" }, { rel: "icon", href: "/favicon.svg" }],
   meta: [
     { name: "description", content: t("index.meta.description") },
@@ -30,9 +30,9 @@ useHead({
 })
 
 useSeoMeta({
-  title: ("index.meta.title"),
+  title: t("index.meta.title"),
   description: t("index.meta.description"),
-  ogTitle: ("index.meta.title"),
+  ogTitle: t("index.meta.title"),
   ogDescription: t("index.meta.description"),
   ogImage: "https://matheus-mortari.vercel.app/og-image.png",
   ogUrl: "https://matheus-mortari.vercel.app",

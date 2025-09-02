@@ -38,7 +38,7 @@ export const projectItems: ProjectItemType[] = [
   {
     title: "index.projects.items.0.title",
     description: "index.projects.items.0.description",
-    image: "https://matimortari.github.io/statics/branding/exports/linknest/og-image.png",
+    image: "https://linknest-live.vercel.app/og-image.png",
     stack: ["TypeScript", "Nuxt.js", "Vue", "TailwindCSS", "Pinia", "Chart.js", "OAuth", "Prisma"],
     demoUrl: "https://linknest-live.vercel.app",
     sourceUrl: "https://github.com/matimortari/linknest",
@@ -46,7 +46,7 @@ export const projectItems: ProjectItemType[] = [
   {
     title: "index.projects.items.1.title",
     description: "index.projects.items.1.description",
-    image: "https://matimortari.github.io/statics/branding/exports/secretkeepr/og-image.png",
+    image: "https://secretkeepr.vercel.app/og-image.png",
     stack: ["TypeScript", "Nuxt.js", "Vue", "TailwindCSS", "Pinia", "OAuth", "Prisma"],
     demoUrl: "https://secretkeepr.vercel.app",
     sourceUrl: "https://github.com/matimortari/secretkeepr",
