@@ -1,8 +1,11 @@
 <template>
-  <section id="stack" class="flex flex-col items-center justify-center gap-4 text-sm md:items-start">
-    <h5 v-motion :initial="{ opacity: 0, y: -20 }" :visible="{ opacity: 1, y: 0 }" :duration="800">
-      {{ t("index.stack.title") }}
-    </h5>
+  <section id="stack" class="flex flex-col items-center justify-center gap-8 text-sm md:items-start">
+    <header class="flex w-full flex-row items-center gap-6 whitespace-nowrap">
+      <h4 v-motion :initial="{ opacity: 0, y: -20 }" :visible="{ opacity: 1, y: 0 }" :duration="800">
+        {{ t("index.stack.title") }}
+      </h4>
+      <hr class="w-full">
+    </header>
 
     <div class="flex flex-wrap justify-center gap-1 md:justify-start">
       <div
@@ -22,7 +25,5 @@
 </template>
 
 <script setup lang="ts">
-import { stackItems } from "~/lib/constants"
-
 const { t } = useI18n()
 </script>

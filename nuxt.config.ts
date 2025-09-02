@@ -2,6 +2,9 @@ import tailwindcss from "@tailwindcss/vite"
 
 export default defineNuxtConfig({
   modules: ["@nuxt/icon", "@nuxtjs/google-fonts", "@nuxtjs/i18n", "@vueuse/motion/nuxt"],
+  imports: {
+    dirs: ["lib", "lib/constants", "lib/locales"],
+  },
   runtimeConfig: {
     public: {
       baseUrl: process.env.NUXT_PUBLIC_BASE_URL,

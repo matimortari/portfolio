@@ -10,7 +10,7 @@
     <div
       v-motion :initial="{ opacity: 0, y: -40 }"
       :visible="{ opacity: 1, y: 0 }" :duration="1000"
-      class="relative flex flex-col items-center gap-2 px-4 py-24"
+      class="relative flex flex-col items-center gap-4 px-4 py-24"
     >
       <div class="relative size-36 select-none 2xl:size-44">
         <img src="/assets/avatar.png" alt="Avatar" class="avatar absolute inset-0">
