@@ -71,7 +71,7 @@ const { t } = useI18n()
   border-radius: 1rem;
   aspect-ratio: 2 / 1;
   width: 100%;
-  box-shadow: 4px 4px 0 1px var(--primary);
+  box-shadow: 2px 2px 0 2px var(--primary);
   transition: all 0.5s ease-in-out;
 }
 .project-container:hover {
@@ -79,7 +79,7 @@ const { t } = useI18n()
 }
 .project-container img {
   border-radius: 1rem;
-  border: 4px solid var(--secondary);
+  border: 3px solid var(--muted);
   width: 100%;
   height: 100%;
   object-fit: cover;
