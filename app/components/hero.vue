@@ -72,7 +72,6 @@ const contactLinks = [
   animation: float 2s ease-in-out infinite;
 }
 
-/* Keyframe animation for floating effect */
 @keyframes float {
   0%,
   100% {
@@ -83,7 +82,6 @@ const contactLinks = [
   }
 }
 
-/* Keyframe animation for scrolling map effect */
 @keyframes scroll {
   0% {
     transform: translateX(0);
