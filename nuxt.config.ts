@@ -1,21 +1,18 @@
 import tailwindcss from "@tailwindcss/vite"
 
 export default defineNuxtConfig({
+  compatibilityDate: "2025-09-05",
   modules: ["@nuxt/icon", "@nuxtjs/google-fonts", "@nuxtjs/i18n", "@vueuse/motion/nuxt"],
-  imports: {
-    dirs: ["lib", "lib/constants", "lib/locales"],
-  },
+  imports: { dirs: ["lib/**"] },
   runtimeConfig: {
     public: {
       baseUrl: process.env.NUXT_PUBLIC_BASE_URL,
     },
   },
-  css: ["~/assets/styles.css"],
   vite: {
-    plugins: [
-      tailwindcss(),
-    ],
+    plugins: [tailwindcss()],
   },
+  css: ["~/assets/styles.css"],
   googleFonts: {
     display: "swap",
     prefetch: true,
@@ -43,9 +40,7 @@ export default defineNuxtConfig({
     },
   },
   icon: {
-    clientBundle: {
-      scan: true,
-    },
+    mode: "svg",
+    clientBundle: { scan: true },
   },
-  compatibilityDate: "2025-05-24",
 })
