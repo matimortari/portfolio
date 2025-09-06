@@ -6,7 +6,7 @@
     </h3>
   </header>
 
-  <section id="projects" class="my-8 flex w-full flex-col justify-center gap-12 md:flex-row md:gap-24 2xl:justify-evenly">
+  <section id="projects" class="my-8 flex w-full flex-col justify-center gap-12 md:flex-row md:gap-20 2xl:justify-evenly">
     <div
       v-for="(project, index) in projectItems" :key="index"
       v-motion :initial="{ opacity: 0, y: 40 }"

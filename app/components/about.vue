@@ -39,5 +39,6 @@ const { t } = useI18n()
 const sections = [
   "index.about.section1",
   "index.about.section2",
+  "index.about.section3",
 ]
 </script>
