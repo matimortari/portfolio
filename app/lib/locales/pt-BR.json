@@ -20,8 +20,9 @@
     },
     "about": {
       "title": "Sobre Mim",
-      "section1": "Sou desenvolvedor de software e estudante de Análise e Desenvolvimento de Sistemas na Universidade de Passo Fundo (UPF), no Rio Grande do Sul. Me especializo na criação de aplicações web full-stack, com interfaces dinâmicas, e no desenvolvimento de sistemas de back-end. Também gosto de desenvolver ferramentas, como CLIs e automações, que otimizam meu dia a dia e potencializam aprendizado.",
-      "section2": "Sou adaptável e comprometido em me manter atualizado com as tendências da área, ao mesmo tempo que mantenho uma base sólida em tecnologias tradicionais e confiáveis. Sinta-se à vontade para explorar meu trabalho e entrar em contato — estou sempre aberto a oportunidades de aprender e colaborar!"
+      "section1": "Sou desenvolvedor de software e estudante de Análise e Desenvolvimento de Sistemas na Universidade de Passo Fundo (UPF), localizado no Rio Grande do Sul. Crio aplicações web dinâmicas, sistemas back-end e ferramentas de produtividade, como CLIs e automações, para otimizar fluxos de trabalho e aprendizado.",
+      "section2": "Interessado em web design, fotografia, escrita técnica e empreendedorismo, gosto de explorar como essas áreas inspiram formas de pensar e criar.",
+      "section3": "Sou adaptável e comprometido em me manter atualizado com as tendências da área, ao mesmo tempo que valorizo tecnologias tradicionais e confiáveis. Sinta-se à vontade para explorar meu trabalho e entrar em contato — estou sempre aberto a oportunidades de aprender e colaborar!"
     },
     "contact": {
       "title": "Entre em Contato",

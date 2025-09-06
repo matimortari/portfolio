@@ -17,8 +17,9 @@
     },
     "about": {
       "title": "About Me",
-      "section1": "I am a software developer and a student of Systems Analysis and Development at the University of Passo Fundo (UPF), based in Rio Grande do Sul, Brazil. I specialize in creating full-stack web applications with dynamic interfaces, as well as developing back-end systems. I also enjoy building tools, such as CLIs and automations, that optimize my daily workflow and enhance my learning.",
-      "section2": "I'm adaptable and committed to staying up-to-date with industry trends while maintaining a strong foundation in traditional, reliable technologies. Feel free to explore my work and get in touch — I'm always open to opportunities to learn and collaborate!"
+      "section1": "I'm a software developer and Systems Analysis and Development student at the University of Passo Fundo (UPF), based in Rio Grande do Sul, Brazil. I build dynamic web applications, back-end systems, and productivity tools such as CLIs and automations to streamline workflows and learning.",
+      "section2": "Passionate about web design, photography, technical writing, and entrepreneurship, I enjoy exploring how these areas inspire ways of thinking and creating.",
+      "section3": "I'm adaptable and committed to staying up-to-date with industry trends while grounded in traditional and reliable technologies. Feel free to explore my work and reach out — I'm always open to opportunities to learn and collaborate!"
     },
     "contact": {
       "title": "Contact Me",
