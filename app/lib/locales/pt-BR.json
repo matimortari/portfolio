@@ -20,8 +20,9 @@
     },
     "about": {
       "title": "Sobre Mim",
-      "section1": "Sou desenvolvedor de software e estudante de Análise e Desenvolvimento de Sistemas na Universidade de Passo Fundo (UPF), no Rio Grande do Sul. Me especializo na criação de aplicações web full-stack, com interfaces dinâmicas, e no desenvolvimento de sistemas de back-end. Também gosto de desenvolver ferramentas, como CLIs e automações, que otimizam meu dia a dia e potencializam aprendizado.",
-      "section2": "Sou adaptável e comprometido em me manter atualizado com as tendências da área, ao mesmo tempo que mantenho uma base sólida em tecnologias tradicionais e confiáveis. Sinta-se à vontade para explorar meu trabalho e entrar em contato — estou sempre aberto a oportunidades de aprender e colaborar!"
+      "section1": "Sou desenvolvedor de software e estudante de Análise e Desenvolvimento de Sistemas na Universidade de Passo Fundo (UPF), localizado no Rio Grande do Sul. Crio aplicações web dinâmicas, sistemas back-end e ferramentas de produtividade, como CLIs e automações, para otimizar fluxos de trabalho e aprendizado.",
+      "section2": "Interessado em web design, fotografia, escrita técnica e empreendedorismo, gosto de aplicar esses interesses em meus projetos como oportunidades para aprender e explorá-los mais a fundo.",
+      "section3": "Sou adaptável e comprometido em me manter atualizado com as tendências da área, ao mesmo tempo que valorizo tecnologias tradicionais e confiáveis. Sinta-se à vontade para explorar meu trabalho e entrar em contato — estou sempre aberto a oportunidades de aprender e colaborar!"
     },
     "contact": {
       "title": "Entre em Contato",
@@ -33,7 +34,7 @@
       "items": [
         { "name": "TypeScript", "description": "Superset moderno e tipado da linguagem de programação JavaScript." },
         { "name": "Node.js", "description": "Ambiente de execução JavaScript para aplicativos no servidor." },
-        { "name": "Vue", "description": "Framework JavaScript progressivo para construção de interfaces." },
+        { "name": "Vue.js", "description": "Framework JavaScript progressivo para construção de interfaces." },
         { "name": "Nuxt.js", "description": "Framework full-stack para construção de aplicações Vue.js modernas." },
         { "name": "TailwindCSS", "description": "Framework CSS utilitária para desenvolvimento rápido de interfaces." },
         { "name": "Prisma", "description": "Kit de ferramentas de acesso a banco de dados e ORM para TypeScript." },
@@ -49,13 +50,13 @@
           "role": "Desenvolvedor Front-End",
           "company": "Siga Software",
           "period": "05/2025 - Presente",
-          "description": "Construindo apps web interativos e sistemas CRM para o setor imobiliário com Vue, Nuxt.js e Tailwind CSS. Foco em performance, SEO e acessibilidade, participando de revisões de código e mantendo a base de código limpa."
+          "description": "Construindo apps web interativos e sistemas CRM para o setor imobiliário com Vue, Nuxt e Tailwind CSS. Foco em performance, SEO e acessibilidade, participando de revisões de código e mantendo a base de código limpa."
         },
         {
           "role": "Desenvolvedor Full-Stack",
           "company": "Independente",
           "period": "10/2023 - Presente",
-          "description": "Criando aplicações web com Vue e Nuxt.js, desenvolvendo APIs REST e bancos de dados PostgreSQL, além de administrar deploys. Também faço pequenas CLIs e ferramentas para otimizar meu fluxo de trabalho."
+          "description": "Criando aplicações web com Vue e Nuxt, desenvolvendo APIs REST e bancos de dados PostgreSQL, além de administrar deploys. Também faço pequenas CLIs e ferramentas para otimizar meu fluxo de trabalho."
         }
       ]
     },

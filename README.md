@@ -1,4 +1,4 @@
-# Matheus Mortari — Web Portfolio 🚀
+# Matheus Mortari — Web Portfolio
 
 Welcome to my web portfolio! This website showcases my projects and experiences in software development.
 
@@ -9,7 +9,7 @@ Welcome to my web portfolio! This website showcases my projects and experiences 
 These are the technologies I have worked with and feel comfortable using:
 
 - **Programming Languages:** TypeScript, Go, Python.
-- **Web Development:** Vue, Nuxt.js, TailwindCSS, Pinia.
+- **Web Development:** Vue.js, Nuxt.js, TailwindCSS, Pinia.
 - **Backend and Databases:** Node.js, PostgreSQL, Prisma.
 - **Development Tools:** VSCode, Postman, ESLint, Git.
 - **Cloud Services:** Vercel, Supabase, SonarCloud.
@@ -21,13 +21,13 @@ Here are some of the projects I'm most proud of:
 ### LinkNest
 
 - **Description:** A Linktree-based link aggregator website, that allows users to create a personalized landing page.
-- **Tech Stack:** TypeScript, Nuxt.js, Vue, TailwindCSS, Pinia, Chart.js, OAuth, Prisma.
+- **Tech Stack:** TypeScript, Nuxt.js, Vue.js, TailwindCSS, Pinia, Chart.js, OAuth, Prisma.
 - **Links:** [Live](https://linknest-live.vercel.app) | [Source](https://github.com/matimortari/linknest)
 
 ### SecretKeepR
 
 - **Description:** A Secrets manager website designed to help users and organizations manage environment variables.
-- **Tech Stack:** TypeScript, Nuxt.js, Vue, TailwindCSS, Pinia, OAuth, Prisma.
+- **Tech Stack:** TypeScript, Nuxt.js, Vue.js, TailwindCSS, Pinia, OAuth, Prisma.
 - **Links:** [Live](https://secretkeepr.vercel.app) | [Source](https://github.com/matimortari/secretkeepr)
 
 ## 📬 Contact
