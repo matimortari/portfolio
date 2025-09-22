@@ -31,7 +31,7 @@
         </p>
 
         <div class="text-secondary my-4 flex flex-row items-center justify-center gap-2 md:my-8">
-          <nuxt-link v-for="link in contactLinks" :key="link.url" :to="link.url" :title="link.label">
+          <nuxt-link v-for="link in contactLinks" :key="link.url" :to="link.url" target="_blank">
             <icon :name="link.icon" size="30" class="hover:scale shrink-0 transition-all duration-500" />
           </nuxt-link>
         </div>

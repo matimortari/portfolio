@@ -8,7 +8,12 @@
   </div>
 
   <footer class="relative">
-    <img src="/assets/footer-bg.svg" alt="Footer Background" class="pointer-events-none absolute bottom-0 -z-10 w-full opacity-20 select-none">
+    <img src="/assets/footer-bg.svg" alt="Footer Background" class="pointer-events-none absolute bottom-0 -z-10 w-full translate-y-4 opacity-20 select-none">
+
+    <p class="text-muted-foreground flex flex-col items-center gap-1 py-8 text-center text-xs">
+      <span>How far have we come, how far can we go?</span>
+      <span>{{ new Date().getFullYear() }} © Matheus Mortari. All rights reserved.</span>
+    </p>
   </footer>
 </template>
 

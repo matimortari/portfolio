@@ -12,13 +12,11 @@
         <div
           v-for="(section, index) in sections" :key="index"
           v-motion :initial="{ opacity: 0, x: -20 }"
-          :visible="{ opacity: 1, x: 0 }"
-          :duration="800" class="text-muted-foreground flex flex-row items-start gap-1 text-center text-sm md:text-start"
+          :visible="{ opacity: 1, x: 0 }" :duration="800"
+          class="flex flex-row items-start gap-1 text-center text-sm md:text-start"
         >
-          <span class="hidden md:block">
-            <icon name="material-symbols:chevron-right-rounded" size="30" class="text-secondary shrink-0" />
-          </span>
-          <p>
+          <icon name="material-symbols:chevron-right-rounded" size="30" class="text-secondary hidden shrink-0 md:block" />
+          <p class="text-muted-foreground">
             {{ t(section) }}
           </p>
         </div>

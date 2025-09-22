@@ -11,11 +11,10 @@
       v-for="(project, index) in projectItems" :key="index"
       v-motion :initial="{ opacity: 0, y: 40 }"
       :visible="{ opacity: 1, y: 0 }" :duration="400"
-      :delay="100 * Number(index)"
-      class="flex flex-col items-center gap-2 text-center md:items-start md:text-start"
+      :delay="100 * Number(index)" class="flex flex-col items-center gap-2 text-center md:items-start md:text-start"
     >
       <div class="project-container max-w-[500px] 2xl:max-w-[600px]">
-        <img :src="project.image" :alt="t(project.title)" class="absolute right-1.5 bottom-1.5 size-full rounded-lg select-none">
+        <img :src="project.image" :alt="t(project.title)" class="right-1 bottom-1 select-none">
       </div>
 
       <div
@@ -29,10 +28,10 @@
         <hr class="w-full">
 
         <div class="flex flex-row items-center gap-2">
-          <nuxt-link :to="project.sourceUrl" :title="project.sourceUrl" class="hover:scale hover:text-secondary flex shrink-0 items-center transition-all duration-500" external>
+          <nuxt-link :to="project.sourceUrl" target="_blank" class="hover:scale hover:text-secondary flex shrink-0 items-center transition-all duration-500">
             <icon name="lineicons:github" size="30" />
           </nuxt-link>
-          <nuxt-link :to="project.demoUrl" :title="project.demoUrl" class="hover:scale hover:text-secondary flex shrink-0 items-center transition-all duration-500" external>
+          <nuxt-link :to="project.demoUrl" target="_blank" class="hover:scale hover:text-secondary flex shrink-0 items-center transition-all duration-500">
             <icon name="material-symbols:share-windows" size="30" />
           </nuxt-link>
         </div>
@@ -78,6 +77,7 @@ const { t } = useI18n()
   transform: scale(1.02);
 }
 .project-container img {
+  position: absolute;
   border-radius: 1rem;
   border: 3px solid var(--muted);
   width: 100%;

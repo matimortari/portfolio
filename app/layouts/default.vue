@@ -2,7 +2,7 @@
   <div>
     <transition name="fade">
       <div v-if="isLoading" class="fixed inset-0 z-50 flex items-center justify-center">
-        <img src="/assets/logo.png" alt="Loading..." width="50" height="50">
+        <img src="/assets/logo.png" alt="Loading..." width="100" height="100">
       </div>
     </transition>
 
@@ -62,11 +62,12 @@ useLocaleHead({
     opacity: 0;
   }
   100% {
-    opacity: 0.2;
+    opacity: 0.4;
   }
 }
 
-img {
+img,
+p {
   opacity: 0.8;
   animation: fade 1s ease-in-out infinite alternate;
 }

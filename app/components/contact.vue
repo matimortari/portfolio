@@ -16,19 +16,21 @@
       >
         <icon :name="contact.icon" size="25" class="shrink-0" />
         <span>{{ contact.label }}</span>
-        <nuxt-link :to="contact.url" class="text-secondary hover:underline">
+        <nuxt-link :to="contact.url" target="_blank" class="text-secondary hover:underline">
           {{ contact.text }}
         </nuxt-link>
       </p>
     </div>
     <hr class="w-full">
 
-    <div class="flex w-full flex-col gap-2">
+    <div
+      v-motion class="flex w-full flex-col gap-2"
+      :initial="{ opacity: 0, y: 20 }" :visible="{ opacity: 1, y: 0 }"
+      :duration="800"
+    >
       <nuxt-link
         v-for="(resume, index) in resumeLinks" :key="index"
-        v-motion :initial="{ opacity: 0, x: -20 }"
-        :visible="{ opacity: 1, x: 0 }" :duration="800"
-        :delay="200 * Number(index)" :to="resume.url"
+        :to="resume.url" target="_blank"
         class="btn flex w-full items-center justify-center gap-2 text-sm italic hover:underline"
       >
         <icon name="material-symbols:article-shortcut" size="25" class="shrink-0" />
