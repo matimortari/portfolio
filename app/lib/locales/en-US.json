@@ -8,7 +8,7 @@
     },
     "navbar": {
       "about": "About Me",
-      "projects": "Projects"
+      "contact": "Contact"
     },
     "hero": {
       "title": "Matheus Mortari",
@@ -61,9 +61,13 @@
     },
     "contact": {
       "title": "Contact Me",
-      "subtitle": "Let's get in touch! Feel free to reach out or check out my resume.",
+      "subtitle": "Let's get in touch! Feel free to reach out to me through the links below.",
       "resumeEn": "Resume - English",
       "resumePt": "Resume - Portuguese"
+    },
+    "footer": {
+      "backToTop": "Back to Top",
+      "copyright": "© Matheus Mortari. All rights reserved."
     }
   }
 }

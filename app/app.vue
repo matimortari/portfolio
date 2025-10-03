@@ -68,10 +68,11 @@ useHead({
 <style scoped>
 .fade-enter-active,
 .fade-leave-active {
-  transition: opacity 0.5s ease;
+  transition: all 2s ease;
 }
 .fade-enter-from,
 .fade-leave-to {
+  filter: blur(8rem);
   opacity: 0;
 }
 

@@ -1,6 +1,6 @@
 <template>
   <header class="flex w-full flex-row items-center gap-4 whitespace-nowrap">
-    <h3 v-motion :initial="{ opacity: 0, y: -20 }" :enter="{ opacity: 1, y: 0 }" :duration="1000">
+    <h3 v-motion :initial="{ opacity: 0, y: -20 }" :visible-once="{ opacity: 1, y: 0 }" :duration="1000">
       {{ t("index.about.title") }}
     </h3>
     <hr class="w-full">

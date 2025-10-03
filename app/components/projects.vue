@@ -1,7 +1,7 @@
 <template>
   <section id="projects" class="flex flex-col items-center justify-center gap-8 py-4 text-sm md:items-start">
     <header class="flex w-full flex-row items-center gap-4 whitespace-nowrap">
-      <h4 v-motion :initial="{ opacity: 0, y: -10 }" :enter="{ opacity: 1, y: 0 }" :duration="1000">
+      <h4 v-motion :initial="{ opacity: 0, y: -10 }" :visible-once="{ opacity: 1, y: 0 }" :duration="1000">
         {{ t("index.projects.title") }}
       </h4>
       <hr class="w-full">
@@ -18,11 +18,7 @@
           <img :src="project.image" :alt="t(project.title)" class="right-1 bottom-1 select-none">
         </div>
 
-        <div
-          v-motion :initial="{ opacity: 0, x: -20 }"
-          :visible="{ opacity: 1, x: 0 }" :duration="1000"
-          class="my-2 flex w-full flex-row items-center gap-2 whitespace-nowrap"
-        >
+        <div class="my-2 flex w-full flex-row items-center gap-2 whitespace-nowrap">
           <h4>
             {{ t(project.title) }}
           </h4>
@@ -38,21 +34,13 @@
           </div>
         </div>
 
-        <div
-          v-motion :initial="{ opacity: 0, y: -20 }"
-          :visible="{ opacity: 1, y: 0 }" :duration="1000"
-          class="flex flex-wrap justify-center gap-1 md:justify-start"
-        >
+        <div class="flex flex-wrap justify-center gap-1 md:justify-start">
           <span v-for="(skill) in project.stack" :key="skill" class="!bg-muted label !rounded-full">
             {{ skill }}
           </span>
         </div>
 
-        <p
-          v-motion :initial="{ opacity: 0, x: -20 }"
-          :visible="{ opacity: 1, x: 0 }" :duration="1000"
-          class="text-muted-foreground max-w-xl text-sm"
-        >
+        <p class="text-muted-foreground max-w-xl text-sm">
           {{ t(project.description) }}
         </p>
       </div>
