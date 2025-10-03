@@ -40,7 +40,7 @@ let lastScrollY = 0
 
 const navLinks = computed(() => [
   { url: "#about", title: t("index.navbar.about") },
-  { url: "#projects", title: t("index.navbar.projects") },
+  { url: "#contact", title: t("index.navbar.contact") },
 ])
 
 function handleScroll() {

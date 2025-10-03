@@ -1,9 +1,9 @@
 <template>
   <section id="contact" class="mx-auto flex flex-col items-center border-t p-8 text-center">
     <header class="flex flex-col items-center gap-4 text-center">
-      <h2>
+      <h3>
         {{ t("index.contact.title") }}
-      </h2>
+      </h3>
       <p class="text-muted-foreground text-sm leading-5 md:whitespace-nowrap">
         {{ t("index.contact.subtitle") }}
       </p>
@@ -22,13 +22,13 @@
         </nuxt-link>
       </div>
 
-      <div class="flex flex-row items-center justify-center gap-4">
+      <div class="flex flex-col items-center justify-center gap-4 md:flex-row">
         <nuxt-link
           v-for="resume in resumeLinks" :key="resume.url"
           :to="resume.url" target="_blank"
-          class="group flex flex-row items-center gap-2 text-sm md:rounded-xl md:border md:p-4"
+          class="group flex flex-row items-center gap-2 rounded-xl border p-4 text-sm"
         >
-          <icon name="material-symbols:article-shortcut" size="25" class="group-hover:scale group-hover:text-primary duration-500" />
+          <icon name="material-symbols:article-shortcut" size="25" class="group-hover:scale group-hover:text-primary shrink-0 duration-500" />
           <span class="font-semibold group-hover:underline">{{ t(resume.label) }}</span>
         </nuxt-link>
       </div>
