@@ -1,59 +1,61 @@
 <template>
-  <header class="flex w-full flex-row items-center gap-8 whitespace-nowrap">
-    <hr class="w-full">
-    <h3 v-motion :initial="{ opacity: 0, y: -20 }" :visible="{ opacity: 1, y: 0 }" :duration="800">
-      {{ t("index.projects.title") }}
-    </h3>
-  </header>
+  <section id="projects" class="flex flex-col items-center justify-center gap-8 py-4 text-sm md:items-start">
+    <header class="flex w-full flex-row items-center gap-4 whitespace-nowrap">
+      <h4 v-motion :initial="{ opacity: 0, y: -10 }" :enter="{ opacity: 1, y: 0 }" :duration="1000">
+        {{ t("index.projects.title") }}
+      </h4>
+      <hr class="w-full">
+    </header>
 
-  <section id="projects" class="my-8 flex w-full flex-col justify-center gap-12 md:flex-row md:gap-20 2xl:justify-evenly">
-    <div
-      v-for="(project, index) in projectItems" :key="index"
-      v-motion :initial="{ opacity: 0, y: 40 }"
-      :visible="{ opacity: 1, y: 0 }" :duration="400"
-      :delay="100 * Number(index)" class="flex flex-col items-center gap-2 text-center md:items-start md:text-start"
-    >
-      <div class="project-container max-w-[500px] 2xl:max-w-[600px]">
-        <img :src="project.image" :alt="t(project.title)" class="right-1 bottom-1 select-none">
-      </div>
-
+    <div class="flex flex-col items-center gap-4 md:items-start">
       <div
-        v-motion :initial="{ opacity: 0, x: -20 }"
-        :visible="{ opacity: 1, x: 0 }" :duration="800"
-        class="my-2 flex w-full flex-row items-center gap-2 whitespace-nowrap"
+        v-for="(project, index) in projectItems" :key="index"
+        v-motion :initial="{ opacity: 0, y: 40 }"
+        :visible="{ opacity: 1, y: 0 }" :duration="1000"
+        :delay="100 * Number(index)" class="flex flex-col items-center gap-2 text-center md:items-start md:text-start"
       >
-        <h4>
-          {{ t(project.title) }}
-        </h4>
-        <hr class="w-full">
-
-        <div class="flex flex-row items-center gap-2">
-          <nuxt-link :to="project.sourceUrl" target="_blank" class="hover:scale hover:text-secondary flex shrink-0 items-center transition-all duration-500">
-            <icon name="lineicons:github" size="30" />
-          </nuxt-link>
-          <nuxt-link :to="project.demoUrl" target="_blank" class="hover:scale hover:text-secondary flex shrink-0 items-center transition-all duration-500">
-            <icon name="material-symbols:share-windows" size="30" />
-          </nuxt-link>
+        <div class="project-container max-w-[500px] 2xl:max-w-[600px]">
+          <img :src="project.image" :alt="t(project.title)" class="right-1 bottom-1 select-none">
         </div>
-      </div>
 
-      <div
-        v-motion :initial="{ opacity: 0, y: -20 }"
-        :visible="{ opacity: 1, y: 0 }" :duration="800"
-        class="flex flex-wrap justify-center gap-1 md:justify-start"
-      >
-        <span v-for="(skill) in project.stack" :key="skill" class="!bg-muted label !rounded-full">
-          {{ skill }}
-        </span>
-      </div>
+        <div
+          v-motion :initial="{ opacity: 0, x: -20 }"
+          :visible="{ opacity: 1, x: 0 }" :duration="1000"
+          class="my-2 flex w-full flex-row items-center gap-2 whitespace-nowrap"
+        >
+          <h4>
+            {{ t(project.title) }}
+          </h4>
+          <hr class="w-full">
 
-      <p
-        v-motion :initial="{ opacity: 0, x: -20 }"
-        :visible="{ opacity: 1, x: 0 }" :duration="800"
-        class="text-muted-foreground max-w-xl text-sm"
-      >
-        {{ t(project.description) }}
-      </p>
+          <div class="flex flex-row items-center gap-2">
+            <nuxt-link :to="project.sourceUrl" target="_blank" class="hover:scale hover:text-secondary flex shrink-0 items-center transition-all duration-500">
+              <icon name="lineicons:github" size="30" />
+            </nuxt-link>
+            <nuxt-link :to="project.demoUrl" target="_blank" class="hover:scale hover:text-secondary flex shrink-0 items-center transition-all duration-500">
+              <icon name="material-symbols:share-windows" size="30" />
+            </nuxt-link>
+          </div>
+        </div>
+
+        <div
+          v-motion :initial="{ opacity: 0, y: -20 }"
+          :visible="{ opacity: 1, y: 0 }" :duration="1000"
+          class="flex flex-wrap justify-center gap-1 md:justify-start"
+        >
+          <span v-for="(skill) in project.stack" :key="skill" class="!bg-muted label !rounded-full">
+            {{ skill }}
+          </span>
+        </div>
+
+        <p
+          v-motion :initial="{ opacity: 0, x: -20 }"
+          :visible="{ opacity: 1, x: 0 }" :duration="1000"
+          class="text-muted-foreground max-w-xl text-sm"
+        >
+          {{ t(project.description) }}
+        </p>
+      </div>
     </div>
   </section>
 </template>

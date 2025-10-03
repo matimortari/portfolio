@@ -1,30 +1,17 @@
 <template>
-  <nav
-    class="fixed top-0 z-50 w-full p-4 transition-transform duration-500"
-    :class="[showNavbar ? 'translate-y-0' : '-translate-y-full', scrolled ? 'backdrop-blur-sm' : '']"
-  >
+  <nav class="fixed top-0 z-50 w-full p-4 transition-transform duration-500" :class="[showNavbar ? 'translate-y-0' : '-translate-y-full', scrolled ? 'backdrop-blur-sm' : '']">
     <div class="flex flex-row items-center justify-between">
       <div
         v-motion :initial="{ opacity: 0 }"
-        :visible="{ opacity: 1 }" :duration="800"
+        :enter="{ opacity: 1 }" :duration="1000"
         class="text-foreground flex flex-row items-center justify-center gap-10"
       >
         <nuxt-link to="/" class="hover:scale transition-all duration-500 outline-none select-none">
-          <img
-            v-motion :initial="{ opacity: 0 }"
-            :visible="{ opacity: 1 }" :duration="800"
-            src="/assets/logo.png" alt="Logo"
-            width="40" height="40"
-          >
+          <img src="/assets/logo.png" alt="Logo" width="40" height="40">
         </nuxt-link>
 
         <div class="flex flex-row items-center gap-8 font-semibold tracking-wide">
-          <nuxt-link
-            v-for="link in navLinks" :key="link.url"
-            v-motion :to="link.url"
-            :visible="{ opacity: 1, x: 0 }" :duration="800"
-            class="hidden outline-none hover:underline md:block"
-          >
+          <nuxt-link v-for="link in navLinks" :key="link.url" :to="link.url" class="hidden outline-none hover:underline md:block">
             {{ link.title }}
           </nuxt-link>
         </div>
@@ -32,13 +19,10 @@
 
       <div
         v-motion :initial="{ opacity: 0 }"
-        :visible="{ opacity: 1 }" :duration="800"
+        :enter="{ opacity: 1 }" :duration="1000"
         class="flex flex-row items-center gap-4 font-semibold"
       >
-        <button
-          v-for="language in availableLocales" :key="language"
-          class="cursor-pointer outline-none hover:underline" @click="() => setLanguage(language)"
-        >
+        <button v-for="language in availableLocales" :key="language" class="outline-none hover:underline" @click="() => setLanguage(language)">
           {{ t(`locale.${language}`) }}
         </button>
       </div>

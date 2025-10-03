@@ -1,41 +1,37 @@
 <template>
-  <section id="contact" class="flex flex-col items-center justify-center gap-6 py-4 text-sm md:items-start">
-    <header class="flex w-full flex-row items-center gap-6 whitespace-nowrap">
-      <h4 v-motion :initial="{ opacity: 0, y: -10 }" :visible="{ opacity: 1, y: 0 }" :duration="800">
+  <section id="contact" class="mx-auto flex flex-col items-center border-t p-8 text-center">
+    <header class="flex flex-col items-center gap-4 text-center">
+      <h2>
         {{ t("index.contact.title") }}
-      </h4>
-      <hr class="w-full">
+      </h2>
+      <p class="text-muted-foreground text-sm leading-5 md:whitespace-nowrap">
+        {{ t("index.contact.subtitle") }}
+      </p>
     </header>
 
-    <div class="flex flex-col items-center gap-2 md:items-start">
-      <p
-        v-for="(contact, index) in contactLinks" :key="index"
-        v-motion :initial="{ opacity: 0, x: -20 }"
-        :visible="{ opacity: 1, x: 0 }" :duration="800"
-        :delay="200 * Number(index)" class="flex flex-row items-center gap-2 italic"
-      >
-        <icon :name="contact.icon" size="25" class="shrink-0" />
-        <span>{{ contact.label }}</span>
-        <nuxt-link :to="contact.url" target="_blank" class="text-secondary hover:underline">
-          {{ contact.text }}
+    <div class="my-12 flex w-full flex-col items-center gap-8">
+      <div class="grid gap-8 md:grid-cols-3">
+        <nuxt-link
+          v-for="link in contactLinks" :key="link.url"
+          :to="link.url" target="_blank"
+          class="group flex flex-col items-center gap-1"
+        >
+          <icon :name="link.icon" size="35" class="text-primary group-hover:scale duration-500" />
+          <span class="font-semibold">{{ link.label }}</span>
+          <span class="text-muted-foreground text-sm group-hover:underline">{{ link.text }}</span>
         </nuxt-link>
-      </p>
-    </div>
-    <hr class="w-full">
+      </div>
 
-    <div
-      v-motion class="flex w-full flex-col gap-2"
-      :initial="{ opacity: 0, y: 20 }" :visible="{ opacity: 1, y: 0 }"
-      :duration="800"
-    >
-      <nuxt-link
-        v-for="(resume, index) in resumeLinks" :key="index"
-        :to="resume.url" target="_blank"
-        class="btn flex w-full items-center justify-center gap-2 text-sm italic hover:underline"
-      >
-        <icon name="material-symbols:article-shortcut" size="25" class="shrink-0" />
-        <span>{{ t(resume.label) }}</span>
-      </nuxt-link>
+      <div class="flex flex-row items-center justify-center gap-4">
+        <nuxt-link
+          v-for="resume in resumeLinks" :key="resume.url"
+          :to="resume.url" target="_blank"
+          class="group flex flex-row items-center gap-2 text-sm md:rounded-xl md:border md:p-4"
+        >
+          <icon name="material-symbols:article-shortcut" size="25" class="group-hover:scale group-hover:text-primary duration-500" />
+          <span class="font-semibold group-hover:underline">{{ t(resume.label) }}</span>
+        </nuxt-link>
+      </div>
     </div>
   </section>
 </template>

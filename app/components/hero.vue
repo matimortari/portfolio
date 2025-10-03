@@ -7,33 +7,34 @@
     </div>
 
     <div
-      v-motion :initial="{ opacity: 0, filter: 'blur(5px)' }"
-      :visible="{ opacity: 1, filter: 'blur(0px)' }" :duration="1200"
-      class="relative flex flex-col items-center gap-4"
+      v-motion :initial="{ opacity: 0, y: 20 }"
+      :enter="{ opacity: 1, y: 0 }" :duration="1000"
+      class="relative z-20 mx-4 my-24 flex flex-col-reverse items-center gap-8 md:flex-row md:justify-evenly md:gap-32"
     >
-      <div class="relative my-8 size-36 select-none 2xl:size-52">
-        <img src="/assets/avatar.png" alt="Avatar" class="avatar absolute inset-0">
-      </div>
-
-      <div class="m-4 flex flex-col gap-2 text-center">
+      <div
+        v-motion :initial="{ opacity: 0, y: 20, filter: 'blur(5px)' }"
+        :enter="{ opacity: 1, y: 0, filter: 'blur(0px)' }" :duration="1000"
+        class="flex flex-col gap-4 text-center md:text-start"
+      >
         <h1>
           {{ t("index.hero.title") }}
         </h1>
         <h2>
           {{ t("index.hero.subtitle") }}
         </h2>
-      </div>
-
-      <div class="flex flex-col items-center justify-center px-10">
-        <p class="text-muted-foreground max-w-md text-center leading-5">
+        <p class="text-muted-foreground max-w-md leading-5">
           {{ t("index.hero.description") }}
         </p>
 
-        <div class="text-secondary my-4 flex flex-row items-center justify-center gap-2 md:my-8">
+        <div class="flex flex-row items-center justify-center gap-2 md:ml-2 md:justify-start">
           <nuxt-link v-for="link in contactLinks" :key="link.url" :to="link.url" target="_blank">
-            <icon :name="link.icon" size="30" class="hover:scale shrink-0 transition-all duration-500" />
+            <icon :name="link.icon" size="35" class="text-secondary transition-all duration-500 hover:scale-110" />
           </nuxt-link>
         </div>
+      </div>
+
+      <div class="relative size-36 select-none md:size-56 2xl:size-64">
+        <img src="/assets/avatar.png" alt="Avatar" class="avatar absolute inset-0">
       </div>
     </div>
   </section>
@@ -65,13 +66,13 @@ onMounted(() => {
 
 <style scoped>
 .hero-background {
-  background: linear-gradient(330deg, var(--background) 60%, var(--primary) 80%, var(--secondary) 100%);
+  background: linear-gradient(330deg, transparent 60%, var(--primary) 80%, var(--secondary) 100%);
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  opacity: 0.8;
+  z-index: 10;
 }
 
 .marquee {
@@ -83,7 +84,6 @@ onMounted(() => {
   border-radius: 50%;
   box-shadow: 0 0 8px 2px var(--primary);
   transition: box-shadow 0.5s ease-in-out;
-  animation: float 2s ease-in-out infinite;
 }
 
 @keyframes float {

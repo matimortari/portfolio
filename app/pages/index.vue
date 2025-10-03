@@ -2,9 +2,9 @@
   <Navbar />
   <Hero />
 
-  <div class="m-8 flex flex-col items-center justify-center md:m-32">
+  <div class="m-8 flex flex-col items-center justify-center md:mx-32 2xl:mx-52">
     <About />
-    <Projects />
+    <Contact />
   </div>
 
   <footer class="relative">
