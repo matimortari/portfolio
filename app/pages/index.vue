@@ -25,4 +25,10 @@ useHead({
   link: [{ rel: "canonical", href: "https://matheus-mortari.vercel.app" }],
   meta: [{ name: "description", content: t("index.meta.description") }],
 })
+
+useLocaleHead({
+  dir: true,
+  seo: true,
+  lang: true,
+})
 </script>

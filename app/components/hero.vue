@@ -7,11 +7,11 @@
     </div>
 
     <div
-      v-motion :initial="{ opacity: 0, y: -40 }"
-      :visible="{ opacity: 1, y: 0 }" :duration="1000"
-      class="relative flex flex-col items-center gap-4 px-4 py-24"
+      v-motion :initial="{ opacity: 0, filter: 'blur(5px)' }"
+      :visible="{ opacity: 1, filter: 'blur(0px)' }" :duration="1200"
+      class="relative flex flex-col items-center gap-4"
     >
-      <div class="relative size-36 select-none 2xl:size-44">
+      <div class="relative my-8 size-36 select-none 2xl:size-52">
         <img src="/assets/avatar.png" alt="Avatar" class="avatar absolute inset-0">
       </div>
 
@@ -76,7 +76,7 @@ onMounted(() => {
 
 .marquee {
   display: flex;
-  animation: scroll 30s linear infinite;
+  animation: scroll 50s linear infinite;
 }
 
 .avatar {
@@ -103,5 +103,10 @@ onMounted(() => {
   100% {
     transform: translateX(-50%);
   }
+}
+
+.blur-wrapper {
+  filter: blur(10px);
+  transition: filter 1s ease-in-out;
 }
 </style>
