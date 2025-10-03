@@ -2,9 +2,8 @@
   <section id="hero" class="relative flex min-h-screen items-center justify-center overflow-hidden">
     <div class="hero-background" />
 
-    <div class="scrolling-map absolute inset-x-0 bottom-0 z-0 hidden w-[200%] opacity-20 md:flex">
-      <img src="/assets/map.png" class="w-1/2 select-none" alt="Background scrolling map">
-      <img src="/assets/map.png" class="w-1/2 select-none" alt="Background scrolling map">
+    <div class="marquee absolute inset-x-0 z-0 w-[200%] opacity-60">
+      <div v-for="i in 2" :key="i" class="hidden w-full md:flex" v-html="svgMap" />
     </div>
 
     <div
@@ -41,6 +40,8 @@
 </template>
 
 <script setup lang="ts">
+import DottedMap from "dotted-map"
+
 const { t } = useI18n()
 
 const contactLinks = [
@@ -48,6 +49,18 @@ const contactLinks = [
   { url: "https://linkedin.com/in/matheus-mortari-19rt", icon: "lineicons:linkedin", label: "LinkedIn" },
   { url: "mailto:matheus.felipe.19rt@gmail.com", icon: "material-symbols:mail-rounded", label: "Email" },
 ]
+
+const svgMap = ref("")
+
+onMounted(() => {
+  const map = new DottedMap({ height: 100, grid: "diagonal" })
+  svgMap.value = map.getSVG({
+    radius: 0.25,
+    color: "#2f2f3d",
+    backgroundColor: "#09080d",
+    shape: "circle",
+  })
+})
 </script>
 
 <style scoped>
@@ -61,8 +74,9 @@ const contactLinks = [
   opacity: 0.8;
 }
 
-.scrolling-map {
-  animation: scroll 60s linear infinite;
+.marquee {
+  display: flex;
+  animation: scroll 30s linear infinite;
 }
 
 .avatar {
