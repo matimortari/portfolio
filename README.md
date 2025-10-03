@@ -26,7 +26,7 @@ Here are some of the projects I'm most proud of:
 
 ### SecretKeepR
 
-- **Description:** A Secrets manager website designed to help users and organizations manage environment variables.
+- **Description:** A secrets management website designed to help users and organizations manage environment variables.
 - **Tech Stack:** TypeScript, Nuxt.js, Vue.js, TailwindCSS, Pinia, OAuth, Prisma.
 - **Links:** [Live](https://secretkeepr.vercel.app) | [Source](https://github.com/matimortari/secretkeepr)
 

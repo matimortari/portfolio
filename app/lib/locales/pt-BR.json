@@ -21,11 +21,6 @@
       "section2": "Interessado em web design, fotografia, escrita técnica e empreendedorismo, gosto de aplicar esses interesses em meus projetos como oportunidades para aprender e explorá-los mais a fundo.",
       "section3": "Sou adaptável e comprometido em me manter atualizado com as tendências da área, ao mesmo tempo que valorizo tecnologias tradicionais e confiáveis. Sinta-se à vontade para explorar meu trabalho e entrar em contato — estou sempre aberto a oportunidades de aprender e colaborar!"
     },
-    "contact": {
-      "title": "Entre em Contato",
-      "resumeEn": "Currículo - Inglês",
-      "resumePt": "Currículo - Português"
-    },
     "stack": {
       "title": "Tecnologias",
       "items": [
@@ -60,9 +55,15 @@
     "projects": {
       "title": "Projetos",
       "items": [
-        { "title": "LinkNest", "description": "Um website agregador de links que permite aos usuários criar uma página personalizada para compartilhar links de suas redes sociais, websites e mais. O usuário pode customizar a aparência da página e checar dados analíticos." },
-        { "title": "SecretKeepR", "description": "Um website projetado para ajudar usuários e organizações a gerenciar e compartilhar variáveis de ambiente com segurança. Ele oferece controles de acesso para gerenciamento de projetos, usuários e segredos criptografados entre várias organizações." }
+        { "title": "LinkNest", "description": "Website agregador de links que permite ao usuário criar uma página personalizada para compartilhar links de suas redes sociais, websites e mais." },
+        { "title": "SecretKeepR", "description": "Plataforma gerenciadora de segredos criada para ajudar usuários e organizações a gerenciar e compartilhar variáveis de ambiente seguramente." }
       ]
+    },
+    "contact": {
+      "title": "Entre em Contato",
+      "subtitle": "Vamos conversar! Sinta-se à vontade para entrar em contato comigo ou conferir meu currículo.",
+      "resumeEn": "Currículo - Inglês",
+      "resumePt": "Currículo - Português"
     }
   }
 }

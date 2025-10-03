@@ -21,11 +21,6 @@
       "section2": "Passionate about web design, photography, technical writing, and entrepreneurship, I enjoy applying these interests in my projects as opportunities to learn and explore them further.",
       "section3": "I'm adaptable and committed to staying up-to-date with industry trends while grounded in traditional and reliable technologies. Feel free to explore my work and reach out — I'm always open to opportunities to learn and collaborate!"
     },
-    "contact": {
-      "title": "Contact Me",
-      "resumeEn": "Resume - English",
-      "resumePt": "Resume - Portuguese"
-    },
     "stack": {
       "title": "Tech Stack",
       "items": [
@@ -60,9 +55,15 @@
     "projects": {
       "title": "Projects",
       "items": [
-        { "title": "LinkNest", "description": "A link aggregator website that allows users to create a personalized landing page to share links to their social media, websites, and more. The user can customize the page appearance, and check analytics data." },
-        { "title": "SecretKeepR", "description": "A secrets manager website designed to help users and organizations securely manage and share environment variables. It provides access controls for managing projects, users, and encrypted secrets across multiple organizations." }
+        { "title": "LinkNest", "description": "Link aggregator website that allows users to create a personalized landing page to share links to their social media, websites, and more." },
+        { "title": "SecretKeepR", "description": "Secret management platform designed to help users and organizations securely manage and share environment variables." }
       ]
+    },
+    "contact": {
+      "title": "Contact Me",
+      "subtitle": "Let's get in touch! Feel free to reach out or check out my resume.",
+      "resumeEn": "Resume - English",
+      "resumePt": "Resume - Portuguese"
     }
   }
 }
