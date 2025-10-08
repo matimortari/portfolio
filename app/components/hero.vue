@@ -1,5 +1,5 @@
 <template>
-  <section id="hero" class="relative flex min-h-screen justify-center overflow-hidden">
+  <section id="hero" class="relative flex min-h-screen items-center justify-center overflow-hidden">
     <div class="hero-background" />
 
     <div class="marquee absolute inset-x-0 z-0 w-[200%] opacity-60">
@@ -31,7 +31,7 @@
             <nuxt-link
               v-for="resume in resumeLinks" :key="resume.url"
               :to="resume.url" target="_blank"
-              class="group bg-primary/80 hover:bg-primary flex flex-row items-center gap-2 rounded-lg px-4 py-2 text-sm font-semibold transition-all duration-500"
+              class="group bg-primary/80 hover:bg-primary flex flex-row items-center gap-2 rounded-lg px-4 py-2 text-sm font-semibold whitespace-nowrap transition-all duration-500"
             >
               <icon name="material-symbols:lab-profile-outline" size="20" class="group-hover:scale transition-all duration-500" />
               <span>{{ t(resume.label) }}</span>
@@ -107,7 +107,7 @@ onMounted(() => {
 .avatar {
   object-fit: cover;
   border-radius: 50%;
-  box-shadow: 0 0 8px 2px var(--primary);
+  animation: float 10s ease-in-out infinite;
   transition: all 0.5s ease-in-out;
   user-select: none;
   -webkit-user-select: none;

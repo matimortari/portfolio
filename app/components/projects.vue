@@ -10,8 +10,8 @@
     <div class="flex flex-col items-center gap-4 md:items-start">
       <div
         v-for="(project, index) in projectItems" :key="index"
-        v-motion :initial="{ opacity: 0, y: 40 }"
-        :visible="{ opacity: 1, y: 0 }" :duration="1000"
+        v-motion :initial="{ opacity: 0 }"
+        :visible="{ opacity: 1 }" :duration="1000"
         :delay="100 * Number(index)" class="flex flex-col items-center gap-2 text-center md:items-start md:text-start"
       >
         <div class="project-container max-w-[500px] 2xl:max-w-[600px]">

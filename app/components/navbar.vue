@@ -1,5 +1,5 @@
 <template>
-  <nav class="fixed top-0 z-50 w-full px-8 py-4 transition-all duration-500" :class="[showNavbar ? 'translate-y-0' : '-translate-y-full', scrolled ? 'backdrop-blur-sm' : '']">
+  <nav class="fixed top-0 z-50 w-full p-4 transition-all duration-500 md:px-8" :class="[showNavbar ? 'translate-y-0' : '-translate-y-full', scrolled ? 'backdrop-blur-sm' : '']">
     <div class="flex flex-row items-center justify-between">
       <div
         v-motion :initial="{ opacity: 0 }"
