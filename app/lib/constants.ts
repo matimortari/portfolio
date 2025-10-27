@@ -1,28 +1,6 @@
-export interface StackItemType {
-  name: string
-  description: string
-  icon: string
-  url: string
-}
 
-export interface ProjectItemType {
-  title: string
-  description: string
-  image: string
-  stack: string[]
-  demoUrl: string
-  sourceUrl: string
-}
 
-export interface ExperienceItemType {
-  role: string
-  company: string
-  period: string
-  description: string
-  stack: string[]
-}
-
-export const stackItems: StackItemType[] = [
+export const stackItems: StackItem[] = [
   { name: "TypeScript", description: "index.stack.items.0.description", icon: "lineicons:typescript", url: "https://www.typescriptlang.org" },
   { name: "Node.js", description: "index.stack.items.1.description", icon: "lineicons:nodejs", url: "https://nodejs.org" },
   { name: "Vue.js", description: "index.stack.items.2.description", icon: "lineicons:vuejs", url: "https://vuejs.org" },
@@ -34,7 +12,7 @@ export const stackItems: StackItemType[] = [
   { name: "Git", description: "index.stack.items.8.description", icon: "lineicons:git", url: "https://git-scm.com" },
 ]
 
-export const projectItems: ProjectItemType[] = [
+export const projectItems: ProjectItem[] = [
   {
     title: "index.projects.items.0.title",
     description: "index.projects.items.0.description",
@@ -53,7 +31,7 @@ export const projectItems: ProjectItemType[] = [
   },
 ]
 
-export const experienceItems: ExperienceItemType[] = [
+export const experienceItems: ExperienceItem[] = [
   {
     role: "index.experience.items.0.role",
     company: "index.experience.items.0.company",
