@@ -1,0 +1,121 @@
+export const STACK_ITEMS: StackItem[] = [
+  { name: "TypeScript", description: "index.stack.items.0.description", icon: "lineicons:typescript", url: "https://www.typescriptlang.org" },
+  { name: "Node.js", description: "index.stack.items.1.description", icon: "lineicons:nodejs", url: "https://nodejs.org" },
+  { name: "Vue.js", description: "index.stack.items.2.description", icon: "lineicons:vuejs", url: "https://vuejs.org" },
+  { name: "Nuxt.js", description: "index.stack.items.3.description", icon: "lineicons:nuxt", url: "https://nuxtjs.org" },
+  { name: "TailwindCSS", description: "index.stack.items.4.description", icon: "lineicons:tailwindcss", url: "https://tailwindcss.com" },
+  { name: "Prisma", description: "index.stack.items.5.description", icon: "lineicons:prisma", url: "https://prisma.io" },
+  { name: "PostgreSQL", description: "index.stack.items.6.description", icon: "lineicons:postgresql", url: "https://www.postgresql.org" },
+  { name: "Go", description: "index.stack.items.7.description", icon: "lineicons:go", url: "https://go.dev" },
+  { name: "Git", description: "index.stack.items.8.description", icon: "lineicons:git", url: "https://git-scm.com" },
+  { name: "Vercel", description: "index.stack.items.9.description", icon: "lineicons:vercel", url: "https://vercel.com" },
+]
+
+export const PROJECT_ITEMS: ProjectItem[] = [
+  {
+    title: "index.projects.items.0.title",
+    description: "index.projects.items.0.description",
+    image: "https://linknest.vercel.app/og-image.png",
+    stack: ["TypeScript", "Nuxt.js", "Vue.js", "TailwindCSS", "Pinia", "Chart.js", "OAuth", "Prisma"],
+    demoUrl: "https://linknest.vercel.app",
+    sourceUrl: "https://github.com/matimortari/linknest",
+  },
+  {
+    title: "index.projects.items.1.title",
+    description: "index.projects.items.1.description",
+    image: "https://secretkeepr.vercel.app/og-image.png",
+    stack: ["TypeScript", "Nuxt.js", "Vue.js", "TailwindCSS", "Pinia", "OAuth", "Prisma"],
+    demoUrl: "https://secretkeepr.vercel.app",
+    sourceUrl: "https://github.com/matimortari/secretkeepr",
+  },
+]
+
+export const EXPERIENCE_ITEMS: ExperienceItem[] = [
+  {
+    role: "index.experience.items.0.role",
+    company: "index.experience.items.0.company",
+    period: "index.experience.items.0.period",
+    description: "index.experience.items.0.description",
+    stack: ["Nuxt.js", "Vue.js", "TailwindCSS", "TypeScript", "HTML", "CSS", "ESLint", "Git", "Google Analytics"],
+  },
+  {
+    role: "index.experience.items.1.role",
+    company: "index.experience.items.1.company",
+    period: "index.experience.items.1.period",
+    description: "index.experience.items.1.description",
+    stack: ["Nuxt.js", "Vue.js", "TailwindCSS", "TypeScript", "Node.js", "PostgreSQL", "Go", "Postman", "Git", "Vercel"],
+  },
+]
+
+export const ABOUT_SECTIONS: AboutSection[] = [
+  {
+    text: "index.about.section1",
+  },
+  {
+    text: "index.about.section2",
+  },
+  {
+    text: "index.about.section3",
+  },
+]
+
+export const CONTACT_LINKS: LinkItem[] = [
+  {
+    label: "GitHub",
+    icon: "lineicons:github",
+    text: "/matimortari",
+    url: "https://github.com/matimortari",
+  },
+  {
+    label: "LinkedIn",
+    icon: "lineicons:linkedin",
+    text: "/matheus-mortari-19rt",
+    url: "https://linkedin.com/in/matheus-mortari-19rt",
+  },
+  {
+    label: "Email",
+    icon: "material-symbols:mail-rounded",
+    text: "matheus.felipe.19rt@gmail.com",
+    url: "mailto:matheus.felipe.19rt@gmail.com",
+  },
+]
+
+export const HERO_CONTACT_LINKS: LinkItem[] = [
+  {
+    label: "GitHub",
+    icon: "lineicons:github",
+    url: "https://github.com/matimortari",
+  },
+  {
+    label: "LinkedIn",
+    icon: "lineicons:linkedin",
+    url: "https://linkedin.com/in/matheus-mortari-19rt",
+  },
+  {
+    label: "Email",
+    icon: "material-symbols:mail-rounded",
+    url: "mailto:matheus.felipe.19rt@gmail.com",
+  },
+]
+
+export const HERO_RESUME_LINKS: LinkItem[] = [
+  {
+    label: "index.contact.resumeEn",
+    url: "https://matimortari.github.io/statics/cv/cv-en.pdf",
+  },
+  {
+    label: "index.contact.resumePt",
+    url: "https://matimortari.github.io/statics/cv/cv-pt.pdf",
+  },
+]
+
+export const NAV_LINKS: LinkItem[] = [
+  {
+    label: "index.navbar.about",
+    url: "#about",
+  },
+  {
+    label: "index.navbar.contact",
+    url: "#contact",
+  },
+]
