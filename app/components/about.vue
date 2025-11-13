@@ -1,6 +1,6 @@
 <template>
   <header class="flex w-full flex-row items-center gap-4 whitespace-nowrap">
-    <h3 v-motion :initial="{ opacity: 0, y: -20 }" :visible-once="{ opacity: 1, y: 0 }" :duration="1000">
+    <h3 v-motion :initial="{ opacity: 0, y: -20 }" :visible-once="{ opacity: 1, y: 0 }" :duration="500">
       {{ $t("index.about.title") }}
     </h3>
     <span class="divider" />
@@ -12,7 +12,7 @@
         <div
           v-for="(section, index) in ABOUT_SECTIONS" :key="index"
           v-motion :initial="{ opacity: 0, x: -20 }"
-          :visible="{ opacity: 1, x: 0 }" :duration="1000"
+          :visible="{ opacity: 1, x: 0 }" :duration="500"
           :delay="index * 200" class="flex flex-row items-start gap-1 md:max-w-[90%]"
         >
           <icon name="material-symbols:chevron-right-rounded" size="30" class="hidden shrink-0 text-secondary md:block" />

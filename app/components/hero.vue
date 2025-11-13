@@ -2,24 +2,18 @@
   <section id="hero" class="relative flex min-h-screen items-center justify-center overflow-hidden">
     <div class="hero-background" />
 
-    <div class="marquee absolute inset-x-0 z-0 w-[200%] opacity-60">
-      <div v-for="i in 2" :key="i" class="hidden w-full md:flex" v-html="svgMap" />
+    <div class="marquee">
+      <div v-for="index in 2" :key="index" class="hidden w-full md:flex" v-html="svgMap" />
     </div>
 
-    <div class="relative z-20 mx-4 my-24 flex flex-col items-center gap-8 md:mx-auto md:flex-row md:justify-evenly md:gap-24 2xl:gap-32">
-      <div
-        v-motion :initial="{ opacity: 0, x: -40 }"
-        :visible-once="{ opacity: 1, x: 0 }" :duration="800"
-        :delay="motionDelay" class="shrink-0"
-      >
-        <img src="/assets/avatar.png" alt="Avatar" class="avatar w-44 md:w-56 2xl:w-72">
-      </div>
+    <div
+      v-motion :initial="{ opacity: 0, x: -40 }"
+      :visible-once="{ opacity: 1, x: 0 }" :duration="800"
+      :delay="props.motionDelay" class="relative z-20 mx-4 my-24 flex flex-col items-center gap-8 md:mx-auto md:flex-row md:justify-evenly md:gap-24 2xl:gap-32"
+    >
+      <img src="/assets/avatar.png" alt="Avatar" class="avatar w-44 md:w-56 2xl:w-72">
 
-      <header
-        v-motion :initial="{ opacity: 0, x: -40 }"
-        :visible-once="{ opacity: 1, x: 0 }" :duration="800"
-        :delay="props.motionDelay" class="flex flex-1 flex-col gap-4 text-center md:text-start"
-      >
+      <header class="flex flex-1 flex-col gap-4 text-center md:text-start">
         <h1>
           {{ $t("index.hero.title") }}
         </h1>
@@ -33,7 +27,7 @@
         <div class="flex flex-col gap-4 sm:flex-row sm:items-center sm:gap-4">
           <div class="flex flex-col items-center justify-center gap-2 sm:justify-start md:flex-row">
             <nuxt-link
-              v-for="resume in HERO_RESUME_LINKS" :key="resume.url"
+              v-for="(resume, index) in HERO_RESUME_LINKS" :key="index"
               :to="resume.url" target="_blank"
               class="group btn"
             >
@@ -44,7 +38,7 @@
 
           <div class="flex flex-row justify-center gap-2 sm:justify-start">
             <nuxt-link
-              v-for="link in HERO_CONTACT_LINKS" :key="link.url"
+              v-for="(link, index) in HERO_CONTACT_LINKS" :key="index"
               :to="link.url" target="_blank"
               class="group btn rounded-full! bg-muted/80! hover:bg-muted!"
             >
@@ -89,11 +83,17 @@ onMounted(() => {
 }
 
 .marquee {
+  position: absolute;
   display: flex;
+  z-index: 0;
+  width: 200%;
+  opacity: 60%;
+  inset-inline: 0;
   animation: scroll 50s linear infinite;
 }
 
 .avatar {
+  flex-shrink: 0;
   object-fit: cover;
   border-radius: 50%;
   animation: float 10s ease-in-out infinite;

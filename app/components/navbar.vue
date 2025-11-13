@@ -1,17 +1,23 @@
 <template>
   <nav class="fixed top-0 z-50 w-full p-4 transition-all duration-500 md:px-8" :class="[showNavbar ? 'translate-y-0' : '-translate-y-full', scrolled ? 'backdrop-blur-sm' : '']">
     <div class="flex flex-row items-center justify-between">
-      <div
-        v-motion :initial="{ opacity: 0 }"
-        :visible-once="{ opacity: 1 }" :duration="1000"
-        class="flex flex-row items-center justify-center gap-10 text-foreground"
-      >
-        <nuxt-link to="/" class="transition-all duration-500 outline-none select-none hover:scale-125">
+      <div class="flex flex-row items-center justify-center gap-10 text-foreground">
+        <nuxt-link
+          v-motion to="/"
+          :initial="{ opacity: 0, x: -10 }" :visible-once="{ opacity: 1, x: 0 }"
+          :duration="500" class="transition-all duration-500 outline-none select-none hover:scale-125"
+        >
           <img src="/assets/logo.png" alt="Logo" width="40" height="40">
         </nuxt-link>
 
         <div class="flex flex-row items-center gap-8 font-semibold tracking-wide">
-          <nuxt-link v-for="link in NAV_LINKS" :key="link.url" :to="link.url" class="hidden text-lg outline-none hover:underline md:block">
+          <nuxt-link
+            v-for="(link, index) in NAV_LINKS" :key="index"
+            v-motion :to="link.url"
+            :initial="{ opacity: 0, y: -10 }" :visible-once="{ opacity: 1, y: 0 }"
+            :duration="500" :delay="200 * index"
+            class="hidden text-lg outline-none hover:underline md:block"
+          >
             {{ $t(link.label) }}
           </nuxt-link>
         </div>
