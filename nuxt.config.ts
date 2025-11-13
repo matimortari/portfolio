@@ -1,10 +1,25 @@
 import tailwindcss from "@tailwindcss/vite"
 
 export default defineNuxtConfig({
-  compatibilityDate: "2025-09-05",
-  modules: ["@nuxt/icon", "@nuxt/fonts", "@nuxtjs/i18n", "@vueuse/motion/nuxt"],
-  imports: { dirs: ["lib/**"] },
-  vite: { plugins: [tailwindcss()] },
+  modules: [
+    "@nuxt/icon",
+    "@nuxt/fonts",
+    "@nuxtjs/i18n",
+    "@vueuse/motion/nuxt",
+  ],
+  imports: {
+    dirs: ["lib/**"],
+  },
+  vite: {
+    plugins: [tailwindcss()],
+  },
+  fonts: {
+    processCSSVariables: true,
+    families: [
+      { name: "Inter", provider: "google", weights: ["300 800"] },
+      { name: "Merriweather Sans", provider: "google", weights: ["700"] },
+    ],
+  },
   css: ["~/assets/styles.css"],
   i18n: {
     restructureDir: "app/lib",
@@ -23,13 +38,7 @@ export default defineNuxtConfig({
       fallbackLocale: "en-US",
     },
   },
-  fonts: {
-    processCSSVariables: true,
-    families: [
-      { name: "Inter", provider: "google", weights: ["300 800"] },
-      { name: "Merriweather Sans", provider: "google", weights: ["700"] },
-    ],
-  },
+
   icon: {
     mode: "svg",
     clientBundle: { scan: true },

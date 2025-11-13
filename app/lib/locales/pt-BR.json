@@ -32,7 +32,8 @@
         { "name": "Prisma", "description": "Kit de ferramentas de acesso a banco de dados e ORM para TypeScript." },
         { "name": "PostgreSQL", "description": "Sistema avançado de gerenciamento de banco de dados relacional." },
         { "name": "Go", "description": "Linguagem de programação compilada com foco em simplicidade." },
-        { "name": "Git", "description": "Sistema de controle de versão distribuído para gerenciamento de código." }
+        { "name": "Git", "description": "Sistema de controle de versão distribuído para gerenciamento de código." },
+        { "name": "Vercel", "description": "Plataforma moderna e escalável para implantação de aplicações web." }
       ]
     },
     "experience": {
@@ -42,21 +43,21 @@
           "role": "Desenvolvedor Front-End",
           "company": "Siga Software",
           "period": "05/2025 - Presente",
-          "description": "Desenvolvo e mantenho aplicações web modernas para o setor imobiliário, com foco em acessibilidade, desempenho e SEO. Liderei migrações e refatorações, integrando TypeScript e ESLint para melhorar a qualidade do código. Criei o novo site institucional da empresa com integrações de banco de dados e CMS. Participo de planejamentos, revisões de código e documentação para aprimorar os fluxos de desenvolvimento."
+          "description": "Eu desenvolvo aplicações web modernas e altamente interativas para o setor imobiliário, entregando soluções para mais de 100 empresas e priorizando acessibilidade, desempenho e SEO. Guiei iniciativas de migração e refatoração em larga escala, coordenando a adoção de tecnologias como ESLint e a consolidação de boas práticas de TypeScript. Desenvolvi integralmente o novo site institucional da empresa, incluindo integrações com banco de dados e CMS."
         },
         {
           "role": "Desenvolvedor Full-Stack",
           "company": "Independente",
           "period": "10/2023 - Presente",
-          "description": "Desenvolvo aplicações web modernas utilizando Vue, TypeScript e Tailwind CSS. Crio APIs REST e sistemas de autenticação em Node.js com integrações PostgreSQL. Gerencio versionamento no GitHub, realizo deploys na Vercel e documento APIs com Postman."
+          "description": "Eu desenvolvo aplicações web modernas nos ecossistemas Vue, TypeScript e Tailwind CSS. Também construo sistemas back-end em Node.js, como APIs REST, fluxos de autenticação de usuário e integrações com bancos de dados PostgreSQL."
         }
       ]
     },
     "projects": {
       "title": "Projetos",
       "items": [
-        { "title": "LinkNest", "description": "Uma plataforma de agregação de links que permite a usuários e empresas criar uma página de destino personalizável para compartilhar seus links e informações em um só lugar." },
-        { "title": "SecretkeepR", "description": "Uma plataforma gerenciadora de segredos que ajuda organizações a armazenar, gerenciar e compartilhar informações sensíveis de forma segura. Também possui um CLI integrado." }
+        { "title": "LinkNest", "description": "Plataforma de agregação de links que permite a usuários e empresas criar uma página de destino personalizável para compartilhar seus links e informações em um só lugar." },
+        { "title": "SecretkeepR", "description": "Plataforma gerenciadora de segredos que ajuda organizações a armazenar, gerenciar e compartilhar informações sensíveis de forma segura. Também possui um CLI integrado." }
       ]
     },
     "contact": {

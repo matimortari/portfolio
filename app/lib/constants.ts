@@ -8,6 +8,7 @@ export const STACK_ITEMS: StackItem[] = [
   { name: "PostgreSQL", description: "index.stack.items.6.description", icon: "lineicons:postgresql", url: "https://www.postgresql.org" },
   { name: "Go", description: "index.stack.items.7.description", icon: "lineicons:go", url: "https://go.dev" },
   { name: "Git", description: "index.stack.items.8.description", icon: "lineicons:git", url: "https://git-scm.com" },
+  { name: "Vercel", description: "index.stack.items.9.description", icon: "lineicons:vercel", url: "https://vercel.com" },
 ]
 
 export const PROJECT_ITEMS: ProjectItem[] = [

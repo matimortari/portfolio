@@ -1,5 +1,5 @@
 <template>
-  <section id="projects" class="flex flex-col items-center justify-center gap-8 py-4 text-sm md:items-start">
+  <section id="projects" class="flex flex-col items-center justify-center gap-8 text-sm md:items-start">
     <header class="flex w-full flex-row items-center gap-4 whitespace-nowrap">
       <h4 v-motion :initial="{ opacity: 0, y: -10 }" :visible-once="{ opacity: 1, y: 0 }" :duration="500">
         {{ $t("index.projects.title") }}
@@ -12,13 +12,13 @@
         v-for="(project, index) in PROJECT_ITEMS" :key="index"
         v-motion :initial="{ opacity: 0 }"
         :visible="{ opacity: 1 }" :duration="500"
-        :delay="200 * Number(index)" class="flex flex-col items-center gap-2 text-center md:items-start md:text-start"
+        :delay="200 * Number(index)" class="flex flex-col items-center gap-2 text-center md:text-start"
       >
-        <div class="project-container max-w-[500px] 2xl:max-w-[600px]">
+        <div class="project-container">
           <img :src="project.image" :alt="$t(project.title)" class="right-1 bottom-1 select-none">
         </div>
 
-        <div class="my-2 flex w-full flex-row items-center gap-2 whitespace-nowrap">
+        <div class="flex w-full flex-row items-center gap-2 p-2 whitespace-nowrap">
           <h4>
             {{ $t(project.title) }}
           </h4>
@@ -34,13 +34,13 @@
           </div>
         </div>
 
-        <div class="flex flex-wrap justify-center gap-1 md:justify-start">
+        <div class="flex flex-wrap justify-center gap-1 self-start md:justify-start">
           <span v-for="(skill, i) in project.stack" :key="i" class="label rounded-full! bg-muted!">
             {{ skill }}
           </span>
         </div>
 
-        <p class="max-w-xl text-sm text-muted-foreground">
+        <p class="max-w-xl pb-4 text-sm text-muted-foreground">
           {{ $t(project.description) }}
         </p>
       </div>

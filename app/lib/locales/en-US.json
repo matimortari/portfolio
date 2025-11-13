@@ -32,7 +32,8 @@
         { "name": "Prisma", "description": "Database access toolkit and ORM for TypeScript applications." },
         { "name": "PostgreSQL", "description": "Relational database management system with advanced features." },
         { "name": "Go", "description": "Compiled programming language, designed for simplicity and efficiency." },
-        { "name": "Git", "description": "Distributed version control system for source code management." }
+        { "name": "Git", "description": "Distributed version control system for source code management." },
+        { "name": "Vercel", "description": "A modern and scalable platform for deploying web applications." }
       ]
     },
     "experience": {
@@ -42,13 +43,13 @@
           "role": "Front-End Developer",
           "company": "Siga Software",
           "period": "05/2025 - Present",
-          "description": "Develop and maintain modern web applications for the real estate sector, focusing on accessibility, performance, and SEO. Led migration and refactoring initiatives, integrating TypeScript and ESLint to enhance code quality. Built the company's new institutional website with CMS and database integrations. Collaborate in planning meetings, code reviews, and documentation to improve development workflows."
+          "description": "I develop modern web, highly interactive web applications for the real estate sector, delivering solutions to more than 100 companies, and prioritizing accessibility, performance, and SEO. I've guided large-scale migration and refactoring initiatives, coordinating the adoption of ESLint and the consolidation of TypeScript best practices. I also have fully developed the company's new institutional website, including database and CMS integrations."
         },
         {
           "role": "Full-Stack Developer",
           "company": "Independent",
           "period": "10/2023 - Present",
-          "description": "Design and develop modern web applications using Vue, TypeScript, and Tailwind CSS. Build REST APIs and authentication systems in Node.js with PostgreSQL integrations. Manage version control on GitHub, deploy projects on Vercel, and document APIs using Postman."
+          "description": "I build modern web applications within the Vue, TypeScript, and Tailwind CSS ecosystems. I also develop back-end systems in Node.js, such as REST APIs, user authentication flows, and PostgreSQL database integrations."
         }
       ]
     },

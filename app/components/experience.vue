@@ -1,5 +1,5 @@
 <template>
-  <section id="experience" class="flex flex-col items-center justify-center gap-8 py-4 text-sm md:items-start">
+  <section id="experience" class="flex flex-col items-center justify-center gap-8 text-sm md:items-start">
     <header class="flex w-full flex-row items-center gap-4 whitespace-nowrap">
       <h4 v-motion :initial="{ opacity: 0, y: -20 }" :visible-once="{ opacity: 1, y: 0 }" :duration="500">
         {{ $t("index.experience.title") }}

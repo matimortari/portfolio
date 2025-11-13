@@ -2,10 +2,10 @@
   <transition name="fade-slide">
     <button
       v-show="showButton"
-      class="group fixed bottom-8 left-8 z-50 flex items-center gap-2 rounded-full bg-secondary p-2 text-sm font-semibold transition-all duration-500 hover:scale-105 md:rounded-none md:bg-transparent"
+      class="group fixed bottom-4 left-4 z-50 flex items-center gap-2 rounded-full bg-transparent p-2 text-sm font-semibold transition-all duration-500 hover:scale-105"
       @click="scrollToTop"
     >
-      <icon name="material-symbols:arrow-upward" size="30" />
+      <icon name="material-symbols:arrow-upward" size="40" class="rounded-full p-1 backdrop-blur-xl" />
       <span class="hidden opacity-0 transition-opacity duration-500 group-hover:opacity-100 md:inline-block">
         {{ $t('index.footer.backToTop') }}
       </span>

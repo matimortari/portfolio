@@ -9,7 +9,7 @@
     <div
       v-motion :initial="{ opacity: 0, x: -40 }"
       :visible-once="{ opacity: 1, x: 0 }" :duration="800"
-      :delay="props.motionDelay" class="relative z-20 mx-4 my-24 flex flex-col items-center gap-8 md:mx-auto md:flex-row md:justify-evenly md:gap-24 2xl:gap-32"
+      :delay="motionDelay" class="relative z-20 mx-4 my-24 flex flex-col items-center gap-12 md:mx-auto md:flex-row md:justify-evenly md:gap-24 2xl:gap-32"
     >
       <img src="/assets/avatar.png" alt="Avatar" class="avatar w-44 md:w-56 2xl:w-72">
 
@@ -24,8 +24,8 @@
           {{ $t("index.hero.description") }}
         </p>
 
-        <div class="flex flex-col gap-4 sm:flex-row sm:items-center sm:gap-4">
-          <div class="flex flex-col items-center justify-center gap-2 sm:justify-start md:flex-row">
+        <div class="flex flex-col gap-8 md:flex-row md:items-center">
+          <div class="flex flex-col items-center justify-center gap-2 md:flex-row md:justify-start">
             <nuxt-link
               v-for="(resume, index) in HERO_RESUME_LINKS" :key="index"
               :to="resume.url" target="_blank"
@@ -36,7 +36,7 @@
             </nuxt-link>
           </div>
 
-          <div class="flex flex-row justify-center gap-2 sm:justify-start">
+          <div class="flex flex-row justify-center gap-2 md:justify-start">
             <nuxt-link
               v-for="(link, index) in HERO_CONTACT_LINKS" :key="index"
               :to="link.url" target="_blank"
@@ -54,7 +54,7 @@
 <script setup lang="ts">
 import DottedMap from "dotted-map"
 
-const props = defineProps<{
+defineProps<{
   motionDelay: number
 }>()
 
