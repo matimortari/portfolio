@@ -1,0 +1,73 @@
+{
+  "locale.en-US": "EN",
+  "locale.pt-BR": "PT",
+  "index": {
+    "meta": {
+      "title": "Matheus Mortari — Desenvolvedor Full-Stack",
+      "description": "Bem-vindo ao meu site, onde você pode conhecer meu trabalho. Sinta-se à vontade para explorar e se conectar!"
+    },
+    "navbar": {
+      "about": "Sobre Mim",
+      "contact": "Contato"
+    },
+    "hero": {
+      "title": "Matheus Mortari",
+      "subtitle": "Desenvolvedor Full-Stack",
+      "description": "Bem-vindo ao meu site, onde você pode conhecer meu trabalho. Sinta-se à vontade para explorar e se conectar!"
+    },
+    "about": {
+      "title": "Sobre Mim",
+      "section1": "Sou desenvolvedor de software e estudante de Análise e Desenvolvimento de Sistemas na Universidade de Passo Fundo (UPF), localizado no Rio Grande do Sul. Crio aplicações web dinâmicas, sistemas back-end e ferramentas de produtividade, como CLIs e automações, para otimizar fluxos de trabalho e aprendizado.",
+      "section2": "Interessado em web design, fotografia, escrita técnica e empreendedorismo, gosto de aplicar esses interesses em meus projetos como oportunidades para aprender e explorá-los mais a fundo.",
+      "section3": "Sou adaptável e comprometido em me manter atualizado com as tendências da área, ao mesmo tempo que valorizo tecnologias tradicionais e confiáveis. Sinta-se à vontade para explorar meu trabalho e entrar em contato — estou sempre aberto a oportunidades de aprender e colaborar!"
+    },
+    "stack": {
+      "title": "Tecnologias",
+      "items": [
+        { "name": "TypeScript", "description": "Superset moderno e tipado da linguagem de programação JavaScript." },
+        { "name": "Node.js", "description": "Ambiente de execução JavaScript para aplicativos no servidor." },
+        { "name": "Vue.js", "description": "Framework JavaScript progressivo para construção de interfaces." },
+        { "name": "Nuxt.js", "description": "Framework full-stack para construção de aplicações Vue.js modernas." },
+        { "name": "TailwindCSS", "description": "Framework CSS utilitária para desenvolvimento rápido de interfaces." },
+        { "name": "Prisma", "description": "Kit de ferramentas de acesso a banco de dados e ORM para TypeScript." },
+        { "name": "PostgreSQL", "description": "Sistema avançado de gerenciamento de banco de dados relacional." },
+        { "name": "Go", "description": "Linguagem de programação compilada com foco em simplicidade." },
+        { "name": "Git", "description": "Sistema de controle de versão distribuído para gerenciamento de código." }
+      ]
+    },
+    "experience": {
+      "title": "Experiência",
+      "items": [
+        {
+          "role": "Desenvolvedor Front-End",
+          "company": "Siga Software",
+          "period": "05/2025 - Presente",
+          "description": "Desenvolvo e mantenho aplicações web modernas para o setor imobiliário, com foco em acessibilidade, desempenho e SEO. Liderei migrações e refatorações, integrando TypeScript e ESLint para melhorar a qualidade do código. Criei o novo site institucional da empresa com integrações de banco de dados e CMS. Participo de planejamentos, revisões de código e documentação para aprimorar os fluxos de desenvolvimento."
+        },
+        {
+          "role": "Desenvolvedor Full-Stack",
+          "company": "Independente",
+          "period": "10/2023 - Presente",
+          "description": "Desenvolvo aplicações web modernas utilizando Vue, TypeScript e Tailwind CSS. Crio APIs REST e sistemas de autenticação em Node.js com integrações PostgreSQL. Gerencio versionamento no GitHub, realizo deploys na Vercel e documento APIs com Postman."
+        }
+      ]
+    },
+    "projects": {
+      "title": "Projetos",
+      "items": [
+        { "title": "LinkNest", "description": "Uma plataforma de agregação de links que permite a usuários e empresas criar uma página de destino personalizável para compartilhar seus links e informações em um só lugar." },
+        { "title": "SecretkeepR", "description": "Uma plataforma gerenciadora de segredos que ajuda organizações a armazenar, gerenciar e compartilhar informações sensíveis de forma segura. Também possui um CLI integrado." }
+      ]
+    },
+    "contact": {
+      "title": "Entre em Contato",
+      "subtitle": "Vamos conversar! Sinta-se à vontade para entrar em contato comigo através dos links abaixo.",
+      "resumeEn": "Currículo - Inglês",
+      "resumePt": "Currículo - Português"
+    },
+    "footer": {
+      "backToTop": "Voltar ao Topo",
+      "copyright": "© Matheus Mortari. Todos os direitos reservados."
+    }
+  }
+}

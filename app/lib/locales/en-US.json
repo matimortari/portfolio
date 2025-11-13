@@ -1,0 +1,73 @@
+{
+  "locale.en-US": "EN",
+  "locale.pt-BR": "PT",
+  "index": {
+    "meta": {
+      "title": "Matheus Mortari — Full-Stack Developer",
+      "description": "Welcome to my website, where you can learn about my work. Feel free to explore and connect!"
+    },
+    "navbar": {
+      "about": "About Me",
+      "contact": "Contact"
+    },
+    "hero": {
+      "title": "Matheus Mortari",
+      "subtitle": "Full-Stack Developer",
+      "description": "Welcome to my website, where you can learn about my work. Feel free to explore and connect!"
+    },
+    "about": {
+      "title": "About Me",
+      "section1": "I'm a software developer and Systems Analysis and Development student at the University of Passo Fundo (UPF), based in Rio Grande do Sul, Brazil. I build dynamic web applications, back-end systems, and productivity tools such as CLIs and automations to streamline workflows and learning.",
+      "section2": "Passionate about web design, photography, technical writing, and entrepreneurship, I enjoy applying these interests in my projects as opportunities to learn and explore them further.",
+      "section3": "I'm adaptable and committed to staying up-to-date with industry trends while grounded in traditional and reliable technologies. Feel free to explore my work and reach out — I'm always open to opportunities to learn and collaborate!"
+    },
+    "stack": {
+      "title": "Tech Stack",
+      "items": [
+        { "name": "TypeScript", "description": "Modern, statically typed superset of the JavaScript programming language." },
+        { "name": "Node.js", "description": "JavaScript runtime environment for server-side applications." },
+        { "name": "Vue.js", "description": "Progressive JavaScript framework for building user interfaces." },
+        { "name": "Nuxt.js", "description": "Full-stack framework for building modern Vue.js applications." },
+        { "name": "TailwindCSS", "description": "Utility-first CSS framework for rapid and efficient UI development." },
+        { "name": "Prisma", "description": "Database access toolkit and ORM for TypeScript applications." },
+        { "name": "PostgreSQL", "description": "Relational database management system with advanced features." },
+        { "name": "Go", "description": "Compiled programming language, designed for simplicity and efficiency." },
+        { "name": "Git", "description": "Distributed version control system for source code management." }
+      ]
+    },
+    "experience": {
+      "title": "Experience",
+      "items": [
+        {
+          "role": "Front-End Developer",
+          "company": "Siga Software",
+          "period": "05/2025 - Present",
+          "description": "Develop and maintain modern web applications for the real estate sector, focusing on accessibility, performance, and SEO. Led migration and refactoring initiatives, integrating TypeScript and ESLint to enhance code quality. Built the company's new institutional website with CMS and database integrations. Collaborate in planning meetings, code reviews, and documentation to improve development workflows."
+        },
+        {
+          "role": "Full-Stack Developer",
+          "company": "Independent",
+          "period": "10/2023 - Present",
+          "description": "Design and develop modern web applications using Vue, TypeScript, and Tailwind CSS. Build REST APIs and authentication systems in Node.js with PostgreSQL integrations. Manage version control on GitHub, deploy projects on Vercel, and document APIs using Postman."
+        }
+      ]
+    },
+    "projects": {
+      "title": "Projects",
+      "items": [
+        { "title": "LinkNest", "description": "A link aggregation platform that lets users and businesses create a customizable landing page for sharing their links and information in one place." },
+        { "title": "SecretkeepR", "description": "A secrets management platform that helps organizations securely store, manage, and share sensitive information. It also features an integrated CLI." }
+      ]
+    },
+    "contact": {
+      "title": "Contact Me",
+      "subtitle": "Let's get in touch! Feel free to reach out to me through the links below.",
+      "resumeEn": "Resume - English",
+      "resumePt": "Resume - Portuguese"
+    },
+    "footer": {
+      "backToTop": "Back to Top",
+      "copyright": "© Matheus Mortari. All rights reserved."
+    }
+  }
+}

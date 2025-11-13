@@ -1,0 +1,38 @@
+<template>
+  <section id="contact" class="mx-auto flex flex-col items-center text-center">
+    <span class="divider" />
+
+    <header class="flex flex-col items-center gap-4 p-8 text-center">
+      <h2 v-motion :initial="{ opacity: 0, y: -20 }" :visible-once="{ opacity: 1, y: 0 }" :duration="1000">
+        {{ $t("index.contact.title") }}
+      </h2>
+      <p
+        v-motion :initial="{ opacity: 0, y: -20 }"
+        :visible-once="{ opacity: 1, y: 0 }" :duration="1000"
+        class="text-sm leading-5 text-muted-foreground md:whitespace-nowrap"
+      >
+        {{ $t("index.contact.subtitle") }}
+      </p>
+    </header>
+
+    <div
+      v-motion :initial="{ opacity: 0, y: 20 }"
+      :visible="{ opacity: 1, y: 0 }" :duration="1000"
+      class="flex w-full flex-col items-center gap-8"
+    >
+      <div class="grid gap-8 md:grid-cols-3">
+        <nuxt-link
+          v-for="link in CONTACT_LINKS" :key="link.url"
+          :to="link.url" target="_blank"
+          class="group flex flex-row items-center gap-4"
+        >
+          <icon :name="link.icon ?? ''" size="60" class="text-primary duration-500 group-hover:scale-125" />
+          <div class="flex flex-col items-start gap-1">
+            <span class="font-semibold">{{ link.label }}</span>
+            <span class="text-sm text-muted-foreground group-hover:underline">{{ link.text }}</span>
+          </div>
+        </nuxt-link>
+      </div>
+    </div>
+  </section>
+</template>

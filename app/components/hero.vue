@@ -1,0 +1,123 @@
+<template>
+  <section id="hero" class="relative flex min-h-screen items-center justify-center overflow-hidden">
+    <div class="hero-background" />
+
+    <div class="marquee absolute inset-x-0 z-0 w-[200%] opacity-60">
+      <div v-for="i in 2" :key="i" class="hidden w-full md:flex" v-html="svgMap" />
+    </div>
+
+    <div class="relative z-20 mx-4 my-24 flex flex-col items-center gap-8 md:mx-auto md:flex-row md:justify-evenly md:gap-24 2xl:gap-32">
+      <div
+        v-motion :initial="{ opacity: 0, x: -40 }"
+        :visible-once="{ opacity: 1, x: 0 }" :duration="800"
+        :delay="motionDelay" class="shrink-0"
+      >
+        <img src="/assets/avatar.png" alt="Avatar" class="avatar w-44 md:w-56 2xl:w-72">
+      </div>
+
+      <header
+        v-motion :initial="{ opacity: 0, x: -40 }"
+        :visible-once="{ opacity: 1, x: 0 }" :duration="800"
+        :delay="props.motionDelay" class="flex flex-1 flex-col gap-4 text-center md:text-start"
+      >
+        <h1>
+          {{ $t("index.hero.title") }}
+        </h1>
+        <h2 class="bg-linear-to-r from-muted-foreground to-primary bg-clip-text text-transparent">
+          {{ $t("index.hero.subtitle") }}
+        </h2>
+        <p class="max-w-md leading-5 text-muted-foreground">
+          {{ $t("index.hero.description") }}
+        </p>
+
+        <div class="flex flex-col gap-4 sm:flex-row sm:items-center sm:gap-4">
+          <div class="flex flex-col items-center justify-center gap-2 sm:justify-start md:flex-row">
+            <nuxt-link
+              v-for="resume in HERO_RESUME_LINKS" :key="resume.url"
+              :to="resume.url" target="_blank"
+              class="group btn"
+            >
+              <icon name="material-symbols:lab-profile-outline" size="20" class="transition-all duration-500 group-hover:scale-125" />
+              <span>{{ $t(resume.label) }}</span>
+            </nuxt-link>
+          </div>
+
+          <div class="flex flex-row justify-center gap-2 sm:justify-start">
+            <nuxt-link
+              v-for="link in HERO_CONTACT_LINKS" :key="link.url"
+              :to="link.url" target="_blank"
+              class="group btn rounded-full! bg-muted/80! hover:bg-muted!"
+            >
+              <icon :name="link.icon ?? ''" size="30" class="transition-all duration-500 group-hover:scale-125" />
+            </nuxt-link>
+          </div>
+        </div>
+      </header>
+    </div>
+  </section>
+</template>
+
+<script setup lang="ts">
+import DottedMap from "dotted-map"
+
+const props = defineProps<{
+  motionDelay: number
+}>()
+
+const svgMap = ref("")
+
+onMounted(() => {
+  const map = new DottedMap({ height: 100, grid: "diagonal" })
+  svgMap.value = map.getSVG({
+    radius: 0.25,
+    color: "#2f2f3d",
+    backgroundColor: "#09080d",
+    shape: "circle",
+  })
+})
+</script>
+
+<style scoped>
+.hero-background {
+  background: linear-gradient(330deg, transparent 60%, var(--primary) 80%, var(--secondary) 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+
+.marquee {
+  display: flex;
+  animation: scroll 50s linear infinite;
+}
+
+.avatar {
+  object-fit: cover;
+  border-radius: 50%;
+  animation: float 10s ease-in-out infinite;
+  transition: all 0.5s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translate(0, 0px);
+  }
+  60% {
+    transform: translate(0, 8px);
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+</style>
