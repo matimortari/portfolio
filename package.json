@@ -12,23 +12,25 @@
   "dependencies": {
     "@nuxt/fonts": "0.12.1",
     "@nuxt/icon": "2.1.0",
-    "@nuxtjs/i18n": "10.2.0",
+    "@nuxtjs/i18n": "10.2.1",
     "@tailwindcss/vite": "4.1.17",
-    "@vercel/analytics": "1.5.0",
+    "@vercel/analytics": "1.6.1",
     "@vueuse/motion": "3.0.3",
     "dotted-map": "2.2.3",
-    "nuxt": "4.2.1",
-    "tailwindcss": "4.1.17"
+    "nuxt": "4.2.2",
+    "tailwindcss": "4.1.17",
+    "vue": "3.5.25",
+    "vue-router": "4.6.3"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "6.2.0",
+    "@antfu/eslint-config": "6.6.1",
     "@iconify-json/lineicons": "1.2.6",
-    "@iconify-json/material-symbols": "1.2.44",
-    "@types/node": "24.10.0",
+    "@iconify-json/material-symbols": "1.2.49",
+    "@types/node": "24.10.2",
     "clsx": "2.1.1",
     "eslint": "9.39.1",
-    "eslint-plugin-better-tailwindcss": "3.7.10",
-    "eslint-plugin-format": "1.0.2",
+    "eslint-plugin-better-tailwindcss": "3.8.0",
+    "eslint-plugin-format": "1.1.0",
     "typescript": "5.9.3"
   }
 }
