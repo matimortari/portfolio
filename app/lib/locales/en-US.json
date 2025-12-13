@@ -70,5 +70,11 @@
       "backToTop": "Back to Top",
       "copyright": "© Matheus Mortari. All rights reserved."
     }
+  },
+  "cv": {
+    "meta": {
+      "title": "My Resume",
+      "description": "Check out my resume to learn more about my experience, skills, and projects."
+    }
   }
 }

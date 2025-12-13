@@ -59,6 +59,17 @@ export const ABOUT_SECTIONS: AboutSection[] = [
   },
 ]
 
+export const NAV_LINKS: LinkItem[] = [
+  {
+    label: "index.navbar.about",
+    url: "#about",
+  },
+  {
+    label: "index.navbar.contact",
+    url: "#contact",
+  },
+]
+
 export const CONTACT_LINKS: LinkItem[] = [
   {
     label: "GitHub",
@@ -98,24 +109,17 @@ export const HERO_CONTACT_LINKS: LinkItem[] = [
   },
 ]
 
-export const HERO_RESUME_LINKS: LinkItem[] = [
+export const HERO_RESUME_LINKS: ResumeLink[] = [
   {
+    lang: "en",
     label: "index.contact.resumeEn",
-    url: "https://matimortari.github.io/statics/cv/cv-en.pdf",
+    url: "/cv/en",
+    blob: "https://kdenka4dfbuxnv79.public.blob.vercel-storage.com/portfolio/CV%20-%20EN.pdf",
   },
   {
+    lang: "pt",
     label: "index.contact.resumePt",
-    url: "https://matimortari.github.io/statics/cv/cv-pt.pdf",
-  },
-]
-
-export const NAV_LINKS: LinkItem[] = [
-  {
-    label: "index.navbar.about",
-    url: "#about",
-  },
-  {
-    label: "index.navbar.contact",
-    url: "#contact",
+    url: "/cv/pt",
+    blob: "https://kdenka4dfbuxnv79.public.blob.vercel-storage.com/portfolio/CV%20-%20PT.pdf",
   },
 ]

@@ -70,5 +70,11 @@
       "backToTop": "Voltar ao Topo",
       "copyright": "© Matheus Mortari. Todos os direitos reservados."
     }
+  },
+  "cv": {
+    "meta": {
+      "title": "Meu Currículo",
+      "description": "Confira meu currículo para saber mais sobre minha experiência, habilidades e projetos."
+    }
   }
 }

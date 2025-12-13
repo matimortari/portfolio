@@ -32,3 +32,10 @@ interface LinkItem {
   icon?: string
   text?: string
 }
+
+interface ResumeLink {
+  lang: "en" | "pt"
+  label: string
+  url: string
+  blob: string
+}
