@@ -101,11 +101,13 @@ export const HERO_CONTACT_LINKS: LinkItem[] = [
 export const HERO_RESUME_LINKS: LinkItem[] = [
   {
     label: "index.contact.resumeEn",
-    url: "https://matimortari.github.io/statics/cv/cv-en.pdf",
+    url: "cv/en",
+    origin: "https://kdenka4dfbuxnv79.public.blob.vercel-storage.com/statics/cv/cv-en.pdf",
   },
   {
     label: "index.contact.resumePt",
-    url: "https://matimortari.github.io/statics/cv/cv-pt.pdf",
+    url: "cv/pt",
+    origin: "https://kdenka4dfbuxnv79.public.blob.vercel-storage.com/statics/cv/cv-pt.pdf",
   },
 ]
 

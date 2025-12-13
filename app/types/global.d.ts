@@ -29,6 +29,7 @@ interface AboutSection {
 interface LinkItem {
   label: string
   url: string
+  origin?: string
   icon?: string
   text?: string
 }
