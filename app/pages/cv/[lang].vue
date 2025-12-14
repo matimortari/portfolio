@@ -11,40 +11,43 @@
 <script setup lang="ts">
 const VuePdfEmbed = defineAsyncComponent(() => import("vue-pdf-embed"))
 const route = useRoute()
-const lang = route.params.lang as string
-const blobUrl = HERO_RESUME_LINKS.find(r => r.lang === lang)?.blob ?? ""
-if (lang !== "en" && lang !== "pt") {
-  await navigateTo("/")
-}
+const { locale } = useI18n()
+const lang = computed(() => route.params.lang as string)
+const blobUrl = computed(() => HERO_RESUME_LINKS.find(r => r.lang === lang.value)?.blob)
 
 const pdfWidth = computed(() => {
-  if (import.meta.client) {
-    const screenWidth = window.innerWidth
-    // Mobile: 95% width
-    if (screenWidth < 768) {
-      return screenWidth * 0.95
-    }
-    // Tablet: 90% width
-    if (screenWidth < 1024) {
-      return screenWidth * 0.9
-    }
-    // Desktop: fixed width of 800px
-    return 800
+  if (window.innerWidth < 768) {
+    return window.innerWidth * 0.95
+  }
+
+  if (window.innerWidth < 1024) {
+    return window.innerWidth * 0.9
   }
 
   return 800
 })
 
-useHead({
-  title: $t("cv.meta.title"),
-  link: [{ rel: "canonical", href: `https://matheus-mortari.vercel.app/cv/${lang}` }],
-  meta: [{ name: "description", content: $t("cv.meta.description") }],
-})
+watchEffect(() => {
+  if (lang.value !== "en" && lang.value !== "pt") {
+    return navigateTo("/")
+  }
 
-useLocaleHead({
-  dir: true,
-  seo: true,
-  lang: true,
+  const mappedLocale = ({ en: "en-US", pt: "pt-BR" } as Record<string, "en-US" | "pt-BR">)[lang.value]
+  if (mappedLocale && locale.value !== mappedLocale) {
+    locale.value = mappedLocale
+  }
+
+  useHead({
+    title: $t("cv.meta.title"),
+    link: [{ rel: "canonical", href: `https://matheus-mortari.vercel.app/cv/${lang.value}` }],
+    meta: [{ name: "description", content: $t("cv.meta.description") }],
+  })
+
+  useLocaleHead({
+    dir: true,
+    seo: true,
+    lang: true,
+  })
 })
 </script>
 

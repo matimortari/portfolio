@@ -25,20 +25,18 @@ export default defineNuxtConfig({
     restructureDir: "app/lib",
     baseUrl: process.env.NUXT_PUBLIC_BASE_URL,
     locales: [
-      { code: "en-US", language: "en-US", file: "en-US.json" },
-      { code: "pt-BR", language: "pt-BR", file: "pt-BR.json" },
+      { code: "en-US", iso: "en-US", file: "en-US.json" },
+      { code: "pt-BR", iso: "pt-BR", file: "pt-BR.json" },
     ],
     defaultLocale: "en-US",
     strategy: "no_prefix",
     detectBrowserLanguage: {
-      useCookie: false,
+      useCookie: true,
       cookieKey: "nuxt-lang",
       alwaysRedirect: true,
-      redirectOn: "root",
       fallbackLocale: "en-US",
     },
   },
-
   icon: {
     mode: "svg",
     clientBundle: { scan: true },

@@ -10,16 +10,7 @@
 <script setup lang="ts">
 import { Analytics } from "@vercel/analytics/nuxt"
 
-const { locale } = useI18n()
-
 const showLoader = ref(true)
-
-if (import.meta.client) {
-  const storedLanguage = localStorage.getItem("nuxt-lang")
-  if (storedLanguage === "en-US" || storedLanguage === "pt-BR") {
-    locale.value = storedLanguage
-  }
-}
 
 onMounted(() => {
   const onLoad = () => (showLoader.value = false)
