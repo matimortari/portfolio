@@ -17,7 +17,7 @@
     },
     "about": {
       "title": "Sobre Mim",
-      "section1": "Sou desenvolvedor de software e estudante de Análise e Desenvolvimento de Sistemas na Universidade de Passo Fundo (UPF), localizado no Rio Grande do Sul. Crio aplicações web dinâmicas, sistemas back-end e ferramentas de produtividade, como CLIs e automações, para otimizar fluxos de trabalho e aprendizado.",
+      "section1": "Sou desenvolvedor de software full-stack e estudante de Análise e Desenvolvimento de Sistemas na Universidade de Passo Fundo (UPF), no Rio Grande do Sul. Eu crio aplicações web dinâmicas, sistemas back-end e ferramentas de produtividade, como CLIs e automações, para otimizar fluxos de trabalho e aprendizado.",
       "section2": "Interessado em web design, fotografia, escrita técnica e empreendedorismo, gosto de aplicar esses interesses em meus projetos como oportunidades para aprender e explorá-los mais a fundo.",
       "section3": "Sou adaptável e comprometido em me manter atualizado com as tendências da área, ao mesmo tempo que valorizo tecnologias tradicionais e confiáveis. Sinta-se à vontade para explorar meu trabalho e entrar em contato — estou sempre aberto a oportunidades de aprender e colaborar!"
     },
@@ -40,24 +40,30 @@
       "title": "Experiência",
       "items": [
         {
-          "role": "Desenvolvedor Front-End",
+          "role": "Desenvolvedor de Software",
           "company": "Siga Software",
           "period": "05/2025 - Presente",
-          "description": "Eu desenvolvo aplicações web modernas e altamente interativas para o setor imobiliário, entregando soluções para mais de 100 empresas e priorizando acessibilidade, desempenho e SEO. Guiei iniciativas de migração e refatoração em larga escala, coordenando a adoção de tecnologias como ESLint e a consolidação de boas práticas de TypeScript. Desenvolvi integralmente o novo site institucional da empresa, incluindo integrações com banco de dados e CMS."
+          "description": "Ajudo a construir e manter aplicações web altamente interativas para mais de 100 empresas do setor imobiliário, com foco em acessibilidade, performance e visibilidade orgânica. Liderei o desenvolvimento de um sistema chave que centraliza dados e automatiza fluxos de trabalho, além de desenvolver o novo site institucional da empresa. Colaboro no planejamento, revisões de código e documentação para garantir um desenvolvimento fluido e entregas de qualidade."
         },
         {
-          "role": "Desenvolvedor Full-Stack",
+          "role": "Desenvolvedor de Software",
           "company": "Independente",
           "period": "10/2023 - Presente",
-          "description": "Eu desenvolvo aplicações web modernas nos ecossistemas Vue, TypeScript e Tailwind CSS. Também construo sistemas back-end em Node.js, como APIs REST, fluxos de autenticação de usuário e integrações com bancos de dados PostgreSQL."
+          "description": "Construo aplicações web modernas nos ecossistemas Vue e TypeScript, priorizando performance, responsividade e usabilidade. Uso Tailwind CSS para a construção de interfaces consistentes de forma ágil. Também desenvolvo sistemas back-end em Node.js, como APIs REST, fluxos de autenticação e integrações com bancos de dados, além de configurar ambientes de produção e monitoramento."
         }
       ]
     },
     "projects": {
       "title": "Projetos",
       "items": [
-        { "title": "LinkNest", "description": "Plataforma de agregação de links que permite a usuários e empresas criar uma página de destino personalizável para compartilhar seus links e informações em um só lugar." },
-        { "title": "SecretkeepR", "description": "Plataforma gerenciadora de segredos que ajuda organizações a armazenar, gerenciar e compartilhar informações sensíveis de forma segura. Também possui um CLI integrado." }
+        {
+          "title": "LinkNest",
+          "description": "Um construtor de páginas que permite aos usuários organizar, exibir e compartilhar seus links, perfis e conteúdo, com personalização e dados analíticos integrados."
+        },
+        {
+          "title": "SecretkeepR",
+          "description": "Uma plataforma para equipes gerirem dados sensíveis com segurança, com controles de acesso, registro de auditoria e uma interface de linha de comando para fácil integração."
+        }
       ]
     },
     "contact": {
