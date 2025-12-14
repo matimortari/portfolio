@@ -26,7 +26,7 @@
           </span>
         </div>
 
-        <p class="text-xs text-muted-foreground md:max-w-[90%] md:text-sm">
+        <p class="text-muted-foreground md:max-w-[90%] text-sm">
           {{ $t(exp.description) }}
         </p>
 

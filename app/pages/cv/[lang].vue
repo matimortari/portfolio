@@ -4,6 +4,11 @@
       <div class="flex w-full flex-col items-center p-4">
         <VuePdfEmbed :source="blobUrl" :width="pdfWidth" class="pdf-viewer" />
       </div>
+
+      <button class="btn fixed bottom-4 left-1/2 z-50 -translate-x-1/2 md:right-8 md:left-auto md:translate-x-0" @click="downloadPdf">
+        <icon name="material-symbols:download" size="25" />
+        <span>{{ $t('cv.download') }}</span>
+      </button>
     </ClientOnly>
   </div>
 </template>
@@ -26,6 +31,27 @@ const pdfWidth = computed(() => {
 
   return 800
 })
+
+async function downloadPdf() {
+  if (!blobUrl.value) {
+    return
+  }
+
+  try {
+    const response = await fetch(blobUrl.value)
+    const blob = await response.blob()
+    const blobLink = document.createElement("a")
+    blobLink.href = URL.createObjectURL(blob)
+    blobLink.download = `Matheus_Mortari_CV_${lang.value.toUpperCase()}.pdf`
+    document.body.appendChild(blobLink)
+    blobLink.click()
+    document.body.removeChild(blobLink)
+    URL.revokeObjectURL(blobLink.href)
+  }
+  catch (err) {
+    console.error("Download failed", err)
+  }
+}
 
 watchEffect(() => {
   if (lang.value !== "en" && lang.value !== "pt") {

@@ -81,6 +81,7 @@
     "meta": {
       "title": "My Resume",
       "description": "Check out my resume to learn more about my experience, skills, and projects."
-    }
+    },
+    "download": "Download Resume"
   }
 }
