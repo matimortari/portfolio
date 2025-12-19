@@ -57,11 +57,11 @@
       "title": "Projects",
       "items": [
         {
-          "title": "LinkNest",
+          "title": "Linkstashr",
           "description": "A landing page builder that lets users organize, showcase, and share their social links, profiles, and content, with built-in personalization and analytics."
         },
         {
-          "title": "SecretkeepR",
+          "title": "WindKeep",
           "description": "A platform for teams to safely manage secrets, with built-in access controls, audit logging, and a command-line interface for easy integration."
         }
       ]

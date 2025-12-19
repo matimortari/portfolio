@@ -57,11 +57,11 @@
       "title": "Projetos",
       "items": [
         {
-          "title": "LinkNest",
+          "title": "Linkstashr",
           "description": "Um construtor de páginas que permite aos usuários organizar, exibir e compartilhar seus links, perfis e conteúdo, com personalização e dados analíticos integrados."
         },
         {
-          "title": "SecretkeepR",
+          "title": "WindKeep",
           "description": "Uma plataforma para equipes gerirem dados sensíveis com segurança, com controles de acesso, registro de auditoria e uma interface de linha de comando para fácil integração."
         }
       ]

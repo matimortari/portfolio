@@ -15,18 +15,18 @@ export const PROJECT_ITEMS: ProjectItem[] = [
   {
     title: "index.projects.items.0.title",
     description: "index.projects.items.0.description",
-    image: "https://linknest.vercel.app/og-image.png",
+    image: "https://linkstashr.vercel.app/og-image.png",
     stack: ["TypeScript", "Nuxt.js", "Vue.js", "TailwindCSS", "Pinia", "Chart.js", "OAuth", "Prisma"],
-    demoUrl: "https://linknest.vercel.app",
-    sourceUrl: "https://github.com/matimortari/linknest",
+    demoUrl: "https://linkstashr.vercel.app",
+    sourceUrl: "https://github.com/matimortari/linkstashr",
   },
   {
     title: "index.projects.items.1.title",
     description: "index.projects.items.1.description",
-    image: "https://secretkeepr.vercel.app/og-image.png",
-    stack: ["TypeScript", "Nuxt.js", "Vue.js", "TailwindCSS", "Pinia", "OAuth", "Prisma"],
-    demoUrl: "https://secretkeepr.vercel.app",
-    sourceUrl: "https://github.com/matimortari/secretkeepr",
+    image: "https://windkeep.vercel.app/og-image.png",
+    stack: ["TypeScript", "Nuxt.js", "Vue.js", "TailwindCSS", "Pinia", "Go", "OAuth", "Prisma"],
+    demoUrl: "https://windkeep.vercel.app",
+    sourceUrl: "https://github.com/matimortari/windkeep",
   },
 ]
 
@@ -36,14 +36,12 @@ export const EXPERIENCE_ITEMS: ExperienceItem[] = [
     company: "index.experience.items.0.company",
     period: "index.experience.items.0.period",
     description: "index.experience.items.0.description",
-    stack: ["Nuxt.js", "Vue.js", "TailwindCSS", "TypeScript", "HTML", "CSS", "ESLint", "Git", "Google Analytics"],
   },
   {
     role: "index.experience.items.1.role",
     company: "index.experience.items.1.company",
     period: "index.experience.items.1.period",
     description: "index.experience.items.1.description",
-    stack: ["Nuxt.js", "Vue.js", "TailwindCSS", "TypeScript", "Node.js", "PostgreSQL", "Go", "Postman", "Git", "Vercel"],
   },
 ]
 
