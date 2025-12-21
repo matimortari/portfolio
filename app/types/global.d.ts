@@ -19,7 +19,6 @@ interface ExperienceItem {
   company: string
   period: string
   description: string
-  stack: string[]
 }
 
 interface AboutSection {

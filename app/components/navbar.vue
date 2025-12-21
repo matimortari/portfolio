@@ -7,7 +7,7 @@
           :initial="{ opacity: 0, x: -10 }" :visible-once="{ opacity: 1, x: 0 }"
           :duration="500" class="transition-all duration-500 outline-none select-none hover:scale-125"
         >
-          <img src="/assets/logo.png" alt="Logo" width="40" height="40">
+          <img src="/assets/symbol.png" alt="Logo" width="40" height="40">
         </nuxt-link>
 
         <div class="flex flex-row items-center gap-8 font-semibold tracking-wide">

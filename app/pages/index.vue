@@ -24,18 +24,10 @@ onMounted(async () => {
   motionDelay.value = 800
 })
 
-watchEffect(() => {
-  useHead({
-    title: $t("index.meta.title"),
-    link: [{ rel: "canonical", href: "https://matheus-mortari.vercel.app" }],
-    meta: [{ name: "description", content: $t("index.meta.description") }],
-  })
-
-  useLocaleHead({
-    dir: true,
-    seo: true,
-    lang: true,
-  })
+useHead({
+  title: computed(() => $t("index.meta.title")),
+  link: [{ rel: "canonical", href: "https://matheus-mortari.vercel.app" }],
+  meta: [{ name: "description", content: computed(() => $t("index.meta.description")) }],
 })
 </script>
 

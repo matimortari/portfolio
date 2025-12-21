@@ -35,9 +35,7 @@
         </div>
 
         <div class="flex flex-wrap justify-center gap-1 self-start md:justify-start">
-          <span v-for="(skill, i) in project.stack" :key="i" class="label rounded-full! bg-muted!">
-            {{ skill }}
-          </span>
+          <span v-for="(skill, i) in project.stack" :key="i" class="label rounded-full! bg-muted!">{{ skill }}</span>
         </div>
 
         <p class="max-w-xl pb-4 text-sm text-muted-foreground">
