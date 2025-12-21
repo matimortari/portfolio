@@ -2,7 +2,7 @@
   <div class="flex h-screen w-full justify-center overflow-auto bg-muted">
     <ClientOnly>
       <div class="flex w-full flex-col items-center p-4">
-        <VuePdfEmbed :source="blobUrl" :width="pdfWidth" class="pdf-viewer" />
+        <iframe :src="pdfUrlWithParams" :style="{ width: `${pdfWidth}px`, height: '100vh' }" />
       </div>
 
       <button class="btn fixed bottom-4 left-1/2 z-50 -translate-x-1/2 md:right-8 md:left-auto md:translate-x-0" @click="downloadPdf">
@@ -14,21 +14,27 @@
 </template>
 
 <script setup lang="ts">
-const VuePdfEmbed = defineAsyncComponent(() => import("vue-pdf-embed"))
 const route = useRoute()
 const { locale } = useI18n()
+const windowWidth = ref(800)
 const lang = computed(() => route.params.lang as string)
 const blobUrl = computed(() => HERO_RESUME_LINKS.find(r => r.lang === lang.value)?.blob)
 
+const pdfUrlWithParams = computed(() => {
+  if (!blobUrl.value) {
+    return ""
+  }
+
+  return `${blobUrl.value}#toolbar=0&navpanes=0&scrollbar=0&view=FitH`
+})
+
 const pdfWidth = computed(() => {
-  if (window.innerWidth < 768) {
-    return window.innerWidth * 0.95
+  if (windowWidth.value < 768) {
+    return windowWidth.value * 0.95
   }
-
-  if (window.innerWidth < 1024) {
-    return window.innerWidth * 0.9
+  if (windowWidth.value < 1024) {
+    return windowWidth.value * 0.9
   }
-
   return 800
 })
 
@@ -53,6 +59,19 @@ async function downloadPdf() {
   }
 }
 
+onMounted(() => {
+  const updateWidth = () => {
+    windowWidth.value = window.innerWidth
+  }
+
+  updateWidth()
+  window.addEventListener("resize", updateWidth)
+
+  onBeforeUnmount(() => {
+    window.removeEventListener("resize", updateWidth)
+  })
+})
+
 watchEffect(() => {
   if (lang.value !== "en" && lang.value !== "pt") {
     return navigateTo("/")
@@ -62,31 +81,11 @@ watchEffect(() => {
   if (mappedLocale && locale.value !== mappedLocale) {
     locale.value = mappedLocale
   }
+})
 
-  useHead({
-    title: $t("cv.meta.title"),
-    link: [{ rel: "canonical", href: `https://matheus-mortari.vercel.app/cv/${lang.value}` }],
-    meta: [{ name: "description", content: $t("cv.meta.description") }],
-  })
-
-  useLocaleHead({
-    dir: true,
-    seo: true,
-    lang: true,
-  })
+useHead({
+  title: computed(() => $t("index.meta.title")),
+  link: [{ rel: "canonical", href: computed(() => `https://matheus-mortari.vercel.app/cv/${lang.value}`) }],
+  meta: [{ name: "description", content: computed(() => $t("index.meta.description")) }],
 })
 </script>
-
-<style scoped>
-.pdf-viewer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-}
-
-.pdf-viewer :deep(canvas) {
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 0.25rem;
-}
-</style>

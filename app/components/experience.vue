@@ -26,15 +26,9 @@
           </span>
         </div>
 
-        <p class="text-muted-foreground md:max-w-[90%] text-sm">
+        <p class="text-sm text-muted-foreground md:max-w-[90%]">
           {{ $t(exp.description) }}
         </p>
-
-        <div class="flex flex-wrap justify-center gap-1 md:justify-start">
-          <span v-for="(item, i) in exp.stack" :key="i" class="label">
-            {{ item }}
-          </span>
-        </div>
       </div>
     </div>
   </section>
