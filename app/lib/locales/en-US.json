@@ -1,0 +1,89 @@
+{
+  "locale.en-US": "EN",
+  "locale.pt-BR": "PT",
+  "index": {
+    "meta": {
+      "title": "Matheus Mortari — Full-Stack Developer",
+      "description": "Welcome to my website, where you can learn about my work. Feel free to explore and connect!"
+    },
+    "navbar": {
+      "about": "About Me",
+      "contact": "Contact"
+    },
+    "hero": {
+      "title": "Matheus Mortari",
+      "subtitle": "Full-Stack Developer",
+      "description": "Welcome to my website, where you can learn about my work. Feel free to explore and connect!"
+    },
+    "about": {
+      "title": "About Me",
+      "section1": "I'm a full-stack software developer and Systems Analysis and Development student at the University of Passo Fundo (UPF), based in Rio Grande do Sul, Brazil. I build dynamic web applications, back-end systems, and productivity tools such as CLIs and automations.",
+      "section2": "I'm adaptable and committed to staying up-to-date with industry trends while grounded in traditional and reliable technologies. Feel free to explore my work and reach out — I'm always open to opportunities to learn and collaborate!"
+    },
+    "stack": {
+      "title": "Tech Stack",
+      "subtitle": "Technologies I enjoy working with.",
+      "items": [
+        { "name": "TypeScript", "description": "Modern, statically typed superset of the JavaScript programming language." },
+        { "name": "Node.js", "description": "JavaScript runtime environment for server-side applications." },
+        { "name": "Vue.js", "description": "Progressive JavaScript framework for building user interfaces." },
+        { "name": "Nuxt.js", "description": "Full-stack framework for building modern Vue.js applications." },
+        { "name": "TailwindCSS", "description": "Utility-first CSS framework for rapid and efficient UI development." },
+        { "name": "Prisma", "description": "Database access toolkit and ORM for TypeScript applications." },
+        { "name": "PostgreSQL", "description": "Relational database management system with advanced features." },
+        { "name": "Go", "description": "Compiled programming language, designed for simplicity and efficiency." },
+        { "name": "Git", "description": "Distributed version control system for source code management." },
+        { "name": "Docker", "description": "Containerization platform for running applications in isolated environments." }
+      ]
+    },
+    "experience": {
+      "title": "Experience",
+      "subtitle": "My professional journey.",
+      "items": [
+        {
+          "role": "Software Developer",
+          "company": "Siga Software",
+          "period": "05/2025 - Present",
+          "description": "I help build and maintain highly interactive web applications for more than 100 real estate companies, focusing on accessibility, performance, and organic visibility. I led the development of a key operational system that centralizes data and automates workflows, and I also developed the company's new institutional website. I collaborate on planning, code reviews, and documentation to ensure smooth development and high-quality deliveries."
+        },
+        {
+          "role": "Software Developer",
+          "company": "Independent",
+          "period": "10/2023 - Present",
+          "description": "I build modern web applications in the Vue and TypeScript ecosystems, prioritizing performance, responsiveness, and usability. I use Tailwind CSS to create consistent interfaces efficiently. I also develop back-end systems in Node.js, such as REST APIs, authentication flows, and database integrations, while setting up production environments and monitoring."
+        }
+      ]
+    },
+    "projects": {
+      "title": "Projects",
+      "subtitle": "Some works that I do for fun and learning.",
+      "items": [
+        {
+          "title": "AllLinks",
+          "description": "A landing page builder that lets users organize, showcase, and share their social links, profiles, and content, with built-in personalization and analytics."
+        },
+        {
+          "title": "WindKeep",
+          "description": "A platform for teams to safely manage secrets, with built-in access controls, audit logging, and a command-line interface for easy integration."
+        }
+      ]
+    },
+    "contact": {
+      "title": "Contact Me",
+      "subtitle": "Let's get in touch! Feel free to reach out to me through the links below.",
+      "resumeEn": "Resume - English",
+      "resumePt": "Resume - Portuguese"
+    },
+    "footer": {
+      "backToTop": "Back to Top",
+      "copyright": "© Matheus Mortari. All rights reserved."
+    }
+  },
+  "cv": {
+    "meta": {
+      "title": "My Resume",
+      "description": "Check out my resume to learn more about my experience, skills, and projects."
+    },
+    "download": "Download Resume"
+  }
+}

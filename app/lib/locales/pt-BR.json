@@ -1,0 +1,89 @@
+{
+  "locale.en-US": "EN",
+  "locale.pt-BR": "PT",
+  "index": {
+    "meta": {
+      "title": "Matheus Mortari — Desenvolvedor Full-Stack",
+      "description": "Bem-vindo ao meu site, onde você pode conhecer meu trabalho. Sinta-se à vontade para explorar e se conectar!"
+    },
+    "navbar": {
+      "about": "Sobre Mim",
+      "contact": "Contato"
+    },
+    "hero": {
+      "title": "Matheus Mortari",
+      "subtitle": "Desenvolvedor Full-Stack",
+      "description": "Bem-vindo ao meu site, onde você pode conhecer meu trabalho. Sinta-se à vontade para explorar e se conectar!"
+    },
+    "about": {
+      "title": "Sobre Mim",
+      "section1": "Sou desenvolvedor de software full-stack e estudante de Análise e Desenvolvimento de Sistemas na Universidade de Passo Fundo (UPF), no Rio Grande do Sul. Eu crio aplicações web dinâmicas, sistemas back-end e ferramentas de produtividade, como CLIs e automações.",
+      "section2": "Sou adaptável e comprometido em me manter atualizado com as tendências da área, ao mesmo tempo que valorizo tecnologias tradicionais e confiáveis. Sinta-se à vontade para explorar meu trabalho e entrar em contato — estou sempre aberto a oportunidades de aprender e colaborar!"
+    },
+    "stack": {
+      "title": "Tecnologias",
+      "subtitle": "Tecnologias que gosto de trabalhar.",
+      "items": [
+        { "name": "TypeScript", "description": "Superset moderno e tipado da linguagem de programação JavaScript." },
+        { "name": "Node.js", "description": "Ambiente de execução JavaScript para aplicativos no servidor." },
+        { "name": "Vue.js", "description": "Framework JavaScript progressivo para construção de interfaces." },
+        { "name": "Nuxt.js", "description": "Framework full-stack para construção de aplicações Vue.js modernas." },
+        { "name": "TailwindCSS", "description": "Framework CSS utilitária para desenvolvimento rápido de interfaces." },
+        { "name": "Prisma", "description": "Kit de ferramentas de acesso a banco de dados e ORM para TypeScript." },
+        { "name": "PostgreSQL", "description": "Sistema avançado de gerenciamento de banco de dados relacional." },
+        { "name": "Go", "description": "Linguagem de programação compilada com foco em simplicidade." },
+        { "name": "Git", "description": "Sistema de controle de versão distribuído para gerenciamento de código." },
+        { "name": "Docker", "description": "Plataforma de containerização para executar aplicações em ambientes isolados." }
+      ]
+    },
+    "experience": {
+      "title": "Experiência",
+      "subtitle": "Minha trajetória profissional.",
+      "items": [
+        {
+          "role": "Desenvolvedor de Software",
+          "company": "Siga Software",
+          "period": "05/2025 - Presente",
+          "description": "Ajudo a construir e manter aplicações web altamente interativas para mais de 100 empresas do setor imobiliário, com foco em acessibilidade, performance e visibilidade orgânica. Liderei o desenvolvimento de um sistema chave que centraliza dados e automatiza fluxos de trabalho, além de desenvolver o novo site institucional da empresa. Colaboro no planejamento, revisões de código e documentação para garantir um desenvolvimento fluido e entregas de qualidade."
+        },
+        {
+          "role": "Desenvolvedor de Software",
+          "company": "Independente",
+          "period": "10/2023 - Presente",
+          "description": "Construo aplicações web modernas nos ecossistemas Vue e TypeScript, priorizando performance, responsividade e usabilidade. Uso Tailwind CSS para a construção de interfaces consistentes de forma ágil. Também desenvolvo sistemas back-end em Node.js, como APIs REST, fluxos de autenticação e integrações com bancos de dados, além de configurar ambientes de produção e monitoramento."
+        }
+      ]
+    },
+    "projects": {
+      "title": "Projetos",
+      "subtitle": "Alguns trabalhos que faço por diversão e aprendizado.",
+      "items": [
+        {
+          "title": "AllLinks",
+          "description": "Um construtor de páginas que permite aos usuários organizar, exibir e compartilhar seus links, perfis e conteúdo, com personalização e dados analíticos integrados."
+        },
+        {
+          "title": "WindKeep",
+          "description": "Uma plataforma para equipes gerirem dados sensíveis com segurança, com controles de acesso, registro de auditoria e uma interface de linha de comando para fácil integração."
+        }
+      ]
+    },
+    "contact": {
+      "title": "Entre em Contato",
+      "subtitle": "Vamos conversar! Sinta-se à vontade para entrar em contato comigo através dos links abaixo.",
+      "resumeEn": "Currículo - Inglês",
+      "resumePt": "Currículo - Português"
+    },
+    "footer": {
+      "backToTop": "Voltar ao Topo",
+      "copyright": "© Matheus Mortari. Todos os direitos reservados."
+    }
+  },
+  "cv": {
+    "meta": {
+      "title": "Meu Currículo",
+      "description": "Confira meu currículo para saber mais sobre minha experiência, habilidades e projetos."
+    },
+    "download": "Baixar Currículo"
+  }
+}
