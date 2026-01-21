@@ -1,11 +1,11 @@
 <template>
   <div class="flex h-screen flex-col items-center justify-center gap-4">
     <h1>
-      {{ error.statusCode }}
+      {{ error.status }}
     </h1>
 
     <p class="text-center text-muted-foreground">
-      {{ error.statusMessage }}
+      {{ error.statusText || "Unknown error" }}
     </p>
 
     <nuxt-link to="/">
