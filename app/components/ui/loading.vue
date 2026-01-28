@@ -1,7 +1,7 @@
 <template>
   <transition name="fade-slide" mode="out-in">
     <div v-show="isLoading" class="fixed inset-0 flex min-h-screen flex-col items-center justify-center gap-4 bg-background">
-      <div class="relative h-1 w-1/4 overflow-hidden rounded bg-muted">
+      <div class="relative h-1 w-1/4 overflow-hidden rounded-sm bg-muted">
         <div class="progress-bar h-1 bg-primary" />
       </div>
     </div>
