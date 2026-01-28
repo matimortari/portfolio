@@ -1,7 +1,7 @@
 <template>
-  <nav class="fixed top-0 z-50 w-full p-4 transition-all duration-500 md:px-8" :class="[showNavbar ? 'translate-y-0' : '-translate-y-full', scrolled ? 'backdrop-blur-sm' : '']">
+  <nav class="fixed top-0 z-50 w-full p-8 transition-all duration-500" :class="[showNavbar ? 'translate-y-0' : '-translate-y-full', scrolled ? 'p-4! backdrop-blur-sm' : '']">
     <div class="flex flex-row items-center justify-between">
-      <div class="flex flex-row items-center justify-center gap-10 text-foreground">
+      <div class="flex flex-row items-center justify-center gap-8 text-foreground">
         <nuxt-link
           v-motion to="/"
           :initial="{ opacity: 0, x: -10 }" :visible-once="{ opacity: 1, x: 0 }"
@@ -15,7 +15,7 @@
             v-for="(link, index) in NAV_LINKS" :key="index"
             v-motion :to="link.url"
             :initial="{ opacity: 0, y: -10 }" :visible-once="{ opacity: 1, y: 0 }"
-            :duration="500" :delay="200 * index"
+            :duration="500" :delay="150 * index"
             class="hidden text-lg outline-none hover:underline md:block"
           >
             {{ $t(link.label) }}

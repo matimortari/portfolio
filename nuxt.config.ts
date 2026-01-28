@@ -15,6 +15,7 @@ export default defineNuxtConfig({
     families: [
       { name: "Inter", provider: "google", weights: ["300 800"] },
       { name: "Merriweather Sans", provider: "google", weights: ["700"] },
+      { name: "JetBrains Mono", provider: "google", weights: ["400"] },
     ],
   },
   css: ["~/assets/styles.css"],
