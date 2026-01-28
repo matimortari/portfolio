@@ -7,9 +7,6 @@ export default defineNuxtConfig({
     "@nuxtjs/i18n",
     "@vueuse/motion/nuxt",
   ],
-  imports: {
-    dirs: ["lib/**"],
-  },
   vite: {
     plugins: [tailwindcss()],
   },
@@ -22,7 +19,7 @@ export default defineNuxtConfig({
   },
   css: ["~/assets/styles.css"],
   i18n: {
-    restructureDir: "app/lib",
+    restructureDir: "app/utils",
     baseUrl: process.env.NUXT_PUBLIC_BASE_URL,
     locales: [
       { code: "en-US", iso: "en-US", file: "en-US.json" },
