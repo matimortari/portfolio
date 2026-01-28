@@ -1,6 +1,6 @@
 # Matheus Mortari — Web Portfolio
 
-Welcome to my [**web portfolio**](https://matheus-mortari.vercel.app)! This website showcases my projects and experiences in software development.
+Welcome to my [**Portfolio**](https://matheus-mortari.vercel.app)! This website showcases my projects and experiences in software development.
 
 ## My Tech Stack
 
