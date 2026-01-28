@@ -2,10 +2,15 @@
   <Navbar />
   <Hero />
 
-  <section id="about" class="relative z-10 container mx-auto flex w-full flex-col items-center p-4 md:p-0">
+  <section id="about" class="relative z-10 container mx-auto flex w-full flex-col items-center p-8">
     <div class="grid-backdrop" />
 
-    <About />
+    <div class="flex w-full flex-col gap-24 border-y-2 border-primary py-12 text-center">
+      <About />
+      <Stack />
+      <Projects />
+    </div>
+
     <Contact />
   </section>
 
@@ -27,12 +32,10 @@ useHead({
   inset: 0;
   z-index: 0;
   pointer-events: none;
-  opacity: 0.2;
   background-image:
-    linear-gradient(to right, var(--muted) 1px, transparent 1px),
-    linear-gradient(to bottom, var(--muted) 1px, transparent 1px);
-  background-size: 50px 50px;
-  mask-image: linear-gradient(to bottom, transparent 0%, black 10%, black 90%, transparent 100%);
+    linear-gradient(to right, rgba(0, 255, 136, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 255, 136, 0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
 }
 
 main > *:not(.grid-backdrop) {

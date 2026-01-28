@@ -1,15 +1,13 @@
 <template>
-  <div class="flex h-screen w-full justify-center overflow-auto bg-muted">
-    <ClientOnly>
-      <div class="flex w-full flex-col items-center p-4">
-        <iframe :src="pdfUrlWithParams" :title="$t('cv.title')" :style="{ width: `${pdfWidth}px`, height: '100vh' }" />
-      </div>
-
-      <button class="btn fixed bottom-4 left-1/2 z-50 -translate-x-1/2 md:right-8 md:left-auto md:translate-x-0" @click="downloadPdf">
-        <icon name="material-symbols:download" size="25" />
-        <span>{{ $t('cv.download') }}</span>
-      </button>
+  <div class="relative flex h-screen w-full justify-center overflow-auto">
+    <ClientOnly class="flex w-full flex-col items-center p-2">
+      <iframe :src="pdfUrlWithParams" :title="$t('cv.meta.title')" :style="{ width: `${pdfWidth}px`, height: '100vh' }" />
     </ClientOnly>
+
+    <button class="group fixed right-4 bottom-4 z-50 flex items-center gap-2 rounded-full bg-transparent p-2 text-sm font-semibold transition-all duration-500 hover:scale-105" @click="downloadPdf">
+      <span class="hidden opacity-0 transition-opacity duration-500 group-hover:opacity-100 md:inline-block">{{ $t('cv.download') }}</span>
+      <icon name="material-symbols:download" size="40" class="rounded-full p-1 backdrop-blur-xl" />
+    </button>
   </div>
 </template>
 
@@ -19,14 +17,7 @@ const { locale } = useI18n()
 const windowWidth = ref(800)
 const lang = computed(() => route.params.lang as string)
 const blobUrl = computed(() => HERO_RESUME_LINKS.find(r => r.lang === lang.value)?.blob)
-
-const pdfUrlWithParams = computed(() => {
-  if (!blobUrl.value) {
-    return ""
-  }
-
-  return `${blobUrl.value}#toolbar=0&navpanes=0&scrollbar=0&view=FitH`
-})
+const pdfUrlWithParams = computed(() => blobUrl.value ? `${blobUrl.value}#toolbar=0&navpanes=0&scrollbar=0&view=FitH` : "")
 
 const pdfWidth = computed(() => {
   if (windowWidth.value < 768) {
@@ -35,6 +26,7 @@ const pdfWidth = computed(() => {
   if (windowWidth.value < 1024) {
     return windowWidth.value * 0.9
   }
+
   return 800
 })
 
@@ -45,34 +37,20 @@ async function downloadPdf() {
 
   const response = await fetch(blobUrl.value)
   const blob = await response.blob()
-  const blobLink = document.createElement("a")
-  blobLink.href = URL.createObjectURL(blob)
-  blobLink.download = `Matheus_Mortari_CV_${lang.value.toUpperCase()}.pdf`
-  document.body.appendChild(blobLink)
-  blobLink.click()
-  document.body.removeChild(blobLink)
-  URL.revokeObjectURL(blobLink.href)
+  const url = URL.createObjectURL(blob)
+  const link = document.createElement("a")
+  link.href = url
+  link.download = `Matheus_Mortari_CV_${lang.value.toUpperCase()}.pdf`
+  link.click()
+  URL.revokeObjectURL(url)
 }
-
-onMounted(() => {
-  const updateWidth = () => {
-    windowWidth.value = window.innerWidth
-  }
-
-  updateWidth()
-  window.addEventListener("resize", updateWidth)
-
-  onBeforeUnmount(() => {
-    window.removeEventListener("resize", updateWidth)
-  })
-})
 
 watchEffect(() => {
   if (lang.value !== "en" && lang.value !== "pt") {
     return navigateTo("/")
   }
 
-  const mappedLocale = ({ en: "en-US", pt: "pt-BR" } as Record<string, "en-US" | "pt-BR">)[lang.value]
+  const mappedLocale = ({ en: "en-US", pt: "pt-BR" })[lang.value] as "en-US" | "pt-BR"
   if (mappedLocale && locale.value !== mappedLocale) {
     locale.value = mappedLocale
   }

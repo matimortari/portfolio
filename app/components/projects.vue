@@ -1,74 +1,49 @@
 <template>
-  <section id="projects" class="flex flex-1 flex-col items-center justify-center gap-4 text-sm md:items-start">
-    <header class="flex w-full flex-col items-center gap-1 whitespace-nowrap md:items-start">
-      <h4>
-        {{ $t("index.projects.title") }}
-      </h4>
-      <p class="text-sm font-medium text-muted-foreground">
-        {{ $t("index.projects.subtitle") }}
-      </p>
-    </header>
+  <section
+    id="projects" v-motion
+    :initial="{ opacity: 0, y: 20 }" :visible-once="{ opacity: 1, y: 0 }"
+    :duration="500" class="mx-auto flex w-full max-w-7xl flex-col items-center gap-8"
+  >
+    <h3>
+      {{ $t("index.projects.title") }}
+    </h3>
 
-    <div class="flex flex-col items-center gap-8 md:items-start md:gap-4">
-      <div
+    <div class="grid w-full gap-24 md:grid-cols-2">
+      <article
         v-for="(project, index) in PROJECT_ITEMS" :key="index"
-        v-motion :initial="{ opacity: 0 }"
-        :visible="{ opacity: 1 }" :duration="500"
-        :delay="200 * Number(index)" class="flex flex-col items-center gap-2 text-center md:text-start"
+        v-motion :initial="{ opacity: 0, y: 20 }"
+        :visible-once="{ opacity: 1, y: 0 }" :duration="500"
+        :delay="index * 150" class="flex flex-col gap-2"
       >
-        <div class="project-container">
-          <img :src="project.image" :alt="$t(project.title)" class="right-1 bottom-1 select-none">
+        <div class="w-full overflow-hidden rounded-md border">
+          <img :src="project.image" :alt="$t(project.title)" class="h-auto w-full transition-transform duration-500 hover:scale-105">
         </div>
 
-        <div class="flex w-full flex-row items-center gap-2 p-2 whitespace-nowrap">
-          <h4>
-            {{ $t(project.title) }}
-          </h4>
-          <span class="divider" />
+        <div class="flex flex-col gap-2">
+          <div class="flex flex-row items-center justify-between">
+            <h4>
+              {{ $t(project.title) }}
+            </h4>
 
-          <div class="flex flex-row items-center gap-2">
-            <nuxt-link :to="project.sourceUrl" target="_blank" class="flex shrink-0 items-center transition-all duration-500 hover:scale-125 hover:text-secondary">
-              <icon name="simple-icons:github" size="30" />
-            </nuxt-link>
-            <nuxt-link :to="project.demoUrl" target="_blank" class="flex shrink-0 items-center transition-all duration-500 hover:scale-125 hover:text-secondary">
-              <icon name="material-symbols:share-windows" size="30" />
-            </nuxt-link>
+            <div class="flex flex-row items-center gap-2">
+              <nuxt-link :to="project.demoUrl" target="_blank" class="btn">
+                <icon name="material-symbols:share-windows" size="20" class="transition-all duration-500 group-hover:scale-125" />
+              </nuxt-link>
+              <nuxt-link :to="project.sourceUrl" target="_blank" class="btn">
+                <icon name="simple-icons:github" size="20" class="transition-all duration-500 group-hover:scale-125" />
+              </nuxt-link>
+            </div>
+          </div>
+
+          <p class="text-sm text-muted-foreground md:text-start">
+            {{ $t(project.description) }}
+          </p>
+
+          <div class="flex flex-wrap gap-2">
+            <span v-for="tech in project.stack" :key="tech" class="label">{{ tech }}</span>
           </div>
         </div>
-
-        <div class="flex flex-wrap justify-center gap-1 self-start md:justify-start">
-          <span v-for="(skill, i) in project.stack" :key="i" class="label rounded-full! bg-muted!">{{ skill }}</span>
-        </div>
-
-        <p class="max-w-xl pb-4 text-sm text-muted-foreground">
-          {{ $t(project.description) }}
-        </p>
-      </div>
+      </article>
     </div>
   </section>
 </template>
-
-<style scoped>
-.project-container {
-  position: relative;
-  border-radius: 1rem;
-  aspect-ratio: 2 / 1;
-  width: 100%;
-  filter: brightness(0.8);
-  box-shadow: 1px 1px 0 1px var(--primary);
-  transition: all 0.5s ease-in-out;
-}
-.project-container:hover {
-  filter: brightness(1);
-  transform: scale(1.02);
-}
-.project-container img {
-  position: absolute;
-  border-radius: 1rem;
-  border: 1px solid var(--primary);
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: all 0.5s ease-in-out;
-}
-</style>

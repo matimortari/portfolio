@@ -37,12 +37,6 @@ export const EXPERIENCE_ITEMS: ExperienceItem[] = [
     period: "index.experience.items.0.period",
     description: "index.experience.items.0.description",
   },
-  {
-    role: "index.experience.items.1.role",
-    company: "index.experience.items.1.company",
-    period: "index.experience.items.1.period",
-    description: "index.experience.items.1.description",
-  },
 ]
 
 export const ABOUT_SECTIONS: AboutSection[] = [
@@ -58,6 +52,10 @@ export const NAV_LINKS: LinkItem[] = [
   {
     label: "index.navbar.about",
     url: "#about",
+  },
+  {
+    label: "index.navbar.projects",
+    url: "#projects",
   },
   {
     label: "index.navbar.contact",

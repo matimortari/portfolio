@@ -8,12 +8,12 @@
     },
     "navbar": {
       "about": "Sobre Mim",
+      "projects": "Projetos",
       "contact": "Contato"
     },
     "hero": {
       "title": "Matheus Mortari",
-      "subtitle": "Desenvolvedor Full-Stack",
-      "description": "Bem-vindo ao meu site, onde você pode conhecer meu trabalho. Sinta-se à vontade para explorar e se conectar!"
+      "subtitle": "Desenvolvedor Full-Stack"
     },
     "about": {
       "title": "Sobre Mim",
@@ -33,7 +33,7 @@
         { "name": "PostgreSQL", "description": "Sistema avançado de gerenciamento de banco de dados relacional." },
         { "name": "Go", "description": "Linguagem de programação compilada com foco em simplicidade." },
         { "name": "Git", "description": "Sistema de controle de versão distribuído para gerenciamento de código." },
-        { "name": "Docker", "description": "Plataforma de containerização para executar aplicações em ambientes isolados." }
+        { "name": "Docker", "description": "Plataforma que permite a execução de aplicações em ambientes isolados." }
       ]
     },
     "experience": {
@@ -45,12 +45,6 @@
           "company": "Siga Software",
           "period": "05/2025 - Presente",
           "description": "Ajudo a construir e manter aplicações web altamente interativas para mais de 100 empresas do setor imobiliário, com foco em acessibilidade, performance e visibilidade orgânica. Liderei o desenvolvimento de um sistema chave que centraliza dados e automatiza fluxos de trabalho, além de desenvolver o novo site institucional da empresa. Colaboro no planejamento, revisões de código e documentação para garantir um desenvolvimento fluido e entregas de qualidade."
-        },
-        {
-          "role": "Desenvolvedor de Software",
-          "company": "Independente",
-          "period": "10/2023 - Presente",
-          "description": "Construo aplicações web modernas nos ecossistemas Vue e TypeScript, priorizando performance, responsividade e usabilidade. Uso Tailwind CSS para a construção de interfaces consistentes de forma ágil. Também desenvolvo sistemas back-end em Node.js, como APIs REST, fluxos de autenticação e integrações com bancos de dados, além de configurar ambientes de produção e monitoramento."
         }
       ]
     },

@@ -1,18 +1,14 @@
 <template>
   <section id="hero" class="relative flex min-h-screen items-center justify-center overflow-hidden">
     <div class="hero-background" />
-
-    <div class="marquee">
-      <div v-for="index in 2" :key="index" class="hidden w-full md:flex" v-html="svgMap" />
-    </div>
+    <div class="corner-accent corner-tl" />
+    <div class="corner-accent corner-br" />
 
     <div
       v-motion :initial="{ opacity: 0, x: -40 }"
       :visible-once="{ opacity: 1, x: 0 }" :duration="800"
-      :delay="motionDelay" class="relative z-20 flex flex-col items-center justify-center gap-12 px-4 py-24 md:mx-auto md:flex-row md:gap-32"
+      :delay="motionDelay" class="relative z-20 flex flex-col-reverse items-center justify-center gap-12 px-4 py-24 md:mx-auto md:flex-row md:gap-32"
     >
-      <img src="/assets/avatar.png" alt="Avatar" class="avatar w-44 md:w-64">
-
       <header class="flex flex-1 flex-col gap-4 text-center md:text-start">
         <h1>
           {{ $t("index.hero.title") }}
@@ -20,12 +16,9 @@
         <h2 class="bg-linear-to-r from-muted-foreground to-primary bg-clip-text text-transparent">
           {{ $t("index.hero.subtitle") }}
         </h2>
-        <p class="max-w-md leading-5 text-muted-foreground">
-          {{ $t("index.hero.description") }}
-        </p>
 
-        <div class="flex flex-col gap-4 md:flex-row md:items-center">
-          <div class="flex flex-col items-center justify-center gap-2 md:flex-row md:justify-start">
+        <div class="flex flex-col items-center gap-2 md:items-start">
+          <div class="flex flex-wrap gap-2">
             <nuxt-link
               v-for="(resume, index) in HERO_RESUME_LINKS" :key="index"
               :to="resume.url" target="_blank"
@@ -36,88 +29,110 @@
             </nuxt-link>
           </div>
 
-          <div class="flex flex-row justify-center gap-2 md:justify-start">
+          <div class="flex flex-row items-center gap-2">
             <nuxt-link
               v-for="(link, index) in HERO_CONTACT_LINKS" :key="index"
               :to="link.url" target="_blank"
-              class="group btn rounded-full! bg-muted/80! hover:bg-muted!"
+              class="group btn"
             >
-              <icon :name="link.icon ?? ''" size="20" class="transition-all duration-500 group-hover:scale-125" />
+              <icon :name="link.icon ?? ''" size="25" class="transition-all duration-500 group-hover:scale-125" />
             </nuxt-link>
           </div>
         </div>
       </header>
+
+      <div class="avatar-container">
+        <div class="avatar-border" />
+        <img src="/assets/avataaar.png" alt="Avatar" class="relative size-full rounded-full object-cover">
+      </div>
     </div>
   </section>
 </template>
 
 <script setup lang="ts">
-import DottedMap from "dotted-map"
-
 const motionDelay = ref(0)
-const svgMap = ref("")
 
 onMounted(async () => {
   await nextTick()
   motionDelay.value = 1000
-
-  const map = new DottedMap({ height: 100, grid: "diagonal" })
-  svgMap.value = map.getSVG({
-    radius: 0.25,
-    color: "#2f2f3d",
-    backgroundColor: "#09080d",
-    shape: "circle",
-  })
 })
 </script>
 
 <style scoped>
 .hero-background {
-  background: linear-gradient(330deg, transparent 60%, var(--primary) 80%, var(--secondary) 100%);
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 10;
-}
-
-.marquee {
-  position: absolute;
-  display: flex;
+  inset: 0;
   z-index: 0;
-  width: 200%;
-  opacity: 60%;
-  inset-inline: 0;
-  animation: scroll 50s linear infinite;
+  background:
+    radial-gradient(ellipse at 20% 30%, rgba(76, 64, 131, 0.15) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 70%, rgba(76, 64, 131, 0.1) 0%, transparent 50%),
+    radial-gradient(ellipse at 50% 50%, rgba(76, 64, 131, 0.05) 0%, transparent 60%);
 }
 
-.avatar {
-  flex-shrink: 0;
-  object-fit: cover;
-  border-radius: 50%;
-  animation: float 10s ease-in-out infinite;
-  transition: all 0.5s ease-in-out;
-  user-select: none;
-  -webkit-user-select: none;
+.corner-accent {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border: 2px solid var(--primary);
+  z-index: 2;
+}
+.corner-tl {
+  top: 1rem;
+  left: 1rem;
+  border-right: none;
+  border-bottom: none;
+  animation: pulse-border 3s ease-in-out infinite;
+}
+.corner-br {
+  bottom: 1rem;
+  right: 1rem;
+  border-left: none;
+  border-top: none;
+  animation: pulse-border 3s ease-in-out infinite 1.5s;
 }
 
-@keyframes float {
+@keyframes pulse-border {
   0%,
   100% {
-    transform: translate(0, 0px);
+    opacity: 0.3;
+    transform: scale(1);
   }
-  60% {
-    transform: translate(0, 8px);
+  50% {
+    opacity: 0.6;
+    transform: scale(1.05);
   }
 }
 
-@keyframes scroll {
+.avatar-container {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (min-width: 1024px) {
+  .avatar-container {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+.avatar-border {
+  position: absolute;
+  inset: -1px;
+  border: 4px solid var(--primary);
+  border-radius: 50%;
+  clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+  z-index: 1;
+  animation: rotate-border 10s linear infinite;
+}
+@keyframes rotate-border {
   0% {
-    transform: translateX(0);
+    transform: rotate(0deg);
   }
   100% {
-    transform: translateX(-50%);
+    transform: rotate(360deg);
   }
 }
 </style>

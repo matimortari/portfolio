@@ -8,12 +8,12 @@
     },
     "navbar": {
       "about": "About Me",
+      "projects": "Projects",
       "contact": "Contact"
     },
     "hero": {
       "title": "Matheus Mortari",
-      "subtitle": "Full-Stack Developer",
-      "description": "Welcome to my website, where you can learn about my work. Feel free to explore and connect!"
+      "subtitle": "Full-Stack Developer"
     },
     "about": {
       "title": "About Me",
@@ -45,12 +45,6 @@
           "company": "Siga Software",
           "period": "05/2025 - Present",
           "description": "I help build and maintain highly interactive web applications for more than 100 real estate companies, focusing on accessibility, performance, and organic visibility. I led the development of a key operational system that centralizes data and automates workflows, and I also developed the company's new institutional website. I collaborate on planning, code reviews, and documentation to ensure smooth development and high-quality deliveries."
-        },
-        {
-          "role": "Software Developer",
-          "company": "Independent",
-          "period": "10/2023 - Present",
-          "description": "I build modern web applications in the Vue and TypeScript ecosystems, prioritizing performance, responsiveness, and usability. I use Tailwind CSS to create consistent interfaces efficiently. I also develop back-end systems in Node.js, such as REST APIs, authentication flows, and database integrations, while setting up production environments and monitoring."
         }
       ]
     },

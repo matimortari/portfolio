@@ -1,26 +1,23 @@
 <template>
-  <section id="stack" class="flex flex-col items-center justify-center gap-4 text-sm md:items-start">
-    <header class="flex w-full flex-col items-center gap-1 whitespace-nowrap md:items-start">
-      <h4>
-        {{ $t("index.stack.title") }}
-      </h4>
-      <p class="text-sm font-medium text-muted-foreground">
-        {{ $t("index.stack.subtitle") }}
-      </p>
-    </header>
+  <section
+    id="stack" v-motion
+    :initial="{ opacity: 0, y: 20 }" :visible-once="{ opacity: 1, y: 0 }"
+    :duration="500" class="mx-auto flex w-full max-w-5xl flex-col items-center gap-8"
+  >
+    <h3>
+      {{ $t("index.stack.title") }}
+    </h3>
 
-    <div class="grid w-full grid-cols-2 items-center justify-center gap-2 md:grid-cols-5">
-      <div
+    <div class="grid w-full grid-cols-2 gap-4 md:grid-cols-5">
+      <nuxt-link
         v-for="(item, index) in STACK_ITEMS" :key="index"
-        v-motion :initial="{ opacity: 0, y: 20 }"
-        :visible-once="{ opacity: 1, y: 0 }" :duration="500"
-        :delay="200 * Number(index)" class="card group p-2.5!"
+        :to="item.url" target="_blank"
+        class="group card flex flex-col items-center gap-2 p-4! text-center"
       >
-        <nuxt-link :to="item.url" target="_blank" class="flex flex-row items-center gap-2 transition-all duration-500">
-          <icon :name="item.icon" size="25" class="shrink-0 transition-all duration-500 group-hover:scale-125" />
-          <span class="text-sm font-semibold">{{ (item.name) }}</span>
-        </nuxt-link>
-      </div>
+        <icon :name="item.icon" size="35" class="text-primary transition-transform duration-500 group-hover:scale-110" />
+        <span class="font-semibold">{{ item.name }}</span>
+        <span class="text-xs text-muted-foreground">{{ $t(item.description) }}</span>
+      </nuxt-link>
     </div>
   </section>
 </template>
