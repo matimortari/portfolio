@@ -1,5 +1,5 @@
 <template>
-  <section id="contact" class="flex w-full flex-col items-center gap-12 py-12 text-center">
+  <section id="contact" class="flex w-full flex-col items-center gap-8 text-center md:py-20">
     <header
       v-motion :initial="{ opacity: 0, y: -20 }"
       :visible-once="{ opacity: 1, y: 0 }" :duration="500"
@@ -16,21 +16,19 @@
     <div
       v-motion :initial="{ opacity: 0, y: 20 }"
       :visible="{ opacity: 1, y: 0 }" :duration="500"
-      class="flex w-full flex-col items-center gap-8"
+      class="grid gap-8 md:grid-cols-3"
     >
-      <div class="grid gap-8 md:grid-cols-3">
-        <nuxt-link
-          v-for="(link, index) in CONTACT_LINKS" :key="index"
-          :to="link.url" target="_blank"
-          class="group flex flex-row items-center gap-4"
-        >
-          <icon :name="link.icon ?? ''" size="50" class="text-primary duration-500 group-hover:scale-110" />
-          <div class="flex flex-col items-start">
-            <span class="font-semibold">{{ link.label }}</span>
-            <span class="text-sm text-muted-foreground group-hover:underline">{{ link.text }}</span>
-          </div>
-        </nuxt-link>
-      </div>
+      <nuxt-link
+        v-for="(link, index) in CONTACT_LINKS" :key="index"
+        :to="link.url" target="_blank"
+        class="group flex flex-row items-center gap-4"
+      >
+        <icon :name="link.icon ?? ''" size="50" class="text-primary duration-500 group-hover:scale-110" />
+        <p class="flex flex-col items-start">
+          <span class="font-semibold">{{ link.label }}</span>
+          <span class="text-sm text-muted-foreground group-hover:underline">{{ link.text }}</span>
+        </p>
+      </nuxt-link>
     </div>
   </section>
 </template>

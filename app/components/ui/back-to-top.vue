@@ -18,13 +18,8 @@ function scrollToTop() {
   window.scrollTo({ top: 0, behavior: "smooth" })
 }
 
-onMounted(() => {
-  window.addEventListener("scroll", handleScroll)
-})
-
-onBeforeUnmount(() => {
-  window.removeEventListener("scroll", handleScroll)
-})
+onMounted(() => window.addEventListener("scroll", handleScroll))
+onBeforeUnmount(() => window.removeEventListener("scroll", handleScroll))
 </script>
 
 <style scoped>

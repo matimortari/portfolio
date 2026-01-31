@@ -7,35 +7,38 @@
     <div
       v-motion :initial="{ opacity: 0, x: -40 }"
       :visible-once="{ opacity: 1, x: 0 }" :duration="800"
-      :delay="motionDelay" class="relative z-20 flex flex-col-reverse items-center justify-center gap-12 px-4 py-24 md:mx-auto md:flex-row md:gap-32"
+      :delay="500" class="relative z-20 flex flex-col-reverse items-center justify-center gap-8 px-4 py-24 md:mx-auto md:flex-row md:gap-24"
     >
       <header class="flex flex-1 flex-col gap-4 text-center md:text-start">
-        <h1>
-          {{ $t("index.hero.title") }}
-        </h1>
-        <h2 class="bg-linear-to-r from-muted-foreground to-primary bg-clip-text text-transparent">
-          {{ $t("index.hero.subtitle") }}
-        </h2>
+        <div class="flex flex-col gap-2">
+          <h1>
+            {{ $t("index.hero.title") }}
+          </h1>
+          <h2 class="bg-linear-to-r from-muted-foreground to-primary bg-clip-text px-12 text-transparent md:px-0">
+            {{ $t("index.hero.subtitle") }}
+          </h2>
+        </div>
 
-        <div class="flex flex-col items-center gap-2 md:items-start">
-          <div class="flex flex-wrap gap-2">
+        <div class="flex flex-col items-center gap-4 md:items-start md:justify-start">
+          <div class="flex w-full max-w-[80%] flex-col items-center justify-center gap-2 md:flex-row md:items-start md:justify-start">
             <nuxt-link
               v-for="(resume, index) in HERO_RESUME_LINKS" :key="index"
               :to="resume.url" target="_blank"
-              class="group btn"
+              class="group btn w-full md:w-auto"
             >
-              <icon name="material-symbols:lab-profile-outline" size="20" class="transition-all duration-500 group-hover:scale-125" />
               <span>{{ $t(resume.label) }}</span>
+              <icon name="material-symbols:arrow-outward" size="25" class="shrink-0 transition-all duration-500 group-hover:translate-x-1 group-hover:-translate-y-1" />
             </nuxt-link>
           </div>
 
-          <div class="flex flex-row items-center gap-2">
+          <div class="flex max-w-[80%] items-center gap-2 md:flex-row md:flex-wrap md:items-start md:justify-start">
             <nuxt-link
               v-for="(link, index) in HERO_CONTACT_LINKS" :key="index"
               :to="link.url" target="_blank"
-              class="group btn"
+              class="group btn w-full justify-start md:w-auto"
             >
-              <icon :name="link.icon ?? ''" size="25" class="transition-all duration-500 group-hover:scale-125" />
+              <icon :name="link.icon ?? ''" size="25" class="shrink-0 transition-all duration-500 group-hover:scale-125" />
+              <span class="hidden md:inline">{{ link.label }}</span>
             </nuxt-link>
           </div>
         </div>
@@ -48,15 +51,6 @@
     </div>
   </section>
 </template>
-
-<script setup lang="ts">
-const motionDelay = ref(0)
-
-onMounted(async () => {
-  await nextTick()
-  motionDelay.value = 1000
-})
-</script>
 
 <style scoped>
 .hero-background {
@@ -105,8 +99,8 @@ onMounted(async () => {
 
 .avatar-container {
   position: relative;
-  width: 200px;
-  height: 200px;
+  width: 180px;
+  height: 180px;
   display: flex;
   align-items: center;
   justify-content: center;

@@ -2,14 +2,14 @@
   <section
     id="projects" v-motion
     :initial="{ opacity: 0, y: 20 }" :visible-once="{ opacity: 1, y: 0 }"
-    :duration="500" class="mx-auto flex w-full max-w-7xl flex-col items-center gap-8"
+    :duration="500" class="mx-auto flex max-w-7xl flex-col items-center gap-8"
   >
     <h3>
       {{ $t("index.projects.title") }}
     </h3>
 
-    <div class="grid w-full gap-24 md:grid-cols-2">
-      <article
+    <div class="flex w-full flex-col justify-between gap-12 md:flex-row">
+      <div
         v-for="(project, index) in PROJECT_ITEMS" :key="index"
         v-motion :initial="{ opacity: 0, y: 20 }"
         :visible-once="{ opacity: 1, y: 0 }" :duration="500"
@@ -27,10 +27,10 @@
 
             <div class="flex flex-row items-center gap-2">
               <nuxt-link :to="project.demoUrl" target="_blank" class="btn">
-                <icon name="material-symbols:share-windows" size="20" class="transition-all duration-500 group-hover:scale-125" />
+                <icon name="material-symbols:share-windows" size="25" class="transition-all duration-500 group-hover:scale-125" />
               </nuxt-link>
               <nuxt-link :to="project.sourceUrl" target="_blank" class="btn">
-                <icon name="simple-icons:github" size="20" class="transition-all duration-500 group-hover:scale-125" />
+                <icon name="simple-icons:github" size="25" class="transition-all duration-500 group-hover:scale-125" />
               </nuxt-link>
             </div>
           </div>
@@ -39,11 +39,11 @@
             {{ $t(project.description) }}
           </p>
 
-          <div class="flex flex-wrap gap-2">
-            <span v-for="tech in project.stack" :key="tech" class="label">{{ tech }}</span>
+          <div class="flex flex-wrap justify-center gap-1 md:justify-start">
+            <span v-for="item in project.stack" :key="item" class="label">{{ item }}</span>
           </div>
         </div>
-      </article>
+      </div>
     </div>
   </section>
 </template>

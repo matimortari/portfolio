@@ -13,7 +13,9 @@
     },
     "hero": {
       "title": "Matheus Mortari",
-      "subtitle": "Full-Stack Developer"
+      "subtitle": "Full-Stack Developer",
+      "resumeEn": "Resume - English",
+      "resumePt": "Resume - Portuguese"
     },
     "about": {
       "title": "About Me",
@@ -64,9 +66,7 @@
     },
     "contact": {
       "title": "Contact Me",
-      "subtitle": "Let's get in touch! Feel free to reach out to me through the links below.",
-      "resumeEn": "Resume - English",
-      "resumePt": "Resume - Portuguese"
+      "subtitle": "Let's get in touch! Feel free to reach out to me through the links below."
     },
     "footer": {
       "backToTop": "Back to Top",

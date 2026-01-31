@@ -15,7 +15,7 @@
             v-for="(link, index) in NAV_LINKS" :key="index"
             v-motion :to="link.url"
             :initial="{ opacity: 0, y: -10 }" :visible-once="{ opacity: 1, y: 0 }"
-            :duration="500" :delay="200 * index"
+            :duration="500" :delay="150 * index"
             class="hidden text-lg outline-none hover:underline md:block"
           >
             {{ $t(link.label) }}

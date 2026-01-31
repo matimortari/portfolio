@@ -2,13 +2,13 @@
   <section
     id="stack" v-motion
     :initial="{ opacity: 0, y: 20 }" :visible-once="{ opacity: 1, y: 0 }"
-    :duration="500" class="mx-auto flex w-full max-w-5xl flex-col items-center gap-8"
+    :duration="500" class="mx-auto flex max-w-5xl flex-col gap-8 text-center"
   >
     <h3>
       {{ $t("index.stack.title") }}
     </h3>
 
-    <div class="grid w-full grid-cols-2 gap-4 md:grid-cols-5">
+    <div class="grid w-full grid-cols-2 gap-2 md:grid-cols-5">
       <nuxt-link
         v-for="(item, index) in STACK_ITEMS" :key="index"
         :to="item.url" target="_blank"

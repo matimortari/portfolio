@@ -16,7 +16,7 @@ export const PROJECT_ITEMS: ProjectItem[] = [
     title: "index.projects.items.0.title",
     description: "index.projects.items.0.description",
     image: "https://alllinks-bio.vercel.app/og-image.png",
-    stack: ["TypeScript", "Nuxt.js", "Vue.js", "TailwindCSS", "Chart.js", "OAuth", "Prisma"],
+    stack: ["TypeScript", "Nuxt.js", "Vue.js", "TailwindCSS", "Chart.js", "OAuth", "Prisma", "PostgreSQL", "Redis"],
     demoUrl: "https://alllinks-bio.vercel.app",
     sourceUrl: "https://github.com/matimortari/alllinks",
   },
@@ -24,7 +24,7 @@ export const PROJECT_ITEMS: ProjectItem[] = [
     title: "index.projects.items.1.title",
     description: "index.projects.items.1.description",
     image: "https://windkeep.vercel.app/og-image.png",
-    stack: ["TypeScript", "Nuxt.js", "Vue.js", "TailwindCSS", "Go", "OAuth", "Prisma"],
+    stack: ["TypeScript", "Nuxt.js", "Vue.js", "TailwindCSS", "Go", "OAuth", "Prisma", "PostgreSQL", "Redis"],
     demoUrl: "https://windkeep.vercel.app",
     sourceUrl: "https://github.com/matimortari/windkeep",
   },
@@ -97,7 +97,7 @@ export const HERO_CONTACT_LINKS: LinkItem[] = [
   },
   {
     label: "Email",
-    icon: "material-symbols:mail-rounded",
+    icon: "simple-icons:gmail",
     url: "mailto:matheus.felipe.19rt@gmail.com",
   },
 ]
@@ -105,13 +105,13 @@ export const HERO_CONTACT_LINKS: LinkItem[] = [
 export const HERO_RESUME_LINKS: ResumeLink[] = [
   {
     lang: "en",
-    label: "index.contact.resumeEn",
+    label: "index.hero.resumeEn",
     url: "/cv/en",
     blob: "https://kdenka4dfbuxnv79.public.blob.vercel-storage.com/portfolio/CV-EN.pdf",
   },
   {
     lang: "pt",
-    label: "index.contact.resumePt",
+    label: "index.hero.resumePt",
     url: "/cv/pt",
     blob: "https://kdenka4dfbuxnv79.public.blob.vercel-storage.com/portfolio/CV-PT.pdf",
   },

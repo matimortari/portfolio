@@ -13,7 +13,9 @@
     },
     "hero": {
       "title": "Matheus Mortari",
-      "subtitle": "Desenvolvedor Full-Stack"
+      "subtitle": "Desenvolvedor Full-Stack",
+      "resumeEn": "Currículo - Inglês",
+      "resumePt": "Currículo - Português"
     },
     "about": {
       "title": "Sobre Mim",
@@ -64,9 +66,7 @@
     },
     "contact": {
       "title": "Entre em Contato",
-      "subtitle": "Vamos conversar! Sinta-se à vontade para entrar em contato comigo através dos links abaixo.",
-      "resumeEn": "Currículo - Inglês",
-      "resumePt": "Currículo - Português"
+      "subtitle": "Vamos conversar! Sinta-se à vontade para entrar em contato comigo através dos links abaixo."
     },
     "footer": {
       "backToTop": "Voltar ao Topo",

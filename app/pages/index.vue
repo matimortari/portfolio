@@ -2,17 +2,14 @@
   <Navbar />
   <Hero />
 
-  <section id="about" class="relative z-10 container mx-auto flex w-full flex-col items-center p-8">
+  <main class="relative z-10 container mx-auto flex w-full flex-col items-center gap-24 p-4 py-12">
     <div class="grid-backdrop" />
 
-    <div class="flex w-full flex-col gap-24 border-y-2 border-primary py-12 text-center">
-      <About />
-      <Stack />
-      <Projects />
-    </div>
-
+    <About />
+    <Stack />
+    <Projects />
     <Contact />
-  </section>
+  </main>
 
   <Footer />
   <UiBackToTop />
