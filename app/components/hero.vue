@@ -4,48 +4,65 @@
     <div class="corner-accent corner-tl" />
     <div class="corner-accent corner-br" />
 
-    <div
-      v-motion :initial="{ opacity: 0, x: -40 }"
-      :visible-once="{ opacity: 1, x: 0 }" :duration="800"
-      :delay="500" class="relative z-20 flex flex-col-reverse items-center justify-center gap-8 px-4 py-24 md:mx-auto md:flex-row md:gap-24"
-    >
+    <div class="relative z-20 flex flex-col-reverse items-center justify-center gap-8 px-4 py-24 md:mx-auto md:flex-row md:gap-24">
       <header class="flex flex-1 flex-col gap-4 text-center md:text-start">
         <div class="flex flex-col gap-2">
-          <h1>
+          <h1
+            v-motion :initial="{ opacity: 0, y: -30, rotateX: -90 }"
+            :visible-once="{ opacity: 1, y: 0, rotateX: 0 }" :duration="800"
+            :delay="300"
+          >
             {{ $t("index.hero.title") }}
           </h1>
-          <h2 class="bg-linear-to-r from-muted-foreground to-primary bg-clip-text px-12 text-transparent md:px-0">
+          <h2
+            v-motion :initial="{ opacity: 0, x: -50, scale: 0.9 }"
+            :visible-once="{ opacity: 1, x: 0, scale: 1 }" :duration="800"
+            :delay="500" class="bg-linear-to-r from-muted-foreground to-primary bg-clip-text px-12 text-transparent md:px-0"
+          >
             {{ $t("index.hero.subtitle") }}
           </h2>
         </div>
 
-        <div class="flex flex-col items-center gap-4 md:items-start md:justify-start">
+        <div
+          v-motion :initial="{ opacity: 0, y: 30 }"
+          :visible-once="{ opacity: 1, y: 0 }" :duration="600"
+          :delay="700" class="flex flex-col items-center gap-4 md:items-start md:justify-start"
+        >
           <div class="flex w-full max-w-[80%] flex-col items-center justify-center gap-2 md:flex-row md:items-start md:justify-start">
             <nuxt-link
               v-for="(resume, index) in HERO_RESUME_LINKS" :key="index"
-              :to="resume.url" target="_blank"
-              class="group btn w-full md:w-auto"
+              v-motion :initial="{ opacity: 0, scale: 0.8 }"
+              :visible-once="{ opacity: 1, scale: 1 }" :duration="500"
+              :delay="900 + index * 100" :to="resume.url"
+              target="_blank" class="group btn w-full md:w-auto"
             >
               <span>{{ $t(resume.label) }}</span>
-              <icon name="material-symbols:arrow-outward" size="25" class="shrink-0 transition-all duration-500 group-hover:translate-x-1 group-hover:-translate-y-1" />
+              <icon name="material-symbols:arrow-outward" size="25" class="shrink-0 duration-500 group-hover:translate-x-1 group-hover:-translate-y-1" />
             </nuxt-link>
           </div>
 
           <div class="flex max-w-[80%] items-center gap-2 md:flex-row md:flex-wrap md:items-start md:justify-start">
             <nuxt-link
               v-for="(link, index) in HERO_CONTACT_LINKS" :key="index"
-              :to="link.url" target="_blank"
-              class="group btn w-full justify-start md:w-auto"
+              v-motion :initial="{ opacity: 0, y: 20, scale: 0.5 }"
+              :visible-once="{ opacity: 1, y: 0, scale: 1 }" :duration="400"
+              :delay="1100 + index * 80" :to="link.url"
+              target="_blank" class="group btn w-full justify-start md:w-auto"
             >
-              <icon :name="link.icon ?? ''" size="25" class="shrink-0 transition-all duration-500 group-hover:scale-125" />
+              <icon :name="link.icon ?? ''" size="25" class="shrink-0 duration-500 group-hover:scale-110" />
               <span class="hidden md:inline">{{ link.label }}</span>
             </nuxt-link>
           </div>
         </div>
       </header>
 
-      <div class="avatar-container">
+      <div
+        v-motion :initial="{ opacity: 0, scale: 0.5, rotateY: 180 }"
+        :visible-once="{ opacity: 1, scale: 1, rotateY: 0 }" :duration="1000"
+        :delay="200" class="avatar-container"
+      >
         <div class="avatar-border" />
+        <div class="avatar-glow" />
         <img src="/assets/avataaar.png" alt="Avatar" class="relative size-full rounded-full object-cover">
       </div>
     </div>
@@ -121,12 +138,34 @@
   z-index: 1;
   animation: rotate-border 10s linear infinite;
 }
+
+.avatar-glow {
+  position: absolute;
+  inset: -20px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(76, 64, 131, 0.3) 0%, transparent 70%);
+  z-index: 0;
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
 @keyframes rotate-border {
   0% {
     transform: rotate(0deg);
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes pulse-glow {
+  0%,
+  100% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.1);
   }
 }
 </style>
