@@ -1,8 +1,8 @@
 <template>
   <section id="contact" class="flex w-full flex-col items-center gap-8 text-center md:py-20">
     <header
-      v-motion :initial="{ opacity: 0, y: -20 }"
-      :visible-once="{ opacity: 1, y: 0 }" :duration="500"
+      v-motion :initial="{ opacity: 0, scale: 0.8, y: -30 }"
+      :visible-once="{ opacity: 1, scale: 1, y: 0 }" :duration="600"
       class="flex flex-col items-center gap-4 text-center"
     >
       <h2>
@@ -13,15 +13,13 @@
       </p>
     </header>
 
-    <div
-      v-motion :initial="{ opacity: 0, y: 20 }"
-      :visible="{ opacity: 1, y: 0 }" :duration="500"
-      class="grid gap-8 md:grid-cols-3"
-    >
+    <div class="grid gap-8 md:grid-cols-3">
       <nuxt-link
         v-for="(link, index) in CONTACT_LINKS" :key="index"
-        :to="link.url" target="_blank"
-        class="group flex flex-row items-center gap-4"
+        v-motion :initial="{ opacity: 0, y: 50, scale: 0.5 }"
+        :visible-once="{ opacity: 1, y: 0, scale: 1 }" :delay="index * 150"
+        :duration="500" :to="link.url"
+        target="_blank" class="group flex flex-row items-center gap-4"
       >
         <icon :name="link.icon ?? ''" size="50" class="text-primary duration-500 group-hover:scale-110" />
         <p class="flex flex-col items-start">
