@@ -1,29 +1,39 @@
 <template>
-  <nav class="fixed top-0 z-50 w-full p-8 transition-all duration-500" :class="[showNavbar ? 'translate-y-0' : '-translate-y-full', scrolled ? 'p-4! backdrop-blur-sm' : '']">
-    <div class="flex flex-row items-center justify-between">
-      <div class="flex flex-row items-center justify-center gap-8 text-foreground">
-        <nuxt-link
-          v-motion to="/"
-          :initial="{ opacity: 0, x: -10 }" :visible-once="{ opacity: 1, x: 0 }"
-          :duration="500" class="transition-all duration-500 outline-none select-none hover:scale-125"
-        >
-          <img src="/assets/symbol.png" alt="Logo" width="40" height="40">
-        </nuxt-link>
-
-        <div class="flex flex-row items-center gap-8 font-semibold tracking-wide">
+  <nav class="fixed top-0 z-50 w-full transition-all duration-500" :class="[showNavbar ? 'translate-y-0' : '-translate-y-full']">
+    <div
+      v-motion :initial="{ opacity: 0, y: -20 }"
+      :visible-once="{ opacity: 1, y: 0 }" :duration="600"
+      class="mx-auto max-w-7xl px-8 py-4 transition-all duration-500"
+    >
+      <div
+        class="flex flex-row items-center justify-between rounded-full border transition-all duration-500"
+        :class="scrolled ? 'border bg-background/80 px-4 py-2 shadow-lg backdrop-blur-sm' : 'border-transparent! py-4'"
+      >
+        <div class="flex flex-row items-center justify-center gap-8 text-foreground">
           <nuxt-link
-            v-for="(link, index) in NAV_LINKS" :key="index"
-            v-motion :to="link.url"
-            :initial="{ opacity: 0, y: -10 }" :visible-once="{ opacity: 1, y: 0 }"
-            :duration="500" :delay="150 * index"
-            class="hidden text-lg outline-none hover:underline md:block"
+            v-motion to="/"
+            :initial="{ opacity: 0, scale: 0, rotate: -180 }" :visible-once="{ opacity: 1, scale: 1, rotate: 0 }"
+            :duration="600" :delay="200"
+            class="transition-all duration-500 outline-none select-none hover:scale-125 hover:rotate-12"
           >
-            {{ $t(link.label) }}
+            <img src="/assets/symbol.png" alt="Logo" width="40" height="40">
           </nuxt-link>
-        </div>
-      </div>
 
-      <UiLanguageSelector />
+          <div class="flex flex-row items-center gap-8 font-semibold tracking-wide">
+            <nuxt-link
+              v-for="(link, index) in NAV_LINKS" :key="index"
+              v-motion :to="link.url"
+              :initial="{ opacity: 0, y: -20, scale: 0.8 }" :visible-once="{ opacity: 1, y: 0, scale: 1 }"
+              :duration="400" :delay="300 + 100 * index"
+              class="group hidden text-lg outline-none md:block"
+            >
+              <span class="relative">{{ $t(link.label) }}<span class="absolute -bottom-1 left-0 h-0.5 w-0 bg-primary transition-all duration-300 group-hover:w-full" /></span>
+            </nuxt-link>
+          </div>
+        </div>
+
+        <UiLanguageSelector />
+      </div>
     </div>
   </nav>
 </template>
@@ -39,7 +49,7 @@ let lastScrollY = 0
 function handleScroll() {
   const currentY = window.scrollY
   showNavbar.value = currentY < lastScrollY || currentY < 10
-  scrolled.value = currentY > 0
+  scrolled.value = currentY > 50
   lastScrollY = currentY
 }
 
@@ -52,7 +62,7 @@ onMounted(() => {
   }
 
   lastScrollY = window.scrollY
-  scrolled.value = lastScrollY > 0
+  scrolled.value = lastScrollY > 50
   window.addEventListener("scroll", handleScroll)
 })
 

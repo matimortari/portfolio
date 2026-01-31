@@ -45,6 +45,13 @@ async function downloadPdf() {
   URL.revokeObjectURL(url)
 }
 
+onMounted(() => {
+  const updateWidth = () => windowWidth.value = window.innerWidth
+  updateWidth()
+  window.addEventListener("resize", updateWidth)
+  onBeforeUnmount(() => window.removeEventListener("resize", updateWidth))
+})
+
 watchEffect(() => {
   if (lang.value !== "en" && lang.value !== "pt") {
     return navigateTo("/")
