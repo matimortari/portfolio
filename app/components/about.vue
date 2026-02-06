@@ -1,5 +1,5 @@
 <template>
-  <section id="about" class="mx-auto flex max-w-3xl flex-col gap-8 text-center">
+  <section id="about" class="mx-auto flex max-w-2xl flex-col gap-8 text-center">
     <h3
       v-motion :initial="{ opacity: 0, scale: 0.9 }"
       :visible-once="{ opacity: 1, scale: 1 }"
