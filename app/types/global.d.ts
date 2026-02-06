@@ -14,13 +14,6 @@ interface ProjectItem {
   sourceUrl: string
 }
 
-interface ExperienceItem {
-  role: string
-  company: string
-  period: string
-  description: string
-}
-
 interface AboutSection {
   text: string
 }

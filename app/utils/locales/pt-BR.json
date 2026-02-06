@@ -38,29 +38,17 @@
         { "name": "Docker", "description": "Plataforma que permite a execução de aplicações em ambientes isolados." }
       ]
     },
-    "experience": {
-      "title": "Experiência",
-      "subtitle": "Minha trajetória profissional.",
-      "items": [
-        {
-          "role": "Desenvolvedor de Software",
-          "company": "Siga Software",
-          "period": "05/2025 - Presente",
-          "description": "Ajudo a construir e manter aplicações web altamente interativas para mais de 100 empresas do setor imobiliário, com foco em acessibilidade, performance e visibilidade orgânica. Liderei o desenvolvimento de um sistema chave que centraliza dados e automatiza fluxos de trabalho, além de desenvolver o novo site institucional da empresa. Colaboro no planejamento, revisões de código e documentação para garantir um desenvolvimento fluido e entregas de qualidade."
-        }
-      ]
-    },
     "projects": {
       "title": "Projetos",
       "subtitle": "Alguns trabalhos que faço por diversão e aprendizado.",
       "items": [
         {
           "title": "AllLinks",
-          "description": "Um construtor de páginas que permite aos usuários organizar, exibir e compartilhar seus links, perfis e conteúdo, com personalização e dados analíticos integrados."
+          "description": "Um construtor de páginas que permite aos usuários centralizar e compartilhar seus links e sites, com personalização e dados analíticos integrados."
         },
         {
           "title": "WindKeep",
-          "description": "Uma plataforma para equipes gerirem dados sensíveis com segurança, com controles de acesso, registro de auditoria e uma interface de linha de comando para fácil integração."
+          "description": "Uma plataforma multi-tenant para gerenciamento de dados sensíveis com controle de acesso, mecanismos de auditoria e uma interface de linha de comando integrada."
         }
       ]
     },
