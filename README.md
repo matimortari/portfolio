@@ -1,10 +1,10 @@
-# Matheus Mortari — Web Portfolio
+# Matheus Mortari – Web Portfolio
 
 Welcome to my [**Portfolio**](https://matheus-mortari.vercel.app)! This website showcases my projects and experiences in software development.
 
 ## My Tech Stack
 
-These are the technologies I have worked with and feel comfortable using:
+These are the technologies and tools I frequently use in my projects:
 
 - **Programming Languages:** TypeScript, Go.
 - **Web Development:** Vue.js, Nuxt.js, TailwindCSS, Pinia.
