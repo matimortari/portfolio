@@ -12,18 +12,20 @@
         :delay="index * 200" class="flex flex-col gap-2"
       >
         <div class="group w-full overflow-hidden rounded-md border">
-          <img :src="project.image" :alt="$t(project.title)" class="h-auto w-full transition-all duration-700 group-hover:scale-110 group-hover:rotate-2">
+          <img :src="project.image" :alt="$t(project.title)" class="h-auto w-full transition-all duration-500 group-hover:scale-105">
         </div>
 
         <div class="flex flex-col gap-2">
           <div class="flex flex-row items-center justify-between">
-            <h4>{{ $t(project.title) }}</h4>
+            <h4>
+              {{ $t(project.title) }}
+            </h4>
             <div class="flex flex-row items-center gap-2">
-              <nuxt-link :to="project.demoUrl" target="_blank" class="btn group/icon">
-                <icon name="material-symbols:share-windows" size="25" class="transition-all duration-500 group-hover/icon:scale-125 group-hover/icon:-rotate-12" />
+              <nuxt-link :to="project.demoUrl" target="_blank" class="btn group">
+                <icon name="material-symbols:share-windows" size="20" class="shrink-0 duration-500 group-hover:scale-110" />
               </nuxt-link>
-              <nuxt-link :to="project.sourceUrl" target="_blank" class="btn group/icon">
-                <icon name="simple-icons:github" size="25" class="transition-all duration-500 group-hover/icon:scale-125 group-hover/icon:rotate-12" />
+              <nuxt-link :to="project.sourceUrl" target="_blank" class="btn group">
+                <icon name="simple-icons:github" size="20" class="shrink-0 duration-500 group-hover:scale-110" />
               </nuxt-link>
             </div>
           </div>

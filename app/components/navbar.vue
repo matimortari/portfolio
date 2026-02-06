@@ -3,20 +3,20 @@
     <div
       v-motion :initial="{ opacity: 0, y: -20 }"
       :visible-once="{ opacity: 1, y: 0 }" :duration="600"
-      class="mx-auto max-w-7xl px-8 py-4 transition-all duration-500"
+      class="mx-auto max-w-7xl p-4 transition-all duration-500"
     >
       <div
         class="flex flex-row items-center justify-between rounded-full border transition-all duration-500"
-        :class="scrolled ? 'border bg-background/80 px-4 py-2 shadow-lg backdrop-blur-sm' : 'border-transparent! py-4'"
+        :class="scrolled ? 'border bg-background/80 p-2 shadow-lg backdrop-blur-sm' : 'border-transparent! py-4'"
       >
         <div class="flex flex-row items-center justify-center gap-8 text-foreground">
           <nuxt-link
             v-motion to="/"
             :initial="{ opacity: 0, scale: 0, rotate: -180 }" :visible-once="{ opacity: 1, scale: 1, rotate: 0 }"
             :duration="600" :delay="200"
-            class="transition-all duration-500 outline-none select-none hover:scale-125 hover:rotate-12"
+            class="pl-4 transition-all duration-500 outline-none select-none hover:scale-125 hover:rotate-12"
           >
-            <img src="/assets/symbol.png" alt="Logo" width="40" height="40">
+            <img src="/assets/symbol.png" alt="Logo" width="35" height="35">
           </nuxt-link>
 
           <div class="flex flex-row items-center gap-8 font-semibold tracking-wide">
@@ -25,7 +25,7 @@
               v-motion :to="link.url"
               :initial="{ opacity: 0, y: -20, scale: 0.8 }" :visible-once="{ opacity: 1, y: 0, scale: 1 }"
               :duration="400" :delay="300 + 100 * index"
-              class="group hidden text-lg outline-none md:block"
+              class="group hidden outline-none md:block"
             >
               <span class="relative">{{ $t(link.label) }}<span class="absolute -bottom-1 left-0 h-0.5 w-0 bg-primary transition-all duration-300 group-hover:w-full" /></span>
             </nuxt-link>

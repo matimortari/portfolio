@@ -3,7 +3,7 @@
   "locale.pt-BR": "PT",
   "index": {
     "meta": {
-      "title": "Matheus Mortari — Desenvolvedor Full-Stack",
+      "title": "Matheus Mortari – Desenvolvedor Full-Stack",
       "description": "Bem-vindo ao meu site, onde você pode conhecer meu trabalho. Sinta-se à vontade para explorar e se conectar!"
     },
     "navbar": {
@@ -20,7 +20,7 @@
     "about": {
       "title": "Sobre Mim",
       "section1": "Sou desenvolvedor de software full-stack e estudante de Análise e Desenvolvimento de Sistemas na Universidade de Passo Fundo (UPF), no Rio Grande do Sul. Eu crio aplicações web dinâmicas, sistemas back-end e ferramentas de produtividade, como CLIs e automações.",
-      "section2": "Sou adaptável e comprometido em me manter atualizado com as tendências da área, ao mesmo tempo que valorizo tecnologias tradicionais e confiáveis. Sinta-se à vontade para explorar meu trabalho e entrar em contato — estou sempre aberto a oportunidades de aprender e colaborar!"
+      "section2": "Sou adaptável e comprometido em me manter atualizado com as tendências da área, ao mesmo tempo que valorizo tecnologias tradicionais e confiáveis. Sinta-se à vontade para explorar meu trabalho e entrar em contato – estou sempre aberto a oportunidades de aprender e colaborar!"
     },
     "stack": {
       "title": "Tecnologias",
