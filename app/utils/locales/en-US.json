@@ -3,7 +3,7 @@
   "locale.pt-BR": "PT",
   "index": {
     "meta": {
-      "title": "Matheus Mortari — Full-Stack Developer",
+      "title": "Matheus Mortari – Full-Stack Developer",
       "description": "Welcome to my website, where you can learn about my work. Feel free to explore and connect!"
     },
     "navbar": {
@@ -20,7 +20,7 @@
     "about": {
       "title": "About Me",
       "section1": "I'm a full-stack software developer and Systems Analysis and Development student at the University of Passo Fundo (UPF), based in Rio Grande do Sul, Brazil. I build dynamic web applications, back-end systems, and productivity tools such as CLIs and automations.",
-      "section2": "I'm adaptable and committed to staying up-to-date with industry trends while grounded in traditional and reliable technologies. Feel free to explore my work and reach out — I'm always open to opportunities to learn and collaborate!"
+      "section2": "I'm adaptable and committed to staying up-to-date with industry trends while grounded in traditional and reliable technologies. Feel free to explore my work and reach out – I'm always open to opportunities to learn and collaborate!"
     },
     "stack": {
       "title": "Tech Stack",

@@ -26,7 +26,7 @@
         <div
           v-motion :initial="{ opacity: 0, y: 30 }"
           :visible-once="{ opacity: 1, y: 0 }" :duration="600"
-          :delay="700" class="flex flex-col items-center gap-4 md:items-start md:justify-start"
+          :delay="700" class="flex flex-col items-center gap-2 md:items-start md:justify-start"
         >
           <div class="flex w-full max-w-[80%] flex-col items-center justify-center gap-2 md:flex-row md:items-start md:justify-start">
             <nuxt-link
