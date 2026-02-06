@@ -33,7 +33,7 @@ async function setLanguage(language: string) {
   left: 4px;
   width: calc(50% - 4px);
   height: calc(100% - 8px);
-  background: var(--primary);
+  background: var(--muted);
   border-radius: 9999px;
   transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 1;

@@ -8,7 +8,7 @@
       <h2>
         {{ $t("index.contact.title") }}
       </h2>
-      <p class="max-w-md leading-5 text-muted-foreground">
+      <p class="max-w-sm leading-5 text-muted-foreground">
         {{ $t("index.contact.subtitle") }}
       </p>
     </header>
@@ -16,8 +16,8 @@
     <div class="grid gap-8 md:grid-cols-3">
       <nuxt-link
         v-for="(link, index) in CONTACT_LINKS" :key="index"
-        v-motion :initial="{ opacity: 0, y: 50, scale: 0.5 }"
-        :visible-once="{ opacity: 1, y: 0, scale: 1 }" :delay="index * 150"
+        v-motion :initial="{ opacity: 0, y: 50 }"
+        :visible-once="{ opacity: 1, y: 0 }" :delay="index * 150"
         :duration="500" :to="link.url"
         target="_blank" class="group flex flex-row items-center gap-4"
       >
