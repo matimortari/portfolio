@@ -30,15 +30,6 @@ export const PROJECT_ITEMS: ProjectItem[] = [
   },
 ]
 
-export const EXPERIENCE_ITEMS: ExperienceItem[] = [
-  {
-    role: "index.experience.items.0.role",
-    company: "index.experience.items.0.company",
-    period: "index.experience.items.0.period",
-    description: "index.experience.items.0.description",
-  },
-]
-
 export const ABOUT_SECTIONS: AboutSection[] = [
   {
     text: "index.about.section1",
