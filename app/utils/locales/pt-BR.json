@@ -67,5 +67,11 @@
       "description": "Confira meu currículo para saber mais sobre minha experiência, habilidades e projetos."
     },
     "download": "Baixar Currículo"
+  },
+  "photos": {
+    "meta": {
+      "title": "Fotos — Matheus Mortari",
+      "description": "Fotos por Matheus Mortari."
+    }
   }
 }
