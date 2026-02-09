@@ -32,7 +32,7 @@ useHead({
     { name: "description", content: computed(() => $t("index.meta.description")) },
     { name: "viewport", content: "width=device-width, initial-scale=1" },
     { property: "og:type", content: "website" },
-    { property: "og:image", content: "https://matheus-mortari.vercel.app/og-image.png" },
+    { property: "og:image", content: computed(() => `https://matheus-mortari.vercel.app/og-image-${locale.value === "pt-BR" ? "pt" : "en"}.png`) },
     { name: "google-site-verification", content: "2j0bcfhh8FCYPpzFylzbiPjl3Pa0X7lMuG060ctsCsA" },
   ],
 })
