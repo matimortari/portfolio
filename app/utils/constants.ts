@@ -98,12 +98,12 @@ export const HERO_RESUME_LINKS: ResumeLink[] = [
     lang: "en",
     label: "index.hero.resumeEn",
     url: "/cv/en",
-    blob: "https://kdenka4dfbuxnv79.public.blob.vercel-storage.com/portfolio/CV-EN.pdf",
+    blob: "https://kdenka4dfbuxnv79.public.blob.vercel-storage.com/portfolio/cv/CV-EN.pdf",
   },
   {
     lang: "pt",
     label: "index.hero.resumePt",
     url: "/cv/pt",
-    blob: "https://kdenka4dfbuxnv79.public.blob.vercel-storage.com/portfolio/CV-PT.pdf",
+    blob: "https://kdenka4dfbuxnv79.public.blob.vercel-storage.com/portfolio/cv/CV-PT.pdf",
   },
 ]
