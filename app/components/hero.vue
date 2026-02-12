@@ -121,6 +121,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  -webkit-user-select: none;
+  user-select: none;
 }
 @media (min-width: 1024px) {
   .avatar-container {
