@@ -1,11 +1,16 @@
 <template>
-  <transition name="fade-slide" mode="out-in">
-    <div v-show="isLoading" class="fixed inset-0 flex min-h-screen flex-col items-center justify-center gap-4 bg-background">
-      <div class="relative h-1 w-1/4 overflow-hidden rounded-sm bg-muted">
-        <div class="progress-bar h-1 bg-primary" />
+  <div v-if="isLoading" class="loading-container">
+    <div class="flex flex-col items-center gap-4">
+      <div class="relative size-16">
+        <div class="spinner" />
+        <div class="spinner-ring" />
       </div>
+
+      <p class="animate-pulse font-medium text-muted-foreground">
+        Loading
+      </p>
     </div>
-  </transition>
+  </div>
 </template>
 
 <script setup lang="ts">
@@ -33,33 +38,46 @@ onMounted(() => {
 </script>
 
 <style scoped>
-.fade-slide-enter-active,
-.fade-slide-leave-active {
-  transition: all 1s ease;
-}
-.fade-slide-enter-from,
-.fade-slide-leave-to {
-  filter: blur(8rem);
-  opacity: 0;
-}
-.fade-slide-enter-to,
-.fade-slide-leave-from {
-  filter: blur(0);
-  opacity: 1;
+.loading-container {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background-color: var(--background);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeOut 0.5s ease 0.3s forwards;
 }
 
-.progress-bar {
-  transform-origin: left;
-  transform: scaleX(0);
-  animation: progress 2.5s ease-in-out infinite alternate;
+.spinner {
+  position: absolute;
+  inset: 0;
+  border: 3px solid var(--muted);
+  border-top-color: var(--primary);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
 }
 
-@keyframes progress {
-  0% {
-    transform: scaleX(0);
+.spinner-ring {
+  position: absolute;
+  inset: -8px;
+  border: 2px solid transparent;
+  border-top-color: var(--secondary);
+  border-radius: 50%;
+  animation: spin 1.5s linear infinite reverse;
+  opacity: 0.5;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
   }
-  100% {
-    transform: scaleX(1);
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    visibility: hidden;
   }
 }
 </style>

@@ -128,7 +128,6 @@ h6 {
 
 .card:hover {
   border-color: var(--primary);
-  box-shadow: 0 8px 32px var(--glow);
   transform: translateY(-2px);
 }
 .card:hover::before {
@@ -184,7 +183,6 @@ h6 {
 .btn:hover {
   color: var(--primary);
   border-color: var(--primary);
-  box-shadow: 0 0 20px var(--glow);
   transform: translateY(-2px);
 }
 .btn:active {
@@ -213,8 +211,8 @@ h6 {
 }
 
 ::selection {
-  background: var(--glow);
-  color: var(--background);
+  background: color-mix(in srgb, var(--muted) 80%, transparent);
+  color: var(--foreground);
 }
 
 /*
