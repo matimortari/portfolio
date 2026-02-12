@@ -2,7 +2,7 @@
   <Navbar />
   <Hero />
 
-  <main class="relative z-10 container mx-auto flex w-full flex-col items-center gap-20 px-4 py-12">
+  <main class="relative z-10 container mx-auto flex w-full flex-col items-center gap-20 overflow-hidden px-4 py-12">
     <div class="grid-backdrop" />
 
     <About />

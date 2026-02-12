@@ -4,8 +4,8 @@
       <iframe :src="pdfUrl" :title="$t('cv.meta.title')" :style="{ width: `${pdfWidth}px`, height: '100vh' }" />
     </ClientOnly>
 
-    <button class="group fixed right-4 bottom-4 z-50 flex items-center gap-2 rounded-full bg-transparent p-2 text-sm font-semibold transition-all duration-500 hover:scale-105" @click="downloadPdf">
-      <span class="hidden opacity-0 transition-opacity duration-500 group-hover:opacity-100 md:inline-block">{{ $t('cv.download') }}</span>
+    <button class="group fixed bottom-4 z-50 flex items-center gap-2 rounded-full bg-transparent p-2 text-sm font-semibold transition-all duration-500 hover:scale-105 md:right-4" @click="downloadPdf">
+      <span class="inline-block transition-opacity duration-500 md:opacity-0 md:group-hover:opacity-100">{{ $t('cv.download') }}</span>
       <icon name="material-symbols:download" size="40" class="rounded-full p-1 backdrop-blur-xl" />
     </button>
   </main>
@@ -21,7 +21,7 @@ const pdfUrl = computed(() => blobUrl.value ? `${blobUrl.value}#toolbar=0&navpan
 
 const pdfWidth = computed(() => {
   if (windowWidth.value < 768) {
-    return windowWidth.value * 0.95
+    return windowWidth.value - 16
   }
   if (windowWidth.value < 1024) {
     return windowWidth.value * 0.9
@@ -64,8 +64,8 @@ watchEffect(() => {
 })
 
 useHead({
-  title: computed(() => $t("index.meta.title")),
+  title: computed(() => $t("cv.meta.title")),
   link: [{ rel: "canonical", href: computed(() => `https://matheus-mortari.vercel.app/cv/${lang.value}`) }],
-  meta: [{ name: "description", content: computed(() => $t("index.meta.description")) }],
+  meta: [{ name: "description", content: computed(() => $t("cv.meta.description")) }],
 })
 </script>

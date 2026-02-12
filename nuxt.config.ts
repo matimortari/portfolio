@@ -8,7 +8,7 @@ export default defineNuxtConfig({
     "@vueuse/motion/nuxt",
   ],
   vite: {
-    plugins: [tailwindcss()],
+    plugins: [tailwindcss() as any],
   },
   fonts: {
     processCSSVariables: true,
