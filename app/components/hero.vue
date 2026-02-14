@@ -26,14 +26,14 @@
         <div
           v-motion :initial="{ opacity: 0, y: 30 }"
           :visible-once="{ opacity: 1, y: 0 }" :duration="600"
-          :delay="700" class="flex flex-col items-center gap-2 md:items-start md:justify-start"
+          :delay="700" class="flex flex-col items-center gap-4 md:items-start md:justify-start md:gap-2"
         >
           <div class="flex w-full max-w-[80%] flex-col items-center justify-center gap-2 md:flex-row md:items-start md:justify-start">
             <nuxt-link
               v-for="(resume, index) in HERO_RESUME_LINKS" :key="index"
               v-motion :initial="{ opacity: 0, scale: 0.8 }"
               :visible-once="{ opacity: 1, scale: 1 }" :duration="500"
-              :delay="900 + index * 100" :to="resume.url"
+              :delay="700 + index * 100" :to="resume.url"
               target="_blank" class="group btn w-full md:w-auto"
             >
               <span>{{ $t(resume.label) }}</span>
