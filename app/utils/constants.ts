@@ -15,10 +15,10 @@ export const PROJECT_ITEMS: ProjectItem[] = [
   {
     title: "index.projects.items.0.title",
     description: "index.projects.items.0.description",
-    image: "https://alllinks-bio.vercel.app/og-image.png",
+    image: "https://linkiosk.vercel.app/og-image.png",
     stack: ["TypeScript", "Nuxt.js", "Vue.js", "TailwindCSS", "Chart.js", "OAuth", "Prisma", "PostgreSQL", "Redis"],
-    demoUrl: "https://alllinks-bio.vercel.app",
-    sourceUrl: "https://github.com/matimortari/alllinks",
+    demoUrl: "https://linkiosk.vercel.app",
+    sourceUrl: "https://github.com/matimortari/linkiosk",
   },
   {
     title: "index.projects.items.1.title",

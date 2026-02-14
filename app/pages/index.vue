@@ -2,14 +2,15 @@
   <Navbar />
   <Hero />
 
-  <main class="relative z-10 container mx-auto flex w-full flex-col items-center gap-20 overflow-hidden px-4 py-12">
+  <div class="relative">
     <div class="grid-backdrop" />
-
-    <About />
-    <Stack />
-    <Projects />
-    <Contact />
-  </main>
+    <main class="relative z-10 container mx-auto flex w-full flex-col items-center gap-20 px-4 py-12">
+      <About />
+      <Stack />
+      <Projects />
+      <Contact />
+    </main>
+  </div>
 
   <Footer />
   <UiBackToTop />
@@ -30,9 +31,9 @@ useHead({
   z-index: 0;
   pointer-events: none;
   background-image:
-    linear-gradient(to right, rgba(0, 255, 136, 0.03) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(0, 255, 136, 0.03) 1px, transparent 1px);
-  background-size: 40px 40px;
+    linear-gradient(to right, rgba(0, 255, 136, 0.02) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 255, 136, 0.02) 1px, transparent 1px);
+  background-size: 100px 100px;
 }
 
 main > *:not(.grid-backdrop) {

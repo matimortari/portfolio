@@ -62,8 +62,8 @@
   Typography
 */
 h1 {
-  font-size: 2.75rem;
-  line-height: 2.75rem;
+  font-size: 2.25rem;
+  line-height: 2.25rem;
   font-weight: 700;
   font-family: var(--font-display);
 }
@@ -74,10 +74,16 @@ h1 {
   }
 }
 h2 {
-  font-size: 2.25rem;
-  line-height: 2.25rem;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
   font-weight: 700;
   font-family: var(--font-display);
+}
+@media (min-width: 1024px) {
+  h2 {
+    font-size: 2.25rem;
+    line-height: 2.25rem;
+  }
 }
 h3 {
   font-size: 1.875rem;
@@ -86,20 +92,14 @@ h3 {
   font-family: var(--font-display);
 }
 h4 {
-  font-size: 1.5rem;
-  line-height: 1.5rem;
+  font-size: 1.75rem;
+  line-height: 1.75rem;
   font-weight: 700;
   font-family: var(--font-display);
 }
 h5 {
-  font-size: 1.25rem;
-  line-height: 1.25rem;
-  font-weight: 700;
-  font-family: var(--font-display);
-}
-h6 {
-  font-size: 1.2rem;
-  line-height: 1.2rem;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
   font-weight: 700;
   font-family: var(--font-display);
 }

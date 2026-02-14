@@ -19,10 +19,11 @@
         v-motion :initial="{ opacity: 0, y: 50 }"
         :visible-once="{ opacity: 1, y: 0 }" :delay="index * 150"
         :duration="500" :to="link.url"
-        target="_blank" class="group flex flex-row items-center gap-4"
+        target="_blank" class="group flex flex-col items-center gap-4 md:flex-row"
       >
-        <icon :name="link.icon ?? ''" size="50" class="text-primary duration-500 group-hover:scale-110" />
-        <p class="flex flex-col items-start">
+        <icon :name="link.icon ?? ''" size="40" class="text-primary duration-500 group-hover:scale-110" />
+
+        <p class="flex flex-col items-center md:items-start">
           <span class="font-semibold">{{ link.label }}</span>
           <span class="text-sm text-muted-foreground group-hover:underline">{{ link.text }}</span>
         </p>
