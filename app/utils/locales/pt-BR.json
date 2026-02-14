@@ -14,13 +14,13 @@
     "hero": {
       "title": "Matheus Mortari",
       "subtitle": "Desenvolvedor Full-Stack",
-      "resumeEn": "Currículo - Inglês",
-      "resumePt": "Currículo - Português"
+      "resumeEn": "Currículo – Inglês",
+      "resumePt": "Currículo – Português"
     },
     "about": {
       "title": "Sobre Mim",
-      "section1": "Sou desenvolvedor de software full-stack e estudante de Análise e Desenvolvimento de Sistemas na Universidade de Passo Fundo (UPF), no Rio Grande do Sul. Eu crio aplicações web dinâmicas, sistemas back-end e ferramentas de produtividade, como CLIs e automações.",
-      "section2": "Sou adaptável e comprometido em me manter atualizado com as tendências da área, ao mesmo tempo que valorizo tecnologias tradicionais e confiáveis. Sinta-se à vontade para explorar meu trabalho e entrar em contato – estou sempre aberto a oportunidades de aprender e colaborar!"
+      "section1": "Eu sou desenvolvedor de software full-stack e estudante de Análise e Desenvolvimento de Sistemas na Universidade de Passo Fundo (UPF), no Rio Grande do Sul. Já desenvolvi aplicações web altamente dinâmicas, sistemas back-end, soluções de observabilidade e infraestrutura e ferramentas de linha de comando.",
+      "section2": "Estou sempre descobrindo e experimentando novas tecnologias, e gosto de usá-la como recurso de estudo e organização. Além disso, tenho diversos outros interesses, como cinema, música e fotografia. Sinta-se à vontade para explorar meu trabalho e entrar em contato – estou aberto a desafios e oportunidades de colaboração."
     },
     "stack": {
       "title": "Tecnologias",
@@ -44,11 +44,11 @@
       "items": [
         {
           "title": "AllLinks",
-          "description": "Um construtor de páginas que permite aos usuários centralizar e compartilhar seus links e sites, com personalização e dados analíticos integrados."
+          "description": "Website que permite ao usuário centralizar e compartilhar websites e links através de uma página pessoal, com recursos de personalização e analytics."
         },
         {
           "title": "WindKeep",
-          "description": "Uma plataforma multi-tenant para gerenciamento de dados sensíveis com controle de acesso, mecanismos de auditoria e uma interface de linha de comando integrada."
+          "description": "Plataforma multi-tenant para gestão de credenciais, com mecanismos de controle de acesso, rotinas de auditoria e uma interface de linha de comando integrada."
         }
       ]
     },

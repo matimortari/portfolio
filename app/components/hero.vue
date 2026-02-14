@@ -4,7 +4,7 @@
     <div class="corner-accent corner-tl" />
     <div class="corner-accent corner-br" />
 
-    <div class="relative z-20 flex flex-col-reverse items-center justify-center gap-8 px-4 py-24 md:mx-auto md:flex-row md:gap-24">
+    <div class="relative z-20 flex flex-col-reverse items-center justify-center gap-8 py-24 md:mx-auto md:flex-row md:gap-24">
       <header class="flex flex-1 flex-col gap-4 text-center md:text-start">
         <div class="flex flex-col gap-2">
           <h1

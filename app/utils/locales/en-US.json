@@ -14,13 +14,13 @@
     "hero": {
       "title": "Matheus Mortari",
       "subtitle": "Full-Stack Developer",
-      "resumeEn": "Resume - English",
-      "resumePt": "Resume - Portuguese"
+      "resumeEn": "Resume – English",
+      "resumePt": "Resume – Portuguese"
     },
     "about": {
       "title": "About Me",
-      "section1": "I'm a full-stack software developer and Systems Analysis and Development student at the University of Passo Fundo (UPF), based in Rio Grande do Sul, Brazil. I build dynamic web applications, back-end systems, and productivity tools such as CLIs and automations.",
-      "section2": "I'm adaptable and committed to staying up-to-date with industry trends while grounded in traditional and reliable technologies. Feel free to explore my work and reach out – I'm always open to opportunities to learn and collaborate!"
+      "section1": "I'm a full-stack software developer and Systems Analysis and Development student at the University of Passo Fundo (UPF), based in Rio Grande do Sul, Brazil. I have built highly dynamic web applications, back-end systems, observability and infrastructure solutions, and command line tools.",
+      "section2": "I'm always finding out new tech to experiment with, as I enjoy using it as a learning and organization resource. Outside of that, I have many other personal interests, such as film, music, and photography. Feel free to explore my work and reach out – I'm open to challenges and opportunities to collaborate."
     },
     "stack": {
       "title": "Tech Stack",
@@ -44,11 +44,11 @@
       "items": [
         {
           "title": "AllLinks",
-          "description": "A landing page builder that allows users to centralize and share their links and websites, with built-in personalization and analytics."
+          "description": "Web platform that allows users to centralize and share their websites and links through a personal page, with customization features and analytics."
         },
         {
           "title": "WindKeep",
-          "description": "A multi-tenant platform for secrets management with role-based access control, audit logging mechanisms, and an integrated command line interface."
+          "description": "A multi-tenant secrets management platform with role-based access control mechanisms, audit routines, and an integrated command-line interface."
         }
       ]
     },
