@@ -30,7 +30,7 @@ useHead({
     { name: "viewport", content: "width=device-width, initial-scale=1" },
     { property: "og:type", content: "website" },
     { property: "og:image", content: computed(() => `${BASE_URL}/og-image-${locale.value === "pt-BR" ? "pt" : "en"}.png`) },
-    { name: "google-site-verification", content: "2j0bcfhh8FCYPpzFylzbiPjl3Pa0X7lMuG060ctsCsA" },
+    { name: "google-site-verification", content: "LCOdFEOFVCM7MI46pZbQPMk1qndhd1gXesZE5JDBvcQ" },
   ],
 })
 </script>
