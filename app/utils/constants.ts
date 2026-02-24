@@ -1,4 +1,4 @@
-export const BASE_URL = "https://matheus-mortari.up.railway.app"
+export const BASE_URL = "https://matheus-mortari.dev"
 
 export const STACK_ITEMS: StackItem[] = [
   { name: "TypeScript", description: "index.stack.items.0.description", icon: "simple-icons:typescript", url: "https://www.typescriptlang.org" },
@@ -25,9 +25,9 @@ export const PROJECT_ITEMS: ProjectItem[] = [
   {
     title: "index.projects.items.1.title",
     description: "index.projects.items.1.description",
-    image: "https://linkiosk.up.railway.app/og-image.png",
+    image: "https://windkeep.up.railway.app/og-image.png",
     stack: ["TypeScript", "Nuxt.js", "Vue.js", "TailwindCSS", "Go", "OAuth", "Prisma", "PostgreSQL", "Redis"],
-    demoUrl: "https://linkiosk.up.railway.app",
+    demoUrl: "https://windkeep.up.railway.app",
     sourceUrl: "https://github.com/matimortari/windkeep",
   },
 ]
