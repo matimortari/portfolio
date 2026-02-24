@@ -65,7 +65,7 @@ watchEffect(() => {
 
 useHead({
   title: computed(() => $t("cv.meta.title")),
-  link: [{ rel: "canonical", href: computed(() => `https://matheus-mortari.vercel.app/cv/${lang.value}`) }],
+  link: [{ rel: "canonical", href: computed(() => `${BASE_URL}/cv/${lang.value}`) }],
   meta: [{ name: "description", content: computed(() => $t("cv.meta.description")) }],
 })
 </script>
