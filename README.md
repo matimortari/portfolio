@@ -1,6 +1,6 @@
 # Matheus Mortari – Web Portfolio
 
-Welcome to my [**Portfolio**](https://matheus-mortari.vercel.app)! This website showcases my projects and experiences in software development.
+Welcome to my [**Portfolio**](https://matheus-mortari.dev)! This website showcases my projects and experiences in software development.
 
 ## My Tech Stack
 
@@ -10,7 +10,6 @@ These are the technologies and tools I frequently use in my projects:
 - **Web Development:** Vue.js, Nuxt.js, TailwindCSS, Pinia.
 - **Backend and Databases:** Node.js, PostgreSQL, Redis, Prisma.
 - **Development Tools:** VSCode, Postman, ESLint, Git, Docker.
-- **Cloud Services:** Vercel, Supabase, SonarCloud.
 
 ## Contact
 
