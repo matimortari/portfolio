@@ -19,7 +19,7 @@
 <script setup lang="ts">
 useHead({
   title: computed(() => $t("index.meta.title")),
-  link: [{ rel: "canonical", href: "https://matheus-mortari.vercel.app" }],
+  link: [{ rel: "canonical", href: `${BASE_URL}` }],
   meta: [{ name: "description", content: computed(() => $t("index.meta.description")) }],
 })
 </script>
