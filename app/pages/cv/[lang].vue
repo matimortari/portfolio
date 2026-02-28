@@ -12,6 +12,7 @@
 </template>
 
 <script setup lang="ts">
+const { public: { baseURL } } = useRuntimeConfig()
 const route = useRoute()
 const { locale } = useI18n()
 const windowWidth = ref(800)
@@ -65,7 +66,7 @@ watchEffect(() => {
 
 useHead({
   title: computed(() => $t("cv.meta.title")),
-  link: [{ rel: "canonical", href: computed(() => `${BASE_URL}/cv/${lang.value}`) }],
+  link: [{ rel: "canonical", href: computed(() => `${baseURL}/cv/${lang.value}`) }],
   meta: [{ name: "description", content: computed(() => $t("cv.meta.description")) }],
 })
 </script>

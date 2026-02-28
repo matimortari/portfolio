@@ -1,5 +1,3 @@
-export const BASE_URL = "https://matheus-mortari.dev"
-
 export const STACK_ITEMS: StackItem[] = [
   { name: "TypeScript", description: "index.stack.items.0.description", icon: "simple-icons:typescript", url: "https://www.typescriptlang.org" },
   { name: "Node.js", description: "index.stack.items.1.description", icon: "simple-icons:nodedotjs", url: "https://nodejs.org" },
