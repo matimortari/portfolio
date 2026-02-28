@@ -17,9 +17,11 @@
 </template>
 
 <script setup lang="ts">
+const { public: { baseURL } } = useRuntimeConfig()
+
 useHead({
   title: computed(() => $t("index.meta.title")),
-  link: [{ rel: "canonical", href: `${BASE_URL}` }],
+  link: [{ rel: "canonical", href: `${baseURL}` }],
   meta: [{ name: "description", content: computed(() => $t("index.meta.description")) }],
 })
 </script>
