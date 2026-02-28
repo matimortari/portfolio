@@ -7,6 +7,11 @@ export default defineNuxtConfig({
     "@nuxtjs/i18n",
     "@vueuse/motion/nuxt",
   ],
+  runtimeConfig: {
+    public: {
+      baseURL: process.env.NUXT_PUBLIC_BASE_URL,
+    },
+  },
   vite: {
     plugins: [tailwindcss() as any],
   },
