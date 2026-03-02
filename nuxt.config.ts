@@ -5,6 +5,7 @@ export default defineNuxtConfig({
     "@nuxt/fonts",
     "@nuxt/icon",
     "@nuxtjs/i18n",
+    "@nuxtjs/seo",
     "@vueuse/motion/nuxt",
   ],
   runtimeConfig: {
@@ -15,6 +16,11 @@ export default defineNuxtConfig({
   vite: {
     plugins: [tailwindcss() as any],
   },
+  nitro: {
+    externals: {
+      inline: ["unhead"],
+    },
+  },
   fonts: {
     processCSSVariables: true,
     families: [
@@ -24,6 +30,13 @@ export default defineNuxtConfig({
     ],
   },
   css: ["~/assets/styles.css"],
+  site: {
+    url: process.env.NUXT_PUBLIC_BASE_URL,
+    name: "Matheus Mortari",
+  },
+  sitemap: {
+    urls: ["/cv/en", "/cv/pt"],
+  },
   i18n: {
     restructureDir: "app/utils",
     baseUrl: process.env.NUXT_PUBLIC_BASE_URL,
