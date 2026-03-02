@@ -1,14 +1,8 @@
 <template>
   <div v-if="isLoading" class="loading-container">
-    <div class="flex flex-col items-center gap-4">
-      <div class="relative size-16">
-        <div class="spinner" />
-        <div class="spinner-ring" />
-      </div>
-
-      <p class="animate-pulse font-medium text-muted-foreground">
-        Loading
-      </p>
+    <div class="relative size-16">
+      <div class="spinner" />
+      <div class="spinner-ring" />
     </div>
   </div>
 </template>
