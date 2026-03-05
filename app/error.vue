@@ -5,11 +5,11 @@
     </h1>
 
     <p class="text-center text-muted-foreground">
-      {{ error.statusText || "Unknown error" }}
+      {{ error.statusText || $t("error.unknown") }}
     </p>
 
     <nuxt-link to="/">
-      Go back home
+      {{ $t("error.goHome") }}
     </nuxt-link>
   </div>
 </template>
