@@ -15,10 +15,10 @@ export const PROJECT_ITEMS: ProjectItem[] = [
   {
     title: "index.projects.items.0.title",
     description: "index.projects.items.0.description",
-    image: "https://linkiosk.up.railway.app/og-image.png",
+    image: "https://linkiwi.up.railway.app/og-image.png",
     stack: ["TypeScript", "Nuxt.js", "Vue.js", "TailwindCSS", "Chart.js", "OAuth", "Prisma", "PostgreSQL", "Redis"],
-    demoUrl: "https://linkiosk.up.railway.app",
-    sourceUrl: "https://github.com/matimortari/linkiosk",
+    demoUrl: "https://linkiwi.up.railway.app",
+    sourceUrl: "https://github.com/matimortari/linkiwi",
   },
   {
     title: "index.projects.items.1.title",
