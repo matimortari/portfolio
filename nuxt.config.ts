@@ -13,7 +13,17 @@ export default defineNuxtConfig({
       baseURL: process.env.NUXT_PUBLIC_BASE_URL,
     },
   },
+  devServer: {
+    host: "0.0.0.0",
+  },
   vite: {
+    server: {
+      hmr: {
+        protocol: "wss",
+        host: "dev.local",
+        clientPort: 443,
+      },
+    },
     plugins: [tailwindcss() as any],
   },
   nitro: {
