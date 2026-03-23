@@ -11,26 +11,26 @@
     "lint:fix": "eslint . --fix"
   },
   "dependencies": {
-    "@nuxtjs/i18n": "10.2.3",
-    "@nuxtjs/seo": "3.4.0",
+    "@nuxtjs/i18n": "10.2.4",
+    "@nuxtjs/seo": "5.1.0",
     "@vueuse/motion": "3.0.3",
     "nuxt": "4.4.2",
     "vue": "3.5.30",
     "vue-pdf-embed": "2.1.4",
-    "vue-router": "5.0.3"
+    "vue-router": "5.0.4"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "7.7.0",
-    "@iconify-json/material-symbols": "1.2.61",
-    "@iconify-json/simple-icons": "1.2.73",
+    "@antfu/eslint-config": "8.2.0",
+    "@iconify-json/material-symbols": "1.2.66",
+    "@iconify-json/simple-icons": "1.2.78",
     "@nuxt/fonts": "0.14.0",
     "@nuxt/icon": "2.2.1",
-    "@tailwindcss/vite": "4.2.1",
-    "@types/node": "25.4.0",
-    "eslint": "10.0.0",
+    "@tailwindcss/vite": "4.2.2",
+    "@types/node": "25.6.0",
+    "eslint": "10.2.0",
     "eslint-plugin-better-tailwindcss": "4.3.0",
     "eslint-plugin-format": "2.0.0",
-    "tailwindcss": "4.2.1",
-    "typescript": "5.9.3"
+    "tailwindcss": "4.2.2",
+    "typescript": "6.0.2"
   }
 }

@@ -1,35 +1,21 @@
 import tailwindcss from "@tailwindcss/vite"
 
 export default defineNuxtConfig({
-  modules: [
-    "@nuxt/fonts",
-    "@nuxt/icon",
-    "@nuxtjs/i18n",
-    "@nuxtjs/seo",
-    "@vueuse/motion/nuxt",
-  ],
+  modules: ["@nuxt/fonts", "@nuxt/icon", "@nuxtjs/i18n", "@nuxtjs/seo", "@vueuse/motion/nuxt"],
   runtimeConfig: {
     public: {
       baseURL: process.env.NUXT_PUBLIC_BASE_URL,
     },
   },
-  devServer: {
-    host: "0.0.0.0",
-  },
+  devServer: { host: "0.0.0.0" },
   vite: {
-    server: {
-      hmr: {
-        protocol: "ws",
-        host: new URL(process.env.NUXT_PUBLIC_BASE_URL!).hostname,
-        port: Number(new URL(process.env.NUXT_PUBLIC_BASE_URL!).port) || 3000,
-      },
-    },
+    server: process.env.NUXT_PUBLIC_BASE_URL
+      ? {
+          allowedHosts: [new URL(process.env.NUXT_PUBLIC_BASE_URL).hostname],
+          hmr: { protocol: "wss", host: new URL(process.env.NUXT_PUBLIC_BASE_URL).hostname, port: Number(new URL(process.env.NUXT_PUBLIC_BASE_URL).port) || 3000 },
+        }
+      : {},
     plugins: [tailwindcss() as any],
-  },
-  nitro: {
-    externals: {
-      inline: ["unhead"],
-    },
   },
   fonts: {
     processCSSVariables: true,
@@ -40,13 +26,6 @@ export default defineNuxtConfig({
     ],
   },
   css: ["~/assets/styles.css"],
-  site: {
-    url: process.env.NUXT_PUBLIC_BASE_URL,
-    name: "Matheus Mortari",
-  },
-  sitemap: {
-    urls: ["/cv/en", "/cv/pt"],
-  },
   i18n: {
     restructureDir: "app/utils",
     baseUrl: process.env.NUXT_PUBLIC_BASE_URL,
@@ -63,8 +42,8 @@ export default defineNuxtConfig({
       fallbackLocale: "en-US",
     },
   },
-  icon: {
-    mode: "svg",
-    clientBundle: { scan: true },
-  },
+  icon: { mode: "svg", clientBundle: { scan: true } },
+  ogImage: { enabled: false },
+  site: { url: process.env.NUXT_PUBLIC_BASE_URL, name: "Matheus Mortari" },
+  sitemap: { urls: ["/cv/en", "/cv/pt"] },
 })
