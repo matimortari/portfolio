@@ -18,8 +18,9 @@ export default defineNuxtConfig({
   },
   vite: {
     server: {
+      allowedHosts: [new URL(process.env.NUXT_PUBLIC_BASE_URL!).hostname],
       hmr: {
-        protocol: "ws",
+        protocol: "wss",
         host: new URL(process.env.NUXT_PUBLIC_BASE_URL!).hostname,
         port: Number(new URL(process.env.NUXT_PUBLIC_BASE_URL!).port) || 3000,
       },
