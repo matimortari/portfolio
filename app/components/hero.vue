@@ -4,7 +4,7 @@
     <div class="corner-accent corner-tl" />
     <div class="corner-accent corner-br" />
 
-    <div class="relative z-20 flex flex-col-reverse items-center justify-center gap-8 px-4 py-24 md:mx-auto md:flex-row md:gap-24">
+    <div class="relative z-20 flex flex-col-reverse items-center justify-center gap-8 py-24 md:mx-auto md:flex-row md:gap-24">
       <header class="flex flex-1 flex-col gap-4 text-center md:text-start">
         <div class="flex flex-col gap-2">
           <h1
@@ -26,14 +26,14 @@
         <div
           v-motion :initial="{ opacity: 0, y: 30 }"
           :visible-once="{ opacity: 1, y: 0 }" :duration="600"
-          :delay="700" class="flex flex-col items-center gap-2 md:items-start md:justify-start"
+          :delay="700" class="flex flex-col items-center gap-4 md:items-start md:justify-start md:gap-2"
         >
           <div class="flex w-full max-w-[80%] flex-col items-center justify-center gap-2 md:flex-row md:items-start md:justify-start">
             <nuxt-link
               v-for="(resume, index) in HERO_RESUME_LINKS" :key="index"
               v-motion :initial="{ opacity: 0, scale: 0.8 }"
               :visible-once="{ opacity: 1, scale: 1 }" :duration="500"
-              :delay="900 + index * 100" :to="resume.url"
+              :delay="700 + index * 100" :to="resume.url"
               target="_blank" class="group btn w-full md:w-auto"
             >
               <span>{{ $t(resume.label) }}</span>
@@ -121,6 +121,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  -webkit-user-select: none;
+  user-select: none;
 }
 @media (min-width: 1024px) {
   .avatar-container {

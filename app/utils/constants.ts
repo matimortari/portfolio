@@ -15,17 +15,17 @@ export const PROJECT_ITEMS: ProjectItem[] = [
   {
     title: "index.projects.items.0.title",
     description: "index.projects.items.0.description",
-    image: "https://alllinks-bio.vercel.app/og-image.png",
+    image: "https://linkiosk.up.railway.app/og-image.png",
     stack: ["TypeScript", "Nuxt.js", "Vue.js", "TailwindCSS", "Chart.js", "OAuth", "Prisma", "PostgreSQL", "Redis"],
-    demoUrl: "https://alllinks-bio.vercel.app",
-    sourceUrl: "https://github.com/matimortari/alllinks",
+    demoUrl: "https://linkiosk.up.railway.app",
+    sourceUrl: "https://github.com/matimortari/linkiosk",
   },
   {
     title: "index.projects.items.1.title",
     description: "index.projects.items.1.description",
-    image: "https://windkeep.vercel.app/og-image.png",
+    image: "https://windkeep.up.railway.app/og-image.png",
     stack: ["TypeScript", "Nuxt.js", "Vue.js", "TailwindCSS", "Go", "OAuth", "Prisma", "PostgreSQL", "Redis"],
-    demoUrl: "https://windkeep.vercel.app",
+    demoUrl: "https://windkeep.up.railway.app",
     sourceUrl: "https://github.com/matimortari/windkeep",
   },
 ]
@@ -98,12 +98,12 @@ export const HERO_RESUME_LINKS: ResumeLink[] = [
     lang: "en",
     label: "index.hero.resumeEn",
     url: "/cv/en",
-    blob: "https://kdenka4dfbuxnv79.public.blob.vercel-storage.com/portfolio/cv/CV-EN.pdf",
+    blob: "https://pub-ce5c64d2ed6a4723bca8e1f8005858ac.r2.dev/cv/CV-EN.pdf",
   },
   {
     lang: "pt",
     label: "index.hero.resumePt",
     url: "/cv/pt",
-    blob: "https://kdenka4dfbuxnv79.public.blob.vercel-storage.com/portfolio/cv/CV-PT.pdf",
+    blob: "https://pub-ce5c64d2ed6a4723bca8e1f8005858ac.r2.dev/cv/CV-PT.pdf",
   },
 ]
