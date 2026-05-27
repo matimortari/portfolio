@@ -7,9 +7,9 @@ Welcome to my [**Portfolio**](https://matheus-mortari.dev)! This website showcas
 These are the technologies and tools I frequently use in my projects:
 
 - **Programming Languages:** TypeScript, Go.
-- **Web Development:** Vue.js, Nuxt.js, TailwindCSS, Pinia.
+- **Web Development:** Vue.js, Nuxt, Tailwind, Pinia.
 - **Backend and Databases:** Node.js, PostgreSQL, Redis, Prisma.
-- **Development Tools:** VSCode, Postman, ESLint, Git, Docker.
+- **Development Tools:** ESLint, Git, Docker.
 
 ## Contact
 
