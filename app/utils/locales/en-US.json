@@ -26,16 +26,46 @@
       "title": "Tech Stack",
       "subtitle": "Technologies I enjoy working with.",
       "items": [
-        { "name": "TypeScript", "description": "Modern, statically typed superset of the JavaScript programming language." },
-        { "name": "Node.js", "description": "JavaScript runtime environment for server-side applications." },
-        { "name": "Vue.js", "description": "Progressive JavaScript framework for building user interfaces." },
-        { "name": "Nuxt.js", "description": "Full-stack framework for building modern Vue.js applications." },
-        { "name": "TailwindCSS", "description": "Utility-first CSS framework for rapid and efficient UI development." },
-        { "name": "Prisma", "description": "Database access toolkit and ORM for TypeScript applications." },
-        { "name": "PostgreSQL", "description": "Relational database management system with advanced features." },
-        { "name": "Go", "description": "Compiled programming language, designed for simplicity and efficiency." },
-        { "name": "Git", "description": "Distributed version control system for source code management." },
-        { "name": "Docker", "description": "Containerization platform for running applications in isolated environments." }
+        {
+          "name": "TypeScript",
+          "description": "Modern, statically typed superset of the JavaScript programming language."
+        },
+        {
+          "name": "Node.js",
+          "description": "JavaScript runtime environment for server-side applications."
+        },
+        {
+          "name": "Vue.js",
+          "description": "Progressive JavaScript framework for building user interfaces."
+        },
+        {
+          "name": "Nuxt",
+          "description": "Full-stack framework for building modern Vue.js applications."
+        },
+        {
+          "name": "Tailwind",
+          "description": "Utility-first CSS framework for rapid and efficient UI development."
+        },
+        {
+          "name": "Prisma",
+          "description": "Database access toolkit and ORM for TypeScript applications."
+        },
+        {
+          "name": "PostgreSQL",
+          "description": "Relational database management system with advanced features."
+        },
+        {
+          "name": "Go",
+          "description": "Compiled programming language, designed for simplicity and efficiency."
+        },
+        {
+          "name": "Git",
+          "description": "Distributed version control system for source code management."
+        },
+        {
+          "name": "Docker",
+          "description": "Containerization platform for running applications in isolated environments."
+        }
       ]
     },
     "projects": {
@@ -43,12 +73,12 @@
       "subtitle": "Some works that I do for fun and learning.",
       "items": [
         {
-          "title": "LinKiwi",
-          "description": "Web platform that allows users to centralize and share their websites and links through a personal page, with customization features and analytics."
-        },
-        {
           "title": "WindKeep",
           "description": "A multi-tenant secrets management platform with role-based access control mechanisms, audit routines, and an integrated command-line interface."
+        },
+        {
+          "title": "LinKiwi",
+          "description": "Web platform that allows users to centralize and share their websites and links through a personal page, with customization features and analytics."
         }
       ]
     },
