@@ -74,11 +74,11 @@
       "items": [
         {
           "title": "WindKeep",
-          "description": "Plataforma multi-tenant para gestão de credenciais, com mecanismos de controle de acesso, rotinas de auditoria e uma interface de linha de comando integrada."
+          "description": "Plataforma de gestão de credenciais com controle de acesso, rotinas de auditoria, armazenamento criptografado de credenciais e CLI integrada."
         },
         {
           "title": "LinKiwi",
-          "description": "Website que permite ao usuário centralizar e compartilhar websites e links através de uma página pessoal, com recursos de personalização e analytics."
+          "description": "Ferramenta de link-in-bio para usuários e empresas centralizarem sua presença online, com recursos de personalização e analytics integrados."
         }
       ]
     },
