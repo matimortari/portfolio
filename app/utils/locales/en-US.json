@@ -74,11 +74,11 @@
       "items": [
         {
           "title": "WindKeep",
-          "description": "A multi-tenant secrets management platform with role-based access control mechanisms, audit routines, and an integrated command-line interface."
+          "description": "A secrets management platform featuring role-based access control, audit routines, encrypted secret storage, and an integrated CLI."
         },
         {
           "title": "LinKiwi",
-          "description": "Web platform that allows users to centralize and share their websites and links through a personal page, with customization features and analytics."
+          "description": "A link-in-bio tool for users and businesses to centralize their online presence, with integrated personalization and analytics."
         }
       ]
     },
