@@ -1,8 +1,6 @@
 @import "tailwindcss";
 
-/*
-  Theme variables
-*/
+/* Color palette and core design primitives */
 :root {
   --background: #09080d;
   --foreground: #ebebeb;
@@ -11,21 +9,15 @@
   --muted: #2f2f3d;
   --muted-foreground: #a0a0a0;
 
-  /*
-    Base styles
-  */
+  /* Global resets */
   background-color: var(--background);
   color: var(--foreground);
   font-family: var(--font-default);
   overflow-x: hidden;
   scroll-behavior: smooth;
-  margin: 0;
-  padding: 0;
 }
 
-/*
-  Color and font theme tokens
-*/
+/* Theme configuration */
 @theme {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -39,9 +31,7 @@
   --font-mono: "JetBrains Mono", monospace;
 }
 
-/*
-  Global resets and accessibility
-*/
+/* Accessibility */
 @layer base {
   button:not(:disabled),
   [role="button"]:not(:disabled) {
@@ -52,15 +42,17 @@
   ::after,
   ::before,
   ::backdrop,
-  ::file-selector-button,
-  br {
+  ::file-selector-button {
     border-color: var(--muted);
+  }
+
+  *:focus-visible {
+    outline: solid 2px var(--primary);
+    border-radius: 0.25rem;
   }
 }
 
-/*
-  Typography
-*/
+/* Typography */
 h1 {
   font-size: 2.25rem;
   line-height: 2.25rem;
@@ -104,9 +96,7 @@ h5 {
   font-family: var(--font-display);
 }
 
-/*
-  UI elements
-*/
+/* UI elements */
 .card {
   background: linear-gradient(135deg, rgba(76, 64, 131, 0.15) 0%, rgba(26, 26, 36, 0.4) 100%);
   backdrop-filter: blur(10px);
@@ -149,9 +139,7 @@ h5 {
   user-select: none;
 }
 
-/*
-  Buttons
-*/
+/* Button elements */
 .btn {
   display: flex;
   flex-direction: row;
@@ -189,9 +177,7 @@ h5 {
   transform: translateY(0);
 }
 
-/*
-  Utilities
-*/
+/* Utilities */
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -213,40 +199,4 @@ h5 {
 ::selection {
   background: color-mix(in srgb, var(--muted) 80%, transparent);
   color: var(--foreground);
-}
-
-/*
-  Glitch effect for headings
-*/
-@keyframes glitch {
-  0% {
-    text-shadow:
-      -2px 0 var(--accent),
-      2px 0 var(--primary);
-  }
-  25% {
-    text-shadow:
-      2px 0 var(--accent),
-      -2px 0 var(--primary);
-  }
-  50% {
-    text-shadow:
-      -2px 0 var(--primary),
-      2px 0 var(--accent);
-  }
-  75% {
-    text-shadow:
-      2px 0 var(--primary),
-      -2px 0 var(--accent);
-  }
-  100% {
-    text-shadow:
-      -2px 0 var(--accent),
-      2px 0 var(--primary);
-  }
-}
-
-.glitch-text {
-  position: relative;
-  animation: glitch 3s infinite;
 }

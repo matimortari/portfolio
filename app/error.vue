@@ -1,16 +1,18 @@
 <template>
-  <div class="flex h-screen flex-col items-center justify-center gap-4">
+  <div class="flex min-h-screen flex-col items-center justify-center gap-4 p-4 text-center md:items-start md:p-12 md:text-start">
     <h1>
-      {{ error.status }}
+      {{ error.status }} – {{ error.statusText || "An unexpected error has occurred." }}
     </h1>
 
-    <p class="text-center text-muted-foreground">
-      {{ error.statusText || $t("error.unknown") }}
+    <p class="flex flex-col gap-2 text-lg/6 text-muted-foreground">
+      <span>Please try going back to the homepage or refreshing the page.</span>
+      <span class="font-mono text-sm">{{ error.message }}</span>
     </p>
 
-    <nuxt-link to="/">
-      {{ $t("error.goHome") }}
-    </nuxt-link>
+    <button class="flex flex-row items-center gap-2" @click="() => clearError({ redirect: '/' })">
+      <icon name="ph:arrow-left-bold" size="25" />
+      <span class="font-semibold">Go Back</span>
+    </button>
   </div>
 </template>
 
