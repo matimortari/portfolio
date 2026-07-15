@@ -12,12 +12,13 @@ const { locale } = useI18n()
 const isLoading = ref(true)
 
 onMounted(() => {
+  const onLoad = () => (isLoading.value = false)
   if (document.readyState === "complete") {
-    nextTick(() => (isLoading.value = false))
+    nextTick(onLoad)
   }
   else {
-    window.addEventListener("load", () => nextTick(() => (isLoading.value = false)))
-    onBeforeUnmount(() => window.removeEventListener("load", () => nextTick(() => (isLoading.value = false))))
+    window.addEventListener("load", () => nextTick(onLoad))
+    onBeforeUnmount(() => window.removeEventListener("load", () => nextTick(onLoad)))
   }
 })
 
