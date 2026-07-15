@@ -74,11 +74,11 @@
       "items": [
         {
           "title": "WindKeep",
-          "description": "Plataforma de gestão de credenciais com controle de acesso, rotinas de auditoria, armazenamento criptografado de credenciais e CLI integrada."
+          "description": "Uma plataforma segura e multi-tenant de gestão de credenciais, com controle de acesso (RBAC), armazenamento criptografado, rotinas de auditoria e uma CLI complementar."
         },
         {
           "title": "LinKiwi",
-          "description": "Ferramenta de link-in-bio para usuários e empresas centralizarem sua presença online, com recursos de personalização e analytics integrados."
+          "description": "Um criador de landing pages pessoais com customização visual, integrações com terceiros e um módulo de analytics com métricas agregadas em tempo real."
         }
       ]
     },
