@@ -40,25 +40,20 @@
 
 <script setup lang="ts">
 const { locale } = useI18n()
-
 const showNavbar = ref(true)
 const scrolled = ref(false)
-
 let lastScrollY = 0
 
 function handleScroll() {
-  const currentY = window.scrollY
-  showNavbar.value = currentY < lastScrollY || currentY < 10
-  scrolled.value = currentY > 50
-  lastScrollY = currentY
+  showNavbar.value = window.scrollY < lastScrollY
+  scrolled.value = window.scrollY > 50
+  lastScrollY = window.scrollY
 }
 
 onMounted(() => {
   const savedLang = localStorage.getItem("nuxt-lang")
   if (savedLang && (savedLang === "en-US" || savedLang === "pt-BR")) {
-    nextTick(() => {
-      locale.value = savedLang as "en-US" | "pt-BR"
-    })
+    nextTick(() => locale.value = savedLang as "en-US" | "pt-BR")
   }
 
   lastScrollY = window.scrollY
@@ -66,7 +61,5 @@ onMounted(() => {
   window.addEventListener("scroll", handleScroll)
 })
 
-onBeforeUnmount(() => {
-  window.removeEventListener("scroll", handleScroll)
-})
+onBeforeUnmount(() => window.removeEventListener("scroll", handleScroll))
 </script>
