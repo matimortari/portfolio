@@ -1,5 +1,5 @@
 <template>
-  <UiLoading v-show="isLoading" />
+  <UiLoading :show="isLoading" />
 
   <div v-show="!isLoading">
     <NuxtPage />
@@ -12,13 +12,11 @@ const { locale } = useI18n()
 const isLoading = ref(true)
 
 onMounted(() => {
-  const onLoad = () => (isLoading.value = false)
   if (document.readyState === "complete") {
-    nextTick(onLoad)
+    isLoading.value = false
   }
   else {
-    window.addEventListener("load", () => nextTick(onLoad))
-    onBeforeUnmount(() => window.removeEventListener("load", () => nextTick(onLoad)))
+    window.addEventListener("load", () => isLoading.value = false, { once: true })
   }
 })
 

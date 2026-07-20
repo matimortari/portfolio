@@ -1,5 +1,5 @@
 <template>
-  <div v-if="isLoading" class="loading-container">
+  <div class="loading-container" :class="{ 'is-leaving': !show }" aria-hidden="true">
     <div class="relative size-16">
       <div class="spinner" />
       <div class="spinner-ring" />
@@ -8,27 +8,9 @@
 </template>
 
 <script setup lang="ts">
-const isLoading = ref(true)
-
-onMounted(() => {
-  const onLoad = () => {
-    isLoading.value = false
-  }
-
-  if (document.readyState === "complete") {
-    isLoading.value = false
-  }
-  else {
-    window.addEventListener("load", onLoad)
-    onBeforeUnmount(() => window.removeEventListener("load", onLoad))
-  }
-
-  setTimeout(() => {
-    if (isLoading.value) {
-      isLoading.value = false
-    }
-  }, 5000)
-})
+defineProps<{
+  show: boolean
+}>()
 </script>
 
 <style scoped>
@@ -40,7 +22,14 @@ onMounted(() => {
   display: flex;
   align-items: center;
   justify-content: center;
-  animation: fadeOut 0.5s ease 0.3s forwards;
+  opacity: 1;
+  transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+
+.loading-container.is-leaving {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 .spinner {
@@ -65,13 +54,6 @@ onMounted(() => {
 @keyframes spin {
   to {
     transform: rotate(360deg);
-  }
-}
-
-@keyframes fadeOut {
-  to {
-    opacity: 0;
-    visibility: hidden;
   }
 }
 </style>
