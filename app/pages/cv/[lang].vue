@@ -18,7 +18,10 @@ const { locale } = useI18n()
 const windowWidth = ref(800)
 const lang = computed(() => route.params.lang as string)
 const blobUrl = computed(() => HERO_RESUME_LINKS.find(r => r.lang === lang.value)?.blob)
-const pdfUrl = computed(() => blobUrl.value ? `${blobUrl.value}#toolbar=0&navpanes=0&scrollbar=0&view=FitH` : "")
+const pdfObjectUrl = ref("")
+let revokeUrl: string | null = null
+
+const pdfUrl = computed(() => pdfObjectUrl.value ? `${pdfObjectUrl.value}#toolbar=0&navpanes=0&scrollbar=0&view=FitH` : "")
 
 const pdfWidth = computed(() => {
   if (windowWidth.value < 768) {
@@ -27,16 +30,29 @@ const pdfWidth = computed(() => {
   if (windowWidth.value < 1024) {
     return windowWidth.value * 0.9
   }
-
   return 800
 })
+
+async function loadPdf() {
+  if (!blobUrl.value) {
+    pdfObjectUrl.value = ""
+    return
+  }
+
+  const response = await fetch(blobUrl.value, { cache: "no-store" })
+  const blob = await response.blob()
+  if (revokeUrl) {
+    URL.revokeObjectURL(revokeUrl)
+  }
+  revokeUrl = URL.createObjectURL(blob)
+  pdfObjectUrl.value = revokeUrl
+}
 
 async function downloadPdf() {
   if (!blobUrl.value) {
     return
   }
-
-  const response = await fetch(blobUrl.value)
+  const response = await fetch(blobUrl.value, { cache: "no-store" })
   const blob = await response.blob()
   const url = URL.createObjectURL(blob)
   const link = document.createElement("a")
@@ -47,11 +63,17 @@ async function downloadPdf() {
 }
 
 onMounted(() => {
-  const updateWidth = () => windowWidth.value = window.innerWidth
-  updateWidth()
-  window.addEventListener("resize", updateWidth)
-  onBeforeUnmount(() => window.removeEventListener("resize", updateWidth))
+  loadPdf()
+  window.addEventListener("resize", () => windowWidth.value = window.innerWidth)
+  onBeforeUnmount(() => {
+    window.removeEventListener("resize", () => windowWidth.value = window.innerWidth)
+    if (revokeUrl) {
+      URL.revokeObjectURL(revokeUrl)
+    }
+  })
 })
+
+watch(lang, loadPdf)
 
 watchEffect(() => {
   if (lang.value !== "en" && lang.value !== "pt") {
