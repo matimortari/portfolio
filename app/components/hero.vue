@@ -99,7 +99,7 @@
   right: 1rem;
   border-left: none;
   border-top: none;
-  animation: pulse-border 3s ease-in-out infinite 1.5s;
+  animation: pulse-border 3s ease-in-out infinite;
 }
 
 @keyframes pulse-border {

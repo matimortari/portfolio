@@ -47,10 +47,8 @@ async function downloadPdf() {
 }
 
 onMounted(() => {
-  const updateWidth = () => windowWidth.value = window.innerWidth
-  updateWidth()
-  window.addEventListener("resize", updateWidth)
-  onBeforeUnmount(() => window.removeEventListener("resize", updateWidth))
+  window.addEventListener("resize", () => windowWidth.value = window.innerWidth)
+  onBeforeUnmount(() => window.removeEventListener("resize", () => windowWidth.value = window.innerWidth))
 })
 
 watchEffect(() => {
