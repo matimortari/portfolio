@@ -45,5 +45,5 @@ export default defineNuxtConfig({
   icon: { mode: "svg", clientBundle: { scan: true } },
   ogImage: { enabled: false },
   site: { url: process.env.NUXT_PUBLIC_BASE_URL, name: "Matheus Mortari" },
-  sitemap: { urls: ["/cv/en", "/cv/pt"] },
+  sitemap: { urls: ["/cv/en", "/cv/pt", "/photos"] },
 })

@@ -98,6 +98,12 @@
     },
     "download": "Baixar Currículo"
   },
+  "photos": {
+    "meta": {
+      "title": "Fotos — Matheus Mortari",
+      "description": "Fotos por Matheus Mortari."
+    }
+  },
   "error": {
     "unknown": "Erro desconhecido. Por favor, tente novamente mais tarde.",
     "goHome": "Voltar para a Página Inicial"

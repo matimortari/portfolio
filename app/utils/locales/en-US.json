@@ -98,6 +98,12 @@
     },
     "download": "Download Resume"
   },
+  "photos": {
+    "meta": {
+      "title": "Photos — Matheus Mortari",
+      "description": "Photos by Matheus Mortari."
+    }
+  },
   "error": {
     "unknown": "Unknown error. Please try again later.",
     "goHome": "Go Back Home"

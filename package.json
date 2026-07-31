@@ -29,6 +29,7 @@
     "eslint": "10.7.0",
     "eslint-plugin-better-tailwindcss": "4.7.0",
     "eslint-plugin-format": "2.0.0",
+    "sharp": "0.34.5",
     "tailwindcss": "4.3.3",
     "typescript": "6.0.2"
   }
