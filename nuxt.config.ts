@@ -9,12 +9,14 @@ export default defineNuxtConfig({
   },
   devServer: { host: "0.0.0.0" },
   vite: {
-    server: process.env.NUXT_PUBLIC_BASE_URL
-      ? {
-          allowedHosts: [new URL(process.env.NUXT_PUBLIC_BASE_URL).hostname],
-          hmr: { protocol: "wss", host: new URL(process.env.NUXT_PUBLIC_BASE_URL).hostname, port: Number(new URL(process.env.NUXT_PUBLIC_BASE_URL).port) || 3000 },
-        }
-      : {},
+    server: {
+      allowedHosts: [new URL(process.env.NUXT_PUBLIC_BASE_URL!).hostname],
+      hmr: {
+        protocol: "wss",
+        host: new URL(process.env.NUXT_PUBLIC_BASE_URL!).hostname,
+        port: Number(new URL(process.env.NUXT_PUBLIC_BASE_URL!).port),
+      },
+    },
     plugins: [tailwindcss() as any],
   },
   fonts: {
@@ -45,5 +47,5 @@ export default defineNuxtConfig({
   icon: { mode: "svg", clientBundle: { scan: true } },
   ogImage: { enabled: false },
   site: { url: process.env.NUXT_PUBLIC_BASE_URL, name: "Matheus Mortari" },
-  sitemap: { urls: ["/cv/en", "/cv/pt"] },
+  sitemap: { urls: ["/cv/en", "/cv/pt", "/photos"] },
 })
