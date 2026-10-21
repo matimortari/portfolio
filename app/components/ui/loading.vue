@@ -23,7 +23,9 @@ defineProps<{
   align-items: center;
   justify-content: center;
   opacity: 1;
-  transition: opacity 0.4s ease, visibility 0.4s ease;
+  transition:
+    opacity 0.4s ease,
+    visibility 0.4s ease;
 }
 
 .loading-container.is-leaving {
