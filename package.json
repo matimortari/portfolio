@@ -19,6 +19,7 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "9.3.0",
+    "@aws-sdk/client-s3": "3.1146.0",
     "@iconify-json/material-symbols": "1.2.94",
     "@iconify-json/simple-icons": "1.2.99",
     "@nuxt/fonts": "0.14.0",
