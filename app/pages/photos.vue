@@ -20,7 +20,17 @@
         >
           <div class="relative w-full overflow-hidden bg-muted" :style="{ aspectRatio: `${entry.photo.width} / ${entry.photo.height}` }">
             <div v-if="!loaded.has(entry.photo.id)" class="absolute inset-0 animate-pulse bg-muted" aria-hidden="true" />
+            <video
+              v-if="entry.photo.type === 'video'"
+              :src="entry.photo.url" :width="entry.photo.width"
+              :height="entry.photo.height" class="pointer-events-none size-full object-cover opacity-0 transition-opacity duration-500 group-hover:opacity-85"
+              :class="{ 'opacity-100': loaded.has(entry.photo.id) }" autoplay
+              muted loop
+              playsinline preload="auto"
+              @loadeddata="onVideoReady($event, entry.photo.id)" @error="markLoaded(entry.photo.id)"
+            />
             <img
+              v-else
               :src="entry.photo.url" :alt="`Photo ${entry.photo.id}`"
               :width="entry.photo.width" :height="entry.photo.height"
               class="size-full object-cover opacity-0 transition-opacity duration-500 group-hover:opacity-85"
@@ -43,29 +53,36 @@
           </div>
 
           <div class="relative flex min-h-0 flex-1 items-center justify-center px-10 sm:px-16" @click.stop>
-            <button type="button" class="absolute left-1 z-10 p-2 font-mono text-xs tracking-widest text-muted-foreground uppercase transition-colors duration-300 hover:text-foreground sm:left-4" aria-label="Previous photo" @click="showPrev">
+            <button type="button" class="absolute left-1 z-10 p-2 font-mono text-xs tracking-widest text-muted-foreground uppercase transition-colors duration-300 hover:text-foreground sm:left-4" aria-label="Previous" @click="showPrev">
               prev
             </button>
 
             <Transition name="lightbox-image" mode="out-in">
+              <video
+                v-if="selectedPhoto?.type === 'video'" :key="`video-${selectedPhoto.id}`"
+                :src="selectedPhoto.url" class="max-h-[82vh] max-w-full object-contain"
+                autoplay muted
+                loop playsinline
+                controls @loadeddata="onVideoReady"
+              />
               <img
-                v-if="selectedPhoto" :key="selectedPhoto.id"
+                v-else-if="selectedPhoto" :key="`image-${selectedPhoto.id}`"
                 :src="selectedPhoto.url" :alt="`Photo ${selectedPhoto.id}`"
                 class="max-h-[82vh] max-w-full object-contain"
               >
             </Transition>
 
-            <button type="button" class="absolute right-1 z-10 p-2 font-mono text-xs tracking-widest text-muted-foreground uppercase transition-colors duration-300 hover:text-foreground sm:right-4" aria-label="Next photo" @click="showNext">
+            <button type="button" class="absolute right-1 z-10 p-2 font-mono text-xs tracking-widest text-muted-foreground uppercase transition-colors duration-300 hover:text-foreground sm:right-4" aria-label="Next" @click="showNext">
               next
             </button>
           </div>
 
-          <div class="flex justify-center gap-2 overflow-x-auto px-4 py-5">
+          <div class="flex justify-center gap-2 overflow-x-auto p-4">
             <button
               v-for="(photo, index) in photos" :key="`thumb-${photo.id}`"
               type="button" class="size-1.5 shrink-0 rounded-full transition-colors duration-300"
               :class="index === selectedIndex ? 'bg-foreground' : 'bg-muted-foreground/35 hover:bg-muted-foreground'"
-              :aria-label="`Go to photo ${photo.id}`" @click.stop="selectedIndex = index"
+              :aria-label="`Go to ${photo.type} ${photo.id}`" @click.stop="selectedIndex = index"
             />
           </div>
         </div>
@@ -106,6 +123,18 @@ function updateColumnCount() {
 
 function markLoaded(id: number) {
   loaded.value = new Set(loaded.value).add(id)
+}
+
+function onVideoReady(event: Event, id?: number) {
+  if (id !== undefined) {
+    markLoaded(id)
+  }
+  const video = event.target
+  if (!(video instanceof HTMLVideoElement)) {
+    return
+  }
+  video.muted = true
+  void video.play().catch(() => {})
 }
 
 function openLightbox(index: number) {

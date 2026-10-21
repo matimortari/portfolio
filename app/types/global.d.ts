@@ -34,6 +34,7 @@ interface ResumeLink {
 
 interface Photo {
   id: number
+  type: "image" | "video"
   url: string
   width: number
   height: number

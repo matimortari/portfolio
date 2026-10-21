@@ -1,16 +1,20 @@
-import { mkdir, readdir } from "node:fs/promises"
+import { readdir, rm, writeFile } from "node:fs/promises"
 import { basename, extname, join } from "node:path"
 import sharp from "sharp"
 
-const INPUT_DIR = ".data/photos/original"
-const OUTPUT_DIR = ".data/photos/compressed"
+const INPUT_DIR = ".data/photos"
 const MAX_WIDTH = 1920
 const MAX_HEIGHT = 1920
 const QUALITY = 85
 
-async function compressImage(inputPath, outputPath) {
+async function compressImage(inputPath) {
   try {
-    await sharp(inputPath).resize(MAX_WIDTH, MAX_HEIGHT, { fit: "inside", withoutEnlargement: true }).jpeg({ quality: QUALITY, mozjpeg: true }).toFile(outputPath)
+    const outputPath = inputPath.replace(/\.(jpeg|png|webp)$/i, ".jpg")
+    const buffer = await sharp(inputPath).rotate().resize(MAX_WIDTH, MAX_HEIGHT, { fit: "inside", withoutEnlargement: true }).jpeg({ quality: QUALITY, mozjpeg: true }).toBuffer()
+    await writeFile(outputPath, buffer)
+    if (outputPath !== inputPath) {
+      await rm(inputPath)
+    }
     console.log(`Compressed: ${basename(inputPath)}`)
   }
   catch (err) {
@@ -20,7 +24,6 @@ async function compressImage(inputPath, outputPath) {
 
 async function main() {
   try {
-    await mkdir(OUTPUT_DIR, { recursive: true })
     const files = await readdir(INPUT_DIR)
     const imageFiles = files.filter((file) => {
       const ext = extname(file).toLowerCase()
@@ -31,7 +34,7 @@ async function main() {
       return
     }
     for (const file of imageFiles) {
-      await compressImage(join(INPUT_DIR, file), join(OUTPUT_DIR, file.replace(/\.(png|webp)$/i, ".jpg")))
+      await compressImage(join(INPUT_DIR, file))
     }
   }
   catch (err) {
