@@ -1,10 +1,6 @@
 <template>
   <section id="contact" class="flex w-full flex-col items-center gap-8 text-center md:py-20">
-    <header
-      v-motion :initial="{ opacity: 0, scale: 0.8, y: -30 }"
-      :visible-once="{ opacity: 1, scale: 1, y: 0 }" :duration="600"
-      class="flex flex-col items-center gap-4 text-center"
-    >
+    <header v-motion="MOTION_FADE_UP" class="flex flex-col items-center gap-4 text-center">
       <h2>
         {{ $t("index.contact.title") }}
       </h2>
@@ -16,12 +12,11 @@
     <div class="grid gap-8 md:grid-cols-3">
       <nuxt-link
         v-for="(link, index) in CONTACT_LINKS" :key="index"
-        v-motion :initial="{ opacity: 0, y: 50 }"
-        :visible-once="{ opacity: 1, y: 0 }" :delay="index * 150"
-        :duration="500" :to="link.url"
-        target="_blank" class="group flex flex-col items-center gap-4 md:flex-row"
+        v-motion="MOTION_FADE_UP" :delay="80 + index * 80"
+        :to="link.url" target="_blank"
+        class="group flex flex-col items-center gap-4 md:flex-row"
       >
-        <icon :name="link.icon ?? ''" size="40" class="text-primary duration-500 group-hover:scale-110" />
+        <icon :name="link.icon ?? ''" size="40" class="text-primary duration-300 group-hover:scale-110" />
 
         <p class="flex flex-col items-center md:items-start">
           <span class="font-semibold">{{ link.label }}</span>

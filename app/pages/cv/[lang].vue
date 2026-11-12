@@ -4,8 +4,8 @@
       <iframe :src="pdfUrl" :title="$t('cv.meta.title')" :style="{ width: `${pdfWidth}px`, height: '100vh' }" />
     </ClientOnly>
 
-    <button class="group fixed bottom-4 z-50 hidden items-center gap-2 rounded-full bg-transparent p-2 text-sm font-semibold transition-all duration-500 hover:scale-105 md:right-4 md:flex" @click="downloadPdf">
-      <span class="transition-opacity duration-500 group-hover:opacity-100 md:opacity-0">{{ $t('cv.download') }}</span>
+    <button class="group fixed bottom-4 z-50 hidden items-center gap-2 rounded-full bg-transparent p-2 text-sm font-semibold transition-transform duration-300 hover:scale-105 md:right-4 md:flex" @click="downloadPdf">
+      <span class="transition-opacity duration-300 group-hover:opacity-100 md:opacity-0">{{ $t('cv.download') }}</span>
       <icon name="material-symbols:download" size="40" class="rounded-full p-1 backdrop-blur-xl" />
     </button>
   </main>

@@ -1,8 +1,8 @@
 <template>
   <transition name="fade-slide">
-    <button v-show="showButton" class="group fixed bottom-4 left-4 z-50 flex items-center gap-2 rounded-full bg-transparent p-2 text-sm font-semibold transition-all duration-500 hover:scale-105" @click="scrollToTop">
+    <button v-show="showButton" class="group fixed bottom-4 left-4 z-50 flex items-center gap-2 rounded-full bg-transparent p-2 text-sm font-semibold transition-transform duration-300 hover:scale-105" @click="scrollToTop">
       <icon name="material-symbols:arrow-upward" size="40" class="rounded-full p-1 backdrop-blur-xl" />
-      <span class="hidden opacity-0 transition-opacity duration-500 group-hover:opacity-100 md:inline-block">{{ $t('index.footer.backToTop') }}</span>
+      <span class="hidden opacity-0 transition-opacity duration-300 group-hover:opacity-100 md:inline-block">{{ $t('index.footer.backToTop') }}</span>
     </button>
   </transition>
 </template>
@@ -26,13 +26,13 @@ onBeforeUnmount(() => window.removeEventListener("scroll", handleScroll))
 .fade-slide-enter-active,
 .fade-slide-leave-active {
   transition:
-    opacity 0.5s ease,
-    transform 0.5s ease;
+    opacity 0.28s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.28s cubic-bezier(0.22, 1, 0.36, 1);
 }
 .fade-slide-enter-from,
 .fade-slide-leave-to {
   opacity: 0;
-  transform: translateY(20px);
+  transform: translateY(12px);
 }
 .fade-slide-enter-to,
 .fade-slide-leave-from {

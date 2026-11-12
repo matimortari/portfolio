@@ -50,6 +50,22 @@
     outline: solid 2px var(--primary);
     border-radius: 0.25rem;
   }
+
+  /* Reduced motion preferences */
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
 }
 
 /* Typography */
@@ -105,7 +121,9 @@ h5 {
   border: 1px var(--muted) solid;
   position: relative;
   overflow: hidden;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition:
+    border-color 0.28s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.28s cubic-bezier(0.22, 1, 0.36, 1);
 }
 .card::before {
   content: "";
@@ -113,7 +131,7 @@ h5 {
   inset: 0;
   background: linear-gradient(135deg, rgba(76, 64, 131, 0.15) 0%, transparent 50%);
   opacity: 0;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.28s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 .card:hover {
@@ -157,7 +175,10 @@ h5 {
   cursor: pointer;
   position: relative;
   overflow: hidden;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition:
+    color 0.28s cubic-bezier(0.22, 1, 0.36, 1),
+    border-color 0.28s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.28s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 @media (max-width: 767px) {

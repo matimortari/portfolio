@@ -7,60 +7,42 @@
     <div class="relative z-20 flex flex-col-reverse items-center justify-center gap-8 py-24 md:mx-auto md:flex-row md:gap-24">
       <header class="flex flex-1 flex-col gap-4 text-center md:text-start">
         <div class="flex flex-col gap-2">
-          <h1
-            v-motion :initial="{ opacity: 0, y: -30, rotateX: -90 }"
-            :visible-once="{ opacity: 1, y: 0, rotateX: 0 }" :duration="800"
-            :delay="300"
-          >
+          <h1 v-motion="MOTION_FADE_UP" :delay="80">
             {{ $t("index.hero.title") }}
           </h1>
-          <h2
-            v-motion :initial="{ opacity: 0, x: -50, scale: 0.9 }"
-            :visible-once="{ opacity: 1, x: 0, scale: 1 }" :duration="800"
-            :delay="500" class="bg-linear-to-r from-muted-foreground to-primary bg-clip-text px-12 text-transparent md:px-0"
-          >
+          <h2 v-motion="MOTION_FADE_UP" :delay="180" class="bg-linear-to-r from-muted-foreground to-primary bg-clip-text px-12 text-transparent md:px-0">
             {{ $t("index.hero.subtitle") }}
           </h2>
         </div>
 
-        <div
-          v-motion :initial="{ opacity: 0, y: 30 }"
-          :visible-once="{ opacity: 1, y: 0 }" :duration="600"
-          :delay="700" class="flex flex-col items-center gap-4 md:items-start md:justify-start md:gap-2"
-        >
+        <div class="flex flex-col items-center gap-4 md:items-start md:justify-start md:gap-2">
           <div class="flex w-full max-w-[80%] flex-col items-center justify-center gap-2 md:flex-row md:items-start md:justify-start">
             <nuxt-link
               v-for="(resume, index) in HERO_RESUME_LINKS" :key="index"
-              v-motion :initial="{ opacity: 0, scale: 0.8 }"
-              :visible-once="{ opacity: 1, scale: 1 }" :duration="500"
-              :delay="700 + index * 100" :to="resume.url"
-              target="_blank" class="group btn w-full md:w-auto"
+              v-motion="MOTION_FADE_UP" :delay="280 + index * 70"
+              :to="resume.url" target="_blank"
+              class="group btn w-full md:w-auto"
             >
               <span>{{ $t(resume.label) }}</span>
-              <icon name="material-symbols:arrow-outward" size="25" class="shrink-0 duration-500 group-hover:translate-x-1 group-hover:-translate-y-1" />
+              <icon name="material-symbols:arrow-outward" size="25" class="shrink-0 duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
             </nuxt-link>
           </div>
 
           <div class="flex max-w-[80%] items-center gap-2 md:flex-row md:flex-wrap md:items-start md:justify-start">
             <nuxt-link
               v-for="(link, index) in HERO_CONTACT_LINKS" :key="index"
-              v-motion :initial="{ opacity: 0, y: 20, scale: 0.5 }"
-              :visible-once="{ opacity: 1, y: 0, scale: 1 }" :duration="400"
-              :delay="1100 + index * 80" :to="link.url"
-              target="_blank" class="group btn w-full justify-start md:w-auto"
+              v-motion="MOTION_FADE_UP" :delay="420 + index * 50"
+              :to="link.url" target="_blank"
+              class="group btn w-full justify-start md:w-auto"
             >
-              <icon :name="link.icon ?? ''" size="25" class="shrink-0 duration-500 group-hover:scale-110" />
+              <icon :name="link.icon ?? ''" size="25" class="shrink-0 duration-300 group-hover:scale-110" />
               <span class="hidden md:inline">{{ link.label }}</span>
             </nuxt-link>
           </div>
         </div>
       </header>
 
-      <div
-        v-motion :initial="{ opacity: 0, scale: 0.5, rotateY: 180 }"
-        :visible-once="{ opacity: 1, scale: 1, rotateY: 0 }" :duration="1000"
-        :delay="200" class="avatar-container"
-      >
+      <div v-motion="MOTION_HERO_AVATAR" :delay="40" class="avatar-container">
         <div class="avatar-border" />
         <div class="avatar-glow" />
         <img src="/assets/avataaar.png" alt="Avatar" class="relative size-full rounded-full object-cover">
@@ -166,7 +148,7 @@
   }
   50% {
     opacity: 0.8;
-    transform: scale(1.1);
+    transform: scale(1.06);
   }
 }
 </style>

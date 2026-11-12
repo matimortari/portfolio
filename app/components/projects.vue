@@ -1,18 +1,17 @@
 <template>
   <section id="projects" class="mx-auto flex max-w-7xl flex-col items-center gap-8">
-    <h3 v-motion :initial="{ opacity: 0, y: -30 }" :visible-once="{ opacity: 1, y: 0 }" :duration="600">
+    <h3 v-motion="MOTION_FADE_UP">
       {{ $t("index.projects.title") }}
     </h3>
 
     <div class="flex w-full flex-col justify-between gap-12 md:flex-row">
       <div
         v-for="(project, index) in PROJECT_ITEMS" :key="index"
-        v-motion :initial="{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }"
-        :visible-once="{ opacity: 1, x: 0 }" :duration="600"
-        :delay="index * 200" class="flex flex-col gap-2"
+        v-motion="MOTION_FADE_UP" :delay="index * 100"
+        class="flex flex-col gap-2"
       >
         <div class="group w-full overflow-hidden rounded-md border">
-          <img :src="project.image" :alt="$t(project.title)" class="h-auto w-full transition-all duration-500 group-hover:scale-105">
+          <img :src="project.image" :alt="$t(project.title)" class="h-auto w-full transition-transform duration-500 ease-out group-hover:scale-[1.03]">
         </div>
 
         <div class="flex flex-col gap-2">

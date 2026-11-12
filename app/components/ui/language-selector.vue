@@ -1,17 +1,11 @@
 <template>
-  <div
-    v-motion :initial="{ opacity: 0, scale: 0.8 }"
-    :visible-once="{ opacity: 1, scale: 1 }" :duration="500"
-    :delay="500" class="relative flex flex-row items-center gap-2 rounded-full border bg-background/50 p-1 backdrop-blur-sm"
-  >
+  <div v-motion="MOTION_FADE_SCALE" :delay="280" class="relative flex flex-row items-center gap-2 rounded-full border bg-background/50 p-1 backdrop-blur-sm">
     <div class="language-indicator" :style="{ transform: `translateX(${locale === 'en-US' ? '0%' : '100%'})` }" />
 
     <button
       v-for="(language, index) in availableLocales" :key="index"
-      v-motion :initial="{ opacity: 0, rotateY: -90 }"
-      :visible-once="{ opacity: 1, rotateY: 0 }" :duration="400"
-      :delay="600 + index * 100" class="relative z-10 rounded-full p-1 text-sm font-semibold transition-all duration-300"
-      @click="setLanguage(language)"
+      v-motion="MOTION_FADE" :delay="340 + index * 60"
+      class="relative z-10 rounded-full p-1 text-sm font-semibold transition-colors duration-300" @click="setLanguage(language)"
     >
       {{ $t(`locale.${language}`) }}
     </button>
@@ -36,7 +30,7 @@ async function setLanguage(language: string) {
   height: calc(100% - 8px);
   background: var(--primary);
   border-radius: 9999px;
-  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 0.28s cubic-bezier(0.22, 1, 0.36, 1);
   z-index: 1;
 }
 </style>
